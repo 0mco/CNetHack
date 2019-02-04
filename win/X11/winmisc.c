@@ -1331,7 +1331,7 @@ X11_player_selection_prompts()
 #if 0 /*JP*/
         Sprintf(qbuf, "Choose your %s Role", s_suffix(plbuf));
 #else
-        Sprintf(qbuf, "%s怑嬈傪慖戰偟偰偔偩偝偄丏", s_suffix(plbuf));
+        Sprintf(qbuf, "%s喀度を联买してくださいˉ", s_suffix(plbuf));
 #endif
         popup =
 #if 0 /*JP*/
@@ -1340,7 +1340,7 @@ X11_player_selection_prompts()
                       choices, (Widget **) 0, ps_select, &player_form);
 #else
             make_menu("player_selection", qbuf, player_select_translations,
-                      "敳偗傞", ps_quit, "儔儞僟儉", ps_random, num_roles,
+                      "却ける", ps_quit, "ランダム", ps_random, num_roles,
                       choices, (Widget **) 0, ps_select, &player_form);
 #endif
 
@@ -1410,7 +1410,7 @@ X11_player_selection_prompts()
 #if 0 /*JP*/
             Sprintf(qbuf, "Pick your %s race", s_suffix(plbuf));
 #else
-            Sprintf(qbuf, "%s庬懓傪慖戰偟偰偔偩偝偄丏", s_suffix(plbuf));
+            Sprintf(qbuf, "%s硷虏を联买してくださいˉ", s_suffix(plbuf));
 #endif
 #if 0 /*JP*/
             popup =
@@ -1420,7 +1420,7 @@ X11_player_selection_prompts()
 #else
             popup =
                 make_menu("race_selection", qbuf, race_select_translations,
-                          "敳偗傞", ps_quit, "儔儞僟儉", ps_random, num_races,
+                          "却ける", ps_quit, "ランダム", ps_random, num_races,
                           choices, (Widget **) 0, ps_select, &player_form);
 #endif
 
@@ -1489,7 +1489,7 @@ X11_player_selection_prompts()
 /*JP
             Sprintf(qbuf, "Your %s gender?", s_suffix(plbuf));
 */
-            Sprintf(qbuf, "%s惈暿傪慖傫偱偔偩偝偄丏", s_suffix(plbuf));
+            Sprintf(qbuf, "%s拉侍を联んでくださいˉ", s_suffix(plbuf));
 #if 0 /*JP*/
             popup =
                 make_menu("gender_selection", qbuf, gend_select_translations,
@@ -1498,7 +1498,7 @@ X11_player_selection_prompts()
 #else
             popup =
                 make_menu("gender_selection", qbuf, gend_select_translations,
-                          "敳偗傞", ps_quit, "儔儞僟儉", ps_random, num_gends,
+                          "却ける", ps_quit, "ランダム", ps_random, num_gends,
                           choices, (Widget **) 0, ps_select, &player_form);
 #endif
 
@@ -1565,7 +1565,7 @@ X11_player_selection_prompts()
 /*JP
             Sprintf(qbuf, "Your %s alignment?", s_suffix(plbuf));
 */
-            Sprintf(qbuf, "%s懏惈傪慖戰偟偰偔偩偝偄丏", s_suffix(plbuf));
+            Sprintf(qbuf, "%s掳拉を联买してくださいˉ", s_suffix(plbuf));
 #if 0 /*JP*/
             popup = make_menu("alignment_selection", qbuf,
                               algn_select_translations, "quit", ps_quit,
@@ -1573,8 +1573,8 @@ X11_player_selection_prompts()
                               (Widget **) 0, ps_select, &player_form);
 #else
             popup = make_menu("alignment_selection", qbuf,
-                              algn_select_translations, "敳偗傞", ps_quit,
-                              "儔儞僟儉", ps_random, num_algns, choices,
+                              algn_select_translations, "却ける", ps_quit,
+                              "ランダム", ps_random, num_algns, choices,
                               (Widget **) 0, ps_select, &player_form);
 #endif
 
@@ -1998,9 +1998,9 @@ init_extended_commands_popup()
                   &extended_commands, extend_select, &extended_command_form);
 #else
     extended_command_popup =
-        make_menu("extended_commands", "奼挘僐儅儞僪",
-                  extended_command_translations, "庢徚", extend_dismiss,
-                  "僿儖僾", extend_help, num_commands, command_list,
+        make_menu("extended_commands", "橙磨コマンド",
+                  extended_command_translations, "艰久", extend_dismiss,
+                  "ヘルプ", extend_help, num_commands, command_list,
                   &extended_commands, extend_select, &extended_command_form);
 #endif
 

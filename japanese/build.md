@@ -1,12 +1,12 @@
-# JNetHack�r���h�菇
+# JNetHackビルド手順
 
-NetHack��JNetHack�̃p�b�`�𓖂Ă���ԁA���邢��git���|�W�g������clone������Ԃ���J�n���܂��B�J�����g�f�B���N�g���̓x�[�X�f�B���N�g��(`/src`, `/dat` �Ȃǂ�����f�B���N�g��)�Ƃ��܂��B
+NetHackにJNetHackのパッチを当てた状態、あるいはgitレポジトリからcloneした状態から開始します。カレントディレクトリはベースディレクトリ(`/src`, `/dat` などがあるディレクトリ)とします。
 
-���̏�Ԃł͕����R�[�h��Shift_JIS�ɂȂ��Ă��܂����AOS�ɂ���ăr���h���邽�߂̕����R�[�h���قȂ�܂��B�ȉ��̎菇�ł͕����R�[�h�ϊ��������܂�ł��܂��B
+この状態では文字コードはShift_JISになっていますが、OSによってビルドするための文字コードが異なります。以下の手順では文字コード変換処理も含んでいます。
 
 ## Windows
 
-VisualStudio 2015�ɑΉ����Ă��܂��B�u�J���҃R�}���h �v�����v�g for VS2015�v������s���܂��B
+VisualStudio 2015に対応しています。「開発者コマンド プロンプト for VS2015」から実行します。
 
 ```
 sys/winnt/setup.bat
@@ -16,7 +16,7 @@ nmake install
 
 ## Linux
 
-NetHack�̃r���h���ɉ�����`nkf`���K�v�ł��B
+NetHackのビルド環境に加えて`nkf`が必要です。
 
 ```
 sh japanese/set_lnx.sh
@@ -25,9 +25,9 @@ make install
 
 ## MacOS
 
-NetHack�̃r���h���ɉ����� `GCC@5�ȏ�`, `nkf` ���K�v�ł��BXCode�Ɋ܂܂�Ă���`gcc`�ł̓r���h�ł��܂���̂ŁAhomebrew�ŃC���X�g�[�����Ă��������B
+NetHackのビルド環境に加えて `GCC@5以上`, `nkf` が必要です。XCodeに含まれている`gcc`ではビルドできませんので、homebrewでインストールしてください。
 
-�ݒ�t�@�C����GCC@5��O��Ƃ��ď�����Ă��܂��B6�ȏ�ł��r���h�ł��܂����A`sys/unix/hints` �� `japanese/set_mac.sh` �̏C�����K�v�ł��B
+設定ファイルはGCC@5を前提として書かれています。6以上でもビルドできますが、`sys/unix/hints` と `japanese/set_mac.sh` の修正が必要です。
 
 ```
 sh japanese/set_mac.sh

@@ -306,12 +306,12 @@ static struct X_status_value shown_stats[NUM_STATS] = {
     { "Wisdom", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE }, /* 5*/
     { "Charisma", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
 #else /*JP*/
-    { "ã≠Ç≥",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /* 0*/
-    { "ëfëÅÇ≥", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ëœãvóÕ", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ímóÕ",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "å´Ç≥",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ñ£óÕ",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /* 5*/
+    { "∂Ø§µ",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /* 0*/
+    { "¡«¡·§µ", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "¬—µ◊Œœ", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "√ŒŒœ",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "∏≠§µ",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "Ã•Œœ",   SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /* 5*/
 #endif
 
     { "", SV_LABEL, (Widget) 0, -1, 0, FALSE, FALSE }, /* name */
@@ -329,17 +329,17 @@ static struct X_status_value shown_stats[NUM_STATS] = {
     { "Time", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
     { "Score", SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
 #else /*JP*/
-    { "ã‡",             SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ëÃóÕ",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ç≈ëÂëÃóÕ",       SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /*10*/
-    { "ñÇóÕ",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ç≈ëÂñÇóÕ",       SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "äZ",             SV_VALUE, (Widget) 0,256, 0, FALSE, FALSE },
-    { "ÉåÉxÉã",         SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "åoå±",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /*15*/
-    { "ëÆê´",           SV_VALUE, (Widget) 0, -2, 0, FALSE, FALSE },
-    { "éûä‘",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
-    { "ÉXÉRÉA",         SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "∂‚",             SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "¬ŒŒœ",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "∫«¬Á¬ŒŒœ",       SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /*10*/
+    { "À‚Œœ",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "∫«¬ÁÀ‚Œœ",       SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "≥ª",             SV_VALUE, (Widget) 0,256, 0, FALSE, FALSE },
+    { "•Ï•Ÿ•Î",         SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "∑–∏≥",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },    /*15*/
+    { "¬∞¿≠",           SV_VALUE, (Widget) 0, -2, 0, FALSE, FALSE },
+    { "ª˛¥÷",           SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
+    { "•π•≥•¢",         SV_VALUE, (Widget) 0, -1, 0, FALSE, FALSE },
 #endif
 
 #if 0 /*JP*/
@@ -349,11 +349,11 @@ static struct X_status_value shown_stats[NUM_STATS] = {
     { "Food Pois", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
     { "Term Ill", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
 #else
-    { "êŒâª", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE }, /*20*/
-    { "ÉXÉâÉCÉÄ", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "íÇëß", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "êHì≈", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "ïaãC", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "¿–≤Ω", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE }, /*20*/
+    { "•π•È•§•‡", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "√‚¬©", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "ø©∆«", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "…¬µ§", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
 #endif
 
     { "", SV_NAME, (Widget) 0, -1, 0, FALSE, TRUE }, /*25*/     /* hunger */
@@ -363,9 +363,9 @@ static struct X_status_value shown_stats[NUM_STATS] = {
     { "Flying", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
     { "Riding", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
 #else
-    { "ïÇóV", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "îÚçs", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "ãRèÊ", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "…‚Õ∑", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "»Ùπ‘", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "µ≥æË", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
 #endif
 
 #if 0 /*JP*/
@@ -375,11 +375,11 @@ static struct X_status_value shown_stats[NUM_STATS] = {
     { "Confused", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
     { "Hallucinating", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
 #else
-    { "ñ”ñ⁄", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE }, /*30*/
-    { "é®òW", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "·øùÚ", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "ç¨óê", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
-    { "å∂äo", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "Ã’Ã‹", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE }, /*30*/
+    { "º™œ∏", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "‚¡⁄Ù", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "∫ÆÕ", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
+    { "∏∏≥–", SV_NAME, (Widget) 0, 0, 0, FALSE, TRUE },
 #endif
 };
 
@@ -453,7 +453,7 @@ long new_value;
                 int k;
 
                 Strcpy(mname, mons[u.umonnum].mname);
-#if 0 /*JP*//*ÉLÉÉÉsÉ^ÉâÉCÉYïsóv*/
+#if 0 /*JP*//*•≠•„•‘•ø•È•§•∫…‘Õ◊*/
                 for (k = 0; mname[k] != '\0'; k++) {
                     if (k == 0 || mname[k - 1] == ' ')
                         mname[k] = highc(mname[k]);
@@ -469,7 +469,7 @@ long new_value;
 /*JP
                 Sprintf(eos(buf), ", level %d", depth(&u.uz));
 */
-                Sprintf(eos(buf), " ínâ∫%däK", depth(&u.uz));
+                Sprintf(eos(buf), " √œ≤º%d≥¨", depth(&u.uz));
             }
         } else {
             impossible("update_val: unknown label type \"%s\"",
@@ -623,9 +623,9 @@ long new_value;
 #else
             Strcpy(buf,
                    (new_value == A_CHAOTIC)
-                   ? "ç¨ì◊"
+                   ? "∫Æ∆Ÿ"
                    : (new_value == A_NEUTRAL)
-                   ? "íÜóß" : "íÅèò");
+                   ? "√ÊŒ©" : "√·Ω¯");
 #endif
         } else {
             Sprintf(buf, "%ld", new_value);

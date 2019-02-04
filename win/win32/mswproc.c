@@ -1692,7 +1692,7 @@ mswin_getlin(const char *question, char *input)
                 if (c == VK_BACK) {
                     if (len > 0)
                         len--;
-#if 1 /*JP*//*2ÉoÉCÉgï∂éöÇ»ÇÁÇ‡Ç§1ÉoÉCÉgè¡Ç∑*/
+#if 1 /*JP*//*2•–•§•» ∏ª˙§ §È§‚§¶1•–•§•»æ√§π*/
                     if (len > 0 && is_kanji2(input, len))
                         len--;
 #endif
@@ -1701,7 +1701,7 @@ mswin_getlin(const char *question, char *input)
                     PlaySound((LPCSTR)SND_ALIAS_SYSTEMEXCLAMATION, NULL, SND_ALIAS_ID|SND_ASYNC);
                 } else {
                     input[len++] = c;
-#if 1 /*JP*//*2ÉoÉCÉgï∂éöÇ»ÇÁÇªÇÃèÍÇ≈Ç‡Ç§1ÉoÉCÉgì«Ç›çûÇﬁ*/
+#if 1 /*JP*//*2•–•§•» ∏ª˙§ §È§Ω§ŒæÏ§«§‚§¶1•–•§•»∆…§ﬂπ˛§‡*/
                     if (is_kanji(c)){
                         c = mswin_nhgetch();
                         input[len++] = c;

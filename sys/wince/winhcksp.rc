@@ -281,7 +281,7 @@ BEGIN
             VALUE "FileDescription", "nethackm\0"
             VALUE "FileVersion", "3, 6, 1, 0\0"
             VALUE "InternalName", "nethackm\0"
-            VALUE "LegalCopyright", "Copyright © 1985-2018\0"
+            VALUE "LegalCopyright", "Copyright 1985-2018\0"
             VALUE "LegalTrademarks", "\0"
             VALUE "OriginalFilename", "nethackm.exe\0"
             VALUE "PrivateBuild", "090914\0"

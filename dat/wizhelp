@@ -1,13 +1,13 @@
-�f�o�b�O���[�h�F
+デバッグモード：
 
-^E  ==  �閧�̃h�A��㩂𒲂ׂ�
-^F  ==  ���@�̒n�}
-^G  ==  �����𑢂�
-^I  ==  �����������ʂ���
-^T  ==  ���̊K�ł̏u�Ԉړ�
-^V  ==  �Ⴄ�K�ւ̏u�Ԉړ�; '?'�œ��ʂȍs��ւ̃��j���[
-^W  ==  �]�݂����Ȃ���(����㩂��ꕔ�̒n�`)
-^X  ==  ����������(�g�����ꂽ�[��)
+^E  ==  秘密のドアや罠を調べる
+^F  ==  魔法の地図
+^G  ==  怪物を造る
+^I  ==  持ち物を識別する
+^T  ==  その階での瞬間移動
+^V  ==  違う階への瞬間移動; '?'で特別な行先へのメニュー
+^W  ==  望みをかなえる(物か罠か一部の地形)
+^X  ==  属性を見る(拡張された啓蒙)
 
 #levelchange    == set hero's experience level
 #lightsources   == show mobile light sources

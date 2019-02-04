@@ -270,7 +270,7 @@ VA_DECL(const char *, line)
 /*JP
     vpline(YouMessage(tmp, "You ", line), VA_ARGS);
 */
-    vpline(YouMessage(tmp, "‚ ‚È‚½‚Í", line), VA_ARGS);
+    vpline(YouMessage(tmp, "ã‚ãªãŸã¯", line), VA_ARGS);
     VA_END();
 }
 
@@ -284,7 +284,7 @@ VA_DECL(const char *, line)
 /*JP
     vpline(YouMessage(tmp, "Your ", line), VA_ARGS);
 */
-    vpline(YouMessage(tmp, "‚ ‚È‚½‚Ì", line), VA_ARGS);
+    vpline(YouMessage(tmp, "ã‚ãªãŸã®", line), VA_ARGS);
     VA_END();
 }
 
@@ -299,12 +299,12 @@ VA_DECL(const char *, line)
 /*JP
         YouPrefix(tmp, "You dream that you feel ", line);
 */
-        YouPrefix(tmp, "‚ ‚È‚½‚Í–²‚Ì’†‚Å", line);
+        YouPrefix(tmp, "ã‚ãªãŸã¯å¤¢ã®ä¸­ã§", line);
     else
 /*JP
         YouPrefix(tmp, "You feel ", line);
 */
-        YouPrefix(tmp, "‚ ‚È‚½‚Í", line);
+        YouPrefix(tmp, "ã‚ãªãŸã¯", line);
     vpline(strcat(tmp, line), VA_ARGS);
     VA_END();
 }
@@ -319,7 +319,7 @@ VA_DECL(const char *, line)
 /*JP
     vpline(YouMessage(tmp, "You can't ", line), VA_ARGS);
 */
-    vpline(YouMessage(tmp, "‚ ‚È‚½‚Í", line), VA_ARGS);
+    vpline(YouMessage(tmp, "ã‚ãªãŸã¯", line), VA_ARGS);
     VA_END();
 }
 
@@ -375,19 +375,19 @@ VA_DECL(const char *, line)
     vpline(strcat(tmp, line), VA_ARGS);
 #else
     if (Underwater)
-        adj = "‚©‚·‚©‚É";
+        adj = "ã‹ã™ã‹ã«";
     else if (Unaware)
-        adj = "–²‚Ì’†‚Å";
+        adj = "å¤¢ã®ä¸­ã§";
     else
         adj = "";
-    tmp = You_buf(strlen(adj) + strlen(line) + sizeof("‚ ‚È‚½‚Í   "));
+    tmp = You_buf(strlen(adj) + strlen(line) + sizeof("ã‚ãªãŸã¯   "));
 
-    p = (char *)strstr(line, "•·‚±") ;
+    p = (char *)strstr(line, "èã“") ;
     if (p == NULL)
-        Strcpy(tmp, "‚ ‚È‚½‚Í");
+        Strcpy(tmp, "ã‚ãªãŸã¯");
     else
         Strcpy(tmp, "");
-    if (p != NULL || (p = (char *)strstr(line, "•·‚¢")) != NULL){
+    if (p != NULL || (p = (char *)strstr(line, "èã„")) != NULL){
         strncat(tmp, line, (p - line));
         strcat(tmp, adj);
         strcat(tmp, p);
@@ -411,8 +411,8 @@ VA_DECL(const char *, line)
 /*JP
         YouPrefix(tmp, "You dream that you see ", line);
 */
-        YouPrefix(tmp, "‚ ‚È‚½‚Í–²‚Ì’†‚Å", line);
-#if 0 /*JP*//*‚±‚±‚ÍŒÄ‚Ño‚µŒ³‚Åˆ—‚·‚é?*/
+        YouPrefix(tmp, "ã‚ãªãŸã¯å¤¢ã®ä¸­ã§", line);
+#if 0 /*JP*//*ã“ã“ã¯å‘¼ã³å‡ºã—å…ƒã§å‡¦ç†ã™ã‚‹?*/
     else if (Blind) /* caller should have caught this... */
         YouPrefix(tmp, "You sense ", line);
 #endif
@@ -420,7 +420,7 @@ VA_DECL(const char *, line)
 /*JP
         YouPrefix(tmp, "You see ", line);
 */
-        YouPrefix(tmp, "‚ ‚È‚½‚Í", line);
+        YouPrefix(tmp, "ã‚ãªãŸã¯", line);
     vpline(strcat(tmp, line), VA_ARGS);
     VA_END();
 }
@@ -443,10 +443,10 @@ VA_DECL(const char *, line)
     Strcat(tmp, line);
     Strcat(tmp, "\"");
 #else
-    tmp = You_buf((int) strlen(line) + sizeof "uv");
-    Strcpy(tmp, "u");
+    tmp = You_buf((int) strlen(line) + sizeof "ã€Œã€");
+    Strcpy(tmp, "ã€Œ");
     Strcat(tmp, line);
-    Strcat(tmp, "v");
+    Strcat(tmp, "ã€");
 #endif
     vpline(tmp, VA_ARGS);
     VA_END();
@@ -528,7 +528,7 @@ VA_DECL(const char *, s)
        "Program in disorder!  (Saving and reloading may fix this problem.)"));
 #else
     pline(VA_PASS1(
-       "ƒvƒƒOƒ‰ƒ€‚ÉáŠQ”­¶I (•Û‘¶‚µ‚ÄÄ“Ç‚İ‚İ‚·‚ê‚Î–â‘è‰ğŒˆ‚·‚é‚©‚à‚µ‚ê‚È‚¢D)"));
+       "ãƒ—ãƒ­ã‚°ãƒ©ãƒ ã«éšœå®³ç™ºç”Ÿï¼ (ä¿å­˜ã—ã¦å†èª­ã¿è¾¼ã¿ã™ã‚Œã°å•é¡Œè§£æ±ºã™ã‚‹ã‹ã‚‚ã—ã‚Œãªã„ï¼)"));
 #endif
     program_state.in_impossible = 0;
     VA_END();

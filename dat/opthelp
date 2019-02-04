@@ -1,124 +1,124 @@
-ƒRƒ“ƒpƒCƒ‹‚Ìw’è‚ÉŠÖ‚í‚ç‚¸—˜—p‰Â”\‚È^‹UƒIƒvƒVƒ‡ƒ“(ƒfƒtƒHƒ‹ƒg‚Í[]D):
-('O'ƒRƒ}ƒ“ƒh‚ğg—p‚µ‚ÄŒ»İ‚ÌƒIƒvƒVƒ‡ƒ“‚Ìİ’è‚ğƒ`ƒFƒbƒN‚µC‚Ç‚ÌƒIƒvƒVƒ‡ƒ“‚ª
-‚ ‚È‚½‚Ìƒo[ƒWƒ‡ƒ“‚É‚ ‚é‚©’m‚é‚±‚Æ‚ª‚Å‚«‚é)
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®æŒ‡å®šã«é–¢ã‚ã‚‰ãšåˆ©ç”¨å¯èƒ½ãªçœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³(ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã¯[]ï¼):
+('O'ã‚³ãƒãƒ³ãƒ‰ã‚’ä½¿ç”¨ã—ã¦ç¾åœ¨ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®è¨­å®šã‚’ãƒã‚§ãƒƒã‚¯ã—ï¼Œã©ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒ
+ã‚ãªãŸã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ã«ã‚ã‚‹ã‹çŸ¥ã‚‹ã“ã¨ãŒã§ãã‚‹)
 
 acoustics      can your character hear anything                        [TRUE]
 autodescribe   describe the terrain under cursor                       [FALSE]
-autodig        Œ@‚é“¹‹ï‚ğ‘•”õ‚µ‚ÄˆÚ“®‚µ‚½ê‡‚ÍŒ@‚é                    [FALSE]
-autoopen       ”à‚ÉŒü‚©‚Á‚ÄˆÚ“®‚·‚é‚ÆŠJ‚¯‚æ‚¤‚Æ‚·‚é                    [TRUE]
-autopickup     ˆÚ“®‚µ‚½‚Æ‚«©“®‚Å•¨‚ğE‚¤                              [TRUE]
-autoquiver     ‰½‚©‚ğË‚é‚Æ‚«‚É–î“›(‚È‚Ç)‚ª‹ó‚Ìê‡C“K“–‚È•Ší‚ğ
-               ‘•“U‚·‚éD                                              [FALSE]
+autodig        æ˜ã‚‹é“å…·ã‚’è£…å‚™ã—ã¦ç§»å‹•ã—ãŸå ´åˆã¯æ˜ã‚‹                    [FALSE]
+autoopen       æ‰‰ã«å‘ã‹ã£ã¦ç§»å‹•ã™ã‚‹ã¨é–‹ã‘ã‚ˆã†ã¨ã™ã‚‹                    [TRUE]
+autopickup     ç§»å‹•ã—ãŸã¨ãè‡ªå‹•ã§ç‰©ã‚’æ‹¾ã†                              [TRUE]
+autoquiver     ä½•ã‹ã‚’å°„ã‚‹ã¨ãã«çŸ¢ç­’(ãªã©)ãŒç©ºã®å ´åˆï¼Œé©å½“ãªæ­¦å™¨ã‚’
+               è£…å¡«ã™ã‚‹ï¼                                              [FALSE]
 BIOS           allow the use of IBM ROM BIOS calls                     [FALSE]
 blind          your character is permanently blind                     [FALSE]
 bones          allow loading bones files                               [TRUE]
 clicklook      look at map by clicking right mouse button              [FALSE]
-cmdassist      •ûŒü‚â‚»‚Ì‘¼‚ÌƒRƒ}ƒ“ƒh‚ÅƒGƒ‰[‚Éƒwƒ‹ƒv‚ğ•\¦‚·‚é      [TRUE]
-confirm        ƒyƒbƒg‚â—FD“I‚È‰ö•¨‚ğUŒ‚‚·‚é‘O‚ÉŠm”F‚·‚é              [TRUE]
+cmdassist      æ–¹å‘ã‚„ãã®ä»–ã®ã‚³ãƒãƒ³ãƒ‰ã§ã‚¨ãƒ©ãƒ¼æ™‚ã«ãƒ˜ãƒ«ãƒ—ã‚’è¡¨ç¤ºã™ã‚‹      [TRUE]
+confirm        ãƒšãƒƒãƒˆã‚„å‹å¥½çš„ãªæ€ªç‰©ã‚’æ”»æ’ƒã™ã‚‹å‰ã«ç¢ºèªã™ã‚‹              [TRUE]
 dark_room      show floor not in sight in different color              [TRUE]
-eight_bit_tty  8-bitƒLƒƒƒ‰ƒNƒ^‚ğ’[––‚É‚»‚Ì‚Ü‚Ü‘—M‚·‚é                 [FALSE]
-extmenu        Šg’£ƒRƒ}ƒ“ƒh (#) ‚ğ‘I‘ğ‚·‚é‚Æ‚«‚Éƒƒjƒ…[‚ğg—p‚·‚é     [FALSE]
-fixinv         ‚Å‚«‚é‚¾‚¯C“¯‚¶•¨‚Í“¯‚¶•¶š‚É“–‚Ä‚é                    [TRUE]
+eight_bit_tty  8-bitã‚­ãƒ£ãƒ©ã‚¯ã‚¿ã‚’ç«¯æœ«ã«ãã®ã¾ã¾é€ä¿¡ã™ã‚‹                 [FALSE]
+extmenu        æ‹¡å¼µã‚³ãƒãƒ³ãƒ‰ (#) ã‚’é¸æŠã™ã‚‹ã¨ãã«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ç”¨ã™ã‚‹     [FALSE]
+fixinv         ã§ãã‚‹ã ã‘ï¼ŒåŒã˜ç‰©ã¯åŒã˜æ–‡å­—ã«å½“ã¦ã‚‹                    [TRUE]
 force_invmenu  commands asking for inventory item show a menu          [FALSE]
 goldX          when filtering objects by bless/curse state,            [FALSE]
                whether to classify gold as X (unknown) or U (uncursed)
-help           '/'ƒRƒ}ƒ“ƒh‚É‚³‚ç‚È‚éî•ñ‚ğŒ©‚é‚©Šm”F‚·‚é             [TRUE]
+help           '/'ã‚³ãƒãƒ³ãƒ‰æ™‚ã«ã•ã‚‰ãªã‚‹æƒ…å ±ã‚’è¦‹ã‚‹ã‹ç¢ºèªã™ã‚‹             [TRUE]
 herecmd_menu   show menu of some possible commands when clicking
                on yourself or next to you with mouse                   [FALSE]
-ignintr        ƒuƒŒ[ƒN‚ğŠÜ‚ŞƒCƒ“ƒ^ƒ‰ƒvƒgƒVƒOƒiƒ‹‚ğ–³‹‚·‚é            [FALSE]
-implicit_uncursed ‰Â”\‚È‚ç‚¿•¨•\¦‚Ì‚Éuô‚í‚ê‚Ä‚¢‚È‚¢v•\¦‚ğœ‚­ [TRUE]
-legacy         ƒQ[ƒ€Å‰‚ÉƒCƒ“ƒgƒƒ_ƒNƒVƒ‡ƒ“‚ğ•\¦‚·‚é                [TRUE]
-lit_corridor   ˆÃ‚¢‰ñ˜L‚Å‚àƒvƒŒ[ƒ„‚ÌüˆÍ‚ğ–¾‚é‚­•\¦‚·‚é              [FALSE]
-lootabc        ” ‚ğŠJ‚¯‚½‚Æ‚«‚Éo/i/b‚Å‚Í‚È‚­a/b/c‚ğg‚¤                [FALSE]
-mail           ƒ[ƒ‹ƒf[ƒ‚ƒ“‚Ì‘¶İ‚ğ‹–‚·                              [TRUE]
+ignintr        ãƒ–ãƒ¬ãƒ¼ã‚¯ã‚’å«ã‚€ã‚¤ãƒ³ã‚¿ãƒ©ãƒ—ãƒˆã‚·ã‚°ãƒŠãƒ«ã‚’ç„¡è¦–ã™ã‚‹            [FALSE]
+implicit_uncursed å¯èƒ½ãªã‚‰æŒã¡ç‰©è¡¨ç¤ºã®æ™‚ã«ã€Œå‘ªã‚ã‚Œã¦ã„ãªã„ã€è¡¨ç¤ºã‚’é™¤ã [TRUE]
+legacy         ã‚²ãƒ¼ãƒ æœ€åˆã«ã‚¤ãƒ³ãƒˆãƒ­ãƒ€ã‚¯ã‚·ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹                [TRUE]
+lit_corridor   æš—ã„å›å»Šã§ã‚‚ãƒ—ãƒ¬ãƒ¼ãƒ¤ã®å‘¨å›²ã‚’æ˜ã‚‹ãè¡¨ç¤ºã™ã‚‹              [FALSE]
+lootabc        ç®±ã‚’é–‹ã‘ãŸã¨ãã«o/i/bã§ã¯ãªãa/b/cã‚’ä½¿ã†                [FALSE]
+mail           ãƒ¡ãƒ¼ãƒ«ãƒ‡ãƒ¼ãƒ¢ãƒ³ã®å­˜åœ¨ã‚’è¨±ã™                              [TRUE]
 mention_walls  give feedback when walking against a wall               [FALSE]
 menu_objsyms   show object symbols in menus if it is selectable        [FALSE]
 menu_overlay   overlay menus on the screen and align to right          [TRUE]
 nudist         start your character without armor                      [FALSE]
-null           ’[––‚Éƒkƒ‹‚ğ‘—‚éD                                      [TRUE]
-               ˆÚ“®‚·‚é•¨‘Ì‚ª•”‰®‚ğƒeƒŒƒ|[ƒg‚µ‚Ä‚¢‚é‚æ‚¤‚ÉŒ©‚¦‚é‚È‚ç
-               ‚ÎC‚±‚ÌƒIƒvƒVƒ‡ƒ“‚ğƒIƒt‚É‚¹‚æD(‹­§“I‚ÉƒfƒBƒŒƒCƒR[ƒh
-               ‚ğ‘—‚é‚æ‚¤‚É‚È‚é)
-perm_invent    ‚¿•¨ˆê——‚ğ‚¸‚Á‚ÆƒEƒBƒ“ƒhƒE‚É•\¦‚µ‚Ä‚¨‚­              [FALSE]
-pickup_thrown  “Š‚°‚ç‚ê‚½ƒAƒCƒeƒ€‚É‘Î‚µ‚Ä‚Ípickup_types‚ğã‘‚«‚·‚é    [TRUE]
-prayconfirm    #prayƒRƒ}ƒ“ƒh‚ªÀs‚³‚ê‚é‚Æ‚«‚ÉŠm”F‚·‚é                 [TRUE]
-pushweapon     ‰½‚©‚ğV‚µ‚­‘•”õ‚·‚é‚Æ‚«C‰Eè‚Ì•Ší‚ğ¶è‚É‚¿‘Ö‚¦‚é  [FALSE]
-rawio          raw I/O‚Ìd—l‚ğ‹–‰Â‚·‚é                                 [FALSE]
-rest_on_space  ƒXƒy[ƒXƒo[‚Å‹xŒe‚·‚é                                  [FALSE]
-safe_pet       (‚í‚©‚Á‚Ä‚¢‚é‚È‚ç)ƒyƒbƒg‚ğUŒ‚‚·‚é‚Ì‚ğ”ğ‚¯‚é            [TRUE]
+null           ç«¯æœ«ã«ãƒŒãƒ«ã‚’é€ã‚‹ï¼                                      [TRUE]
+               ç§»å‹•ã™ã‚‹ç‰©ä½“ãŒéƒ¨å±‹ã‚’ãƒ†ãƒ¬ãƒãƒ¼ãƒˆã—ã¦ã„ã‚‹ã‚ˆã†ã«è¦‹ãˆã‚‹ãªã‚‰
+               ã°ï¼Œã“ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’ã‚ªãƒ•ã«ã›ã‚ˆï¼(å¼·åˆ¶çš„ã«ãƒ‡ã‚£ãƒ¬ã‚¤ã‚³ãƒ¼ãƒ‰
+               ã‚’é€ã‚‹ã‚ˆã†ã«ãªã‚‹)
+perm_invent    æŒã¡ç‰©ä¸€è¦§ã‚’ãšã£ã¨ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«è¡¨ç¤ºã—ã¦ãŠã              [FALSE]
+pickup_thrown  æŠ•ã’ã‚‰ã‚ŒãŸã‚¢ã‚¤ãƒ†ãƒ ã«å¯¾ã—ã¦ã¯pickup_typesã‚’ä¸Šæ›¸ãã™ã‚‹    [TRUE]
+prayconfirm    #prayã‚³ãƒãƒ³ãƒ‰ãŒå®Ÿè¡Œã•ã‚Œã‚‹ã¨ãã«ç¢ºèªã™ã‚‹                 [TRUE]
+pushweapon     ä½•ã‹ã‚’æ–°ã—ãè£…å‚™ã™ã‚‹ã¨ãï¼Œå³æ‰‹ã®æ­¦å™¨ã‚’å·¦æ‰‹ã«æŒã¡æ›¿ãˆã‚‹  [FALSE]
+rawio          raw I/Oã®ä»•æ§˜ã‚’è¨±å¯ã™ã‚‹                                 [FALSE]
+rest_on_space  ã‚¹ãƒšãƒ¼ã‚¹ãƒãƒ¼ã§ä¼‘æ†©ã™ã‚‹                                  [FALSE]
+safe_pet       (ã‚ã‹ã£ã¦ã„ã‚‹ãªã‚‰)ãƒšãƒƒãƒˆã‚’æ”»æ’ƒã™ã‚‹ã®ã‚’é¿ã‘ã‚‹            [TRUE]
 sanity_check   perform data sanity checks                              [FALSE]
-showexp        ŒoŒ±’l‚ğ•\¦‚·‚é                                        [FALSE]
-showrace       ©•ª©g‚ğE‹Æ‚Å‚È‚­í‘°‚Å•\¦‚·‚é                      [FALSE]
-silent         ’[––‚Ìƒxƒ‹‚ğ–Â‚ç‚³‚È‚¢                                  [TRUE]
-sortpack       —‚½‚æ‚¤‚Èí—Ş‚Ì•¨‚ğ‚Ü‚Æ‚ß‚é                            [TRUE]
-sparkle        –‚–@UŒ‚‚ÉƒŒƒWƒXƒg‚µ‚½‚Æ‚«(‰Î‚Ö‚Ì‘Ï«‚ğ‚Â‰ö•¨‚É       [TRUE]
-               ‰Î‚ÌUŒ‚‚ğs‚Á‚½‚Æ‚«‚È‚Ç)‚ÉƒGƒtƒFƒNƒg‚ğ•\¦‚·‚é
-standout       --More--‚ğ‘¾š‚Å•\¦‚·‚é                                [FALSE]
+showexp        çµŒé¨“å€¤ã‚’è¡¨ç¤ºã™ã‚‹                                        [FALSE]
+showrace       è‡ªåˆ†è‡ªèº«ã‚’è·æ¥­ã§ãªãç¨®æ—ã§è¡¨ç¤ºã™ã‚‹                      [FALSE]
+silent         ç«¯æœ«ã®ãƒ™ãƒ«ã‚’é³´ã‚‰ã•ãªã„                                  [TRUE]
+sortpack       ä¼¼ãŸã‚ˆã†ãªç¨®é¡ã®ç‰©ã‚’ã¾ã¨ã‚ã‚‹                            [TRUE]
+sparkle        é­”æ³•æ”»æ’ƒã«ãƒ¬ã‚¸ã‚¹ãƒˆã—ãŸã¨ã(ç«ã¸ã®è€æ€§ã‚’æŒã¤æ€ªç‰©ã«       [TRUE]
+               ç«ã®æ”»æ’ƒã‚’è¡Œã£ãŸã¨ããªã©)ã«ã‚¨ãƒ•ã‚§ã‚¯ãƒˆã‚’è¡¨ç¤ºã™ã‚‹
+standout       --More--ã‚’å¤ªå­—ã§è¡¨ç¤ºã™ã‚‹                                [FALSE]
 status_updates update the status lines                                 [TRUE]
-time           ƒQ[ƒ€‚ÌŒo‰ßŠÔ‚ğ•\¦‚·‚é                              [FALSE]
-tombstone      €‚ñ‚¾‚Æ‚«•æÎ‚ğ•\¦‚·‚é                                [TRUE]
-toptenwin      ƒgƒbƒv10‚ğ•W€o—Í‚Å‚Í‚È‚­ƒEƒBƒ“ƒhƒE‚É•\¦‚·‚é          [FALSE]
-travel         ’n}‚Ì“Á’è‚ÌˆÊ’u‚ÉÅ¬Œo˜HƒAƒ‹ƒSƒŠƒYƒ€‚ğ—p‚¢‚ÄˆÚ“®‚·‚é
-               ƒRƒ}ƒ“ƒh(•’Ê‚Í '_' ƒRƒ}ƒ“ƒh‚Å‹N“®‚·‚é)‚ğ—LŒø‚É‚·‚é     [TRUE]
-use_darkgray   •‚¢ƒVƒ“ƒ{ƒ‹‚Ì‚ÉÂ‚Å‚Í‚È‚­•‚Ì‘¾š‚ğg‚¤              [TRUE]
-use_inverse    Š´’m‚µ‚½‰ö•¨‚ğƒnƒCƒ‰ƒCƒg‚µ‚Ä•\¦‚·‚é                    [FALSE]
-verbose        ƒQ[ƒ€‚ÌƒRƒƒ“ƒg‚ğÚ‚µ‚­•\¦‚·‚é                        [TRUE]
+time           ã‚²ãƒ¼ãƒ ã®çµŒéæ™‚é–“ã‚’è¡¨ç¤ºã™ã‚‹                              [FALSE]
+tombstone      æ­»ã‚“ã ã¨ãå¢“çŸ³ã‚’è¡¨ç¤ºã™ã‚‹                                [TRUE]
+toptenwin      ãƒˆãƒƒãƒ—10ã‚’æ¨™æº–å‡ºåŠ›ã§ã¯ãªãã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã«è¡¨ç¤ºã™ã‚‹          [FALSE]
+travel         åœ°å›³ã®ç‰¹å®šã®ä½ç½®ã«æœ€å°çµŒè·¯ã‚¢ãƒ«ã‚´ãƒªã‚ºãƒ ã‚’ç”¨ã„ã¦ç§»å‹•ã™ã‚‹
+               ã‚³ãƒãƒ³ãƒ‰(æ™®é€šã¯ '_' ã‚³ãƒãƒ³ãƒ‰ã§èµ·å‹•ã™ã‚‹)ã‚’æœ‰åŠ¹ã«ã™ã‚‹     [TRUE]
+use_darkgray   é»’ã„ã‚·ãƒ³ãƒœãƒ«ã®æ™‚ã«é’ã§ã¯ãªãé»’ã®å¤ªå­—ã‚’ä½¿ã†              [TRUE]
+use_inverse    æ„ŸçŸ¥ã—ãŸæ€ªç‰©ã‚’ãƒã‚¤ãƒ©ã‚¤ãƒˆã—ã¦è¡¨ç¤ºã™ã‚‹                    [FALSE]
+verbose        ã‚²ãƒ¼ãƒ ã®ã‚³ãƒ¡ãƒ³ãƒˆã‚’è©³ã—ãè¡¨ç¤ºã™ã‚‹                        [TRUE]
 whatis_menu    show menu when getting a map location                   [FALSE]
 whatis_moveskip skip same glyphs when getting a map location           [FALSE]
 
 
-ƒRƒ“ƒpƒCƒ‹‚Ìİ’è‚É‚æ‚Á‚Ä‚Í‚³‚ç‚É^‹UƒIƒvƒVƒ‡ƒ“‚ª‘¶İ‚·‚éD
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®è¨­å®šã«ã‚ˆã£ã¦ã¯ã•ã‚‰ã«çœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå­˜åœ¨ã™ã‚‹ï¼
 
-ƒRƒ“ƒpƒCƒ‹‚É INSURANCE ‚ªİ’è‚³‚ê‚Ä‚é‚È‚ç‚Î:
-checkpoint     ŠK‚ğˆÚ“®‚·‚é“x‚ÉƒQ[ƒ€ƒZ[ƒu‚µC‰Â”\‚È‚ç‚ÎƒvƒƒO        [TRUE]
-               ƒ‰ƒ€‚ªƒNƒ‰ƒbƒVƒ…‚µ‚Ä‚à•œŠˆ‚Å‚«‚é‚æ‚¤‚É‚·‚é
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« INSURANCE ãŒè¨­å®šã•ã‚Œã¦ã‚‹ãªã‚‰ã°:
+checkpoint     éšã‚’ç§»å‹•ã™ã‚‹åº¦ã«ã‚²ãƒ¼ãƒ ã‚»ãƒ¼ãƒ–ã—ï¼Œå¯èƒ½ãªã‚‰ã°ãƒ—ãƒ­ã‚°        [TRUE]
+               ãƒ©ãƒ ãŒã‚¯ãƒ©ãƒƒã‚·ãƒ¥ã—ã¦ã‚‚å¾©æ´»ã§ãã‚‹ã‚ˆã†ã«ã™ã‚‹
 
-ƒRƒ“ƒpƒCƒ‹‚É NEWS ‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-news           ƒXƒ^[ƒgƒAƒbƒv‚ÉƒQ[ƒ€ŠÇ—Ò‚©‚ç‚ÌƒƒbƒZ[ƒW‚ğ        [TRUE]
-               •\¦‚·‚é
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« NEWS ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+news           ã‚¹ã‚¿ãƒ¼ãƒˆã‚¢ãƒƒãƒ—æ™‚ã«ã‚²ãƒ¼ãƒ ç®¡ç†è€…ã‹ã‚‰ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’        [TRUE]
+               è¡¨ç¤ºã™ã‚‹
 
-ƒRƒ“ƒpƒCƒ‹‚É DGK‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-BIOS           IBM ROM BIOS‚ğg—p‚·‚é                                  [FALSE]
-rawio          I/O‚ğ’¼Ú‘€ì‚·‚é(ƒXƒ^[ƒg‚Ì‚İİ’è‰Â”\)               [FALSE]
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« DGKãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+BIOS           IBM ROM BIOSã‚’ä½¿ç”¨ã™ã‚‹                                  [FALSE]
+rawio          I/Oã‚’ç›´æ¥æ“ä½œã™ã‚‹(ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã®ã¿è¨­å®šå¯èƒ½)               [FALSE]
 
 
-ƒRƒ“ƒpƒCƒ‹‚É SCORE_ON_BOTL ‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-showscore      ƒXƒRƒA‚ğ•\¦‚·‚é                                        [FALSE]
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« SCORE_ON_BOTL ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+showscore      ã‚¹ã‚³ã‚¢ã‚’è¡¨ç¤ºã™ã‚‹                                        [FALSE]
 
-ƒRƒ“ƒpƒCƒ‹‚É TEXTCOLOR ‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-color          ‰æ–Ê‚Ì•¨‚ÌFX‚ÈF‚ğg—p‚·‚é                  [TRUE for micros]
-hilite_pet     ƒyƒbƒg‚ğ‹­’²•\¦‚·‚é                                    [FALSE]
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« TEXTCOLOR ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+color          ç”»é¢ã®ç‰©ã®è‰²ã€…ãªè‰²ã‚’ä½¿ç”¨ã™ã‚‹                  [TRUE for micros]
+hilite_pet     ãƒšãƒƒãƒˆã‚’å¼·èª¿è¡¨ç¤ºã™ã‚‹                                    [FALSE]
 hilite_pile    display item piles in a highlighted manner              [FALSE]
 
-ƒRƒ“ƒpƒCƒ‹‚É TIMED_DELAY ‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î(tty ƒCƒ“ƒ^[ƒtƒF[ƒX‚Ì‚İ):
-timed_delay    UNIX‚âVMS‚Å‚ÍƒfƒBƒXƒvƒŒƒC‚Ö•\¦‚ğƒ|[ƒY‚·‚é‘ã‚è‚É       [TRUE]
-               ƒ^ƒCƒ}[‚ğg‚¤DMSDOS‚Å termcapƒ‰ƒCƒuƒ‰ƒŠ‚ğg—p‚µ
-               ‚È‚¢ê‡‚ÍC•\¦‚ğƒ|[ƒY‚Ì‚ ‚é‚È‚µ‚É‚©‚©‚í‚ç‚¸
-               ƒ^ƒCƒ}[‚ªg‚í‚ê‚éD
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« TIMED_DELAY ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°(tty ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã®ã¿):
+timed_delay    UNIXã‚„VMSã§ã¯ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã¸è¡¨ç¤ºã‚’ãƒãƒ¼ã‚ºã™ã‚‹ä»£ã‚Šã«       [TRUE]
+               ã‚¿ã‚¤ãƒãƒ¼ã‚’ä½¿ã†ï¼MSDOSã§ termcapãƒ©ã‚¤ãƒ–ãƒ©ãƒªã‚’ä½¿ç”¨ã—
+               ãªã„å ´åˆã¯ï¼Œè¡¨ç¤ºã‚’ãƒãƒ¼ã‚ºã®ã‚ã‚‹ãªã—ã«ã‹ã‹ã‚ã‚‰ãš
+               ã‚¿ã‚¤ãƒãƒ¼ãŒä½¿ã‚ã‚Œã‚‹ï¼
 
-Amiga‚©AƒRƒ“ƒpƒCƒ‹‚ÉALTMETA‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-altmeta        Amiga‚ÅAAlt+ƒL[‚ğMeta+ƒL[‚Æ‚µ‚Äˆµ‚¤D                [TRUE]
-altmeta        unix‚ÆVMS‚ÅCjnethack‚ªƒvƒŒƒCƒ„[‚ÌƒL[ƒ{[ƒh‚©‚ç       [FALSE]
-               ƒRƒ}ƒ“ƒh‚ğ“¾‚éC2•¶š•À‚Ñ"ESC c"‚ğM-c(Meta+c,
-               ÅãˆÊƒrƒbƒgİ’è)‚Æ‚µ‚Äˆµ‚¤D
+Amigaã‹ã€ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã«ALTMETAãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+altmeta        Amigaã§ã€Alt+ã‚­ãƒ¼ã‚’Meta+ã‚­ãƒ¼ã¨ã—ã¦æ‰±ã†ï¼                [TRUE]
+altmeta        unixã¨VMSã§ï¼ŒjnethackãŒãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ã‚­ãƒ¼ãƒœãƒ¼ãƒ‰ã‹ã‚‰       [FALSE]
+               ã‚³ãƒãƒ³ãƒ‰ã‚’å¾—ã‚‹æ™‚ï¼Œ2æ–‡å­—ä¸¦ã³"ESC c"ã‚’M-c(Meta+c,
+               æœ€ä¸Šä½ãƒ“ãƒƒãƒˆè¨­å®š)ã¨ã—ã¦æ‰±ã†ï¼
 
-ƒRƒ“ƒpƒCƒ‹‚É USE_TILES ‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î (MSDOS ƒvƒƒeƒNƒgƒ‚[ƒh‚Ì‚İ):
-preload_tiles  ƒQ[ƒ€ŠJn‚Éƒ^ƒCƒ‹‚ğ—\‚ß RAM ‚É“Ç‚İ‚Ş‚©‚ğ§Œä‚·‚éD [TRUE]
-               ‚±‚ê‚É‚æ‚èƒ^ƒCƒ‹ƒOƒ‰ƒtƒBƒbƒN‚Ì«”\‚ªŒüã‚·‚é‚ªC
-               ‚æ‚è‘½‚­‚Ìƒƒ‚ƒŠ‚ğg‚¤D
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« USE_TILES ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã° (MSDOS ãƒ—ãƒ­ãƒ†ã‚¯ãƒˆãƒ¢ãƒ¼ãƒ‰ã®ã¿):
+preload_tiles  ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã«ã‚¿ã‚¤ãƒ«ã‚’äºˆã‚ RAM ã«èª­ã¿è¾¼ã‚€ã‹ã‚’åˆ¶å¾¡ã™ã‚‹ï¼ [TRUE]
+               ã“ã‚Œã«ã‚ˆã‚Šã‚¿ã‚¤ãƒ«ã‚°ãƒ©ãƒ•ã‚£ãƒƒã‚¯ã®æ€§èƒ½ãŒå‘ä¸Šã™ã‚‹ãŒï¼Œ
+               ã‚ˆã‚Šå¤šãã®ãƒ¡ãƒ¢ãƒªã‚’ä½¿ã†ï¼
 
 Boolean option if TTY_TILES_ESCCODES was set at compile time (tty only):
 vt_tiledata    insert extra data escae code markers into output        [FALSE]
 
-”CˆÓ‚Ì^‹UƒIƒvƒVƒ‡ƒ“‚Í'!'‚â'no'‚ğ‚Â‚¯‚é‚±‚Æ‚É‚æ‚è”Û’è‚Å‚«‚éD
+ä»»æ„ã®çœŸå½ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯'!'ã‚„'no'ã‚’ã¤ã‘ã‚‹ã“ã¨ã«ã‚ˆã‚Šå¦å®šã§ãã‚‹ï¼
 
-ƒpƒ‰ƒ[ƒ^‚Â‚«ƒIƒvƒVƒ‡ƒ“‚Í option_name:option_value ‚Ì‚æ‚¤‚ÉŠùq‚·‚éD
-Š¿šƒR[ƒh‚Í“à•”ƒR[ƒh‚É‚·‚é•K—v‚ª‚ ‚éD(•’Ê‚ÍEUC)
+ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¤ãã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯ option_name:option_value ã®ã‚ˆã†ã«æ—¢è¿°ã™ã‚‹ï¼
+æ¼¢å­—ã‚³ãƒ¼ãƒ‰ã¯å†…éƒ¨ã‚³ãƒ¼ãƒ‰ã«ã™ã‚‹å¿…è¦ãŒã‚ã‚‹ï¼(æ™®é€šã¯EUC)
 
-ƒQ[ƒ€’†‚Éİ’è‚Å‚«‚éƒpƒ‰ƒ[ƒ^‚Â‚«ƒIƒvƒVƒ‡ƒ“‚Í:
+ã‚²ãƒ¼ãƒ ä¸­ã«è¨­å®šã§ãã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¤ãã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯:
 
-boulder        ‹Šâ‚Ì•¶š‚ğ•Ï‚¦‚é                                      [`]
-disclose       ƒQ[ƒ€I—¹‚ÉŒ©‚éî•ñ‚Ìí—Ş                [ni na nv ng nc no]
+boulder        å·¨å²©ã®æ–‡å­—ã‚’å¤‰ãˆã‚‹                                      [`]
+disclose       ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã«è¦‹ã‚‹æƒ…å ±ã®ç¨®é¡                [ni na nv ng nc no]
               (space separated list of two-character values;
               prefix: '+' always disclose, '-' never disclose,
               'n' prompt with default "no", 'y' prompt with default "yes",
@@ -126,65 +126,65 @@ disclose       ƒQ[ƒ€I—¹‚ÉŒ©‚éî•ñ‚Ìí—Ş                [ni na nv ng nc no]
               suffix: 'i' inventory, 'a' attributes, 'v' vanquished
               monsters, 'g' genocided and extinct monsters, 'c' conduct,
               'o' dungeon overview)
-fruit          D•¨‚Ì‰Ê•¨‚Ì–¼‘O [slime mold]
-               (Šî–{“I‚ÉNetHack‚ª‹C‚Ü‚®‚ê‚Åg‚Á‚Ä‚«‚½)
-menustyle      •¡”ƒIƒuƒWƒFƒNƒg‚ğ‘I‘ğ‚·‚é‚Æ‚«‚Ìƒ†[ƒU[ƒCƒ“ƒ^ƒtƒF[ƒX   [Full]
-               Traditional -- ‘ÎÛ‚Æ‚·‚éƒNƒ‰ƒX‚ğ“ü—Í‚µC‚»‚ê‚©‚ç‚»‚ÌƒNƒ‰ƒX‚ÌƒA
-                              ƒCƒeƒ€‚ğˆê‚Â‚¸‚Â‘I‚Ô
-               Combination -- ‘ÎÛ‚Æ‚·‚éƒNƒ‰ƒX‚ğ“ü—Í‚µC‚»‚ê‚©‚çƒAƒCƒeƒ€‚ğ‘I‚Ô
-                              ‚Ì‚Éƒƒjƒ…[‚ğg‚¤
-               Full        -- ‘ÎÛ‚Æ‚·‚éƒNƒ‰ƒX‚ğƒƒjƒ…[‚Å‘I‚ÑC‚»‚ê‚©‚çƒAƒCƒe
-                              ƒ€‚ğ‘I‚Ô‚Ì‚Éƒƒjƒ…[‚ğg‚¤
-               Partial     -- ƒNƒ‰ƒX‘I‘ğ‚ğg—p‚¹‚¸C‘S‚Ä‚ÌƒAƒCƒeƒ€‚Ìƒƒjƒ…[‚ğ
-                              g‚¤
-               Å‰‚Ìˆê•¶š('T', 'C', 'F', 'P')‚ÅŒˆ’èD
+fruit          å¥½ç‰©ã®æœç‰©ã®åå‰ [slime mold]
+               (åŸºæœ¬çš„ã«NetHackãŒæ°—ã¾ãã‚Œã§ä½¿ã£ã¦ããŸ)
+menustyle      è¤‡æ•°ã‚ªãƒ–ã‚¸ã‚§ã‚¯ãƒˆã‚’é¸æŠã™ã‚‹ã¨ãã®ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¤ãƒ³ã‚¿ãƒ•ã‚§ãƒ¼ã‚¹   [Full]
+               Traditional -- å¯¾è±¡ã¨ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’å…¥åŠ›ã—ï¼Œãã‚Œã‹ã‚‰ãã®ã‚¯ãƒ©ã‚¹ã®ã‚¢
+                              ã‚¤ãƒ†ãƒ ã‚’ä¸€ã¤ãšã¤é¸ã¶
+               Combination -- å¯¾è±¡ã¨ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’å…¥åŠ›ã—ï¼Œãã‚Œã‹ã‚‰ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸ã¶
+                              ã®ã«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†
+               Full        -- å¯¾è±¡ã¨ã™ã‚‹ã‚¯ãƒ©ã‚¹ã‚’ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã§é¸ã³ï¼Œãã‚Œã‹ã‚‰ã‚¢ã‚¤ãƒ†
+                              ãƒ ã‚’é¸ã¶ã®ã«ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’ä½¿ã†
+               Partial     -- ã‚¯ãƒ©ã‚¹é¸æŠã‚’ä½¿ç”¨ã›ãšï¼Œå…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚’
+                              ä½¿ã†
+               æœ€åˆã®ä¸€æ–‡å­—('T', 'C', 'F', 'P')ã§æ±ºå®šï¼
               (With Traditional, many actions allow pseudo-class 'm' to
               request a menu for choosing items: one-shot Combination.)
-number_pad     ˆÚ“®‚É‰pš‚ğg‚¤‚©”š‚ğg‚¤‚©: [0]
-               0 -- “`““I‚È hjkl + yubn ˆÚ“® (ƒfƒtƒHƒ‹ƒg);
-               1 -- ƒeƒ“ƒL[—p‚É”š‚ÅˆÚ“®;
-               2 -- 1‚Æ“¯—l‚¾‚ª'5'‚Í'G'‚Å‚Í‚È‚­'g'Ú“ª«‚Æ‚µ‚Ä“®ì;
-               3 -- Œg‘Ñ“d˜b‚Ì”šƒL[ (1,2,3‚Íã, 7,8,9‚Í‰º);
-               4 -- Œg‘Ñ“d˜b”šƒL[(3)‚Æ'5'‚ÉŠÖ‚·‚éİ’è(2)‚Ì‘g‚İ‡‚í‚¹;
-              -1 -- ‰pšˆÚ“®‚¾‚ª'z'‚Æ'y'‚ğŒğŠ·‚·‚éD
+number_pad     ç§»å‹•ã«è‹±å­—ã‚’ä½¿ã†ã‹æ•°å­—ã‚’ä½¿ã†ã‹: [0]
+               0 -- ä¼çµ±çš„ãª hjkl + yubn ç§»å‹• (ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆ);
+               1 -- ãƒ†ãƒ³ã‚­ãƒ¼ç”¨ã«æ•°å­—ã§ç§»å‹•;
+               2 -- 1ã¨åŒæ§˜ã ãŒ'5'ã¯'G'ã§ã¯ãªã'g'æ¥é ­è¾ã¨ã—ã¦å‹•ä½œ;
+               3 -- æºå¸¯é›»è©±ã®æ•°å­—ã‚­ãƒ¼ (1,2,3ã¯ä¸Š, 7,8,9ã¯ä¸‹);
+               4 -- æºå¸¯é›»è©±æ•°å­—ã‚­ãƒ¼(3)ã¨'5'ã«é–¢ã™ã‚‹è¨­å®š(2)ã®çµ„ã¿åˆã‚ã›;
+              -1 -- è‹±å­—ç§»å‹•ã ãŒ'z'ã¨'y'ã‚’äº¤æ›ã™ã‚‹ï¼
               Setting number_pad (to a positive value) affects how all
               digit keys are handled, not just those on numeric keypad.
-packorder      'sortpack'ƒIƒvƒVƒ‡ƒ“‚ªƒIƒ“‚Ì‚ÉA‚¿•¨ˆê——‚Ì [")[%?+!=/(*`0_]
-               ‡”Ô‚ğŒˆ‚ß‚éƒVƒ“ƒ{ƒ‹
-               (‚¢‚­‚Â‚©‚Ì•¨‘Ì‚µ‚©“Á’è‚µ‚È‚¢ê‡Cc‚è‚Ì‚ÍƒfƒtƒHƒ‹ƒg‚Ì
-               ‡”Ô‚É•À‚Ô)
-paranoid_confirmation  ‘z’è‚Æˆá‚¤–â‚¢‡‚í‚¹‚ğ‚·‚éó‹µ‚Ì‹ó”’‹æØ‚è‚ÌƒŠƒXƒg
+packorder      'sortpack'ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒã‚ªãƒ³ã®æ™‚ã«ã€æŒã¡ç‰©ä¸€è¦§ã® [")[%?+!=/(*`0_]
+               é †ç•ªã‚’æ±ºã‚ã‚‹ã‚·ãƒ³ãƒœãƒ«
+               (ã„ãã¤ã‹ã®ç‰©ä½“ã—ã‹ç‰¹å®šã—ãªã„å ´åˆï¼Œæ®‹ã‚Šã®ã¯ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®
+               é †ç•ªã«ä¸¦ã¶)
+paranoid_confirmation  æƒ³å®šã¨é•ã†å•ã„åˆã‚ã›ã‚’ã™ã‚‹çŠ¶æ³ã®ç©ºç™½åŒºåˆ‡ã‚Šã®ãƒªã‚¹ãƒˆ
               [paranoid_confirmation:pray]
-              Confirm -- "yes"‚ª•K—v‚È‚Æ‚«C”Û’è‚É‚Í"no"‚ª•K—v
-              quit    -- ”²‚¯‚½‚è’Tõƒ‚[ƒh‚É“ü‚éŠm”F‚Íyes‚©y‚©
-              die     -- (’Tõ‚âƒfƒoƒbƒOƒ‚[ƒh‚Å)€‚Ê‚Æ‚«‚ÌŠm”F‚Íyes‚©y‚©
-              bones   -- ƒfƒoƒbƒOƒ‚[ƒh‚Åœ‚ğc‚·Šm”F‚Íyes‚©y‚©
-              attack  -- —FD“I‚È‰ö•¨‚ğUŒ‚‚·‚éŠm”F‚Íyes‚©y‚©
-              pray    -- ‹F‚é‚Æ‚«‚Éy‚ÅŠm”F‚·‚é; ƒfƒtƒHƒ‹ƒg‚Åon
-              Remove  -- ŠO‚·‚±‚Æ‚ª‚Å‚«‚éƒAƒCƒeƒ€‚ªˆê‚Â‚Ì‚à'R'‚â'T'‚ÅŠm”F
-                         ‚·‚é‚©
-pickup_burden  ‰½‚©‚ğ‚¿‚ ‚°‚æ‚¤‚Æ‚µ‚Ä‚Ó‚ç‚ß‚­ó‘Ô‚É‚È‚Á‚½‚Æ‚«‚ÉC‘±‚¯‚é‚©[S]
-               ‚Ç‚¤‚©‚ÌŠm”F‚ğ‚·‚éD(’Êí:UC‚æ‚ë‚ß‚«:BCˆ³”—:SCŒÀŠE:NC
-               ‰×d:NC’´‰ß:T)
-pickup_types   ©“®‚ÅE‚¢‚ ‚°‚é•¨‚ÌƒVƒ“ƒ{ƒ‹D‹ó‚Í‘S‚Ä‚ğˆÓ–¡‚·‚éD           []
-pile_limit     ƒAƒCƒeƒ€‚ª—‚¿‚Ä‚¢‚é°‚Ìã‚ğ•à‚­CƒAƒCƒeƒ€‚Ìˆê——‚Å‚Í‚È‚­  [5]
-              u‚±‚±‚É‚Í‚½‚­‚³‚ñ‚Ì‚à‚Ì‚ª‚ ‚év‚Æ•\¦‚·‚éè‡’lD
-               (0‚Íuí‚ÉƒAƒCƒeƒ€‚Ìˆê——‚ğ•\¦vD)
-runmode        (—lX‚ÈˆÚ“®ƒRƒ}ƒ“ƒh‚âƒgƒ‰ƒxƒ‹ƒRƒ}ƒ“ƒh‚É‚æ‚Á‚Ä)•¡”ƒ}ƒX    [run]
-               ˆÚ“®‚·‚éê‡‚É’n}ƒEƒBƒ“ƒhƒE‚ğXV‚·‚é•p“x‚ğw’è‚·‚é:
-               teleport -- ˆÚ“®‚ªI—¹‚·‚é‚Ü‚ÅXV‚µ‚È‚¢;
-               run      -- X’n}‚ğXV‚·‚é (ŠÔŠu‚Í 7 ƒ}ƒX);
-               walk     -- ˆê•à–ˆ‚É’n}‚ğXV‚·‚é;
-               crawl    -- walk ‚Æ“¯—l‚¾‚ªAˆê•à–ˆ‚ÉƒEƒFƒCƒg‚ğ“ü‚ê‚é;
-               (‚±‚ê‚Í‰æ–Ê•\¦‚É‚Ì‚İì—p‚µCÀÛ‚ÌˆÚ“®‚É‚Í‰e‹¿‚µ‚È‚¢D)
-scores         ƒQ[ƒ€I—¹‚ÉŒ©‚éƒXƒRƒA‚Ìí—Ş [!own/3 top/2 around]
-               ƒgƒbƒvƒXƒRƒACƒgƒbƒvƒXƒRƒA‚Ìü•ÓC‚ ‚È‚½©g‚ÌƒXƒRƒA‚Ì
-               ‘g‚İ‡‚¹‚ğ‘I‚ÔD 
-suppress_alert —á‚¦‚ÎƒQ[ƒ€I—¹ƒRƒ}ƒ“ƒh‚ÍˆÈ‘O‚Í 'Q' ‚¾‚Á‚½‚ª¡‚Í #quitA
-               ‚Æ‚¢‚Á‚½AƒQ[ƒ€ƒvƒŒƒC‚âƒ†[ƒU[ƒCƒ“ƒ^[ƒtƒF[ƒX‚Ìƒo[ƒWƒ‡ƒ“
-               ŠÔ‚Ìˆá‚¢‚ÉŠÖ‚·‚éŒxƒƒbƒZ[ƒW‚ğ–³Œø‰»‚·‚éD
-               (—á: suppress_alert:3.3.1 ‚Æ‚·‚é‚ÆA‚±‚Ìƒo[ƒWƒ‡ƒ“ˆÈ‘O‚É‰Á‚¦‚ç
-               ‚ê‚½ŒxƒƒbƒZ[ƒW‚ª’â~‚³‚ê‚éD)
+              Confirm -- "yes"ãŒå¿…è¦ãªã¨ãï¼Œå¦å®šã«ã¯"no"ãŒå¿…è¦
+              quit    -- æŠœã‘ãŸã‚Šæ¢ç´¢ãƒ¢ãƒ¼ãƒ‰ã«å…¥ã‚‹ç¢ºèªã¯yesã‹yã‹
+              die     -- (æ¢ç´¢ã‚„ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã§)æ­»ã¬ã¨ãã®ç¢ºèªã¯yesã‹yã‹
+              bones   -- ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã§éª¨ã‚’æ®‹ã™ç¢ºèªã¯yesã‹yã‹
+              attack  -- å‹å¥½çš„ãªæ€ªç‰©ã‚’æ”»æ’ƒã™ã‚‹ç¢ºèªã¯yesã‹yã‹
+              pray    -- ç¥ˆã‚‹ã¨ãã«yã§ç¢ºèªã™ã‚‹; ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã§on
+              Remove  -- å¤–ã™ã“ã¨ãŒã§ãã‚‹ã‚¢ã‚¤ãƒ†ãƒ ãŒä¸€ã¤ã®æ™‚ã‚‚'R'ã‚„'T'ã§ç¢ºèª
+                         ã™ã‚‹ã‹
+pickup_burden  ä½•ã‹ã‚’æŒã¡ã‚ã’ã‚ˆã†ã¨ã—ã¦ãµã‚‰ã‚ãçŠ¶æ…‹ã«ãªã£ãŸã¨ãã«ï¼Œç¶šã‘ã‚‹ã‹[S]
+               ã©ã†ã‹ã®ç¢ºèªã‚’ã™ã‚‹ï¼(é€šå¸¸:Uï¼Œã‚ˆã‚ã‚ã:Bï¼Œåœ§è¿«:Sï¼Œé™ç•Œ:Nï¼Œ
+               è·é‡:Nï¼Œè¶…é:T)
+pickup_types   è‡ªå‹•ã§æ‹¾ã„ã‚ã’ã‚‹ç‰©ã®ã‚·ãƒ³ãƒœãƒ«ï¼ç©ºã¯å…¨ã¦ã‚’æ„å‘³ã™ã‚‹ï¼           []
+pile_limit     ã‚¢ã‚¤ãƒ†ãƒ ãŒè½ã¡ã¦ã„ã‚‹åºŠã®ä¸Šã‚’æ­©ãæ™‚ï¼Œã‚¢ã‚¤ãƒ†ãƒ ã®ä¸€è¦§ã§ã¯ãªã  [5]
+              ã€Œã“ã“ã«ã¯ãŸãã•ã‚“ã®ã‚‚ã®ãŒã‚ã‚‹ã€ã¨è¡¨ç¤ºã™ã‚‹é–¾å€¤ï¼
+               (0ã¯ã€Œå¸¸ã«ã‚¢ã‚¤ãƒ†ãƒ ã®ä¸€è¦§ã‚’è¡¨ç¤ºã€ï¼)
+runmode        (æ§˜ã€…ãªç§»å‹•ã‚³ãƒãƒ³ãƒ‰ã‚„ãƒˆãƒ©ãƒ™ãƒ«ã‚³ãƒãƒ³ãƒ‰ã«ã‚ˆã£ã¦)è¤‡æ•°ãƒã‚¹    [run]
+               ç§»å‹•ã™ã‚‹å ´åˆã«åœ°å›³ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã‚’æ›´æ–°ã™ã‚‹é »åº¦ã‚’æŒ‡å®šã™ã‚‹:
+               teleport -- ç§»å‹•ãŒçµ‚äº†ã™ã‚‹ã¾ã§æ›´æ–°ã—ãªã„;
+               run      -- æ™‚ã€…åœ°å›³ã‚’æ›´æ–°ã™ã‚‹ (é–“éš”ã¯ 7 ãƒã‚¹);
+               walk     -- ä¸€æ­©æ¯ã«åœ°å›³ã‚’æ›´æ–°ã™ã‚‹;
+               crawl    -- walk ã¨åŒæ§˜ã ãŒã€ä¸€æ­©æ¯ã«ã‚¦ã‚§ã‚¤ãƒˆã‚’å…¥ã‚Œã‚‹;
+               (ã“ã‚Œã¯ç”»é¢è¡¨ç¤ºã«ã®ã¿ä½œç”¨ã—ï¼Œå®Ÿéš›ã®ç§»å‹•ã«ã¯å½±éŸ¿ã—ãªã„ï¼)
+scores         ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã«è¦‹ã‚‹ã‚¹ã‚³ã‚¢ã®ç¨®é¡ [!own/3 top/2 around]
+               ãƒˆãƒƒãƒ—ã‚¹ã‚³ã‚¢ï¼Œãƒˆãƒƒãƒ—ã‚¹ã‚³ã‚¢ã®å‘¨è¾ºï¼Œã‚ãªãŸè‡ªèº«ã®ã‚¹ã‚³ã‚¢ã®
+               çµ„ã¿åˆã›ã‚’é¸ã¶ï¼ 
+suppress_alert ä¾‹ãˆã°ã‚²ãƒ¼ãƒ çµ‚äº†ã‚³ãƒãƒ³ãƒ‰ã¯ä»¥å‰ã¯ 'Q' ã ã£ãŸãŒä»Šã¯ #quitã€
+               ã¨ã„ã£ãŸã€ã‚²ãƒ¼ãƒ ãƒ—ãƒ¬ã‚¤ã‚„ãƒ¦ãƒ¼ã‚¶ãƒ¼ã‚¤ãƒ³ã‚¿ãƒ¼ãƒ•ã‚§ãƒ¼ã‚¹ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³
+               é–“ã®é•ã„ã«é–¢ã™ã‚‹è­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ç„¡åŠ¹åŒ–ã™ã‚‹ï¼
+               (ä¾‹: suppress_alert:3.3.1 ã¨ã™ã‚‹ã¨ã€ã“ã®ãƒãƒ¼ã‚¸ãƒ§ãƒ³ä»¥å‰ã«åŠ ãˆã‚‰
+               ã‚ŒãŸè­¦å‘Šãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãŒåœæ­¢ã•ã‚Œã‚‹ï¼)
 whatis_coord  controls whether to include map coordinates when          [n]
               autodescribe is active for the '/' and ';' commands.
               Value is the first letter of one of
@@ -199,40 +199,40 @@ whatis_filter controls how to filter eligible map coordinates when      [n]
               n - no filtering
               v - locations in view only
               a - locations in same area (room, corridor, etc)
-kcode          ’[––‚ÌŠ¿šƒR[ƒh                                         [EUC]
+kcode          ç«¯æœ«ã®æ¼¢å­—ã‚³ãƒ¼ãƒ‰                                         [EUC]
 
-ƒXƒ^[ƒg‚É‚Ì‚İİ’è‚Å‚«‚éƒpƒ‰ƒ[ƒ^‚Â‚«ƒIƒvƒVƒ‡ƒ“‚Í:
+ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã«ã®ã¿è¨­å®šã§ãã‚‹ãƒ‘ãƒ©ãƒ¡ãƒ¼ã‚¿ã¤ãã‚ªãƒ—ã‚·ãƒ§ãƒ³ã¯:
 
-align      ƒQ[ƒ€ƒXƒ^[ƒg‚Ì‘®«(lawful, neutral, chaotic, random    [random]
-           ‚Ì‚¢‚¸‚ê‚©)D
-           ‘½‚­‚ÌE‹Æ‚Í‘®«‚Ì‘I‘ğ‚É§ŒÀ‚ğ—^‚¦‚éB
-           Å‰‚Ìˆê•¶š‚ğw’è‚·‚é‚¾‚¯‚Å‚æ‚¢D
-catname    –`Œ¯‚ğ‹Ÿ‚É‚·‚éÅ‰‚Ì”L‚Ì–¼‘O [none]
-dogname    –`Œ¯‚ğ‹Ÿ‚É‚·‚éÅ‰‚ÌŒ¢‚Ì–¼‘O [none]
+align      ã‚²ãƒ¼ãƒ ã‚¹ã‚¿ãƒ¼ãƒˆæ™‚ã®å±æ€§(lawful, neutral, chaotic, random    [random]
+           ã®ã„ãšã‚Œã‹)ï¼
+           å¤šãã®è·æ¥­ã¯å±æ€§ã®é¸æŠã«åˆ¶é™ã‚’ä¸ãˆã‚‹ã€‚
+           æœ€åˆã®ä¸€æ–‡å­—ã‚’æŒ‡å®šã™ã‚‹ã ã‘ã§ã‚ˆã„ï¼
+catname    å†’é™ºã‚’ä¾›ã«ã™ã‚‹æœ€åˆã®çŒ«ã®åå‰ [none]
+dogname    å†’é™ºã‚’ä¾›ã«ã™ã‚‹æœ€åˆã®çŠ¬ã®åå‰ [none]
            Several roles who start with a dog have one whose name is
            pre-set (for example, "Hachi" for Samurai), but that name
            will be overridden if you specify dogname.
-gender     ƒQ[ƒ€ŠJn‚Ì«•Ê(male, female, random)DÅ‰‚Ì           [random]
-           1 •¶š‚ğw’è‚·‚é‚¾‚¯‚Å‚æ‚¢DŒÃ‚¢ male, female ƒIƒvƒVƒ‡ƒ“‚àg—p‚Å‚«
-           ‚é‚ªCgender ƒIƒvƒVƒ‡ƒ“‚ª—Dæ‚·‚éD
-horsename  –`Œ¯‚ğ‹Ÿ‚É‚·‚éÅ‰‚Ì”n‚Ì–¼‘O                               [none]
-menu_*     ƒƒjƒ…[ƒRƒ}ƒ“ƒh‚Åg—p‚·‚éˆê•¶š‚ÌƒLƒƒƒ‰ƒNƒ^DˆÈ‰º‚É‚ ‚é‚Ì‚Í
-           ‘S‚Ä‚ÌƒRƒ}ƒ“ƒh‚Ìƒƒjƒ…[‚ÆƒfƒtƒHƒ‹ƒg‚ÌƒL[D‚»‚ê‚¼‚ê‚É‘±‚­
-           ( )“à•¶š‚ÌˆÓ–¡‚ÍŸ‚Ì’Ê‚è:
+gender     ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®æ€§åˆ¥(male, female, random)ï¼æœ€åˆã®           [random]
+           1 æ–‡å­—ã‚’æŒ‡å®šã™ã‚‹ã ã‘ã§ã‚ˆã„ï¼å¤ã„ male, female ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚‚ä½¿ç”¨ã§ã
+           ã‚‹ãŒï¼Œgender ã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå„ªå…ˆã™ã‚‹ï¼
+horsename  å†’é™ºã‚’ä¾›ã«ã™ã‚‹æœ€åˆã®é¦¬ã®åå‰                               [none]
+menu_*     ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã‚³ãƒãƒ³ãƒ‰ã§ä½¿ç”¨ã™ã‚‹ä¸€æ–‡å­—ã®ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ï¼ä»¥ä¸‹ã«ã‚ã‚‹ã®ã¯
+           å…¨ã¦ã®ã‚³ãƒãƒ³ãƒ‰ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã¨ãƒ‡ãƒ•ã‚©ãƒ«ãƒˆã®ã‚­ãƒ¼ï¼ãã‚Œãã‚Œã«ç¶šã
+           ( )å†…æ–‡å­—ã®æ„å‘³ã¯æ¬¡ã®é€šã‚Š:
            'x' = x11, 't' = tty, 'g' = Gem, 'a' = Amiga.
-           menu_deselect_all  ‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ”ñ‘I‘ğ             [-](xtga)
-           menu_deselect_page Œ»İ‚Ìƒy[ƒW‚ÌƒAƒCƒeƒ€‚ğ”ñ‘I‘ğ     [\](tga)
-           menu_first_page    ƒƒjƒ…[‚ÌÅ‰‚Ìƒy[ƒW‚Ö           [^](tga)
-           menu_invert_all    ‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ”½“]               [@](xtga)
-           menu_invert_page   Œ»İ‚Ìƒy[ƒW‚ÌƒAƒCƒeƒ€‚ğ”½“]       [~](tga)
-           menu_last_page     ƒƒjƒ…[‚ÌÅŒã‚Ìƒy[ƒW‚Ö           [|](tga)
-           menu_next_page     Ÿ‚Ìƒƒjƒ…[‚Ìƒy[ƒW‚Ö             [>](tga)
-           menu_previous_page ‘O‚Ìƒƒjƒ…[‚Ìƒy[ƒW‚Ö             [<](tga)
-           menu_search        ƒƒjƒ…[‚ÌŒŸõ                     [:](xtga)
-           menu_select_all    ‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ‘I‘ğ               [.](xtga)
-           menu_select_page   Œ»İ‚Ìƒy[ƒW‚Ì‘S‚Ä‚ÌƒAƒCƒeƒ€‚ğ‘I‘ğ [,](tga)
-msghistory æ“ªs‚É•\¦‚³‚ê‚½ƒƒbƒZ[ƒW—š—ğ‚Ì•Û‘¶” [20]
-name       ‚ ‚È‚½‚Ì–¼‘O       [defaults to username on multi-
+           menu_deselect_all  å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éé¸æŠ             [-](xtga)
+           menu_deselect_page ç¾åœ¨ã®ãƒšãƒ¼ã‚¸ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’éé¸æŠ     [\](tga)
+           menu_first_page    ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ€åˆã®ãƒšãƒ¼ã‚¸ã¸           [^](tga)
+           menu_invert_all    å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’åè»¢               [@](xtga)
+           menu_invert_page   ç¾åœ¨ã®ãƒšãƒ¼ã‚¸ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’åè»¢       [~](tga)
+           menu_last_page     ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æœ€å¾Œã®ãƒšãƒ¼ã‚¸ã¸           [|](tga)
+           menu_next_page     æ¬¡ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒšãƒ¼ã‚¸ã¸             [>](tga)
+           menu_previous_page å‰ã®ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®ãƒšãƒ¼ã‚¸ã¸             [<](tga)
+           menu_search        ãƒ¡ãƒ‹ãƒ¥ãƒ¼ã®æ¤œç´¢                     [:](xtga)
+           menu_select_all    å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠ               [.](xtga)
+           menu_select_page   ç¾åœ¨ã®ãƒšãƒ¼ã‚¸ã®å…¨ã¦ã®ã‚¢ã‚¤ãƒ†ãƒ ã‚’é¸æŠ [,](tga)
+msghistory å…ˆé ­è¡Œã«è¡¨ç¤ºã•ã‚ŒãŸãƒ¡ãƒƒã‚»ãƒ¼ã‚¸å±¥æ­´ã®ä¿å­˜æ•° [20]
+name       ã‚ãªãŸã®åå‰       [defaults to username on multi-
            user systems, asks "who are you?" on single-user systems or if
            the username is classified as generic like "games"]
            MS Windows is treated as single-user even though it supports
@@ -240,21 +240,21 @@ name       ‚ ‚È‚½‚Ì–¼‘O       [defaults to username on multi-
            line (typically via 'nethack -u myname' depending upon type
            of system and method of access to it), that name overrides
            'name' from your options.
-pettype    ‚ ‚È‚½‚ÌD‚«‚Èƒyƒbƒg‚Ìí—Ş (cat, dog, horse, random,    [random]
+pettype    ã‚ãªãŸã®å¥½ããªãƒšãƒƒãƒˆã®ç¨®é¡ (cat, dog, horse, random,    [random]
            or none), if your role allows more than one type (or if you
            want to avoid a starting pet).  Most roles allow dog or cat
            but not horse.  For roles which force a particular type,
            pettype is ignored unless it specifies 'none'.
-playmode   ’Êí(normal)ƒvƒŒƒC‚©ƒXƒRƒA‚Ìc‚ç‚È‚¢’Tõ(explore)ƒ‚[ƒh‚©ƒfƒoƒbƒO
-           (debug)ƒ‚[ƒh‚© [normal]
-race       ƒQ[ƒ€ŠJn‚Ìí‘° (—á race:Human, race:Elf)             [random]
-           ‚Ù‚Æ‚ñ‚Ç‚ÌE‹Æ‚Íí‘°‚Ì‘I‘ğ‚É§ŒÀ‚ğ—^‚¦‚éD
-role       ƒQ[ƒ€ŠJn‚ÌE‹Æ (—á race:Barbarian, role: Valk)       [random]
-           Å‰‚Ìˆê•¶š‚ğw’è‚·‚é‚¾‚¯‚Å‚æ‚¢‚ªC’P‚ÉÅ‰‚Éƒ}ƒbƒ`‚µ‚½
-           E‹Æ‚ğ‘I‚Ô‚¾‚¯‚Å‚ ‚éDŠ®‘S‚É¯•Ê‰Â”\‚È•¶š‚ğ‹Lq‚·‚é‚±‚Æ
-           ‚ğ‚¨‘E‚ß‚·‚éD–¼‘O‚ÌŒã‚ÉE‹Æ‚ğw’è‚·‚é‚±‚Æ‚à‰Â”\‚Å‚ ‚é‚ªC
-           (—á Vic-V)roleƒIƒvƒVƒ‡ƒ“‚ª—Dæ‚·‚éD
-windowtype g—p‚·‚éƒEƒCƒ“ƒhƒDƒVƒXƒeƒ€ [ƒVƒXƒeƒ€‚ÆƒRƒ“ƒpƒCƒ‹İ’èˆË‘¶]
+playmode   é€šå¸¸(normal)ãƒ—ãƒ¬ã‚¤ã‹ã‚¹ã‚³ã‚¢ã®æ®‹ã‚‰ãªã„æ¢ç´¢(explore)ãƒ¢ãƒ¼ãƒ‰ã‹ãƒ‡ãƒãƒƒã‚°
+           (debug)ãƒ¢ãƒ¼ãƒ‰ã‹ [normal]
+race       ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®ç¨®æ— (ä¾‹ race:Human, race:Elf)             [random]
+           ã»ã¨ã‚“ã©ã®è·æ¥­ã¯ç¨®æ—ã®é¸æŠã«åˆ¶é™ã‚’ä¸ãˆã‚‹ï¼
+role       ã‚²ãƒ¼ãƒ é–‹å§‹æ™‚ã®è·æ¥­ (ä¾‹ race:Barbarian, role: Valk)       [random]
+           æœ€åˆã®ä¸€æ–‡å­—ã‚’æŒ‡å®šã™ã‚‹ã ã‘ã§ã‚ˆã„ãŒï¼Œå˜ã«æœ€åˆã«ãƒãƒƒãƒã—ãŸ
+           è·æ¥­ã‚’é¸ã¶ã ã‘ã§ã‚ã‚‹ï¼å®Œå…¨ã«è­˜åˆ¥å¯èƒ½ãªæ–‡å­—ã‚’è¨˜è¿°ã™ã‚‹ã“ã¨
+           ã‚’ãŠè–¦ã‚ã™ã‚‹ï¼åå‰ã®å¾Œã«è·æ¥­ã‚’æŒ‡å®šã™ã‚‹ã“ã¨ã‚‚å¯èƒ½ã§ã‚ã‚‹ãŒï¼Œ
+           (ä¾‹ Vic-V)roleã‚ªãƒ—ã‚·ãƒ§ãƒ³ãŒå„ªå…ˆã™ã‚‹ï¼
+windowtype ä½¿ç”¨ã™ã‚‹ã‚¦ã‚¤ãƒ³ãƒ‰ã‚¥ã‚·ã‚¹ãƒ†ãƒ  [ã‚·ã‚¹ãƒ†ãƒ ã¨ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«è¨­å®šä¾å­˜]
            if more than one choice is available.
            Most instances of the program support only one window-type;
            when that is the case, you don't need to specify anything.
@@ -263,15 +263,15 @@ windowtype g—p‚·‚éƒEƒCƒ“ƒhƒDƒVƒXƒeƒ€ [ƒVƒXƒeƒ€‚ÆƒRƒ“ƒpƒCƒ‹İ’èˆË‘¶]
            command or from outside the program by examining the text file
            named 'options' which is generated when building it.
 
-ƒRƒ“ƒpƒCƒ‹‚É TTY_GRAPHICS ‚ªİ’è‚³‚ê‚Ä‚¢‚é‚È‚ç‚Î:
-msg_window g—p‚·‚éƒƒbƒZ[ƒWƒEƒBƒ“ƒhƒE‚Ìí—Ş:                      [single]
-           single      -- ˆê“x‚É 1 ƒƒbƒZ[ƒW‚¸‚Â
-           full        -- •Û‘¶‚³‚ê‚Ä‚¢‚é‘S‚Ä‚ÌƒƒbƒZ[ƒW‚ğ~‚éƒEƒBƒ“ƒhƒE‚Å•\¦
-           reverse     -- full ‚Æ“¯—l‚¾‚ªAV‚µ‚¢ƒƒbƒZ[ƒW‚©‚ç‡‚É•\¦
-           combination -- 1 ƒƒbƒZ[ƒW‚ğ 2 ‰ñA‚»‚ÌŒã‚Í full
+ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã« TTY_GRAPHICS ãŒè¨­å®šã•ã‚Œã¦ã„ã‚‹ãªã‚‰ã°:
+msg_window ä½¿ç”¨ã™ã‚‹ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã®ç¨®é¡:                      [single]
+           single      -- ä¸€åº¦ã« 1 ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ãšã¤
+           full        -- ä¿å­˜ã•ã‚Œã¦ã„ã‚‹å…¨ã¦ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’é™ã‚‹ã‚¦ã‚£ãƒ³ãƒ‰ã‚¦ã§è¡¨ç¤º
+           reverse     -- full ã¨åŒæ§˜ã ãŒã€æ–°ã—ã„ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‹ã‚‰é †ã«è¡¨ç¤º
+           combination -- 1 ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’ 2 å›ã€ãã®å¾Œã¯ full
            default:  
 
 
-ƒIƒvƒVƒ‡ƒ“‚Ì—á:
+ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã®ä¾‹:
 !autopickup,!tombstone,name:Gandalf,scores:own/3 top/2 around
 female,nonews,dogname:Rover,rest_on_space,!verbose,menustyle:traditional

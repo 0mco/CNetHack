@@ -200,10 +200,10 @@ OBJECT:random,random
 OBJECT:random,random
 OBJECT:random,random
 # Treasure?
-ENGRAVING:random,engrave,"~ˆó’n“_"
-ENGRAVING:random,engrave,"~ˆó’n“_"
-ENGRAVING:random,engrave,"~ˆó’n“_"
-ENGRAVING:random,engrave,"~ˆó’n“_"
+ENGRAVING:random,engrave,"Ã—å°åœ°ç‚¹"
+ENGRAVING:random,engrave,"Ã—å°åœ°ç‚¹"
+ENGRAVING:random,engrave,"Ã—å°åœ°ç‚¹"
+ENGRAVING:random,engrave,"Ã—å°åœ°ç‚¹"
 # Random traps
 TRAP:"spiked pit",(24,02)
 TRAP:"spiked pit",(37,00)
@@ -321,7 +321,7 @@ NON_DIGGABLE:(00,00,75,19)
 # The altar of Huhetotl.  Unattended.
 ALTAR:(50,14),chaos,altar
 # Objects
-OBJECT:('(',"crystal ball"),(50,14),blessed,5,name:"’Tõ‚ÌƒI[ƒu"
+OBJECT:('(',"crystal ball"),(50,14),blessed,5,name:"æ¢ç´¢ã®ã‚ªãƒ¼ãƒ–"
 OBJECT:random,random
 OBJECT:random,random
 OBJECT:random,random

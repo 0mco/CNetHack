@@ -328,7 +328,7 @@ char c;
     case '\n':
         cl_end();
 #if 1 /*JP*/
-        (void) jputchar('\r'); /* raw mode で必要? */
+        (void) jputchar('\r'); /* raw mode ､ﾇﾉｬﾍﾗ? */
         (void) jputchar('\n');
 #endif
         ttyDisplay->curx = 0;
@@ -398,7 +398,7 @@ raw_topl_putsym(c)
     case '\n':
         cl_end();
 #if 1 /*JP*/
-        (void) cputchar('\r'); /* raw mode で必要? */
+        (void) cputchar('\r'); /* raw mode ､ﾇﾉｬﾍﾗ? */
         (void) cputchar('\n');
 #endif
         ttyDisplay->curx = 0;

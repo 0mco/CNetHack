@@ -117,14 +117,14 @@ register struct obj *pen;
 /*JP
         You("need hands to be able to write!");
 */
-        You("‘‚­‚½‚ß‚É‚Íè‚ª•K—v‚¾I");
+        You("æ›¸ããŸã‚ã«ã¯æ‰‹ãŒå¿…è¦ã ï¼");
         return 0;
     } else if (Glib) {
 #if 0 /*JP*/
         pline("%s from your %s.", Tobjnam(pen, "slip"),
               makeplural(body_part(FINGER)));
 #else
-        pline("%s‚ª%s‚©‚çŠŠ‚è‚¨‚¿‚½D", xname(pen),
+        pline("%sãŒ%sã‹ã‚‰æ»‘ã‚ŠãŠã¡ãŸï¼", xname(pen),
               body_part(FINGER));
 #endif
         dropx(pen);
@@ -145,24 +145,24 @@ register struct obj *pen;
                      : "scroll";
 #else
     typeword = (paper->otyp == SPE_NOVEL)
-                  ? "–{"
+                  ? "æœ¬"
                   : (paper->oclass == SPBOOK_CLASS)
-                     ? "–‚–@‘"
-                     : "Šª•¨";
+                     ? "é­”æ³•æ›¸"
+                     : "å·»ç‰©";
 #endif
     if (Blind) {
         if (!paper->dknown) {
 /*JP
             You("don't know if that %s is blank or not.", typeword);
 */
-            You("%s‚ª”’†‚©‚Ç‚¤‚©‚í‚©‚ç‚È‚¢I", typeword);
+            You("%sãŒç™½ç´™ã‹ã©ã†ã‹ã‚ã‹ã‚‰ãªã„ï¼", typeword);
             return 0;
         } else if (paper->oclass == SPBOOK_CLASS) {
             /* can't write a magic book while blind */
 /*JP
             pline("%s can't create braille text.",
 */
-            pline("%s‚Å‚Í“_š‚ğì‚ê‚È‚¢D",
+            pline("%sã§ã¯ç‚¹å­—ã‚’ä½œã‚Œãªã„ï¼",
                   upstart(ysimple_name(pen)));
             return 0;
         }
@@ -172,7 +172,7 @@ register struct obj *pen;
 /*JP
         pline("That %s is not blank!", typeword);
 */
-        pline("%s‚Í”’†‚¶‚á‚È‚¢I", typeword);
+        pline("%sã¯ç™½ç´™ã˜ã‚ƒãªã„ï¼", typeword);
         exercise(A_WIS, FALSE);
         return 1;
     }
@@ -181,13 +181,13 @@ register struct obj *pen;
 /*JP
     Sprintf(qbuf, "What type of %s do you want to write?", typeword);
 */
-    Sprintf(qbuf, "‚Ç‚Ìí‚Ì%s‚Ìô•¶‚ğ‘‚«‚Ü‚·‚©H", typeword);
+    Sprintf(qbuf, "ã©ã®ç¨®ã®%sã®å‘ªæ–‡ã‚’æ›¸ãã¾ã™ã‹ï¼Ÿ", typeword);
     getlin(qbuf, namebuf);
     (void) mungspaces(namebuf); /* remove any excess whitespace */
     if (namebuf[0] == '\033' || !namebuf[0])
         return 1;
     nm = namebuf;
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä¸è¦*/
     if (!strncmpi(nm, "scroll ", 7))
         nm += 7;
     else if (!strncmpi(nm, "spellbook ", 10))
@@ -246,7 +246,7 @@ register struct obj *pen;
 /*JP
     There("is no such %s!", typeword);
 */
-    pline("‚»‚Ì‚æ‚¤‚È%s‚Í‚È‚¢I", typeword);
+    pline("ãã®ã‚ˆã†ãª%sã¯ãªã„ï¼", typeword);
     return 1;
 found:
 
@@ -254,17 +254,17 @@ found:
 /*JP
         You_cant("write that!");
 */
-        pline("”’†‚É”’†‚ğ‘‚­HI");
+        pline("ç™½ç´™ã«ç™½ç´™ã‚’æ›¸ãï¼Ÿï¼");
 /*JP
         pline("It's obscene!");
 */
-        pline("‚»‚¤‚¢‚¤‚â‚è‚©‚½‚Í‚¿‚å‚Á‚Æ•s–ù‰õ‚¾‚ÈI");
+        pline("ãã†ã„ã†ã‚„ã‚Šã‹ãŸã¯ã¡ã‚‡ã£ã¨ä¸æ„‰å¿«ã ãªï¼");
         return 1;
     } else if (i == SPE_BOOK_OF_THE_DEAD) {
 /*JP
         pline("No mere dungeon adventurer could write that.");
 */
-        pline("ˆê‰î‚Ì–À‹{–`Œ¯‰Æ‚É‚Í‘‚¯‚é‚à‚Ì‚Å‚Í‚È‚¢D");
+        pline("ä¸€ä»‹ã®è¿·å®®å†’é™ºå®¶ã«ã¯æ›¸ã‘ã‚‹ã‚‚ã®ã§ã¯ãªã„ï¼");
         return 1;
     } else if (by_descr && paper->oclass == SPBOOK_CLASS
                && !objects[i].oc_name_known) {
@@ -272,7 +272,7 @@ found:
 /*JP
         pline("Unfortunately you don't have enough information to go on.");
 */
-        pline("c”O‚È‚ª‚ç‚»‚ê‚ğ‘‚­‚¾‚¯‚Ì\•ª‚È’m¯‚ª‚È‚¢D");
+        pline("æ®‹å¿µãªãŒã‚‰ãã‚Œã‚’æ›¸ãã ã‘ã®ååˆ†ãªçŸ¥è­˜ãŒãªã„ï¼");
         return 1;
     }
 
@@ -291,7 +291,7 @@ found:
 /*JP
         Your("marker is too dry to write that!");
 */
-        Your("ƒ}[ƒJ‚ÍŠ£‚«‚·‚¬‚Ä‚¨‚è‚¤‚Ü‚­‘‚¯‚È‚©‚Á‚½I");
+        Your("ãƒãƒ¼ã‚«ã¯ä¹¾ãã™ãã¦ãŠã‚Šã†ã¾ãæ›¸ã‘ãªã‹ã£ãŸï¼");
         obfree(new_obj, (struct obj *) 0);
         return 1;
     }
@@ -307,19 +307,19 @@ found:
 /*JP
         Your("marker dries out!");
 */
-        pline("‘‚¢‚Ä‚¢‚é“r’†‚Åƒ}[ƒJ‚ÍŠ£‚«‚«‚Á‚½I");
+        pline("æ›¸ã„ã¦ã„ã‚‹é€”ä¸­ã§ãƒãƒ¼ã‚«ã¯ä¹¾ããã£ãŸï¼");
         /* scrolls disappear, spellbooks don't */
         if (paper->oclass == SPBOOK_CLASS) {
 /*JP
             pline_The("spellbook is left unfinished and your writing fades.");
 */
-            pline_The("–‚–@‘‚É‚Í‘‚«‚«‚ê‚È‚©‚Á‚½D‚»‚µ‚Ä‘‚¢‚½•¶š‚ÍÁ‚¦‚Ä‚µ‚Ü‚Á‚½D");
+            pline_The("é­”æ³•æ›¸ã«ã¯æ›¸ããã‚Œãªã‹ã£ãŸï¼ãã—ã¦æ›¸ã„ãŸæ–‡å­—ã¯æ¶ˆãˆã¦ã—ã¾ã£ãŸï¼");
             update_inventory(); /* pen charges */
         } else {
 /*JP
             pline_The("scroll is now useless and disappears!");
 */
-            pline_The("Šª•¨‚Íg‚¢‚à‚Ì‚É‚È‚ç‚È‚­‚È‚Á‚ÄÁ–Å‚µ‚½I");
+            pline_The("å·»ç‰©ã¯ä½¿ã„ã‚‚ã®ã«ãªã‚‰ãªããªã£ã¦æ¶ˆæ»…ã—ãŸï¼");
             useup(paper);
         }
         obfree(new_obj, (struct obj *) 0);
@@ -359,14 +359,14 @@ found:
 /*JP
         You("%s to write that.", by_descr ? "fail" : "don't know how");
 */
-        You("%sI", by_descr ? "‘‚­‚Ì‚É¸”s‚µ‚½" : "‚Ç‚¤‚â‚Á‚Ä‘‚­‚Ì‚©’m‚ç‚È‚¢");
+        You("%sï¼", by_descr ? "æ›¸ãã®ã«å¤±æ•—ã—ãŸ" : "ã©ã†ã‚„ã£ã¦æ›¸ãã®ã‹çŸ¥ã‚‰ãªã„");
         /* scrolls disappear, spellbooks don't */
         if (paper->oclass == SPBOOK_CLASS) {
             You(
 /*JP
       "write in your best handwriting:  \"My Diary\", but it quickly fades.");
 */
-      "’š”J‚É‘‚¢‚½Fu‰ä‚ª“ú‹LvD‚µ‚©‚µ‚ ‚Á‚ÆŒ¾‚¤ŠÔ‚ÉÁ‚¦‚Ä‚µ‚Ü‚Á‚½D");
+      "ä¸å¯§ã«æ›¸ã„ãŸï¼šã€Œæˆ‘ãŒæ—¥è¨˜ã€ï¼ã—ã‹ã—ã‚ã£ã¨è¨€ã†é–“ã«æ¶ˆãˆã¦ã—ã¾ã£ãŸï¼");
             update_inventory(); /* pen charges */
         } else {
             if (by_descr) {
@@ -376,11 +376,11 @@ found:
 /*JP
                 Sprintf(namebuf, "%s was here!", plname);
 */
-                Sprintf(namebuf, "%s‚Í‚±‚±‚É‚ ‚èI", plname);
+                Sprintf(namebuf, "%sã¯ã“ã“ã«ã‚ã‚Šï¼", plname);
 /*JP
             You("write \"%s\" and the scroll disappears.", namebuf);
 */
-            You("u%sv‚Æ‘‚¢‚½D‚·‚é‚ÆŠª•¨‚ÍÁ‚¦‚Ä‚µ‚Ü‚Á‚½D", namebuf);
+            You("ã€Œ%sã€ã¨æ›¸ã„ãŸï¼ã™ã‚‹ã¨å·»ç‰©ã¯æ¶ˆãˆã¦ã—ã¾ã£ãŸï¼", namebuf);
             useup(paper);
         }
         obfree(new_obj, (struct obj *) 0);
@@ -397,7 +397,7 @@ found:
 /*JP
         You("fail to write the scroll correctly and it disappears.");
 */
-        You("Šª•¨‚É³‚µ‚­‘‚­‚Ì‚É¸”s‚µ‚½DŠª•¨‚ÍÁ‚¦‚½D");
+        You("å·»ç‰©ã«æ­£ã—ãæ›¸ãã®ã«å¤±æ•—ã—ãŸï¼å·»ç‰©ã¯æ¶ˆãˆãŸï¼");
         useup(paper);
         obfree(new_obj, (struct obj *) 0);
         return 1;
@@ -413,7 +413,7 @@ found:
         pline_The("spellbook warps strangely, then turns %s.",
                   new_book_description(new_obj->otyp, namebuf));
 #else
-        pline("–‚–@‘‚Í–­‚É”½‚è‚©‚¦‚èC‚»‚µ‚Ä%s‚É‚È‚Á‚½D",
+        pline("é­”æ³•æ›¸ã¯å¦™ã«åã‚Šã‹ãˆã‚Šï¼Œãã—ã¦%sã«ãªã£ãŸï¼",
                   new_book_description(new_obj->otyp, namebuf));
 #endif
     }
@@ -437,7 +437,7 @@ found:
                                   (const char *) 0);
 #else
     new_obj =
-        hold_another_object(new_obj, "‚¨‚Á‚ÆI%s‚Í‚ ‚È‚½‚Ìè‚©‚çŠŠ‚è—‚¿‚½I",
+        hold_another_object(new_obj, "ãŠã£ã¨ï¼%sã¯ã‚ãªãŸã®æ‰‹ã‹ã‚‰æ»‘ã‚Šè½ã¡ãŸï¼",
                             xname(new_obj), (const char *) 0);
 #endif
     nhUse(new_obj); /* try to avoid complaint about dead assignment */
@@ -456,7 +456,7 @@ new_book_description(booktype, outbuf)
 int booktype;
 char *outbuf;
 {
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä¸è¦*/
     /* subset of description strings from objects.c; if it grows
        much, we may need to add a new flag field to objects[] instead */
     static const char *const compositions[] = {
@@ -477,7 +477,7 @@ char *outbuf;
             break;
 
     Sprintf(outbuf, "%s%s", *comp_p ? "into " : "", descr);
-#else /*JP:’Pƒ‚ÉƒRƒs[*/
+#else /*JP:å˜ç´”ã«ã‚³ãƒ”ãƒ¼*/
     Strcpy(outbuf, OBJ_DESCR(objects[booktype]));
 #endif
     return outbuf;

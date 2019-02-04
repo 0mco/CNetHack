@@ -223,7 +223,7 @@ XtCallbackProc cancel_callback;
 /*JP
         cancel = XtCreateManagedWidget("cancel", commandWidgetClass, form,
 */
-        cancel = XtCreateManagedWidget("ƒLƒƒƒ“ƒZƒ‹", commandWidgetClass, form,
+        cancel = XtCreateManagedWidget("¥­¥ã¥ó¥»¥ë", commandWidgetClass, form,
                                        args, num_args);
         XtAddCallback(cancel, XtNcallback, cancel_callback, form);
         XtInstallAccelerators(response, cancel);

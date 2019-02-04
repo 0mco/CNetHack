@@ -282,22 +282,22 @@ boolean devour;
 /*JP
                 pline("%s digs in.", noit_Monnam(mtmp));
 */
-                pline("%s‚ÍŒ@‚Á‚Ä‚¢‚éD", noit_Monnam(mtmp));
+                pline("%sã¯æ˜ã£ã¦ã„ã‚‹ï¼", noit_Monnam(mtmp));
             else
 #if 0 /*JP*/
                 pline("%s %s %s.", noit_Monnam(mtmp),
                       devour ? "devours" : "eats", distant_name(obj, doname));
 #else
-                pline("%s‚Í%s‚ğ%s‚¢‚éD", noit_Monnam(mtmp),
-                      distant_name(obj, doname), devour ? "ˆù‚İ‚ñ‚Å" : "H‚×‚Ä");
+                pline("%sã¯%sã‚’%sã„ã‚‹ï¼", noit_Monnam(mtmp),
+                      distant_name(obj, doname), devour ? "é£²ã¿è¾¼ã‚“ã§" : "é£Ÿã¹ã¦");
 #endif
         } else if (seeobj)
 #if 0 /*JP*/
             pline("It %s %s.", devour ? "devours" : "eats",
                   distant_name(obj, doname));
 #else
-            pline("‚»‚ê‚Í%s‚ğ%s‚¢‚éD", distant_name(obj, doname),
-                  devour ? "ˆù‚İ‚ñ‚Å" : "H‚×‚Ä");
+            pline("ãã‚Œã¯%sã‚’%sã„ã‚‹ï¼", distant_name(obj, doname),
+                  devour ? "é£²ã¿è¾¼ã‚“ã§" : "é£Ÿã¹ã¦");
 #endif
     }
     if (obj->unpaid) {
@@ -324,7 +324,7 @@ boolean devour;
             pline("%s spits %s out in disgust!", Monnam(mtmp),
                   distant_name(obj, doname));
 #else
-            pline("%s‚Í%s‚ğƒyƒb‚Æ“f‚«o‚µ‚½I", Monnam(mtmp),
+            pline("%sã¯%sã‚’ãƒšãƒƒã¨åãå‡ºã—ãŸï¼", Monnam(mtmp),
                   distant_name(obj,doname));
 #endif
         }
@@ -342,7 +342,7 @@ boolean devour;
             pline("That %s will cost you %ld %s.", objnambuf, oprice,
                   currency(oprice));
 #else
-            pline("‚ ‚Ì%s‚Í%ld%s‚¾D", objnambuf, oprice,
+            pline("ã‚ã®%sã¯%ld%sã ï¼", objnambuf, oprice,
                   currency(oprice));
 #endif
             /* delobj->obfree will handle actual shop billing update */
@@ -404,14 +404,14 @@ struct edog *edog;
 /*JP
                 pline("%s is confused from hunger.", Monnam(mtmp));
 */
-                pline("%s‚Í‹ó• ‚Ì‚½‚ß¬—‚µ‚Ä‚¢‚éD", Monnam(mtmp));
+                pline("%sã¯ç©ºè…¹ã®ãŸã‚æ··ä¹±ã—ã¦ã„ã‚‹ï¼", Monnam(mtmp));
             else if (couldsee(mtmp->mx, mtmp->my))
                 beg(mtmp);
             else
 /*JP
                 You_feel("worried about %s.", y_monnam(mtmp));
 */
-                You("%s‚ªS”z‚É‚È‚Á‚½D", y_monnam(mtmp));
+                You("%sãŒå¿ƒé…ã«ãªã£ãŸï¼", y_monnam(mtmp));
             stop_occupation();
         } else if (monstermoves > edog->hungrytime + 750 || mtmp->mhp < 1) {
         dog_died:
@@ -419,19 +419,19 @@ struct edog *edog;
 /*JP
                 Your("leash goes slack.");
 */
-                Your("•R‚Í‚½‚é‚ñ‚¾D");
+                Your("ç´ã¯ãŸã‚‹ã‚“ã ï¼");
             else if (cansee(mtmp->mx, mtmp->my))
 /*JP
                 pline("%s starves.", Monnam(mtmp));
 */
-                pline("%s‚Í‹Q‚¦‚Å€‚ñ‚¾D", Monnam(mtmp));
+                pline("%sã¯é£¢ãˆã§æ­»ã‚“ã ï¼", Monnam(mtmp));
             else
 #if 0 /*JP*/
                 You_feel("%s for a moment.",
                          Hallucination ? "bummed" : "sad");
 #else
-                You("%s‹C•ª‚É‚¨‚»‚í‚ê‚½D",
-                    Hallucination ? "‚ª‚Á‚©‚è‚µ‚½" : "”ß‚µ‚¢");
+                You("%sæ°—åˆ†ã«ãŠãã‚ã‚ŒãŸï¼",
+                    Hallucination ? "ãŒã£ã‹ã‚Šã—ãŸ" : "æ‚²ã—ã„");
 #endif
             mondied(mtmp);
             return  TRUE;
@@ -499,7 +499,7 @@ int udist;
                             pline("%s picks up %s.", Monnam(mtmp),
                                   distant_name(otmp, doname));
 #else
-                            pline("%s‚Í%s‚ğE‚Á‚½D", Monnam(mtmp),
+                            pline("%sã¯%sã‚’æ‹¾ã£ãŸï¼", Monnam(mtmp),
                                   distant_name(obj, doname));
 #endif
                         obj_extract_self(otmp);
@@ -990,7 +990,7 @@ int after; /* this is extra fast monster movement */
 /*JP
         You("get released!");
 */
-        You("“®‚¯‚é‚æ‚¤‚É‚È‚Á‚½I");
+        You("å‹•ã‘ã‚‹ã‚ˆã†ã«ãªã£ãŸï¼");
     }
 #endif
     if (!nohands(mtmp->data) && !verysmall(mtmp->data)) {
@@ -1234,7 +1234,7 @@ newdogpos:
                 pline("%s breaks loose of %s leash!", Monnam(mtmp),
                       mhis(mtmp));
 #else
-                pline("%s‚Í©•ª‚É‚Â‚¢‚Ä‚¢‚é•R‚ğ‚Í‚¸‚µ‚½I",
+                pline("%sã¯è‡ªåˆ†ã«ã¤ã„ã¦ã„ã‚‹ç´ã‚’ã¯ãšã—ãŸï¼",
                       Monnam(mtmp));
 #endif
                 m_unleash(mtmp, FALSE);
@@ -1264,7 +1264,7 @@ newdogpos:
             pline("%s %s reluctantly over %s.", noit_Monnam(mtmp),
                   vtense((char *) 0, locomotion(mtmp->data, "step")), what);
 #else
-            pline("%s‚Í%s‚Ìã‚É‚¢‚â‚¢‚â“®‚¢‚½D", noit_Monnam(mtmp), what);
+            pline("%sã¯%sã®ä¸Šã«ã„ã‚„ã„ã‚„å‹•ã„ãŸï¼", noit_Monnam(mtmp), what);
 #endif
         }
         for (j = MTSZ - 1; j > 0; j--)
@@ -1471,7 +1471,7 @@ struct monst *mtmp;
             cansee(mtmp->mx, mtmp->my) ? "" : "ed",
             buf);
 #else
-        You("%s‚ª‚ ‚Á‚½‚Æ‚±‚ë‚É%s‚ªŒ»‚ê‚½‚Ì%sI",
+        You("%sãŒã‚ã£ãŸã¨ã“ã‚ã«%sãŒç¾ã‚ŒãŸã®%sï¼",
             buf,
             (mtmp->m_ap_type == M_AP_FURNITURE)
                 ? an(defsyms[mtmp->mappearance].explanation)
@@ -1484,7 +1484,7 @@ struct monst *mtmp;
                             : (mtmp->m_ap_type == M_AP_MONSTER)
                                   ? an(mons[mtmp->mappearance].mname)
                                   : something,
-            cansee(mtmp->mx, mtmp->my) ? "‚ğŒ©‚½" : "‚É‹C‚Ã‚¢‚½");
+            cansee(mtmp->mx, mtmp->my) ? "ã‚’è¦‹ãŸ" : "ã«æ°—ã¥ã„ãŸ");
 #endif
         display_nhwindow(WIN_MAP, TRUE);
     }

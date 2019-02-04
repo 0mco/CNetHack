@@ -1,14 +1,14 @@
 [![Linux/Mac](https://travis-ci.org/jnethack/jnethack-alpha.svg?branch=develop)](https://travis-ci.org/jnethack/jnethack-alpha)[![Windows](https://ci.appveyor.com/api/projects/status/2no8rc2q162ssb2c/branch/develop?svg=true)](https://ci.appveyor.com/project/argrath/jnethack-alpha/branch/develop)
 
-# JNetHack ƒŒƒ|ƒWƒgƒŠ
+# JNetHack ¥ì¥İ¥¸¥È¥ê
 
-JNetHack ‚ÌƒŒƒ|ƒWƒgƒŠ‚Å‚·B“ñ‚Â‚ÌƒŒƒ|ƒWƒgƒŠ‚ğg‚Á‚Ä‚¢‚Ü‚·BŠJ”­’†‚Ìó‹µ‚É‚Â‚¢‚Ä‚ÍREADME36.j‚ğQÆ‚µ‚Ä‚­‚¾‚³‚¢B
+JNetHack ¤Î¥ì¥İ¥¸¥È¥ê¤Ç¤¹¡£Æó¤Ä¤Î¥ì¥İ¥¸¥È¥ê¤ò»È¤Ã¤Æ¤¤¤Ş¤¹¡£³«È¯Ãæ¤Î¾õ¶·¤Ë¤Ä¤¤¤Æ¤ÏREADME36.j¤ò»²¾È¤·¤Æ¤¯¤À¤µ¤¤¡£
 
-### ƒƒCƒ“ƒŒƒ|ƒWƒgƒŠ https://osdn.net/projects/jnethack/scm/git/source/
+### ¥á¥¤¥ó¥ì¥İ¥¸¥È¥ê https://osdn.net/projects/jnethack/scm/git/source/
 
-‚ ‚é’ö“xŠm”F‚µ‚½ƒ\[ƒXƒR[ƒh‚ª“o˜^‚³‚ê‚Ü‚·BŒ´‘¥‚Æ‚µ‚Ärebase‚Í‚µ‚Ü‚¹‚ñB
+¤¢¤ëÄøÅÙ³ÎÇ§¤·¤¿¥½¡¼¥¹¥³¡¼¥É¤¬ÅĞÏ¿¤µ¤ì¤Ş¤¹¡£¸¶Â§¤È¤·¤Ærebase¤Ï¤·¤Ş¤»¤ó¡£
 
-### ŠJ”­ƒŒƒ|ƒWƒgƒŠ https://github.com/jnethack/jnethack-alpha
+### ³«È¯¥ì¥İ¥¸¥È¥ê https://github.com/jnethack/jnethack-alpha
 
-ŠJ”­’†‚Ìƒ\[ƒX‚ª“o˜^‚³‚ê‚Ü‚·B•p”É‚Érebase‚³‚ê‚Ü‚·B
-TravisCI‚ÆAppVeyor‚Åƒrƒ‹ƒh‚ÌŠm”F‚ğ‚µ‚Ä‚¢‚Ü‚·B
+³«È¯Ãæ¤Î¥½¡¼¥¹¤¬ÅĞÏ¿¤µ¤ì¤Ş¤¹¡£ÉÑÈË¤Ërebase¤µ¤ì¤Ş¤¹¡£
+TravisCI¤ÈAppVeyor¤Ç¥Ó¥ë¥É¤Î³ÎÇ§¤ò¤·¤Æ¤¤¤Ş¤¹¡£

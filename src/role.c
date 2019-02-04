@@ -43,25 +43,25 @@ const struct Role roles[] = {
         { "Curator", 0 } },
       "Quetzalcoatl", "Camaxtli", "Huhetotl", /* Central American */
 #else
-    { { "lŒÃŠwÒ", 0 },
-      { { "zˆõ", 0 },
-        { "˜J“­Ò", 0 },
-        { "’²¸Ò", 0 },
-        { "”­Œ@Ò", 0 },
-        { "Œ@íÒ", 0 },
-        { "’TŒŸÒ", 0 },
-        { "“´ŒAŠwÒ", 0 },
-        { "”üpûWÒ", 0 },
-        { "ŠÙ’·", 0 } },
-      "ƒPƒcƒAƒ‹ƒJƒgƒ‹", "ƒJƒ}ƒLƒVƒgƒŠ", "ƒtƒwƒgƒgƒ‹", /* Central American */
+    { { "è€ƒå¤å­¦è€…", 0 },
+      { { "é‰±å“¡", 0 },
+        { "åŠ´åƒè€…", 0 },
+        { "èª¿æŸ»è€…", 0 },
+        { "ç™ºæ˜è€…", 0 },
+        { "æ˜å‰Šè€…", 0 },
+        { "æ¢æ¤œè€…", 0 },
+        { "æ´çªŸå­¦è€…", 0 },
+        { "ç¾è¡“åé›†è€…", 0 },
+        { "é¤¨é•·", 0 } },
+      "ã‚±ãƒ„ã‚¢ãƒ«ã‚«ãƒˆãƒ«", "ã‚«ãƒã‚­ã‚·ãƒˆãƒª", "ãƒ•ãƒ˜ãƒˆãƒˆãƒ«", /* Central American */
 #endif
       "Arc",
 #if 0 /*JP*/
       "the College of Archeology",
       "the Tomb of the Toltec Kings",
 #else
-      "lŒÃŠw‘åŠw",
-      "ƒgƒ‹ƒeƒJ‰¤‰Æ‚Ì•æ",
+      "è€ƒå¤å­¦å¤§å­¦",
+      "ãƒˆãƒ«ãƒ†ã‚«ç‹å®¶ã®å¢“",
 #endif
       PM_ARCHEOLOGIST,
       NON_PM,
@@ -104,25 +104,25 @@ const struct Role roles[] = {
         { "Conqueror", "Conqueress" } },
       "Mitra", "Crom", "Set", /* Hyborian */
 #else
-    { { "–ì”Øl", 0 },
-      { { "“‘¯", 0 },
-        { "—ª’DÒ", 0 },
-        { "ˆ«Š¿", 0 },
-        { "R‘¯", 0 },
-        { "N—ªÒ", 0 },
-        { "‹­“", 0 },
-        { "ECÒ", 0 },
-        { "ñ—Ì", 0 },
-        { "ª•Ò", 0 } },
-      "ƒ~ƒgƒ‰", "ƒNƒƒ€", "ƒZƒg", /* Hyborian */
+    { { "é‡è›®äºº", 0 },
+      { { "ç›—è³Š", 0 },
+        { "ç•¥å¥ªè€…", 0 },
+        { "æ‚ªæ¼¢", 0 },
+        { "å±±è³Š", 0 },
+        { "ä¾µç•¥è€…", 0 },
+        { "å¼·ç›—", 0 },
+        { "æ®ºæˆ®è€…", 0 },
+        { "é¦–é ˜", 0 },
+        { "å¾æœè€…", 0 } },
+      "ãƒŸãƒˆãƒ©", "ã‚¯ãƒ­ãƒ ", "ã‚»ãƒˆ", /* Hyborian */
 #endif
       "Bar",
 #if 0 /*JP*/
       "the Camp of the Duali Tribe",
       "the Duali Oasis",
 #else
-      "ƒfƒ…ƒAƒŠ‘°‚ÌƒLƒƒƒ“ƒv",
-      "ƒfƒ…ƒAƒŠ‘°‚ÌƒIƒAƒVƒX",
+      "ãƒ‡ãƒ¥ã‚¢ãƒªæ—ã®ã‚­ãƒ£ãƒ³ãƒ—",
+      "ãƒ‡ãƒ¥ã‚¢ãƒªæ—ã®ã‚ªã‚¢ã‚·ã‚¹",
 #endif
       PM_BARBARIAN,
       NON_PM,
@@ -165,25 +165,25 @@ const struct Role roles[] = {
         { "Pioneer", 0 } },
       "Anu", "_Ishtar", "Anshar", /* Babylonian */
 #else
-    { { "“´ŒAl", 0 },
-      { { "ŒŠ‹l", 0 },
-        { "Œ´Z–¯", 0 },
-        { "•ú˜QÒ", 0 },
-        { "•‚˜QÒ", 0 },
-        { "—·sÒ", 0 },
-        { "•ú—VÒ", 0 },
-        { "—V–q–¯", 0 },
-        { "—¬˜QÒ", 0 },
-        { "æ‹ìÒ", 0 } },
-      "ƒAƒk", "_ƒCƒVƒ…ƒ^ƒ‹", "ƒAƒ“ƒVƒƒƒ‹", /* Babylonian */
+    { { "æ´çªŸäºº", 0 },
+      { { "ç©´å±…äºº", 0 },
+        { "åŸä½æ°‘", 0 },
+        { "æ”¾æµªè€…", 0 },
+        { "æµ®æµªè€…", 0 },
+        { "æ—…è¡Œè€…", 0 },
+        { "æ”¾éŠè€…", 0 },
+        { "éŠç‰§æ°‘", 0 },
+        { "æµæµªè€…", 0 },
+        { "å…ˆé§†è€…", 0 } },
+      "ã‚¢ãƒŒ", "_ã‚¤ã‚·ãƒ¥ã‚¿ãƒ«", "ã‚¢ãƒ³ã‚·ãƒ£ãƒ«", /* Babylonian */
 #endif
       "Cav",
 #if 0 /*JP*/
       "the Caves of the Ancestors",
       "the Dragon's Lair",
 #else
-      "‘¾ŒÃ‚Ì“´ŒA",
-      "—³‚Ì‰B‚ê‰Æ",
+      "å¤ªå¤ã®æ´çªŸ",
+      "ç«œã®éš ã‚Œå®¶",
 #endif
       PM_CAVEMAN,
       PM_CAVEWOMAN,
@@ -226,25 +226,25 @@ const struct Role roles[] = {
         { "Chirurgeon", 0 } },
       "_Athena", "Hermes", "Poseidon", /* Greek */
 #else
-    { { "–òt", 0 },
-      { { "Œ©K‚¢", 0 },
-        { "ˆãtŒ©K‚¢", 0 },
-        { "ŠÅŒìt", "ŠÅŒì•w" },
-        { "ˆãt•è", 0 },
-        { "–ò•¨å”C", 0 },
-        { "Š¿•ûˆã", 0 },
-        { "ˆãtå”C", 0 },
-        { "“à‰Èˆã", 0 },
-        { "ŠO‰Èˆã", 0 } },
-      "_ƒAƒeƒi", "ƒwƒ‹ƒƒX", "ƒ|ƒZƒCƒhƒ“", /* Greek */
+    { { "è–¬å¸«", 0 },
+      { { "è¦‹ç¿’ã„", 0 },
+        { "åŒ»å¸«è¦‹ç¿’ã„", 0 },
+        { "çœ‹è­·å¸«", "çœ‹è­·å©¦" },
+        { "åŒ»å¸«åŠ©æ‰‹", 0 },
+        { "è–¬ç‰©ä¸»ä»»", 0 },
+        { "æ¼¢æ–¹åŒ»", 0 },
+        { "åŒ»å¸«ä¸»ä»»", 0 },
+        { "å†…ç§‘åŒ»", 0 },
+        { "å¤–ç§‘åŒ»", 0 } },
+      "_ã‚¢ãƒ†ãƒŠ", "ãƒ˜ãƒ«ãƒ¡ã‚¹", "ãƒã‚»ã‚¤ãƒ‰ãƒ³", /* Greek */
 #endif
       "Hea",
 #if 0 /*JP*/
       "the Temple of Epidaurus",
       "the Temple of Coeus",
 #else
-      "ƒGƒsƒ_ƒEƒƒX›‰@",
-      "ƒRƒCƒIƒX›‰@",
+      "ã‚¨ãƒ”ãƒ€ã‚¦ãƒ­ã‚¹å¯ºé™¢",
+      "ã‚³ã‚¤ã‚ªã‚¹å¯ºé™¢",
 #endif
       PM_HEALER,
       NON_PM,
@@ -286,25 +286,25 @@ const struct Role roles[] = {
         { "Paladin", 0 } },
       "Lugh", "_Brigit", "Manannan Mac Lir", /* Celtic */
 #else
-    { { "‹Rm", 0 },
-      { { "Œ©K‚¢", 0 },
-        { "•à•º", 0 },
-        { "ím", 0 },
-        { "‹R•º", 0 },
-        { "dím", 0 },
-        { "‹Rm", 0 },
-        { "d‹Rm", 0 },
-        { "ŒM‹Rm", 0 },
-        { "¹‹Rm", 0 } },
-      "ƒ‹[ƒt", "_ƒuƒŠƒWƒbƒg", "ƒ}ƒiƒ“ƒiƒ“Eƒ}ƒNƒŠ[ƒ‹", /* Celtic */
+    { { "é¨å£«", 0 },
+      { { "è¦‹ç¿’ã„", 0 },
+        { "æ­©å…µ", 0 },
+        { "æˆ¦å£«", 0 },
+        { "é¨å…µ", 0 },
+        { "é‡æˆ¦å£«", 0 },
+        { "é¨å£«", 0 },
+        { "é‡é¨å£«", 0 },
+        { "å‹²é¨å£«", 0 },
+        { "è–é¨å£«", 0 } },
+      "ãƒ«ãƒ¼ãƒ•", "_ãƒ–ãƒªã‚¸ãƒƒãƒˆ", "ãƒãƒŠãƒ³ãƒŠãƒ³ãƒ»ãƒã‚¯ãƒªãƒ¼ãƒ«", /* Celtic */
 #endif
       "Kni",
 #if 0 /*JP*/
       "Camelot Castle",
       "the Isle of Glass",
 #else
-      "ƒLƒƒƒƒƒbƒgé",
-      "ƒKƒ‰ƒX‚Ì“‡",
+      "ã‚­ãƒ£ãƒ¡ãƒ­ãƒƒãƒˆåŸ",
+      "ã‚¬ãƒ©ã‚¹ã®å³¶",
 #endif
       PM_KNIGHT,
       NON_PM,
@@ -346,25 +346,25 @@ const struct Role roles[] = {
         { "Master", 0 } },
       "Shan Lai Ching", "Chih Sung-tzu", "Huan Ti", /* Chinese */
 #else
-    { { "•“¬‰Æ", 0 },
-      { { "“ü–åŠó–]Ò", 0 },
-        { "‰SÒ", 0 },
-        { "“ü–åÒ“`", 0 },
-        { "“y‚ÌK‚¢è", 0 },
-        { "…‚ÌK‚¢è", 0 },
-        { "‹à‚ÌK‚¢è", 0 },
-        { "–Ø‚ÌK‚¢è", 0 },
-        { "‰Î‚ÌK‚¢è", 0 },
-        { "–Æ‹–ŠF“`", 0 } },
-      "R—‹¸", "Ô¼q", "‰©’é", /* Chinese */
+    { { "æ­¦é—˜å®¶", 0 },
+      { { "å…¥é–€å¸Œæœ›è€…", 0 },
+        { "åˆå¿ƒè€…", 0 },
+        { "å…¥é–€è€…ä¼", 0 },
+        { "åœŸã®ç¿’ã„æ‰‹", 0 },
+        { "æ°´ã®ç¿’ã„æ‰‹", 0 },
+        { "é‡‘ã®ç¿’ã„æ‰‹", 0 },
+        { "æœ¨ã®ç¿’ã„æ‰‹", 0 },
+        { "ç«ã®ç¿’ã„æ‰‹", 0 },
+        { "å…è¨±çš†ä¼", 0 } },
+      "å±±é›·ç²¾", "èµ¤æ¾å­", "é»„å¸", /* Chinese */
 #endif
       "Mon",
 #if 0 /*JP*/
       "the Monastery of Chan-Sune",
       "the Monastery of the Earth-Lord",
 #else
-      "ƒ`ƒƒƒ“EƒX[C“¹‰@",
-      "’n‰¤‚ÌC“¹‰@",
+      "ãƒãƒ£ãƒ³ãƒ»ã‚¹ãƒ¼ä¿®é“é™¢",
+      "åœ°ç‹ã®ä¿®é“é™¢",
 #endif
       PM_MONK,
       NON_PM,
@@ -407,16 +407,16 @@ const struct Role roles[] = {
         { "High Priest", "High Priestess" } },
       0, 0, 0, /* deities from a randomly chosen other role will be used */
 #else
-    { { "‘m—µ", "“ò‘m" },
-      { { "C“¹Ò", "C“¹—" },
-        { "˜Ò", 0 },
-        { "˜Õ", 0 },
-        { "‘m—µ", "“ò‘m" },
-        { "•”CiÕ", 0 },
-        { "¹Ò", "¹—" },
-        { "i‹³", 0 },
-        { "‘åi‹³", 0 },
-        { "‘å‘mã", 0 } },
+    { { "åƒ§ä¾¶", "å°¼åƒ§" },
+      { { "ä¿®é“è€…", "ä¿®é“å¥³" },
+        { "ä¾è€…", 0 },
+        { "ä¾ç¥­", 0 },
+        { "åƒ§ä¾¶", "å°¼åƒ§" },
+        { "åŠ©ä»»å¸ç¥­", 0 },
+        { "è–è€…", "è–å¥³" },
+        { "å¸æ•™", 0 },
+        { "å¤§å¸æ•™", 0 },
+        { "å¤§åƒ§ä¸Š", 0 } },
       0, 0, 0, /* deities from a randomly chosen other role will be used */
 #endif
       "Pri",
@@ -424,8 +424,8 @@ const struct Role roles[] = {
       "the Great Temple",
       "the Temple of Nalzok",
 #else
-      "ˆÌ‘å‚È‚é›‰@",
-      "ƒiƒ‹ƒ]ƒN›‰@",
+      "å‰å¤§ãªã‚‹å¯ºé™¢",
+      "ãƒŠãƒ«ã‚¾ã‚¯å¯ºé™¢",
 #endif
       PM_PRIEST,
       PM_PRIESTESS,
@@ -470,25 +470,25 @@ const struct Role roles[] = {
         { "Thief", 0 } },
       "Issek", "Mog", "Kos", /* Nehwon */
 #else
-    { { "“‘¯", 0 },
-      { { "’Ç‚¢‚Í‚¬", 0 },
-        { "‚Ğ‚Á‚½‚­‚è", 0 },
-        { "ƒXƒŠ", 0 },
-        { "‚²‚ë‚Â‚«", 0 },
-        { "‚±‚»‚Ç‚ë", 0 },
-        { "‹ó‘ƒ", 0 },
-        { "“D–_", 0 },
-        { "‹­“", 0 },
-        { "‘å“D–_", 0 } },
-      "ƒCƒZƒbƒN", "ƒ‚ƒO", "ƒRƒX", /* Nehwon */
+    { { "ç›—è³Š", 0 },
+      { { "è¿½ã„ã¯ã", 0 },
+        { "ã²ã£ãŸãã‚Š", 0 },
+        { "ã‚¹ãƒª", 0 },
+        { "ã”ã‚ã¤ã", 0 },
+        { "ã“ãã©ã‚", 0 },
+        { "ç©ºå·£", 0 },
+        { "æ³¥æ£’", 0 },
+        { "å¼·ç›—", 0 },
+        { "å¤§æ³¥æ£’", 0 } },
+      "ã‚¤ã‚»ãƒƒã‚¯", "ãƒ¢ã‚°", "ã‚³ã‚¹", /* Nehwon */
 #endif
       "Rog",
 #if 0 /*JP*/
       "the Thieves' Guild Hall",
       "the Assassins' Guild Hall",
 #else
-      "“‘¯ƒMƒ‹ƒh",
-      "ˆÃEÒƒMƒ‹ƒh",
+      "ç›—è³Šã‚®ãƒ«ãƒ‰",
+      "æš—æ®ºè€…ã‚®ãƒ«ãƒ‰",
 #endif
       PM_ROGUE,
       NON_PM,
@@ -544,25 +544,25 @@ const struct Role roles[] = {
         { "Marksman", "Markswoman" } },
       "Mercury", "_Venus", "Mars", /* Roman/planets */
 #else
-    { { "ƒŒƒ“ƒWƒƒ[", 0 },
-      { { "V•Ä", 0 },
-        { "Œ©’£‚è", 0 },
-        { "æ“±", 0 },
-        { "’ã@", 0 },
-        { "ËŒó", 0 },
-        { "‹|•º", 0 }, /* One skilled at crossbows */
-        { "’†‹‰‹|•º", 0 },
-        { "ã‹‰‹|•º", 0 },
-        { "ã‹‰‹|•º", 0 } },
-      "ƒ}[ƒLƒ…ƒŠ[", "_ƒr[ƒiƒX", "ƒ}[ƒY", /* Roman/planets */
+    { { "ãƒ¬ãƒ³ã‚¸ãƒ£ãƒ¼", 0 },
+      { { "æ–°ç±³", 0 },
+        { "è¦‹å¼µã‚Š", 0 },
+        { "å…ˆå°", 0 },
+        { "åµå¯Ÿ", 0 },
+        { "æ–¥å€™", 0 },
+        { "å¼“å…µ", 0 }, /* One skilled at crossbows */
+        { "ä¸­ç´šå¼“å…µ", 0 },
+        { "ä¸Šç´šå¼“å…µ", 0 },
+        { "ä¸Šç´šå¼“å…µ", 0 } },
+      "ãƒãƒ¼ã‚­ãƒ¥ãƒªãƒ¼", "_ãƒ“ãƒ¼ãƒŠã‚¹", "ãƒãƒ¼ã‚º", /* Roman/planets */
 #endif
       "Ran",
 #if 0 /*JP*/
       "Orion's camp",
       "the cave of the wumpus",
 #else
-      "ƒIƒŠƒIƒ“‚ÌƒLƒƒƒ“ƒv",
-      "ƒƒ“ƒpƒX‚Ì“´ŒA",
+      "ã‚ªãƒªã‚ªãƒ³ã®ã‚­ãƒ£ãƒ³ãƒ—",
+      "ãƒ¯ãƒ³ãƒ‘ã‚¹ã®æ´çªŸ",
 #endif
       PM_RANGER,
       NON_PM,
@@ -605,25 +605,25 @@ const struct Role roles[] = {
         { "Shogun", 0 } },       /* supreme commander, warlord */
       "_Amaterasu Omikami", "Raijin", "Susanowo", /* Japanese */
 #else
-    { { "˜", 0 },
-      { { "Šø–{", 0 },       /* Banner Knight */
-        { "˜Ql", 0 },          /* no allegiance */
-        { "”EÒ", "‚­ƒmˆê" }, /* secret society */
-        { "éå", 0 },          /* heads a castle */
-        { "—Ìå", 0 },         /* has a territory */
-        { "—Ìå", 0 },        /* heads a province */
-        { "‘å–¼", "˜Œ³" },         /* a samurai lord */
-        { "Œö‰Æ", 0 },           /* Noble of the Court */
-        { "Œö‰Æ", "‘å‰œ" } },       /* supreme commander, warlord */
-      "_“VÆ‘å_", "—‹_", "{²”V’j", /* Japanese */
+    { { "ä¾", 0 },
+      { { "æ——æœ¬", 0 },       /* Banner Knight */
+        { "æµªäºº", 0 },          /* no allegiance */
+        { "å¿è€…", "ããƒä¸€" }, /* secret society */
+        { "åŸä¸»", 0 },          /* heads a castle */
+        { "é ˜ä¸»", 0 },         /* has a territory */
+        { "é ˜ä¸»", 0 },        /* heads a province */
+        { "å¤§å", "è…°å…ƒ" },         /* a samurai lord */
+        { "å…¬å®¶", 0 },           /* Noble of the Court */
+        { "å…¬å®¶", "å¤§å¥¥" } },       /* supreme commander, warlord */
+      "_å¤©ç…§å¤§ç¥", "é›·ç¥", "é ˆä½ä¹‹ç”·", /* Japanese */
 #endif
       "Sam",
 #if 0 /*JP*/
       "the Castle of the Taro Clan",
       "the Shogun's Castle",
 #else
-      "‘¾˜Yˆê‘°‚Ìé",
-      "«ŒR‚Ìé",
+      "å¤ªéƒä¸€æ—ã®åŸ",
+      "å°†è»ã®åŸ",
 #endif
       PM_SAMURAI,
       NON_PM,
@@ -665,25 +665,25 @@ const struct Role roles[] = {
         { "Adventurer", 0 } },
       "Blind Io", "_The Lady", "Offler", /* Discworld */
 #else
-    { { "ŠÏŒõ‹q", 0 },
-      { { "ƒv[‘¾˜Y", "ƒv[q" },
-        { "ŠÏŒõ‹q", 0 },
-        { "ü—V—·sÒ", 0 },
-        { "•Õ—ğÒ", 0 },
-        { "—·sÒ", 0 },
-        { "—·l", 0 },
-        { "qŠCÒ", 0 },
-        { "’TŒŸ‰Æ", 0 },
-        { "–`Œ¯Ò", 0 } },
-      "–Ó–Ú‚ÌƒCƒI", "_ƒ—_„", "ƒIƒtƒ‰[", /* Discworld */
+    { { "è¦³å…‰å®¢", 0 },
+      { { "ãƒ—ãƒ¼å¤ªéƒ", "ãƒ—ãƒ¼å­" },
+        { "è¦³å…‰å®¢", 0 },
+        { "å‘¨éŠæ—…è¡Œè€…", 0 },
+        { "éæ­´è€…", 0 },
+        { "æ—…è¡Œè€…", 0 },
+        { "æ—…äºº", 0 },
+        { "èˆªæµ·è€…", 0 },
+        { "æ¢æ¤œå®¶", 0 },
+        { "å†’é™ºè€…", 0 } },
+      "ç›²ç›®ã®ã‚¤ã‚ª", "_ï¼œå¥³ç¥ï¼", "ã‚ªãƒ•ãƒ©ãƒ¼", /* Discworld */
 #endif
       "Tou",
 #if 0 /*JP*/
       "Ankh-Morpork",
       "the Thieves' Guild Hall",
 #else
-      "ƒAƒ“ƒNƒ‚ƒ‹ƒ|[ƒN",
-      "“‘¯ƒMƒ‹ƒh",
+      "ã‚¢ãƒ³ã‚¯ãƒ¢ãƒ«ãƒãƒ¼ã‚¯",
+      "ç›—è³Šã‚®ãƒ«ãƒ‰",
 #endif
       PM_TOURIST,
       NON_PM,
@@ -725,25 +725,25 @@ const struct Role roles[] = {
         { "Lord", "Lady" } },
       "Tyr", "Odin", "Loki", /* Norse */
 #else
-    { { "ƒƒ‹ƒLƒ…[ƒŒ", 0 },
-      { { "Œ©K‚¢", 0 },
-        { "•à•º", 0 },
-        { "ím", 0 },
-        { "‹R•º", 0 },
-        { "í“¬•º", 0 },
-        { "UŒ‚•º", 0 },
-        { "‰p—Y", 0 },
-        { "æ“±Ò", 0 },
-        { "ƒ[ƒh", "ƒŒƒfƒB" } },
-      "ƒ`ƒ…[ƒ‹", "ƒI[ƒfƒBƒ“", "ƒƒL", /* Norse */
+    { { "ãƒ¯ãƒ«ã‚­ãƒ¥ãƒ¼ãƒ¬", 0 },
+      { { "è¦‹ç¿’ã„", 0 },
+        { "æ­©å…µ", 0 },
+        { "æˆ¦å£«", 0 },
+        { "é¨å…µ", 0 },
+        { "æˆ¦é—˜å…µ", 0 },
+        { "æ”»æ’ƒå…µ", 0 },
+        { "è‹±é›„", 0 },
+        { "å…ˆå°è€…", 0 },
+        { "ãƒ­ãƒ¼ãƒ‰", "ãƒ¬ãƒ‡ã‚£" } },
+      "ãƒãƒ¥ãƒ¼ãƒ«", "ã‚ªãƒ¼ãƒ‡ã‚£ãƒ³", "ãƒ­ã‚­", /* Norse */
 #endif
       "Val",
 #if 0 /*JP*/
       "the Shrine of Destiny",
       "the cave of Surtur",
 #else
-      "‰^–½‚Ì¹“°",
-      "ƒXƒ‹ƒg‚Ì“´ŒA",
+      "é‹å‘½ã®è–å ‚",
+      "ã‚¹ãƒ«ãƒˆã®æ´çªŸ",
 #endif
       PM_VALKYRIE,
       NON_PM,
@@ -785,25 +785,25 @@ const struct Role roles[] = {
         { "Mage", 0 } },
       "Ptah", "Thoth", "Anhur", /* Egyptian */
 #else
-    { { "–‚–@g‚¢", 0 },
-      { { "è•it", 0 },
-        { "Šïpt", 0 },
-        { "è‚¢t", 0 },
-        { "—ìŠ´t", 0 },
-        { "¢Š«t", 0 },
-        { "—dpt", 0 },
-        { "–‚pt", 0 },
-        { "–‚–@g‚¢", 0 },
-        { "‘å–‚–@g‚¢", 0 } },
-      "ƒvƒ^ƒn", "ƒg[ƒg", "ƒAƒ“ƒtƒ‹", /* Egyptian */
+    { { "é­”æ³•ä½¿ã„", 0 },
+      { { "æ‰‹å“å¸«", 0 },
+        { "å¥‡è¡“å¸«", 0 },
+        { "å ã„å¸«", 0 },
+        { "éœŠæ„Ÿå¸«", 0 },
+        { "å¬å–šå¸«", 0 },
+        { "å¦–è¡“å¸«", 0 },
+        { "é­”è¡“å¸«", 0 },
+        { "é­”æ³•ä½¿ã„", 0 },
+        { "å¤§é­”æ³•ä½¿ã„", 0 } },
+      "ãƒ—ã‚¿ãƒ", "ãƒˆãƒ¼ãƒˆ", "ã‚¢ãƒ³ãƒ•ãƒ«", /* Egyptian */
 #endif
       "Wiz",
 #if 0 /*JP*/
       "the Lonely Tower",
       "the Tower of Darkness",
 #else
-      "ŒÇ‚‚Ì“ƒ",
-      "ˆÃ•‚Ì“ƒ",
+      "å­¤é«˜ã®å¡”",
+      "æš—é»’ã®å¡”",
 #endif
       PM_WIZARD,
       NON_PM,
@@ -873,15 +873,15 @@ const struct Race races[] = {
         "human",
         "humanity",
 #else
-        "lŠÔ",
-        "lŠÔ‚Ì",
-        "lŠÔ",
+        "äººé–“",
+        "äººé–“ã®",
+        "äººé–“",
 #endif
         "Hum",
 #if 0 /*JP*/
         { "man", "woman" },
 #else
-        { "’j", "—" },
+        { "ç”·", "å¥³" },
 #endif
         PM_HUMAN,
         NON_PM,
@@ -905,9 +905,9 @@ const struct Race races[] = {
         "elven",
         "elvenkind",
 #else
-        "ƒGƒ‹ƒt",
-        "ƒGƒ‹ƒt‚Ì",
-        "ƒGƒ‹ƒt",
+        "ã‚¨ãƒ«ãƒ•",
+        "ã‚¨ãƒ«ãƒ•ã®",
+        "ã‚¨ãƒ«ãƒ•",
 #endif
         "Elf",
         { 0, 0 },
@@ -932,9 +932,9 @@ const struct Race races[] = {
         "dwarven",
         "dwarvenkind",
 #else
-        "ƒhƒ[ƒt",
-        "ƒhƒ[ƒt‚Ì",
-        "ƒhƒ[ƒt",
+        "ãƒ‰ãƒ¯ãƒ¼ãƒ•",
+        "ãƒ‰ãƒ¯ãƒ¼ãƒ•ã®",
+        "ãƒ‰ãƒ¯ãƒ¼ãƒ•",
 #endif
         "Dwa",
         { 0, 0 },
@@ -959,9 +959,9 @@ const struct Race races[] = {
         "gnomish",
         "gnomehood",
 #else
-        "ƒm[ƒ€",
-        "ƒm[ƒ€‚Ì",
-        "ƒm[ƒ€",
+        "ãƒãƒ¼ãƒ ",
+        "ãƒãƒ¼ãƒ ã®",
+        "ãƒãƒ¼ãƒ ",
 #endif
         "Gno",
         { 0, 0 },
@@ -986,9 +986,9 @@ const struct Race races[] = {
         "orcish",
         "orcdom",
 #else
-        "ƒI[ƒN",
-        "ƒI[ƒN‚Ì",
-        "ƒI[ƒN",
+        "ã‚ªãƒ¼ã‚¯",
+        "ã‚ªãƒ¼ã‚¯ã®",
+        "ã‚ªãƒ¼ã‚¯",
 #endif
         "Orc",
         { 0, 0 },
@@ -1038,8 +1038,8 @@ struct Race urace = {
 
 /* Table of all genders */
 /*JP:
-- steed.c kick_steed() He[] ‚É’l‚ªƒRƒs[‚³‚ê‚é‚Ì‚Å’·‚³‚ğ•Ï‚¦‚½‚Æ‚«‚É‚Í
-  ŠY“–•”‚à—vC³B
+- steed.c kick_steed() He[] ã«å€¤ãŒã‚³ãƒ”ãƒ¼ã•ã‚Œã‚‹ã®ã§é•·ã•ã‚’å¤‰ãˆãŸã¨ãã«ã¯
+  è©²å½“éƒ¨ã‚‚è¦ä¿®æ­£ã€‚
 */
 const struct Gender genders[] = {
 #if 0 /*JP*/
@@ -1047,9 +1047,9 @@ const struct Gender genders[] = {
     { "female", "she", "her", "her", "Fem", ROLE_FEMALE },
     { "neuter", "it", "it", "its", "Ntr", ROLE_NEUTER }
 #else
-    { "’j«", "”Ş", "”Ş", "”Ş‚Ì", "Mal", ROLE_MALE },
-    { "—«", "”Ş—", "”Ş—", "”Ş—‚Ì", "Fem", ROLE_FEMALE },
-    { "’†«", "‚»‚ê", "‚»‚ê", "‚»‚Ì", "Ntr", ROLE_NEUTER }
+    { "ç”·æ€§", "å½¼", "å½¼", "å½¼ã®", "Mal", ROLE_MALE },
+    { "å¥³æ€§", "å½¼å¥³", "å½¼å¥³", "å½¼å¥³ã®", "Fem", ROLE_FEMALE },
+    { "ä¸­æ€§", "ãã‚Œ", "ãã‚Œ", "ãã®", "Ntr", ROLE_NEUTER }
 #endif
 };
 
@@ -1061,10 +1061,10 @@ const struct Align aligns[] = {
     { "chaos", "chaotic", "Cha", ROLE_CHAOTIC, A_CHAOTIC },
     { "evil", "unaligned", "Una", 0, A_NONE }
 #else
-    { "’˜", "’˜‚Ì", "Law", ROLE_LAWFUL, A_LAWFUL },
-    { "’†—§", "’†—§‚Ì", "Neu", ROLE_NEUTRAL, A_NEUTRAL },
-    { "¬“×", "¬“×‚Ì", "Cha", ROLE_CHAOTIC, A_CHAOTIC },
-    { "–³S", "–³S‚Ì", "Una", 0, A_NONE }
+    { "ç§©åº", "ç§©åºã®", "Law", ROLE_LAWFUL, A_LAWFUL },
+    { "ä¸­ç«‹", "ä¸­ç«‹ã®", "Neu", ROLE_NEUTRAL, A_NEUTRAL },
+    { "æ··æ²Œ", "æ··æ²Œã®", "Cha", ROLE_CHAOTIC, A_CHAOTIC },
+    { "ç„¡å¿ƒ", "ç„¡å¿ƒã®", "Una", 0, A_NONE }
 #endif
 };
 
@@ -1083,7 +1083,7 @@ STATIC_DCL int FDECL(race_alignmentcount, (int));
 /*JP
 static char NEARDATA randomstr[] = "random";
 */
-static char NEARDATA randomstr[] = "ƒ‰ƒ“ƒ_ƒ€";
+static char NEARDATA randomstr[] = "ãƒ©ãƒ³ãƒ€ãƒ ";
 
 boolean
 validrole(rolenum)
@@ -1736,9 +1736,9 @@ int num_post_attribs;
     if (!post_attribs && num_post_attribs > 1)
         Strcat(buf, conjuct);
 #else
-    /*JP: “ú–{Œê‚Å‚Í "A, B, and C" ‚Æ‚¢‚¤ˆ—‚Í•s—v */
+    /*JP: æ—¥æœ¬èªã§ã¯ "A, B, and C" ã¨ã„ã†å‡¦ç†ã¯ä¸è¦ */
     if(num_post_attribs > post_attribs){
-        Strcat(buf, "C");
+        Strcat(buf, "ï¼Œ");
     }
     --post_attribs;
 #endif
@@ -1790,7 +1790,7 @@ int buflen, rolenum, racenum, gendnum, alignnum;
 /*JP
     static char err_ret[] = " character's";
 */
-    static char err_ret[] = "ƒLƒƒƒ‰ƒNƒ^[‚Ì";
+    static char err_ret[] = "ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã®";
 #if 0 /*JP*/
     boolean donefirst = FALSE;
 #endif
@@ -1955,7 +1955,7 @@ int buflen, rolenum, racenum, gendnum, alignnum;
 /*JP
         Strcat(buf, "character");
 */
-        Strcat(buf, "ƒLƒƒƒ‰ƒNƒ^[");
+        Strcat(buf, "ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼");
 #if 0 /*JP*/
         donefirst = TRUE;
 #endif
@@ -1978,7 +1978,7 @@ int buflen, rolenum, racenum, gendnum, alignnum;
 /*JP
     const char *defprompt = "Shall I pick a character for you? [ynaq] ";
 */
-    const char *defprompt = "“K“–‚ÉƒLƒƒƒ‰ƒNƒ^[‚ğ‘I‚ñ‚Å‚æ‚¢‚Å‚·‚©H[ynaq] ";
+    const char *defprompt = "é©å½“ã«ã‚­ãƒ£ãƒ©ã‚¯ã‚¿ãƒ¼ã‚’é¸ã‚“ã§ã‚ˆã„ã§ã™ã‹ï¼Ÿ[ynaq] ";
     int num_post_attribs = 0;
 #if 0 /*JP*/
     char tmpbuf[BUFSZ], *p;
@@ -2006,9 +2006,9 @@ int buflen, rolenum, racenum, gendnum, alignnum;
 #if 0 /*JP*/
     Sprintf(buf, "%s", s_suffix(tmpbuf));
 #else
-    Sprintf(buf, "%s‚Ì", tmpbuf);
+    Sprintf(buf, "%sã®", tmpbuf);
 #endif
-#if 0 /*JP:“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP:æ—¥æœ¬èªã§ã¯ä¸è¦*/
     /* don't bother splitting caveman/cavewoman or priest/priestess
        in order to apply possessive suffix to both halves, but do
        change "priest/priestess'" to "priest/priestess's" */
@@ -2044,34 +2044,34 @@ int buflen, rolenum, racenum, gendnum, alignnum;
 /*
             Strcat(buf, "race");
 */
-            Strcat(buf, "í‘°");
+            Strcat(buf, "ç¨®æ—");
         }
         if (pa[BP_ROLE]) {
             (void) promptsep(eos(buf), num_post_attribs);
 /*
             Strcat(buf, "role");
 */
-            Strcat(buf, "E‹Æ");
+            Strcat(buf, "è·æ¥­");
         }
         if (pa[BP_GEND]) {
             (void) promptsep(eos(buf), num_post_attribs);
 /*JP
             Strcat(buf, "gender");
 */
-            Strcat(buf, "«•Ê");
+            Strcat(buf, "æ€§åˆ¥");
         }
         if (pa[BP_ALIGN]) {
             (void) promptsep(eos(buf), num_post_attribs);
 /*JP
             Strcat(buf, "alignment");
 */
-            Strcat(buf, "‘®«");
+            Strcat(buf, "å±æ€§");
         }
     }
 /*JP
     Strcat(buf, " for you? [ynaq] ");
 */
-    Strcat(buf, "‚ğ“K“–‚É‘I‚ñ‚Å‚æ‚ë‚µ‚¢‚Å‚·‚©H[ynq] ");
+    Strcat(buf, "ã‚’é©å½“ã«é¸ã‚“ã§ã‚ˆã‚ã—ã„ã§ã™ã‹ï¼Ÿ[ynq] ");
     return buf;
 }
 
@@ -2141,15 +2141,15 @@ winid where;
 /*JP
     static const char NEARDATA choosing[] = " choosing now",
 */
-    static const char NEARDATA choosing[] = " Œ»İ‘I‘ğ’†",
+    static const char NEARDATA choosing[] = " ç¾åœ¨é¸æŠä¸­",
 /*JP
                                not_yet[] = " not yet specified",
 */
-                               not_yet[] = " –¢‘I‘ğ",
+                               not_yet[] = " æœªé¸æŠ",
 /*JP
                                rand_choice[] = " random";
 */
-                               rand_choice[] = " ƒ‰ƒ“ƒ_ƒ€";
+                               rand_choice[] = " ãƒ©ãƒ³ãƒ€ãƒ ";
     char buf[BUFSZ];
     int r, c, g, a, allowmask;
 
@@ -2190,13 +2190,13 @@ winid where;
 /*JP
     Sprintf(buf, "%12s ", "name:");
 */
-    Sprintf(buf, "%12s ", "–¼‘O:");
+    Sprintf(buf, "%12s ", "åå‰:");
     Strcat(buf, (which == RS_NAME) ? choosing : !*plname ? not_yet : plname);
     putstr(where, 0, buf);
 /*JP
     Sprintf(buf, "%12s ", "role:");
 */
-    Sprintf(buf, "%12s ", "E‹Æ:");
+    Sprintf(buf, "%12s ", "è·æ¥­:");
     Strcat(buf, (which == RS_ROLE) ? choosing : (r == ROLE_NONE)
                                                     ? not_yet
                                                     : (r == ROLE_RANDOM)
@@ -2215,7 +2215,7 @@ winid where;
 /*JP
     Sprintf(buf, "%12s ", "race:");
 */
-    Sprintf(buf, "%12s ", "í‘°:");
+    Sprintf(buf, "%12s ", "ç¨®æ—:");
     Strcat(buf, (which == RS_RACE) ? choosing : (c == ROLE_NONE)
                                                     ? not_yet
                                                     : (c == ROLE_RANDOM)
@@ -2225,7 +2225,7 @@ winid where;
 /*JP
     Sprintf(buf, "%12s ", "gender:");
 */
-    Sprintf(buf, "%12s ", "«•Ê:");
+    Sprintf(buf, "%12s ", "æ€§åˆ¥:");
     Strcat(buf, (which == RS_GENDER) ? choosing : (g == ROLE_NONE)
                                                       ? not_yet
                                                       : (g == ROLE_RANDOM)
@@ -2235,8 +2235,8 @@ winid where;
 /*JP
     Sprintf(buf, "%12s ", "alignment:");
 */
-    Sprintf(buf, "%12s ", "‘®«:");
-#if 0 /*JP:“ú–{Œê‚Å‚Í–¼Œ‚ª©‘R*/
+    Sprintf(buf, "%12s ", "å±æ€§:");
+#if 0 /*JP:æ—¥æœ¬èªã§ã¯åè©ãŒè‡ªç„¶*/
     Strcat(buf, (which == RS_ALGNMNT) ? choosing : (a == ROLE_NONE)
                                                        ? not_yet
                                                        : (a == ROLE_RANDOM)
@@ -2278,13 +2278,13 @@ boolean preselect;
 /*JP
         what = "name";
 */
-        what = "–¼‘O";
+        what = "åå‰";
         break;
     case RS_ROLE:
 /*JP
         what = "role";
 */
-        what = "E‹Æ";
+        what = "è·æ¥­";
         f = r;
         for (i = 0; i < SIZE(roles); ++i)
             if (i != f && !rfilter.roles[i])
@@ -2293,18 +2293,18 @@ boolean preselect;
 /*JP
             constrainer = "filter";
 */
-            constrainer = "i‚è‚İ";
+            constrainer = "çµã‚Šè¾¼ã¿";
 /*JP
             forcedvalue = "role";
 */
-            forcedvalue = "E‹Æ";
+            forcedvalue = "è·æ¥­";
         }
         break;
     case RS_RACE:
 /*JP
         what = "race";
 */
-        what = "í‘°";
+        what = "ç¨®æ—";
         f = flags.initrace;
         c = ROLE_NONE; /* override player's setting */
         if (r >= 0) {
@@ -2315,7 +2315,7 @@ boolean preselect;
 /*JP
                 constrainer = "role";
 */
-                constrainer = "E‹Æ";
+                constrainer = "è·æ¥­";
                 forcedvalue = races[c].noun;
             } else if (f >= 0
                        && (allowmask & ~rfilter.mask) == races[f].selfmask) {
@@ -2324,11 +2324,11 @@ boolean preselect;
 /*JP
                 constrainer = "filter";
 */
-                constrainer = "i‚è‚İ";
+                constrainer = "çµã‚Šè¾¼ã¿";
 /*JP
                 forcedvalue = "race";
 */
-                forcedvalue = "í‘°";
+                forcedvalue = "ç¨®æ—";
             }
         }
         break;
@@ -2336,7 +2336,7 @@ boolean preselect;
 /*JP
         what = "gender";
 */
-        what = "«•Ê";
+        what = "æ€§åˆ¥";
         f = flags.initgend;
         g = ROLE_NONE;
         if (r >= 0) {
@@ -2349,7 +2349,7 @@ boolean preselect;
 /*JP
                 constrainer = "role";
 */
-                constrainer = "E‹Æ";
+                constrainer = "è·æ¥­";
                 forcedvalue = genders[g].adj;
             } else if (f >= 0
                        && (allowmask & ~rfilter.mask) == genders[f].allow) {
@@ -2358,11 +2358,11 @@ boolean preselect;
 /*JP
                 constrainer = "filter";
 */
-                constrainer = "i‚è‚İ";
+                constrainer = "çµã‚Šè¾¼ã¿";
 /*JP
                 forcedvalue = "gender";
 */
-                forcedvalue = "«•Ê";
+                forcedvalue = "æ€§åˆ¥";
             }
         }
         break;
@@ -2370,7 +2370,7 @@ boolean preselect;
 /*JP
         what = "alignment";
 */
-        what = "‘®«";
+        what = "å±æ€§";
         f = flags.initalign;
         a = ROLE_NONE;
         if (r >= 0) {
@@ -2385,7 +2385,7 @@ boolean preselect;
 /*JP
                 constrainer = "role";
 */
-                constrainer = "E‹Æ";
+                constrainer = "è·æ¥­";
         }
         if (c >= 0 && !constrainer) {
             allowmask = races[c].allow & ROLE_ALIGNMASK;
@@ -2399,7 +2399,7 @@ boolean preselect;
 /*JP
                 constrainer = "race";
 */
-                constrainer = "í‘°";
+                constrainer = "ç¨®æ—";
         }
         if (f >= 0 && !constrainer
             && (ROLE_ALIGNMASK & ~rfilter.mask) == aligns[f].allow) {
@@ -2408,14 +2408,14 @@ boolean preselect;
 /*JP
             constrainer = "filter";
 */
-            constrainer = "i‚è‚İ";
+            constrainer = "çµã‚Šè¾¼ã¿";
 /*JP
             forcedvalue = "alignment";
 */
-            forcedvalue = "‘®«";
+            forcedvalue = "å±æ€§";
         }
         if (a >= 0)
-#if 0 /*JP:“ú–{Œê‚Å‚Í–¼Œ‚ª©‘R*/
+#if 0 /*JP:æ—¥æœ¬èªã§ã¯åè©ãŒè‡ªç„¶*/
             forcedvalue = aligns[a].adj;
 #else
             forcedvalue = aligns[a].noun;
@@ -2430,7 +2430,7 @@ boolean preselect;
 /*JP
         Sprintf(buf, "%4s%s forces %s", "", constrainer, forcedvalue);
 */
-        Sprintf(buf, "%4s‚±‚Ì%s‚Å‚Í%s‚Ì‚İ", "", constrainer, forcedvalue);
+        Sprintf(buf, "%4sã“ã®%sã§ã¯%sã®ã¿", "", constrainer, forcedvalue);
         add_menu(where, NO_GLYPH, &any, 0, 0, ATR_NONE, buf,
                  MENU_UNSELECTED);
     } else if (what) {
@@ -2438,7 +2438,7 @@ boolean preselect;
 /*JP
         Sprintf(buf, "Pick%s %s first", (f >= 0) ? " another" : "", what);
 */
-        Sprintf(buf, "%s%s‚ğæ‚É‘I‚Ô", (f >= 0) ? "‘¼‚Ì" : "", what);
+        Sprintf(buf, "%s%sã‚’å…ˆã«é¸ã¶", (f >= 0) ? "ä»–ã®" : "", what);
         add_menu(where, NO_GLYPH, &any, RS_menu_let[which], 0, ATR_NONE, buf,
                  MENU_UNSELECTED);
     } else if (which == RS_filter) {
@@ -2448,7 +2448,7 @@ boolean preselect;
                  "Reset role/race/&c filtering", MENU_UNSELECTED);
 #else
         add_menu(where, NO_GLYPH, &any, '~', 0, ATR_NONE,
-                 "E‹Æ/í‘°‚È‚Ç‚Ìi‚è‚İ‚ğ‰ğœ‚·‚é", MENU_UNSELECTED);
+                 "è·æ¥­/ç¨®æ—ãªã©ã®çµã‚Šè¾¼ã¿ã‚’è§£é™¤ã™ã‚‹", MENU_UNSELECTED);
 #endif
     } else if (which == ROLE_RANDOM) {
         any.a_int = ROLE_RANDOM;
@@ -2456,7 +2456,7 @@ boolean preselect;
         add_menu(where, NO_GLYPH, &any, '*', 0, ATR_NONE, "Random",
                  preselect ? MENU_SELECTED : MENU_UNSELECTED);
 #else
-        add_menu(where, NO_GLYPH, &any, '*', 0, ATR_NONE, "ƒ‰ƒ“ƒ_ƒ€",
+        add_menu(where, NO_GLYPH, &any, '*', 0, ATR_NONE, "ãƒ©ãƒ³ãƒ€ãƒ ",
                  MENU_UNSELECTED);
 #endif
     } else if (which == ROLE_NONE) {
@@ -2465,7 +2465,7 @@ boolean preselect;
         add_menu(where, NO_GLYPH, &any, 'q', 0, ATR_NONE, "Quit",
                  preselect ? MENU_SELECTED : MENU_UNSELECTED);
 #else
-        add_menu(where, NO_GLYPH, &any, 'q', 0, ATR_NONE, "”²‚¯‚é",
+        add_menu(where, NO_GLYPH, &any, 'q', 0, ATR_NONE, "æŠœã‘ã‚‹",
                  MENU_UNSELECTED);
 #endif
     } else {
@@ -2589,7 +2589,7 @@ role_init()
 /*JP
     quest_status.godgend = !strcmpi(align_gtitle(alignmnt), "goddess");
 */
-    quest_status.godgend = !strcmpi(align_gtitle(alignmnt), "—_");
+    quest_status.godgend = !strcmpi(align_gtitle(alignmnt), "å¥³ç¥");
 
     /* Fix up infravision */
     if (mons[urace.malenum].mflags3 & M3_INFRAVISION) {
@@ -2638,25 +2638,25 @@ struct monst *mtmp;
     }
 #else
 /*
-  ‚ ‚¢‚³‚Â‚Í“ú–{Œê‚Æ‚µ‚Ä©‘R‚É‚È‚é‚æ‚¤‘å‚«‚­d—l‚ğ•ÏX
+  ã‚ã„ã•ã¤ã¯æ—¥æœ¬èªã¨ã—ã¦è‡ªç„¶ã«ãªã‚‹ã‚ˆã†å¤§ããä»•æ§˜ã‚’å¤‰æ›´
 */
     static char helo_buf[BUFSZ];
 
     switch (Role_switch) {
     case PM_KNIGHT:
-        Sprintf(helo_buf, "‚æ‚­‚¼Q‚Á‚½%s‚æ", plname);
+        Sprintf(helo_buf, "ã‚ˆããå‚ã£ãŸ%sã‚ˆ", plname);
         break;
     case PM_SAMURAI:
-        Sprintf(helo_buf, "‚æ‚­‚¼Q‚ç‚ê‚½%s‚æ", plname);
+        Sprintf(helo_buf, "ã‚ˆããå‚ã‚‰ã‚ŒãŸ%sã‚ˆ", plname);
         break;
     case PM_TOURIST:
-        Sprintf(helo_buf, "ƒAƒ[ƒn%s", plname);
+        Sprintf(helo_buf, "ã‚¢ãƒ­ãƒ¼ãƒ%s", plname);
         break;
     case PM_VALKYRIE:
-        Sprintf(helo_buf, "°‚ÌçŒìÒ%s‚æ", plname);
+        Sprintf(helo_buf, "é­‚ã®å®ˆè­·è€…%sã‚ˆ", plname);
         break;
     default:
-        Sprintf(helo_buf, "‚æ‚¤‚±‚»%s", plname);
+        Sprintf(helo_buf, "ã‚ˆã†ã“ã%s", plname);
         break;
     }
 
@@ -2685,19 +2685,19 @@ Goodbye()
 
     switch (Role_switch) {
     case PM_KNIGHT:
-        Sprintf(helo_buf, "‚³‚ç‚ÎŒhåi‚È‚é");
+        Sprintf(helo_buf, "ã•ã‚‰ã°æ•¬è™”ãªã‚‹");
         break;
     case PM_SAMURAI:
-        Sprintf(helo_buf, "‚³‚ç‚Î•m“¹‚ğu‚·");
+        Sprintf(helo_buf, "ã•ã‚‰ã°æ­¦å£«é“ã‚’å¿—ã™");
         break;
     case PM_TOURIST:
-        Sprintf(helo_buf, "ƒAƒ[ƒn");
+        Sprintf(helo_buf, "ã‚¢ãƒ­ãƒ¼ãƒ");
         break;
     case PM_VALKYRIE:
-        Sprintf(helo_buf, "‚³‚ç‚Î°‚ÌçŒìÒ");
+        Sprintf(helo_buf, "ã•ã‚‰ã°é­‚ã®å®ˆè­·è€…");
         break;
     default:
-        Sprintf(helo_buf, "‚³‚æ‚¤‚È‚ç");
+        Sprintf(helo_buf, "ã•ã‚ˆã†ãªã‚‰");
         break;
     }
 

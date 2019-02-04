@@ -1,18 +1,18 @@
-                        JNetHack 3.6.* 偺曄峏揰
+                        JNetHack 3.6.* の恃构爬
 
 
-JNetHack 3.4.* 偐傜曄峏偝傟偨庡側揰偼埲壓偺捠傝偱偡丅
+JNetHack 3.4.* から恃构された肩な爬は笆布の奶りです。
 
- * 僜乕僗僐乕僪攝晍偼Shift_JIS偵曄峏偟偰偄傑偡丅Unix娐嫬偱價儖僪偡傞応崌偼
-   EUC-JP偵曄姺偟偰偔偩偝偄丅
+ * ソ〖スコ〖ド芹邵はShift_JISに恃构しています。Unix茨董でビルドする眷圭は
+   EUC-JPに恃垂してください。
 
- * 婅偄傗媠嶦偱儐乕僓乕擖椡傪峴偆応崌丄擔杮岅偺傒傪庴偗晅偗傑偡丅
+ * 搓いや翟沪でユ〖ザ〖掐蜗を乖う眷圭、泣塑胳のみを减け烧けます。
 
- * 弌椡暥帤僐乕僪偲偟偰JIS偼巜掕偱偒側偔側傝傑偟偨丅
+ * 叫蜗矢机コ〖ドとしてJISは回年できなくなりました。
 
- * UNIX娐嫬偱偼僨僼僅儖僩偱偼暥帤僐乕僪曄姺偵iconv傪偡傞傛偆偵側偭偰偍傝丄
-   弌椡暥帤僐乕僪偲偟偰UTF-8偑巜掕壜擻偵側偭偰偄傑偡丅
+ * UNIX茨董ではデフォルトでは矢机コ〖ド恃垂にiconvをするようになっており、
+   叫蜗矢机コ〖ドとしてUTF-8が回年材墙になっています。
 
 OPTIONS=kcode:u
 
-   偲偟偰偔偩偝偄丅
+   としてください。

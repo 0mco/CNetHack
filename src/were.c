@@ -13,7 +13,7 @@
 #if 1 /*JP*/
 STATIC_DCL char *FDECL(beastname, (const char *));
 
-/*JP uƒWƒƒƒbƒJƒ‹lŠÔv‚©‚çuƒWƒƒƒbƒJƒ‹v‚ğæ‚èo‚· */
+/*JP ã€Œã‚¸ãƒ£ãƒƒã‚«ãƒ«äººé–“ã€ã‹ã‚‰ã€Œã‚¸ãƒ£ãƒƒã‚«ãƒ«ã€ã‚’å–ã‚Šå‡ºã™ */
 STATIC_OVL char *
 beastname(name)
 const char *name;
@@ -45,13 +45,13 @@ register struct monst *mon;
 /*JP
                     howler = "wolf";
 */
-                    howler = "˜T";
+                    howler = "ç‹¼";
                     break;
                 case PM_WEREJACKAL:
 /*JP
                     howler = "jackal";
 */
-                    howler = "ƒWƒƒƒbƒJƒ‹";
+                    howler = "ã‚¸ãƒ£ãƒƒã‚«ãƒ«";
                     break;
                 default:
                     howler = (char *) 0;
@@ -61,7 +61,7 @@ register struct monst *mon;
 /*JP
                     You_hear("a %s howling at the moon.", howler);
 */
-                    You_hear("Œ–é‚É%s‚ª–i‚¦‚éº‚ğ•·‚¢‚½D", howler);
+                    You_hear("æœˆå¤œã«%sãŒå ãˆã‚‹å£°ã‚’èã„ãŸï¼", howler);
             }
         }
     } else if (!rn2(30) || Protection_from_shape_changers) {
@@ -137,8 +137,8 @@ register struct monst *mon;
         pline("%s changes into a %s.", Monnam(mon),
               is_human(&mons[pm]) ? "human" : mons[pm].mname + 4);
 #else
-        pline("%s‚Í%s‚Ìp‚É‚È‚Á‚½D", Monnam(mon),
-              is_human(&mons[pm]) ? "lŠÔ" : beastname(mons[pm].mname));
+        pline("%sã¯%sã®å§¿ã«ãªã£ãŸï¼", Monnam(mon),
+              is_human(&mons[pm]) ? "äººé–“" : beastname(mons[pm].mname));
 #endif
 
     set_mon_data(mon, &mons[pm], 0);
@@ -180,7 +180,7 @@ char *genbuf;
 /*JP
                 Strcpy(genbuf, "rat");
 */
-                Strcpy(genbuf, "ƒlƒYƒ~");
+                Strcpy(genbuf, "ãƒã‚ºãƒŸ");
             break;
         case PM_WEREJACKAL:
         case PM_HUMAN_WEREJACKAL:
@@ -189,7 +189,7 @@ char *genbuf;
 /*JP
                 Strcpy(genbuf, "jackal");
 */
-                Strcpy(genbuf, "ƒWƒƒƒbƒJƒ‹");
+                Strcpy(genbuf, "ã‚¸ãƒ£ãƒƒã‚«ãƒ«");
             break;
         case PM_WEREWOLF:
         case PM_HUMAN_WEREWOLF:
@@ -198,7 +198,7 @@ char *genbuf;
 /*JP
                 Strcpy(genbuf, "wolf");
 */
-                Strcpy(genbuf, "˜T");
+                Strcpy(genbuf, "ç‹¼");
             break;
         default:
             continue;
@@ -228,8 +228,8 @@ you_were()
         /* `+4' => skip "were" prefix to get name of beast */
         Sprintf(qbuf, "Do you want to change into %s?",
                 an(mons[u.ulycn].mname + 4));
-#else /* “ú–{Œê‚Å‚Íê—pŠÖ”‚ğg‚¤ */
-        Sprintf(qbuf, "%s‚É•Ï‰»‚µ‚Ü‚·‚©H",
+#else /* æ—¥æœ¬èªã§ã¯å°‚ç”¨é–¢æ•°ã‚’ä½¿ã† */
+        Sprintf(qbuf, "%sã«å¤‰åŒ–ã—ã¾ã™ã‹ï¼Ÿ",
                 beastname(mons[u.ulycn].mname));
 #endif
         if (!paranoid_query(ParanoidWerechange, qbuf))
@@ -248,7 +248,7 @@ boolean purify;
 /*JP
         You_feel("purified.");
 */
-        You("ò‚ß‚ç‚ê‚½‚æ‚¤‚È‹C‚ª‚µ‚½D");
+        You("æµ„ã‚ã‚‰ã‚ŒãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
         set_ulycn(NON_PM); /* cure lycanthropy */
     }
     if (!Unchanging && is_were(youmonst.data)
@@ -256,7 +256,7 @@ boolean purify;
 /*JP
             || !paranoid_query(ParanoidWerechange, "Remain in beast form?")))
 */
-            || !paranoid_query(ParanoidWerechange, "b‚Ìp‚Ì‚Ü‚Ü‚Å‚¢‚éH")))
+            || !paranoid_query(ParanoidWerechange, "ç£ã®å§¿ã®ã¾ã¾ã§ã„ã‚‹ï¼Ÿ")))
         rehumanize();
     else if (is_were(youmonst.data) && !u.mtimedone)
         u.mtimedone = rn1(200, 200); /* 40% of initial were change */

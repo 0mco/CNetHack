@@ -312,7 +312,7 @@ attempt_restore:
 /*JP
         pline("Restoring save file...");
 */
-        pline("ƒZ[ƒuƒtƒ@ƒCƒ‹‚ğ•œŒ³’†DDD");
+        pline("¥»¡¼¥Ö¥Õ¥¡¥¤¥ë¤òÉü¸µÃæ¡¥¡¥¡¥");
         mark_synch(); /* flush output */
         if (dorecover(fd)) {
             resuming = TRUE; /* not starting new game */
@@ -322,7 +322,7 @@ attempt_restore:
 /*JP
                 if (yn("Do you want to keep the save file?") == 'n') {
 */
-                if (yn("ƒZ[ƒuƒtƒ@ƒCƒ‹‚ğc‚µ‚Ä‚¨‚«‚Ü‚·‚©H") == 'n') {
+                if (yn("¥»¡¼¥Ö¥Õ¥¡¥¤¥ë¤ò»Ä¤·¤Æ¤ª¤­¤Ş¤¹¤«¡©") == 'n') {
                     (void) delete_savefile();
                 } else {
                     (void) chmod(fq_save, FCMASK); /* back to readable */
@@ -653,7 +653,7 @@ wd_message()
             pline("Only user%s %s may access debug (wizard) mode.",
                   index(sysopt.wizards, ' ') ? "s" : "", tmp);
 #else
-            pline("u%sv‚Ì‚İ‚ªƒfƒoƒbƒO(ƒEƒCƒU[ƒh)ƒ‚[ƒh‚ğg—p‚Å‚«‚éD",
+            pline("¡Ö%s¡×¤Î¤ß¤¬¥Ç¥Ğ¥Ã¥°(¥¦¥¤¥¶¡¼¥É)¥â¡¼¥É¤ò»ÈÍÑ¤Ç¤­¤ë¡¥",
                   tmp);
 #endif
             free(tmp);
@@ -661,13 +661,13 @@ wd_message()
 /*JP
             pline("Entering explore/discovery mode instead.");
 */
-            pline("‚©‚í‚è‚É”­Œ©ƒ‚[ƒh‚ÖˆÚs‚·‚éD");
+            pline("¤«¤ï¤ê¤ËÈ¯¸«¥â¡¼¥É¤Ø°Ü¹Ô¤¹¤ë¡¥");
         wizard = 0, discover = 1; /* (paranoia) */
     } else if (discover)
 /*JP
         You("are in non-scoring explore/discovery mode.");
 */
-        You("ƒXƒRƒA‚ÌÚ‚ç‚È‚¢”­Œ©ƒ‚[ƒh‚Å‹N“®‚µ‚½D");
+        You("¥¹¥³¥¢¤ÎºÜ¤é¤Ê¤¤È¯¸«¥â¡¼¥É¤Çµ¯Æ°¤·¤¿¡¥");
 }
 
 /*

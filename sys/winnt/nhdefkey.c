@@ -294,8 +294,8 @@ coord *cc;
         ReadConsoleInput(hConIn, ir, 1, count);
 #else
         /*JP
-          Windows8И╚Н~В┼В═У·Ц{МъВЁУ№Ч═В╖ВщВ╞2ГoГCГgВ▄В╞В▀В─Х╘В┴В─ВнВщВ╠В┼
-          2ГoГCГgЦ┌ВЁГLГГГbГVГЕВ╡В─1ГoГCГgВ╕В┬Х╘В╖БB
+          Windows8░╩╣▀д╟д╧╞№╦▄╕ьдЄ╞■╬╧д╣дыд╚2е╨еде╚д▐д╚дсд╞╩╓д├д╞дпдыд╬д╟
+          2е╨еде╚╠▄дЄенеуе├е╖ехд╖д╞1е╨еде╚д║д─╩╓д╣бг
         */
         if (irbufnext == 1) {
             memcpy(ir, &irbuf[1], sizeof(INPUT_RECORD));

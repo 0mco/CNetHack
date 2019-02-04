@@ -27,7 +27,7 @@ Y = (149, 149, 149)
 Z = (195, 195, 195)
 0 = (100, 100, 100)
 1 = (72, 108, 108)
-# tile 0 (ïîâÆÇÃà√Ç¢ïîï™)
+# tile 0 (…Ù≤∞§Œ∞≈§§…Ù ¨)
 {
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
@@ -46,7 +46,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
 }
-# tile 1 (ï«)
+# tile 1 ( …)
 {
   ANNOA1PPPPP1NNOA
   AOOOA1P1PP11OOOA
@@ -65,7 +65,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 2 (ï«)
+# tile 2 ( …)
 {
   AAANOOAAAAANOOAA
   OOONOOA1OOONOOA1
@@ -84,7 +84,7 @@ Z = (195, 195, 195)
   1111111111111111
   AAAAAAAAAAAAAAAA
 }
-# tile 3 (ï«)
+# tile 3 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -103,7 +103,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 4 (ï«)
+# tile 4 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -122,7 +122,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 5 (ï«)
+# tile 5 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -141,7 +141,7 @@ Z = (195, 195, 195)
   1111111111111111
   AAAAAAAAAAAAAAAA
 }
-# tile 6 (ï«)
+# tile 6 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -160,7 +160,7 @@ Z = (195, 195, 195)
   1111111111111111
   AAAAAAAAAAAAAAAA
 }
-# tile 7 (ï«)
+# tile 7 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -179,7 +179,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 8 (ï«)
+# tile 8 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -198,7 +198,7 @@ Z = (195, 195, 195)
   1111111111111111
   AAAAAAAAAAAAAAAA
 }
-# tile 9 (ï«)
+# tile 9 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -217,7 +217,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 10 (ï«)
+# tile 10 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -236,7 +236,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 11 (ï«)
+# tile 11 ( …)
 {
   AAANNNNOOOOOOAAA
   NNNNAA11PPPPO111
@@ -255,7 +255,7 @@ Z = (195, 195, 195)
   A111A11PPPP1111A
   AOPPA11PPPP1OP1A
 }
-# tile 12 (èoì¸å˚)
+# tile 12 (Ω–∆˛∏˝)
 {
   AAAAAAAAAAAAAAAA
   AA............AA
@@ -274,7 +274,7 @@ Z = (195, 195, 195)
   AA............AA
   AAAAAAAAAAAAAAAA
 }
-# tile 13 (äJÇ¢ÇΩî‡)
+# tile 13 (≥´§§§ø»‚)
 {
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
@@ -293,7 +293,7 @@ Z = (195, 195, 195)
   A..............A
   AAAAAAAAAAAAAAAA
 }
-# tile 14 (äJÇ¢ÇΩî‡)
+# tile 14 (≥´§§§ø»‚)
 {
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
@@ -312,7 +312,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
 }
-# tile 15 (ï¬Ç∂ÇΩî‡)
+# tile 15 ( ƒ§∏§ø»‚)
 {
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
@@ -331,7 +331,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
 }
-# tile 16 (ï¬Ç∂ÇΩî‡)
+# tile 16 ( ƒ§∏§ø»‚)
 {
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
@@ -350,7 +350,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAAAA
   AAAAAAAAAAAAAAAA
 }
-# tile 17 (ìSñ_)
+# tile 17 (≈¥À¿)
 {
   ................
   ................
@@ -369,7 +369,7 @@ Z = (195, 195, 195)
   .BP.BP.BP.PP.PP.
   ................
 }
-# tile 18 (ñÿ)
+# tile 18 (Ã⁄)
 {
   ................
   .....FFFFFF.....
@@ -388,7 +388,7 @@ Z = (195, 195, 195)
   ...JJJJ.J.JJJA..
   ................
 }
-# tile 19 (ïîâÆÇÃè∞)
+# tile 19 (…Ù≤∞§Œæ≤)
 {
   ................
   ................
@@ -407,7 +407,7 @@ Z = (195, 195, 195)
   ................
   ................
 }
-# tile 20 (ïîâÆÇÃà√Ç¢ïîï™)
+# tile 20 (…Ù≤∞§Œ∞≈§§…Ù ¨)
 {
   .A.A.A.A.A.A.A.A
   A.A.A.A.A.A.A.A.
@@ -426,7 +426,7 @@ Z = (195, 195, 195)
   .A.A.A.A.A.A.A.A
   A.A.A.A.A.A.A.A.
 }
-# tile 21 (í òH)
+# tile 21 (ƒÃœ©)
 {
   ................
   ................
@@ -445,7 +445,7 @@ Z = (195, 195, 195)
   ................
   ................
 }
-# tile 22 (ñæÇÈÇ¢í òH)
+# tile 22 (Ã¿§Î§§ƒÃœ©)
 {
   ................
   ................
@@ -464,7 +464,7 @@ Z = (195, 195, 195)
   ................
   ................
 }
-# tile 23 (è„ÇËäKíi)
+# tile 23 (æÂ§Í≥¨√ )
 {
   AAAAAAAAAAAAAA.A
   AADJJJJJJJJJDA.A
@@ -483,7 +483,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAA.A
   AAAAAAAAAAAAAAAA
 }
-# tile 24 (â∫ÇËäKíi)
+# tile 24 (≤º§Í≥¨√ )
 {
   AAAAAAAAAAAAAA.A
   AADJJJJJJJJJDA.A
@@ -502,7 +502,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAA.A
   AAAAAAAAAAAAAAAA
 }
-# tile 25 (è„ÇËÇÕÇµÇ≤)
+# tile 25 (æÂ§Í§œ§∑§¥)
 {
   ADAAAAAAAAAAAD.A
   AADAAAANAAAADA.A
@@ -521,7 +521,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAA.A
   AAAAAAAAAAAAAAAA
 }
-# tile 26 (â∫ÇËÇÕÇµÇ≤)
+# tile 26 (≤º§Í§œ§∑§¥)
 {
   ADAAAAAAAAAAAD.A
   AADAAAANAAAADA.A
@@ -540,7 +540,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAA.A
   AAAAAAAAAAAAAAAA
 }
-# tile 27 (ç’íd)
+# tile 27 (∫◊√≈)
 {
   ................
   ................
@@ -559,7 +559,7 @@ Z = (195, 195, 195)
   ...AAAAAAAAAAA..
   ................
 }
-# tile 28 (ïÊ)
+# tile 28 ( Ë)
 {
   ................
   ................
@@ -578,7 +578,7 @@ Z = (195, 195, 195)
   FFFFFFFFFFFFFFF.
   ................
 }
-# tile 29 (âÿÇ‚Ç©Ç»ã ç¿)
+# tile 29 (≤⁄§‰§´§ ∂Ã∫¬)
 {
   ................
   .....HHHHH......
@@ -597,7 +597,7 @@ Z = (195, 195, 195)
   ................
   ................
 }
-# tile 30 (ó¨Çµë‰)
+# tile 30 (ŒÆ§∑¬Ê)
 {
   ................
   ................
@@ -616,7 +616,7 @@ Z = (195, 195, 195)
   ................
   ................
 }
-# tile 31 (êÚ)
+# tile 31 (¿Ù)
 {
   ....E....E......
   ..EEEE..EEE.....
@@ -635,7 +635,7 @@ Z = (195, 195, 195)
   ....AAAAAAAAA...
   ................
 }
-# tile 32 (êÖÇÃÇΩÇ‹Ç¡ÇΩèÍèä)
+# tile 32 (øÂ§Œ§ø§ﬁ§√§øæÏΩÍ)
 {
   ..........NNN...
   .EEEE....NE.EN..
@@ -654,7 +654,7 @@ Z = (195, 195, 195)
   .E..EE...E..EEE.
   EE....EEE.....EE
 }
-# tile 33 (ïX)
+# tile 33 (…π)
 {
   NNNNNNNNNNNNNNNN
   NNNNNNNNNNNNNNNN
@@ -673,7 +673,7 @@ Z = (195, 195, 195)
   NNNNNNNNNNNNNNNN
   NNNNNNNNNNNNNNNN
 }
-# tile 34 (ónä‚)
+# tile 34 (Õœ¥‰)
 {
   DDDDDDCDDDDDDDDD
   DDDDDCDKDDDDDDDD
@@ -692,7 +692,7 @@ Z = (195, 195, 195)
   DDDDKKDDDDCDDDDD
   DDDDDDDDDDDKDDDD
 }
-# tile 35 (ç~ÇËÇƒÇ¢ÇÈíµÇÀã¥)
+# tile 35 (πﬂ§Í§∆§§§Îƒ∑§Õ∂∂)
 {
   EKKAKKKKKKKAKKAE
   EJKKKKKKKKKKKJAA
@@ -711,7 +711,7 @@ Z = (195, 195, 195)
   EEJJJJJJJJJJJAAA
   EJKKKKKKKKKKKJAA
 }
-# tile 36 (ç~ÇËÇƒÇ¢ÇÈíµÇÀã¥)
+# tile 36 (πﬂ§Í§∆§§§Îƒ∑§Õ∂∂)
 {
   EEEEEEEEEEEEEEEE
   JEJKJEJKJEJKJEJK
@@ -730,7 +730,7 @@ Z = (195, 195, 195)
   AAAAAAAAAAAAAAAA
   AAAEAAAEAAAEAAAE
 }
-# tile 37 (è„Ç¡ÇƒÇ¢ÇÈíµÇÀã¥)
+# tile 37 (æÂ§√§∆§§§Îƒ∑§Õ∂∂)
 {
   ................
   ..JKJ.JKJ.JKJ...
@@ -749,7 +749,7 @@ Z = (195, 195, 195)
   ...AAA.AAA.AAA..
   ................
 }
-# tile 38 (è„Ç¡ÇƒÇ¢ÇÈíµÇÀã¥)
+# tile 38 (æÂ§√§∆§§§Îƒ∑§Õ∂∂)
 {
   ................
   ..JJJJJJJJJJJ...
@@ -768,7 +768,7 @@ Z = (195, 195, 195)
   ...AAAAAAAAAAA..
   ................
 }
-# tile 39 (ãÛãCÇÃÇΩÇ‹Ç¡ÇΩèÍèä)
+# tile 39 (∂ıµ§§Œ§ø§ﬁ§√§øæÏΩÍ)
 {
   BBBBBBBBBBBBBBBB
   BBBBBBBBBBBBBBBB
@@ -787,7 +787,7 @@ Z = (195, 195, 195)
   BBBBBBBBBBBBBBBB
   BBBBBBBBBBBBBBBB
 }
-# tile 40 (â_)
+# tile 40 (±¿)
 {
   BBBBBBBBBBBBBBBB
   BBBBBNNNNNNNBBBB
@@ -806,7 +806,7 @@ Z = (195, 195, 195)
   BBBBBBOOOOBBBBBB
   BBBBBBBBBBBBBBBB
 }
-# tile 41 (êÖ)
+# tile 41 (øÂ)
 {
   EEEEEEEEEEEEEEEE
   EEEEEEEEEEEEEEEE
@@ -825,7 +825,7 @@ Z = (195, 195, 195)
   EEEEEEEEEEEEEEEE
   EEEEEEEEEEEEEEEE
 }
-# tile 42 (ñÓÇÃ„©)
+# tile 42 (Ã§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -844,7 +844,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 43 (ìäÇ∞ñÓÇÃ„©)
+# tile 43 (≈Í§≤Ã§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -863,7 +863,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 44 (óéêŒÇÃ„©)
+# tile 44 (ÕÓ¿–§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -882,7 +882,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 45 (Ç´ÇµÇﬁî¬)
+# tile 45 (§≠§∑§‡»ƒ)
 {
   ................
   .....DDDDD......
@@ -901,7 +901,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 46 (åFÇÃ„©)
+# tile 46 (∑ß§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -920,7 +920,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 47 (ínóã)
+# tile 47 (√œÕÎ)
 {
   ................
   .....DDDDD......
@@ -939,7 +939,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 48 (ãêä‚ÇÃ„©)
+# tile 48 (µ¥‰§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -958,7 +958,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 49 (êáñ∞ÉKÉXÇÃ„©)
+# tile 49 (øÁÃ≤•¨•π§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -977,7 +977,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 50 (ïÖêHÇÃ„©)
+# tile 50 (…Âø©§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -996,7 +996,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 51 (âŒÇÃ„©)
+# tile 51 (≤–§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -1015,7 +1015,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 52 (óéÇµåä)
+# tile 52 (ÕÓ§∑∑Í)
 {
   AAAAAAAAAAAAAAAA
   A.AAAAAAAAAAAABA
@@ -1034,7 +1034,7 @@ Z = (195, 195, 195)
   A.PPPPPPPPPPPPPA
   AAAAAAAAAAAAAAAA
 }
-# tile 53 (ÉgÉQÇæÇÁÇØÇÃóéÇµåä)
+# tile 53 (•»•≤§¿§È§±§ŒÕÓ§∑∑Í)
 {
   AAAAAAAAAAAAAAAA
   A.AAAAAAAAAAAABA
@@ -1053,7 +1053,7 @@ Z = (195, 195, 195)
   A.PPPPPPPPPPPPPA
   AAAAAAAAAAAAAAAA
 }
-# tile 54 (åä)
+# tile 54 (∑Í)
 {
   ................
   ......AAAA......
@@ -1072,7 +1072,7 @@ Z = (195, 195, 195)
   ................
   ................
 }
-# tile 55 (óéÇµî‡)
+# tile 55 (ÕÓ§∑»‚)
 {
   AAAAAAAAAAAAAAAA
   A.AAAAAAAAAAAABA
@@ -1091,7 +1091,7 @@ Z = (195, 195, 195)
   A.PPPPPPPPPPPPPA
   AAAAAAAAAAAAAAAA
 }
-# tile 56 (èuä‘à⁄ìÆÇÃ„©)
+# tile 56 (Ω÷¥÷∞‹∆∞§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -1110,7 +1110,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 57 (ï ÇÃäKÇ÷ÇÃèuä‘à⁄ìÆÇÃ„©)
+# tile 57 ( Ã§Œ≥¨§ÿ§ŒΩ÷¥÷∞‹∆∞§ŒÊ´)
 {
   ................
   .....DDADD......
@@ -1129,7 +1129,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 58 (ñÇñ@ÇÃì¸å˚)
+# tile 58 (À‚À°§Œ∆˛∏˝)
 {
   ................
   .....DDDDD......
@@ -1148,7 +1148,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 59 (Ç≠Ç‡ÇÃëÉ)
+# tile 59 (§Ø§‚§Œ¡„)
 {
   OAOA.OA...O....O
   .O.NNNN.NOA..OOA
@@ -1167,7 +1167,7 @@ Z = (195, 195, 195)
   .OA.............
   OA..............
 }
-# tile 60 (í§ëúÇÃ„©)
+# tile 60 (ƒ¶¡¸§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -1186,7 +1186,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 61 (ñÇñ@ÇÃ„©)
+# tile 61 (À‚À°§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -1205,7 +1205,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 62 (îΩñÇñ@ãÛä‘ÇÃ„©)
+# tile 62 (»øÀ‚À°∂ı¥÷§ŒÊ´)
 {
   ................
   ......DDDDD.....
@@ -1224,7 +1224,7 @@ Z = (195, 195, 195)
   .....AAAAA......
   ................
 }
-# tile 63 (ïœâªÇÃ„©)
+# tile 63 ( —≤Ω§ŒÊ´)
 {
   ................
   .....DDDDD......
@@ -1243,7 +1243,7 @@ Z = (195, 195, 195)
   ......AAAAA.....
   ................
 }
-# tile 64 (êUìÆÇµÇƒÇ¢ÇÈèÍèä)
+# tile 64 (ø∂∆∞§∑§∆§§§ÎæÏΩÍ)
 {
   ................
   ................
@@ -1490,7 +1490,7 @@ Z = (195, 195, 195)
   .....NNNNN......
   ................
 }
-# tile 77 (ì≈â_)
+# tile 77 (∆«±¿)
 {
   BBBBBBBBBBBBBBBB
   BBBBBFFFFFFFBBBB
@@ -1509,7 +1509,7 @@ Z = (195, 195, 195)
   BBBBBBGGGGBBBBBB
   BBBBBBBBBBBBBBBB
 }
-# tile 78 (óLå¯Ç»à íu)
+# tile 78 (Õ≠∏˙§ ∞Ã√÷)
 {
   ................
   ................

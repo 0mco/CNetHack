@@ -175,7 +175,7 @@ getlin_hook_proc hook;
                 int n;
                 n = offset_in_kanji((unsigned char *)tmp, bufp - tmp);
                 if (n > 0) {
-                    /* 後で1バイト引かれるのでその分はここでは引かない */
+                    /* ｸ螟ﾇ1･ﾐ･､･ﾈｰ妤ｫ､�､�､ﾎ､ﾇ､ｽ､ﾎﾊｬ､ﾏ､ｳ､ｳ､ﾇ､ﾏｰ妤ｫ､ﾊ､､ */
                     bufp = bufp - (n - 1);
                     goto moreback;
                 }
@@ -374,7 +374,7 @@ tty_get_ext_cmd()
 /*JP
         pline("%s: unknown extended command.", buf);
 */
-        pline("%s:拡張コマンドエラー", buf);
+        pline("%s:ｳﾈﾄ･･ｳ･ﾞ･ﾉ･ｨ･鬘ｼ", buf);
         i = -1;
     }
 

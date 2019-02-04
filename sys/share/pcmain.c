@@ -620,7 +620,7 @@ attempt_restore:
 /*JP
         pline("Restoring save file...");
 */
-        pline("ƒZ[ƒuƒtƒ@ƒCƒ‹‚ð•œŒ³’†DDD");
+        pline("¥»¡¼¥Ö¥Õ¥¡¥¤¥ë¤òÉü¸µÃæ¡¥¡¥¡¥");
         mark_synch(); /* flush output */
 
         if (dorecover(fd)) {
@@ -629,12 +629,12 @@ attempt_restore:
 /*JP
                 You("are in non-scoring discovery mode.");
 */
-                pline("”­Œ©ƒ‚[ƒh‚Å‚ÍƒXƒRƒA‚Í‚Ì‚ç‚È‚¢‚æD");
+                pline("È¯¸«¥â¡¼¥É¤Ç¤Ï¥¹¥³¥¢¤Ï¤Î¤é¤Ê¤¤¤è¡¥");
             if (discover || wizard) {
 /*JP
                 if (yn("Do you want to keep the save file?") == 'n')
 */
-                if (yn("ƒZ[ƒuƒtƒ@ƒCƒ‹‚ðŽc‚µ‚Ä‚¨‚«‚Ü‚·‚©H") == 'n')
+                if (yn("¥»¡¼¥Ö¥Õ¥¡¥¤¥ë¤ò»Ä¤·¤Æ¤ª¤­¤Þ¤¹¤«¡©") == 'n')
                     (void) delete_savefile();
                 else {
                     nh_compress(fqname(SAVEF, SAVEPREFIX, 0));
@@ -666,7 +666,7 @@ attempt_restore:
 /*JP
             You("are in non-scoring discovery mode.");
 */
-            pline("”­Œ©ƒ‚[ƒh‚Å‚ÍƒXƒRƒA‚Í‚Ì‚ç‚È‚¢‚æD");
+            pline("È¯¸«¥â¡¼¥É¤Ç¤Ï¥¹¥³¥¢¤Ï¤Î¤é¤Ê¤¤¤è¡¥");
     }
 
 #ifndef NO_SIGNAL

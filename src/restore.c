@@ -142,7 +142,7 @@ boolean quietly;
 /*JP
                 pline("Finishing off %s...", xname(otmp));
 */
-                pline("%s‚ğg‚¢I‚¦‚½DDD", xname(otmp));
+                pline("%sã‚’ä½¿ã„çµ‚ãˆãŸï¼ï¼ï¼", xname(otmp));
             useup(otmp);
         }
     }
@@ -538,7 +538,7 @@ unsigned int *stuckid, *steedid;
 /*JP
         pline("Saved game was not yours.");
 */
-        pline("ƒZ[ƒu‚³‚ê‚½ƒQ[ƒ€‚Í‚ ‚È‚½‚Ì‚à‚Ì‚Å‚Í‚È‚¢D");
+        pline("ã‚»ãƒ¼ãƒ–ã•ã‚ŒãŸã‚²ãƒ¼ãƒ ã¯ã‚ãªãŸã®ã‚‚ã®ã§ã¯ãªã„ï¼");
         if (!wizard)
             return FALSE;
     }
@@ -594,7 +594,7 @@ unsigned int *stuckid, *steedid;
 #if 0 /*JP*/
         You("were not healthy enough to survive restoration.");
 #else
-        You("ÄŠJ‚Å‚«‚é‚Ù‚ÇŒ’N‚Å‚Í‚È‚©‚Á‚½D");
+        You("å†é–‹ã§ãã‚‹ã»ã©å¥åº·ã§ã¯ãªã‹ã£ãŸï¼");
 #endif
         /* wiz1_level.dlevel is used by mklev.c to see if lots of stuff is
          * uninitialized, so we only have to set it and not the other stuff.
@@ -737,7 +737,7 @@ xchar ltmp;
 /*JP
         pline("Not enough space on `%s' to restore your game.", levels);
 */
-        pline("ƒQ[ƒ€‚ğÄŠJ‚·‚é‚½‚ß‚Ì'%s'‚Ì‚½‚ß‚ÌƒXƒy[ƒX‚ª‚È‚¢D", levels);
+        pline("ã‚²ãƒ¼ãƒ ã‚’å†é–‹ã™ã‚‹ãŸã‚ã®'%s'ã®ãŸã‚ã®ã‚¹ãƒšãƒ¼ã‚¹ãŒãªã„ï¼", levels);
 
         /* Remove levels and bones that may have been created.
          */
@@ -765,7 +765,7 @@ xchar ltmp;
 /*JP
         pline("Be seeing you...");
 */
-        pline("‚Ü‚½‰ï‚¢‚Ü‚µ‚å‚¤DDD");
+        pline("ã¾ãŸä¼šã„ã¾ã—ã‚‡ã†ï¼ï¼ï¼");
         nh_terminate(EXIT_SUCCESS);
     }
 #endif /* MFLOPPY */
@@ -830,9 +830,9 @@ register int fd;
         flags.debug ? " while in debug mode"
                     : flags.explore ? " while in explore mode" : "");
 #else
-    You("%s%s‚Ì’n‰º%dŠK‚É–ß‚Á‚Ä‚«‚½D",
-        flags.debug ? "ƒEƒBƒU[ƒhƒ‚[ƒh’†‚Ì"
-                    : flags.explore ? "’TŒŸƒ‚[ƒh’†‚Ì" : "",
+    You("%s%sã®åœ°ä¸‹%déšã«æˆ»ã£ã¦ããŸï¼",
+        flags.debug ? "ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰ãƒ¢ãƒ¼ãƒ‰ä¸­ã®"
+                    : flags.explore ? "æ¢æ¤œãƒ¢ãƒ¼ãƒ‰ä¸­ã®" : "",
         dungeons[u.uz.dnum].dname, depth(&u.uz));
 #endif
     curs(WIN_MAP, 1, 1);
@@ -991,15 +991,15 @@ char *reason;
 /*JP
     pline("Strange, this map is not as I remember it.");
 */
-    pline("–­‚¾C‚±‚Ì’n}‚Í„‚ªŠo‚¦‚Ä‚¢‚½‚à‚Ì‚Æˆá‚¤D");
+    pline("å¦™ã ï¼Œã“ã®åœ°å›³ã¯ç§ãŒè¦šãˆã¦ã„ãŸã‚‚ã®ã¨é•ã†ï¼");
 /*JP
     pline("Somebody is trying some trickery here...");
 */
-    pline("‚¾‚ê‚©‚ª‚±‚±‚Å‚¢‚©‚³‚Ü‚ğ‚µ‚æ‚¤‚Æ‚µ‚½‚æ‚¤‚¾DDD");
+    pline("ã ã‚Œã‹ãŒã“ã“ã§ã„ã‹ã•ã¾ã‚’ã—ã‚ˆã†ã¨ã—ãŸã‚ˆã†ã ï¼ï¼ï¼");
 /*JP
     pline("This game is void.");
 */
-    pline("‚±‚ÌƒQ[ƒ€‚Í–³Œø‚Æ‚È‚éD");
+    pline("ã“ã®ã‚²ãƒ¼ãƒ ã¯ç„¡åŠ¹ã¨ãªã‚‹ï¼");
     Strcpy(killer.name, reason ? reason : "");
     done(TRICKED);
 }

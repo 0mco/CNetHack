@@ -389,7 +389,7 @@ MainWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
         } /* end switch */
     } break;
 
-#if 1 /*JP*//*‘SŠp•¶š‘Î‰*/
+#if 1 /*JP*//*Á´³ÑÊ¸»úÂĞ±ş*/
     case WM_CHAR:
     {
         if (doublebyte == 1) {
@@ -484,7 +484,7 @@ MainWndProc(HWND hWnd, UINT message, WPARAM wParam, LPARAM lParam)
 /*JP
             switch (NHMessageBox(hWnd, TEXT("Save?"),
 */
-            switch (NHMessageBox(hWnd, TEXT("•Û‘¶‚µ‚ÄI—¹‚µ‚Ü‚·‚©H"),
+            switch (NHMessageBox(hWnd, TEXT("ÊİÂ¸¤·¤Æ½ªÎ»¤·¤Ş¤¹¤«¡©"),
                                  MB_YESNOCANCEL | MB_ICONQUESTION)) {
             case IDYES:
 #ifdef SAFERHANGUP

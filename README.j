@@ -12,25 +12,25 @@ this program.  Japanization part of JNetHack obey original license
 completely.  Japanization part copyright belong to the authors(see
 below).
 
-JNetHack‚Í NetHack-3.6.1‚É“ú–{Œê‰»‚ğ{‚µ‚½‚à‚Ì‚Å‚·DJNetHack‚ğÄ”z•z‚·‚é
-Û‚ÍƒIƒŠƒWƒiƒ‹‚ÌNetHack-3.6.1‚Ìƒ‰ƒCƒZƒ“ƒX (dat/license)‚ğ‚æ‚­“Ç‚ñ‚Å‚­‚¾
-‚³‚¢D“ú–{Œê‰»‚³‚ê‚½ NetHack‚ÍCƒIƒŠƒWƒiƒ‹‚Ì”z•z‹K’è‚ÉŠ®‘S‚É]‚Á‚Ä‚¢‚Ü‚·D
-“ú–{Œê‰»‚³‚ê‚½•”•ª‚Ì Copyright‚ÍìÒ‚ç‚É‚ ‚è‚Ü‚·(‰º‹LQl)D‚Ü‚½CƒIƒŠƒW
-ƒiƒ‹‚Ìƒ‰ƒCƒZƒ“ƒX‚ÅŒ¾‚¤‚Æ‚±‚ë‚Ì NetHack‚Æ‚Í JNetHack ‚ğ‚àŠÜ‚Ş‚Æ‚µ‚Ü‚·D
+JNetHack¤Ï NetHack-3.6.1¤ËÆüËÜ¸ì²½¤ò»Ü¤·¤¿¤â¤Î¤Ç¤¹¡¥JNetHack¤òºÆÇÛÉÛ¤¹¤ë
+ºİ¤Ï¥ª¥ê¥¸¥Ê¥ë¤ÎNetHack-3.6.1¤Î¥é¥¤¥»¥ó¥¹ (dat/license)¤ò¤è¤¯ÆÉ¤ó¤Ç¤¯¤À
+¤µ¤¤¡¥ÆüËÜ¸ì²½¤µ¤ì¤¿ NetHack¤Ï¡¤¥ª¥ê¥¸¥Ê¥ë¤ÎÇÛÉÛµ¬Äê¤Ë´°Á´¤Ë½¾¤Ã¤Æ¤¤¤Ş¤¹¡¥
+ÆüËÜ¸ì²½¤µ¤ì¤¿ÉôÊ¬¤Î Copyright¤Ïºî¼Ô¤é¤Ë¤¢¤ê¤Ş¤¹(²¼µ­»²¹Í)¡¥¤Ş¤¿¡¤¥ª¥ê¥¸
+¥Ê¥ë¤Î¥é¥¤¥»¥ó¥¹¤Ç¸À¤¦¤È¤³¤í¤Î NetHack¤È¤Ï JNetHack ¤ò¤â´Ş¤à¤È¤·¤Ş¤¹¡¥
 
 
-			     ’˜ìŒ Òˆê——
+			     Ãøºî¸¢¼Ô°ìÍ÷
 
 Issei Numata		HAMADA Naoki		Shigehiro Miyashita
 Tomoyuki Shiraishi	Kazuhiro FUjieda	Kunedog
-Shinkou Awatsu		Takeshi Nishimura	‚“cK¡
-SHIRAKATA Kentaro	”Â‘q[—m		”óŒû—Yˆê
+Shinkou Awatsu		Takeshi Nishimura	¹âÅÄ¹¬¼£
+SHIRAKATA Kentaro	ÈÄÁÒ½¼ÍÎ		Èõ¸ıÍº°ì
 Haruko Numata
 
-				 Ó«
+				 ¼Õ¼­
 				   
-ˆÈ‰º‚ÉC‚½‚í‚¢‚à‚È‚¢‚±‚Æ‚©‚çŒµ‚µ‚¢‚±‚Æ‚Ü‚ÅC‹Md‚Èl¶‚Ìˆê•”•ª‚ğ‚­‚¾‚ç
-‚È‚¢‚±‚Æ‚É–v“ª‚µ‚½lŠÔ‚Ì–¼‚ğ¦‚·D
+°Ê²¼¤Ë¡¤¤¿¤ï¤¤¤â¤Ê¤¤¤³¤È¤«¤é¸·¤·¤¤¤³¤È¤Ş¤Ç¡¤µ®½Å¤Ê¿ÍÀ¸¤Î°ìÉôÊ¬¤ò¤¯¤À¤é
+¤Ê¤¤¤³¤È¤ËË×Æ¬¤·¤¿¿Í´Ö¤ÎÌ¾¤ò¼¨¤¹¡¥
 				   
 aBE TOru		HAMADA Naoki		Shigehiro Miyashita
 Shinkou Awatsu		Tomoyuki Shiraishi	Masayuki Koba
@@ -46,12 +46,12 @@ MAKOTO Matsushita	Sayu			IIDA Yosiaki
 Satoshi Asami		OZAWA Sakuro		FUCHIGAMI Masachika
 KIHARA Hideto		UCHIDA Toshiaki		Satoh Yoshiyuki
 Terishige Fukui		Yamamoto Hirotaka	Hiramoto Kouji
-MORIMOTO Kenji		“à“c@˜a—m		Noritaka Ishizumi
+MORIMOTO Kenji		ÆâÅÄ¡¡ÏÂÍÎ		Noritaka Ishizumi
 Yosuke Mitsumath	Kenji Gotoh		Terushige Fukui
-‚¤‚¦‚¾ ‚³‚Æ‚µ		´…“ª			Hirata Makoto
+¤¦¤¨¤À ¤µ¤È¤·		À¶¿åÆ¬			Hirata Makoto
 FUmiki Niioka		Akira Tsuneduka		Tsubai Masanari
 Shinmyoh Koji		Yukihiko Aoki		Hideaki YOSHIFUJI
-‹v—¯Œ«¡		Niizato Manabu		” R —m
+µ×Î±¸­¼£		Niizato Manabu		È¢»³ ÍÎ
 G-HAL
 
-‚¨‚æ‚ÑCdq-ml‚Ìƒƒ“ƒo[
+¤ª¤è¤Ó¡¤dq-ml¤Î¥á¥ó¥Ğ¡¼

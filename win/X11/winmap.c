@@ -1179,7 +1179,7 @@ Cardinal *num_params;
         }
 #if 1 /*JP*/
         /*
-              ‹­ˆø‚É
+              ¶¯°ú¤Ë
          */
         if(!iflags.num_pad){
             if(keysym == XK_KP_1 || keysym == XK_KP_End){

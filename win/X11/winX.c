@@ -365,7 +365,7 @@ XtPointer       data;
                            DefaultVisual(dpy, screen),
                            AllocNone);
     /*
-      Žè”²‚«
+      ¼êÈ´¤­
      */
     black.red = 0;
     black.green = 0;

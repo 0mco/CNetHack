@@ -956,19 +956,19 @@ init_dungeons()
 /*JP
     quest_dnum = dname_to_dnum("The Quest");
 */
-    quest_dnum = dname_to_dnum("ƒNƒGƒXƒg");
+    quest_dnum = dname_to_dnum("ã‚¯ã‚¨ã‚¹ãƒˆ");
 /*JP
     sokoban_dnum = dname_to_dnum("Sokoban");
 */
-    sokoban_dnum = dname_to_dnum("‘qŒÉ”Ô");
+    sokoban_dnum = dname_to_dnum("å€‰åº«ç•ª");
 /*JP
     mines_dnum = dname_to_dnum("The Gnomish Mines");
 */
-    mines_dnum = dname_to_dnum("ƒm[ƒ€‚ÌzR");
+    mines_dnum = dname_to_dnum("ãƒãƒ¼ãƒ ã®é‰±å±±");
 /*JP
     tower_dnum = dname_to_dnum("Vlad's Tower");
 */
-    tower_dnum = dname_to_dnum("ƒ”ƒ‰ƒhŒò‚Ì“ƒ");
+    tower_dnum = dname_to_dnum("ãƒ´ãƒ©ãƒ‰ä¾¯ã®å¡”");
 
     /* one special fixup for dummy surface level */
     if ((x = find_level("dummy")) != 0) {
@@ -1667,7 +1667,7 @@ const char *nam;
     } else {
         /* no matching annotation, check whether they used a name we know */
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Íˆ—‚µ‚È‚¢*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯å‡¦ç†ã—ãªã„*/
         /* allow strings like "the oracle level" to find "oracle" */
         if (!strncmpi(nam, "the ", 4))
             nam += 4;
@@ -1804,27 +1804,27 @@ int type;
 /*JP
         return "Portal";
 */
-        return "–‚–@‚Ì“ü‚èŒû";
+        return "é­”æ³•ã®å…¥ã‚Šå£";
     case BR_NO_END1:
 /*JP
         return "Connection";
 */
-        return "Ú‘±•”";
+        return "æ¥ç¶šéƒ¨";
     case BR_NO_END2:
 /*JP
         return "One way stair";
 */
-        return "ˆê•û’Ês‚ÌŠK’i";
+        return "ä¸€æ–¹é€šè¡Œã®éšæ®µ";
     case BR_STAIR:
 /*JP
         return "Stair";
 */
-        return "ŠK’i";
+        return "éšæ®µ";
     }
 /*JP
     return " (unknown)";
 */
-    return " (•s–¾)";
+    return " (ä¸æ˜)";
 }
 
 STATIC_OVL char
@@ -1857,7 +1857,7 @@ struct lchoice *lchoices_p;
                     br_string(br->type),
                     dungeons[br->end2.dnum].dname, depth(&br->end1));
 #else
-            Sprintf(buf, "%c %s‚©‚ç%s: %d",
+            Sprintf(buf, "%c %sã‹ã‚‰%s: %d",
                     bymenu ? chr_u_on_lvl(&br->end1) : ' ',
                     br_string(br->type),
                     dungeons[br->end2.dnum].dname, depth(&br->end1));
@@ -1902,14 +1902,14 @@ xchar *rdgn;
 /*JP
         descr = unplaced ? "depth" : "level";
 */
-        descr = unplaced ? "’n‰º" : "ƒŒƒxƒ‹";
+        descr = unplaced ? "åœ°ä¸‹" : "ãƒ¬ãƒ™ãƒ«";
         nlev = dptr->num_dunlevs;
         if (nlev > 1)
 #if 0 /*JP*/
             Sprintf(buf, "%s: %s %d to %d", dptr->dname, makeplural(descr),
                     dptr->depth_start, dptr->depth_start + nlev - 1);
 #else
-            Sprintf(buf, "%s: %s%d‚©‚ç%d", dptr->dname, descr,
+            Sprintf(buf, "%s: %s%dã‹ã‚‰%d", dptr->dname, descr,
                     dptr->depth_start, dptr->depth_start + nlev - 1);
 #endif
         else
@@ -1921,13 +1921,13 @@ xchar *rdgn;
 /*JP
                 Strcat(buf, ", entrance from below");
 */
-                Strcat(buf, ", ‰º‚©‚ç‚Ì“ü‚èŒû");
+                Strcat(buf, ", ä¸‹ã‹ã‚‰ã®å…¥ã‚Šå£");
             else
 #if 0 /*JP*/
                 Sprintf(eos(buf), ", entrance on %d",
                         dptr->depth_start + dptr->entry_lev - 1);
 #else
-                Sprintf(eos(buf), ", %d‚Ì“ü‚èŒû",
+                Sprintf(eos(buf), ", %dã®å…¥ã‚Šå£",
                         dptr->depth_start + dptr->entry_lev - 1);
 #endif
         }
@@ -1975,7 +1975,7 @@ xchar *rdgn;
 /*JP
         end_menu(win, "Level teleport to where:");
 */
-        end_menu(win, "‚Ç‚±‚ÉuŠÔˆÚ“®‚·‚éF");
+        end_menu(win, "ã©ã“ã«ç¬é–“ç§»å‹•ã™ã‚‹ï¼š");
         n = select_menu(win, PICK_ONE, &selected);
         destroy_nhwindow(win);
         if (n > 0) {
@@ -1998,14 +1998,14 @@ xchar *rdgn;
 /*JP
                 putstr(win, 0, "Floating branches");
 */
-                putstr(win, 0, "•‚“®•ªŠò");
+                putstr(win, 0, "æµ®å‹•åˆ†å²");
                 first = FALSE;
             }
 #if 0 /*JP*/
             Sprintf(buf, "   %s to %s", br_string(br->type),
                     dungeons[br->end2.dnum].dname);
 #else
-            Sprintf(buf, "   %s‚©‚ç%s", br_string(br->type),
+            Sprintf(buf, "   %sã‹ã‚‰%s", br_string(br->type),
                     dungeons[br->end2.dnum].dname);
 #endif
             putstr(win, 0, buf);
@@ -2019,7 +2019,7 @@ xchar *rdgn;
         Sprintf(buf, "Invocation position @ (%d,%d), hero @ (%d,%d)",
                 inv_pos.x, inv_pos.y, u.ux, u.uy);
 #else
-        Sprintf(buf, "”­“®ˆÊ’u @ (%d,%d), ƒvƒŒƒCƒ„[ @ (%d,%d)",
+        Sprintf(buf, "ç™ºå‹•ä½ç½® @ (%d,%d), ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ @ (%d,%d)",
                 inv_pos.x, inv_pos.y, u.ux, u.uy);
 #endif
         putstr(win, 0, buf);
@@ -2049,7 +2049,7 @@ xchar *rdgn;
 #else
         else if (Is_earthlevel(&u.uz) || Is_waterlevel(&u.uz)
                  || Is_firelevel(&u.uz) || Is_airlevel(&u.uz)
-                 || Is_qstart(&u.uz) || at_dgn_entrance("ƒNƒGƒXƒg")
+                 || Is_qstart(&u.uz) || at_dgn_entrance("ã‚¯ã‚¨ã‚¹ãƒˆ")
                  || Is_knox(&u.uz))
 #endif
             Strcpy(buf, "No portal found.");
@@ -2140,7 +2140,7 @@ donamelevel()
         Sprintf(tmpbuf, "Replace annotation \"%.30s%s\" with?", mptr->custom,
                 (strlen(mptr->custom) > 30) ? "..." : "");
 #else
-        Sprintf(tmpbuf, "Œ»İ‚Ìƒƒ‚u%.30s%sv‚ğ‰½‚É‘‚«Š·‚¦‚éH", mptr->custom,
+        Sprintf(tmpbuf, "ç¾åœ¨ã®ãƒ¡ãƒ¢ã€Œ%.30s%sã€ã‚’ä½•ã«æ›¸ãæ›ãˆã‚‹ï¼Ÿ", mptr->custom,
                 strlen(mptr->custom) > 30 ? "..." : "");
 #endif
         getlin(tmpbuf, nbuf);
@@ -2149,7 +2149,7 @@ donamelevel()
 /*JP
         getlin("What do you want to call this dungeon level?", nbuf);
 */
-        getlin("‚±‚ÌŠK‚ğ‰½‚ÆŒÄ‚ÔH", nbuf);
+        getlin("ã“ã®éšã‚’ä½•ã¨å‘¼ã¶ï¼Ÿ", nbuf);
 
     /* empty input or ESC means don't add or change annotation;
        space-only means discard current annotation without adding new one */
@@ -2527,7 +2527,7 @@ recalc_mapseen()
 /*JP
     mptr->flags.quest_summons = (at_dgn_entrance("The Quest")
 */
-    mptr->flags.quest_summons = (at_dgn_entrance("ƒNƒGƒXƒg")
+    mptr->flags.quest_summons = (at_dgn_entrance("ã‚¯ã‚¨ã‚¹ãƒˆ")
                                  && u.uevent.qcalled
                                  && !(u.uevent.qcompleted
                                       || u.uevent.qexpelled
@@ -2826,7 +2826,7 @@ const char *obj;
     /* players are computer scientists: 0, 1, 2, n */
     switch (x) {
     case 0:
-/*JP:‚±‚±‚É‚Í—ˆ‚È‚¢‚Í‚¸*/
+/*JP:ã“ã“ã«ã¯æ¥ãªã„ã¯ãš*/
         return "no";
     /* an() returns too much.  index is ok in this case */
     case 1:
@@ -2838,12 +2838,12 @@ const char *obj;
 /*JP
         return "some";
 */
-        return "“ñ‚Â‚Ì";
+        return "äºŒã¤ã®";
     case 3:
 /*JP
         return "many";
 */
-        return "‘½‚­‚Ì";
+        return "å¤šãã®";
     }
 
     return "(unknown)";
@@ -2863,19 +2863,19 @@ branch *br;
 /*JP
         return closed_portal ? "Sealed portal" : "Portal";
 */
-        return closed_portal ? "••ˆó‚³‚ê‚½–‚–@‚Ì“üŒû" : "–‚–@‚Ì“üŒû";
+        return closed_portal ? "å°å°ã•ã‚ŒãŸé­”æ³•ã®å…¥å£" : "é­”æ³•ã®å…¥å£";
     case BR_NO_END1:
         return "Connection";
     case BR_NO_END2:
 /*JP
         return br->end1_up ? "One way stairs up" : "One way stairs down";
 */
-        return br->end1_up ? "ã‚è•Ğ“¹ŠK’i" : "‰º‚è•Ğ“¹ŠK’i";
+        return br->end1_up ? "ä¸Šã‚Šç‰‡é“éšæ®µ" : "ä¸‹ã‚Šç‰‡é“éšæ®µ";
     case BR_STAIR:
 /*JP
         return br->end1_up ? "Stairs up" : "Stairs down";
 */
-        return br->end1_up ? "ã‚èŠK’i" : "‰º‚èŠK’i";
+        return br->end1_up ? "ä¸Šã‚Šéšæ®µ" : "ä¸‹ã‚Šéšæ®µ";
     }
 
     return "(unknown)";
@@ -2895,38 +2895,38 @@ int indx;
 /*JP
         Strcpy(outbuf, "Astral Plane");
 */
-        Strcpy(outbuf, "“VãŠE");
+        Strcpy(outbuf, "å¤©ä¸Šç•Œ");
         break;
     case -4:
 /*JP
         planename = "Water";
 */
-        planename = "…";
+        planename = "æ°´";
         break;
     case -3:
 /*JP
         planename = "Fire";
 */
-        planename = "‰Î";
+        planename = "ç«";
         break;
     case -2:
 /*JP
         planename = "Air";
 */
-        planename = "•—";
+        planename = "é¢¨";
         break;
     case -1:
 /*JP
         planename = "Earth";
 */
-        planename = "“y";
+        planename = "åœŸ";
         break;
     }
     if (planename)
 /*JP
         Sprintf(outbuf, "Plane of %s", planename);
 */
-        Sprintf(outbuf, "%s‚Ì¸—ìŠE", planename);
+        Sprintf(outbuf, "%sã®ç²¾éœŠç•Œ", planename);
     else if (!*outbuf)
         Sprintf(outbuf, "unknown plane #%d", indx);
     return outbuf;
@@ -2939,7 +2939,7 @@ int rtype;
 #if 0 /*JP*/
     const char *str = "shop"; /* catchall */
 #else
-    const char *str = "“X"; /* catchall */
+    const char *str = "åº—"; /* catchall */
 #endif
 
     /* Yuck, redundancy...but shclass.name doesn't cut it as a noun */
@@ -2948,73 +2948,73 @@ int rtype;
 /*JP
         str = "untended shop";
 */
-        str = "•úŠü‚³‚ê‚½“X";
+        str = "æ”¾æ£„ã•ã‚ŒãŸåº—";
         break; /* see recalc_mapseen */
     case SHOPBASE:
 /*JP
         str = "general store";
 */
-        str = "G‰İ“X";
+        str = "é›‘è²¨åº—";
         break;
     case ARMORSHOP:
 /*JP
         str = "armor shop";
 */
-        str = "–h‹ï“X";
+        str = "é˜²å…·åº—";
         break;
     case SCROLLSHOP:
 /*JP
         str = "scroll shop";
 */
-        str = "Šª•¨“X";
+        str = "å·»ç‰©åº—";
         break;
     case POTIONSHOP:
 /*JP
         str = "potion shop";
 */
-        str = "–ò“X";
+        str = "è–¬åº—";
         break;
     case WEAPONSHOP:
 /*JP
         str = "weapon shop";
 */
-        str = "•Ší“X";
+        str = "æ­¦å™¨åº—";
         break;
     case FOODSHOP:
 /*JP
         str = "delicatessen";
 */
-        str = "H—¿•i“X";
+        str = "é£Ÿæ–™å“åº—";
         break;
     case RINGSHOP:
 /*JP
         str = "jewelers";
 */
-        str = "•óÎ“X";
+        str = "å®çŸ³åº—";
         break;
     case WANDSHOP:
 /*JP
         str = "wand shop";
 */
-        str = "ñ“X";
+        str = "æ–åº—";
         break;
     case BOOKSHOP:
 /*JP
         str = "bookstore";
 */
-        str = "‘“X";
+        str = "æ›¸åº—";
         break;
     case FODDERSHOP:
 /*JP
         str = "health food store";
 */
-        str = "Œ’NH•i“X";
+        str = "å¥åº·é£Ÿå“åº—";
         break;
     case CANDLESHOP:
 /*JP
         str = "lighting shop";
 */
-        str = "Æ–¾“X";
+        str = "ç…§æ˜åº—";
         break;
     default:
         break;
@@ -3105,7 +3105,7 @@ boolean printdun;
 /*JP
             Sprintf(buf, "%s: levels %d up to %d",
 */
-            Sprintf(buf, "%s: %dŠK‚©‚ç%dŠK",
+            Sprintf(buf, "%s: %déšã‹ã‚‰%déš",
                     dungeons[dnum].dname,
                     depthstart + dungeons[dnum].entry_lev - 1,
                     depthstart + dungeons[dnum].dunlev_ureached - 1);
@@ -3113,7 +3113,7 @@ boolean printdun;
 /*JP
             Sprintf(buf, "%s: levels %d to %d",
 */
-            Sprintf(buf, "%s: %dŠK‚©‚ç%dŠK",
+            Sprintf(buf, "%s: %déšã‹ã‚‰%déš",
                     dungeons[dnum].dname, depthstart,
                     depthstart + dungeons[dnum].dunlev_ureached - 1);
         putstr(win, !final ? ATR_INVERSE : 0, buf);
@@ -3127,7 +3127,7 @@ boolean printdun;
 /*JP
         Sprintf(buf, "%sLevel %d:", TAB, i);
 */
-        Sprintf(buf, "%s%dŠK:", TAB, i);
+        Sprintf(buf, "%s%déš:", TAB, i);
 
     /* wizmode prints out proto dungeon names for clarity */
     if (wizard) {
@@ -3146,10 +3146,10 @@ boolean printdun;
                   : (final == 1 && how == ESCAPED) ? "left from"
                     : "were");
 #else
-        Sprintf(eos(buf), " <- ‚±‚±%sD",
-                (!final || (final == 1 && how == ASCENDED)) ? "‚É‚¢‚é"
-                  : (final == 1 && how == ESCAPED) ? "‚©‚ç”²‚¯‚½"
-                    : "‚É‚¢‚½");
+        Sprintf(eos(buf), " <- ã“ã“%sï¼",
+                (!final || (final == 1 && how == ASCENDED)) ? "ã«ã„ã‚‹"
+                  : (final == 1 && how == ESCAPED) ? "ã‹ã‚‰æŠœã‘ãŸ"
+                    : "ã«ã„ãŸ");
 #endif
     putstr(win, !final ? ATR_BOLD : 0, buf);
 
@@ -3168,7 +3168,7 @@ boolean printdun;
 /*JP
                 ADDNTOBUF("shop", mptr->feat.nshop);
 */
-                ADDNTOBUF("“X", mptr->feat.nshop);
+                ADDNTOBUF("åº—", mptr->feat.nshop);
             else
                 Sprintf(eos(buf), "%s%s", COMMA,
                         an(shop_string(mptr->feat.shoptype)));
@@ -3179,12 +3179,12 @@ boolean printdun;
 /*JP
                 ADDNTOBUF("altar", mptr->feat.naltar);
 */
-                ADDNTOBUF("Õ’d", mptr->feat.naltar);
+                ADDNTOBUF("ç¥­å£‡", mptr->feat.naltar);
             else
 /*JP
                 ADDNTOBUF("temple", mptr->feat.ntemple);
 */
-                ADDNTOBUF("›‰@", mptr->feat.ntemple);
+                ADDNTOBUF("å¯ºé™¢", mptr->feat.ntemple);
 
             /* only print out altar's god if they are all to your god */
             if (Amask2align(Msa2amask(mptr->feat.msalign)) == u.ualign.type)
@@ -3196,23 +3196,23 @@ boolean printdun;
 /*JP
         ADDNTOBUF("throne", mptr->feat.nthrone);
 */
-        ADDNTOBUF("‹ÊÀ", mptr->feat.nthrone);
+        ADDNTOBUF("ç‰åº§", mptr->feat.nthrone);
 /*JP
         ADDNTOBUF("fountain", mptr->feat.nfount);
 */
-        ADDNTOBUF("ò", mptr->feat.nfount);
+        ADDNTOBUF("æ³‰", mptr->feat.nfount);
 /*JP
         ADDNTOBUF("sink", mptr->feat.nsink);
 */
-        ADDNTOBUF("—¬‚µ‘ä", mptr->feat.nsink);
+        ADDNTOBUF("æµã—å°", mptr->feat.nsink);
 /*JP
         ADDNTOBUF("grave", mptr->feat.ngrave);
 */
-        ADDNTOBUF("•æ", mptr->feat.ngrave);
+        ADDNTOBUF("å¢“", mptr->feat.ngrave);
 /*JP
         ADDNTOBUF("tree", mptr->feat.ntree);
 */
-        ADDNTOBUF("–Ø", mptr->feat.ntree);
+        ADDNTOBUF("æœ¨", mptr->feat.ntree);
 #if 0
         ADDTOBUF("water", mptr->feat.water);
         ADDTOBUF("lava", mptr->feat.lava);
@@ -3232,43 +3232,43 @@ boolean printdun;
 /*JP
         Sprintf(buf, "%sOracle of Delphi.", PREFIX);
 */
-        Sprintf(buf, "%sƒfƒ‹ƒtƒ@ƒC‚Ì_“aD", PREFIX);
+        Sprintf(buf, "%sãƒ‡ãƒ«ãƒ•ã‚¡ã‚¤ã®ç¥æ®¿ï¼", PREFIX);
     } else if (In_sokoban(&mptr->lev)) {
 #if 0 /*JP*/
         Sprintf(buf, "%s%s.", PREFIX,
                 mptr->flags.sokosolved ? "Solved" : "Unsolved");
 #else
         Sprintf(buf, "%s%s.", PREFIX,
-                mptr->flags.sokosolved ? "ƒNƒŠƒAÏ" : "–¢ƒNƒŠƒA");
+                mptr->flags.sokosolved ? "ã‚¯ãƒªã‚¢æ¸ˆ" : "æœªã‚¯ãƒªã‚¢");
 #endif
     } else if (mptr->flags.bigroom) {
 /*JP
         Sprintf(buf, "%sA very big room.", PREFIX);
 */
-        Sprintf(buf, "%s‚Æ‚Ä‚à‘å‚«‚¢•”‰®D", PREFIX);
+        Sprintf(buf, "%sã¨ã¦ã‚‚å¤§ãã„éƒ¨å±‹ï¼", PREFIX);
     } else if (mptr->flags.roguelevel) {
 /*JP
         Sprintf(buf, "%sA primitive area.", PREFIX);
 */
-        Sprintf(buf, "%s’Pƒ‚È•”‰®D", PREFIX);
+        Sprintf(buf, "%så˜ç´”ãªéƒ¨å±‹ï¼", PREFIX);
     } else if (on_level(&mptr->lev, &qstart_level)) {
 #if 0 /*JP*/
         Sprintf(buf, "%sHome%s.", PREFIX,
                 mptr->flags.unreachable ? " (no way back...)" : "");
 #else
-        Sprintf(buf, "%sŒÌ‹½%sD", PREFIX,
-                mptr->flags.unreachable ? "(–ß‚ê‚È‚¢DDD)" : "");
+        Sprintf(buf, "%sæ•…éƒ·%sï¼", PREFIX,
+                mptr->flags.unreachable ? "(æˆ»ã‚Œãªã„ï¼ï¼ï¼)" : "");
 #endif
         if (u.uevent.qcompleted)
 /*JP
             Sprintf(buf, "%sCompleted quest for %s.", PREFIX, ldrname());
 */
-            Sprintf(buf, "%s%s‚Ì‚½‚ß‚ÉƒNƒGƒXƒg‚ğŠ®‹‚µ‚½D", PREFIX, ldrname());
+            Sprintf(buf, "%s%sã®ãŸã‚ã«ã‚¯ã‚¨ã‚¹ãƒˆã‚’å®Œé‚ã—ãŸï¼", PREFIX, ldrname());
         else if (mptr->flags.questing)
 /*JP
             Sprintf(buf, "%sGiven quest by %s.", PREFIX, ldrname());
 */
-            Sprintf(buf, "%s%s‚©‚çƒNƒGƒXƒg‚ğ—^‚¦‚ç‚ê‚½D", PREFIX, ldrname());
+            Sprintf(buf, "%s%sã‹ã‚‰ã‚¯ã‚¨ã‚¹ãƒˆã‚’ä¸ãˆã‚‰ã‚ŒãŸï¼", PREFIX, ldrname());
     } else if (mptr->flags.ludios) {
         /* presence of the ludios branch in #overview output indicates that
            the player has made it onto the level; presence of this annotation
@@ -3276,22 +3276,22 @@ boolean printdun;
 /*JP
         Sprintf(buf, "%sFort Ludios.", PREFIX);
 */
-        Sprintf(buf, "%sƒ[ƒfƒBƒIƒXÔD", PREFIX);
+        Sprintf(buf, "%sãƒ­ãƒ¼ãƒ‡ã‚£ã‚ªã‚¹ç ¦ï¼", PREFIX);
     } else if (mptr->flags.castle) {
 /*JP
         Sprintf(buf, "%sThe castle%s.", PREFIX, tunesuffix(mptr, tmpbuf));
 */
-        Sprintf(buf, "%sé%sD", PREFIX, tunesuffix(mptr, tmpbuf));
+        Sprintf(buf, "%såŸ%sï¼", PREFIX, tunesuffix(mptr, tmpbuf));
     } else if (mptr->flags.valley) {
 /*JP
         Sprintf(buf, "%sValley of the Dead.", PREFIX);
 */
-        Sprintf(buf, "%s€‚Ì’JD", PREFIX);
+        Sprintf(buf, "%sæ­»ã®è°·ï¼", PREFIX);
     } else if (mptr->flags.msanctum) {
 /*JP
         Sprintf(buf, "%sMoloch's Sanctum.", PREFIX);
 */
-        Sprintf(buf, "%sƒ‚[ƒƒbƒN‚Ì¹ˆæD", PREFIX);
+        Sprintf(buf, "%sãƒ¢ãƒ¼ãƒ­ãƒƒã‚¯ã®è–åŸŸï¼", PREFIX);
     }
     if (*buf)
         putstr(win, 0, buf);
@@ -3300,7 +3300,7 @@ boolean printdun;
 /*JP
         Sprintf(buf, "%sSummoned by %s.", PREFIX, ldrname());
 */
-        Sprintf(buf, "%s%s‚©‚çŒÄ‚Ño‚³‚ê‚½D", PREFIX, ldrname());
+        Sprintf(buf, "%s%sã‹ã‚‰å‘¼ã³å‡ºã•ã‚ŒãŸï¼", PREFIX, ldrname());
         putstr(win, 0, buf);
     }
 
@@ -3310,7 +3310,7 @@ boolean printdun;
         Sprintf(buf, "%s%s to %s", PREFIX, br_string2(mptr->br),
                 dungeons[mptr->br->end2.dnum].dname);
 #else
-        Sprintf(buf, "%s%s‚Ö‚Ì%s", PREFIX, dungeons[mptr->br->end2.dnum].dname,
+        Sprintf(buf, "%s%sã¸ã®%s", PREFIX, dungeons[mptr->br->end2.dnum].dname,
                 br_string2(mptr->br));
 #endif
 
@@ -3322,7 +3322,7 @@ boolean printdun;
 /*JP
             Sprintf(eos(buf), ", level %d", depth(&(mptr->br->end2)));
 */
-            Sprintf(eos(buf), ", %dŠK", depth(&(mptr->br->end2)));
+            Sprintf(eos(buf), ", %déš", depth(&(mptr->br->end2)));
         Strcat(buf, ".");
         putstr(win, 0, buf);
     }
@@ -3339,7 +3339,7 @@ boolean printdun;
 /*JP
             Sprintf(buf, "%s%s", PREFIX, "Final resting place for");
 */
-            Sprintf(buf, "%s%s", PREFIX, "ÅŠú‚Ì’n:");
+            Sprintf(buf, "%s%s", PREFIX, "æœ€æœŸã®åœ°:");
             putstr(win, 0, buf);
             if (died_here) {
                 /* disclosure occurs before bones creation, so listing dead

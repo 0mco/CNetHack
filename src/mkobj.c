@@ -653,9 +653,9 @@ static const char *const alteration_verbs[] = {
     "degrade", "dilute", "erase", "burn", "neutralize", "destroy", "splatter",
     "bite", "open", "break the lock on", "rust", "rot", "tarnish"
 #else
-    "–³Œø‰»‚µ‚½", "—ò‰»‚³‚¹‚½", "•úo‚³‚¹‚½", "j•Ÿ‚ğ‰ğ‚¢‚½", "ô‚¢‚ğ‰ğ‚¢‚½", "–‚—Í‚ğŒ¸‚ç‚µ‚½",
-    "—ò‰»‚³‚¹‚½", "”–‚ß‚½", "Á‚µ‚½", "”R‚â‚µ‚½", "–³“Å‰»‚µ‚½", "‰ó‚µ‚½", "g‚Á‚½",
-    "H‚×‚½", "ŠJ‚¯‚½", "Œ®‚ğ‰ó‚µ‚½", "K‚Ñ‚³‚¹‚½", "•…‚ç‚¹‚½", "‚Â‚¯‚½"
+    "ç„¡åŠ¹åŒ–ã—ãŸ", "åŠ£åŒ–ã•ã›ãŸ", "æ”¾å‡ºã•ã›ãŸ", "ç¥ç¦ã‚’è§£ã„ãŸ", "å‘ªã„ã‚’è§£ã„ãŸ", "é­”åŠ›ã‚’æ¸›ã‚‰ã—ãŸ",
+    "åŠ£åŒ–ã•ã›ãŸ", "è–„ã‚ãŸ", "æ¶ˆã—ãŸ", "ç‡ƒã‚„ã—ãŸ", "ç„¡æ¯’åŒ–ã—ãŸ", "å£Šã—ãŸ", "ä½¿ã£ãŸ",
+    "é£Ÿã¹ãŸ", "é–‹ã‘ãŸ", "éµã‚’å£Šã—ãŸ", "éŒ†ã³ã•ã›ãŸ", "è…ã‚‰ã›ãŸ", "å‚·ã¤ã‘ãŸ"
 #endif
 };
 
@@ -668,7 +668,7 @@ int alter_type;
     xchar ox, oy;
     char objroom;
     boolean set_bknown;
-#if 0 /*JP*//*g‚í‚È‚¢*/
+#if 0 /*JP*//*ä½¿ã‚ãªã„*/
     const char *those, *them;
 #endif
     struct monst *shkp = 0;
@@ -701,7 +701,7 @@ int alter_type;
             return;
     }
 
-#if 0 /*JP*//*“ú–{Œê‚Å‚Í•s—v*/
+#if 0 /*JP*//*æ—¥æœ¬èªã§ã¯ä¸è¦*/
     if (obj->quan == 1L)
         those = "that", them = "it";
     else
@@ -723,7 +723,7 @@ int alter_type;
                   alteration_verbs[alter_type], those, simpleonames(obj),
                   them);
 #else
-        verbalize("%s‚ğ%s‚Ì‚È‚çC”ƒ‚Á‚Ä‚à‚ç‚¤‚æI",
+        verbalize("%sã‚’%sã®ãªã‚‰ï¼Œè²·ã£ã¦ã‚‚ã‚‰ã†ã‚ˆï¼",
                   simpleonames(obj), alteration_verbs[alter_type]);
 #endif
         bill_dummy_object(obj);
@@ -736,7 +736,7 @@ int alter_type;
             verbalize("You %s %s, you pay for %s!",
                       alteration_verbs[alter_type], those, them);
 #else
-            verbalize("%s‚Ì‚È‚çC”ƒ‚Á‚Ä‚à‚ç‚¤‚æI",
+            verbalize("%sã®ãªã‚‰ï¼Œè²·ã£ã¦ã‚‚ã‚‰ã†ã‚ˆï¼",
                       alteration_verbs[alter_type]);
 #endif
             bill_dummy_object(obj);
@@ -1227,7 +1227,7 @@ int old_range;
 #if 0 /*JP*/
                 Strcpy(buf, (obj->quan == 1L) ? "It" : "They");
 #else
-                Strcpy(buf, "‚»‚ê");
+                Strcpy(buf, "ãã‚Œ");
 #endif
             else if (carried(obj) || cansee(ox, oy))
                 Strcpy(buf, Yname2(obj));
@@ -1242,9 +1242,9 @@ int old_range;
                       (abs(delta) > 1) ? "much " : "",
                       (delta > 0) ? "brighter" : "less brightly");
 #else
-                pline("%s‚Ì‹P‚«‚Í%s%sD", buf,
-                      (abs(delta) > 1) ? "‚©‚È‚è" : "",
-                      (delta > 0) ? "‘‚µ‚½" : "Œ¸‚Á‚½");
+                pline("%sã®è¼ãã¯%s%sï¼", buf,
+                      (abs(delta) > 1) ? "ã‹ãªã‚Š" : "",
+                      (delta > 0) ? "å¢—ã—ãŸ" : "æ¸›ã£ãŸ");
 #endif
             }
         }
@@ -2166,7 +2166,7 @@ boolean tipping; /* caller emptying entire contents; affects shop handling */
 /*JP
             what = (obj->quan > 1L) ? "Some potions" : "A potion";
 */
-            what = "–ò";
+            what = "è–¬";
         } else {
             obj = mkobj(FOOD_CLASS, FALSE);
             if (obj->otyp == FOOD_RATION && !rn2(7))
@@ -2174,13 +2174,13 @@ boolean tipping; /* caller emptying entire contents; affects shop handling */
 /*JP
             what = "Some food";
 */
-            what = "H‚×•¨";
+            what = "é£Ÿã¹ç‰©";
         }
         ++objcount;
 /*JP
         pline("%s %s out.", what, vtense(what, "spill"));
 */
-        pline("%s‚ª”ò‚Ño‚Ä‚«‚½D", what);
+        pline("%sãŒé£›ã³å‡ºã¦ããŸï¼", what);
         obj->blessed = horn->blessed;
         obj->cursed = horn->cursed;
         obj->owt = weight(obj);
@@ -2203,12 +2203,12 @@ boolean tipping; /* caller emptying entire contents; affects shop handling */
                 The(aobjnam(obj, "slip")), (const char *) 0);
 #else
             obj = hold_another_object(
-                obj, u.uswallow ? "‚¨‚Á‚ÆI%s‚Í“Í‚©‚È‚¢I"
+                obj, u.uswallow ? "ãŠã£ã¨ï¼%sã¯å±Šã‹ãªã„ï¼"
                                 : (Is_airlevel(&u.uz) || Is_waterlevel(&u.uz)
                                    || levl[u.ux][u.uy].typ < IRONBARS
                                    || levl[u.ux][u.uy].typ >= ICE)
-                                      ? "‚¨‚Á‚ÆI%s‚Í‚ ‚È‚½‚Ìè‚©‚çŠŠ‚è—‚¿‚½I"
-                                      : "‚¨‚Á‚ÆI%s‚Í°‚ÉŠŠ‚è—‚¿‚½I",
+                                      ? "ãŠã£ã¨ï¼%sã¯ã‚ãªãŸã®æ‰‹ã‹ã‚‰æ»‘ã‚Šè½ã¡ãŸï¼"
+                                      : "ãŠã£ã¨ï¼%sã¯åºŠã«æ»‘ã‚Šè½ã¡ãŸï¼",
                 xname(obj), (const char *)0);
 #endif
         } else {
@@ -2223,7 +2223,7 @@ boolean tipping; /* caller emptying entire contents; affects shop handling */
                     pline("%s %s to the %s.", Doname2(obj),
                           otense(obj, "drop"), surface(u.ux, u.uy));
 #else
-                    pline("%s‚Í%s‚É—‚¿‚½D", Doname2(obj),
+                    pline("%sã¯%sã«è½ã¡ãŸï¼", Doname2(obj),
                           surface(u.ux, u.uy));
 #endif
                 dropy(obj);
@@ -2834,12 +2834,12 @@ struct obj *otmp2;
 /*JP
                 You_see("parts of the floor melting!");
 */
-                You_see("°‚Ìˆê•”‚ª—n‚¯‚Ä‚¢‚é‚Ì‚ğŒ©‚½I");
+                You_see("åºŠã®ä¸€éƒ¨ãŒæº¶ã‘ã¦ã„ã‚‹ã®ã‚’è¦‹ãŸï¼");
             } else if (inpack) {
 /*JP
                 Your("pack reaches out and grabs something!");
 */
-                Your("‚©‚Î‚ñ‚ªè‚ğL‚Î‚µ‚Ä‰½‚©‚ğ‚Â‚©‚ñ‚¾I");
+                Your("ã‹ã°ã‚“ãŒæ‰‹ã‚’ä¼¸ã°ã—ã¦ä½•ã‹ã‚’ã¤ã‹ã‚“ã ï¼");
             }
             /* even though we can see where they should be,
              * they'll be out of our view (minvent or container)
@@ -2849,15 +2849,15 @@ struct obj *otmp2;
             pline("The %s coalesce%s.", makeplural(obj_typename(otmp->otyp)),
                   inpack ? " inside your pack" : "");
 #else
-            pline("%s‚ª%s‡‘Ì‚µ‚½D", obj_typename(otmp->otyp),
-                  inpack ? "‚ ‚È‚½‚Ì‚©‚Î‚ñ‚Ì’†‚Å" : "");
+            pline("%sãŒ%såˆä½“ã—ãŸï¼", obj_typename(otmp->otyp),
+                  inpack ? "ã‚ãªãŸã®ã‹ã°ã‚“ã®ä¸­ã§" : "");
 #endif
         }
     } else {
 /*JP
         You_hear("a faint sloshing sound.");
 */
-        You_hear("‚©‚·‚©‚ÈƒoƒVƒƒƒoƒVƒƒ‚Æ‚¢‚¤‰¹‚ğ•·‚¢‚½D");
+        You_hear("ã‹ã™ã‹ãªãƒã‚·ãƒ£ãƒã‚·ãƒ£ã¨ã„ã†éŸ³ã‚’èã„ãŸï¼");
     }
 }
 

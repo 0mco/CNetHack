@@ -487,7 +487,7 @@ unsigned int ch2;
     buf[0] = ch1;
     buf[1] = ch2;
 
-    /* xputc_core()‚©‚ç‚ÌƒRƒs[ */
+    /* xputc_core()¤«¤é¤Î¥³¥Ô¡¼ */
     inverse = (console.current_nhattr[ATR_INVERSE] && iflags.wc_inverse);
     console.attr = (inverse) ?
                     ttycolors_inv[console.current_nhcolor] :
@@ -510,9 +510,9 @@ xputc2(ch1, ch2)
 int ch1;
 int ch2;
 {
-    /* wintty.c ‚Å‚Í 1 ƒoƒCƒg–ˆ‚É curx ‚ð‰ÁŽZ‚·‚é‚ªA‚±‚±‚Í
-       2 ƒoƒCƒg‚½‚Ü‚Á‚Ä‚©‚çŒÄ‚Ño‚³‚ê‚é‚Ì‚ÅA1 •¶Žš•ªæ‚Éi‚ñ‚Å
-      ‚µ‚Ü‚Á‚Ä‚¢‚éB]‚Á‚Ä 1 ‚ðˆø‚­B */
+    /* wintty.c ¤Ç¤Ï 1 ¥Ð¥¤¥ÈËè¤Ë curx ¤ò²Ã»»¤¹¤ë¤¬¡¢¤³¤³¤Ï
+       2 ¥Ð¥¤¥È¤¿¤Þ¤Ã¤Æ¤«¤é¸Æ¤Ó½Ð¤µ¤ì¤ë¤Î¤Ç¡¢1 Ê¸»úÊ¬Àè¤Ë¿Ê¤ó¤Ç
+      ¤·¤Þ¤Ã¤Æ¤¤¤ë¡£½¾¤Ã¤Æ 1 ¤ò°ú¤¯¡£ */
     console.cursor.X = ttyDisplay->curx - 1;
     console.cursor.Y = ttyDisplay->cury;
 
@@ -1568,7 +1568,7 @@ static int CALLBACK EnumFontCallback(
 void
 check_and_set_font()
 {
-#if 0 /*JP*//* ƒR[ƒhƒy[ƒW‚Í•ÏX‚µ‚È‚¢B932‚ð‰¼’è‚·‚éB*/
+#if 0 /*JP*//* ¥³¡¼¥É¥Ú¡¼¥¸¤ÏÊÑ¹¹¤·¤Ê¤¤¡£932¤ò²¾Äê¤¹¤ë¡£*/
     if (!check_font_widths()) {
         raw_print("WARNING: glyphs too wide in console font."
                   "  Changing code page to 437 and font to Consolas\n");

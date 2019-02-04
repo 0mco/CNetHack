@@ -101,12 +101,12 @@ boolean forceshow;
 /*JP
         pline_The("corridor disappears.");
 */
-        pline("’Ê˜H‚ÍÁ‚¦‚½D");
+        pline("é€šè·¯ã¯æ¶ˆãˆãŸï¼");
     if (IS_ROCK(levl[u.ux][u.uy].typ))
 /*JP
         You("are encased in rock.");
 */
-        You("Î‚É‚Â‚Â‚Ü‚ê‚½D");
+        You("çŸ³ã«ã¤ã¤ã¾ã‚ŒãŸï¼");
     return TRUE;
 }
 
@@ -359,25 +359,25 @@ invault()
             pline("Suddenly one of the Vault's %s enters!",
                   makeplural(guard->data->mname));
 #else
-            pline("“Ë‘RC‘qŒÉ‚Ì”Ô•º‚ª“ü‚Á‚Ä‚«‚½I");
+            pline("çªç„¶ï¼Œå€‰åº«ã®ç•ªå…µãŒå…¥ã£ã¦ããŸï¼");
 #endif
         else
 /*JP
             pline("Someone else has entered the Vault.");
 */
-            pline("’N‚©‚ª‘qŒÉ‚É“ü‚Á‚Ä‚«‚½D");
+            pline("èª°ã‹ãŒå€‰åº«ã«å…¥ã£ã¦ããŸï¼");
         newsym(guard->mx, guard->my);
         if (u.uswallow) {
             /* can't interrogate hero, don't interrogate engulfer */
 /*JP
             if (!Deaf) verbalize("What's going on here?");
 */
-            if (!Deaf) verbalize("‚±‚±‚Å‰½‚ğ‚µ‚Ä‚¢‚é‚ñ‚¾H");
+            if (!Deaf) verbalize("ã“ã“ã§ä½•ã‚’ã—ã¦ã„ã‚‹ã‚“ã ï¼Ÿ");
             if (gsensed)
 /*JP
                 pline_The("other presence vanishes.");
 */
-                pline("‘¼l‚Ì‹C”z‚ÍÁ‚¦‚½D");
+                pline("ä»–äººã®æ°—é…ã¯æ¶ˆãˆãŸï¼");
             mongone(guard);
             return;
         }
@@ -388,14 +388,14 @@ invault()
                 if (!Deaf) verbalize("Hey! Who left that %s in here?",
                                     mimic_obj_name(&youmonst));
 #else
-                if (!Deaf) verbalize("‚¨‚¢I‚¾‚ê‚ª‚±‚Ì%s‚ğ‚±‚±‚É’u‚¢‚Äs‚Á‚½‚ñ‚¾H",
+                if (!Deaf) verbalize("ãŠã„ï¼ã ã‚ŒãŒã“ã®%sã‚’ã“ã“ã«ç½®ã„ã¦è¡Œã£ãŸã‚“ã ï¼Ÿ",
                                     mimic_obj_name(&youmonst));
 #endif
             /* You're mimicking some object or you're hidden. */
 /*JP
             pline("Puzzled, %s turns around and leaves.", mhe(guard));
 */
-            pline("%s‚Í¢˜f‚µ‚È‚ª‚çCŒü‚«’¼‚Á‚Ä‹‚Á‚Ä‚¢‚Á‚½D", mhe(guard));
+            pline("%sã¯å›°æƒ‘ã—ãªãŒã‚‰ï¼Œå‘ãç›´ã£ã¦å»ã£ã¦ã„ã£ãŸï¼", mhe(guard));
             mongone(guard);
             return;
         }
@@ -407,12 +407,12 @@ invault()
 /*JP
                 pline("%s huffs and turns to leave.", noit_Monnam(guard));
 */
-                pline("%s‚Í•s‹@Œ™‚É‚È‚Á‚ÄC‹‚Á‚Ä‚¢‚Á‚½D", noit_Monnam(guard));
+                pline("%sã¯ä¸æ©Ÿå«Œã«ãªã£ã¦ï¼Œå»ã£ã¦ã„ã£ãŸï¼", noit_Monnam(guard));
             else
 /*JP
             verbalize("I'll be back when you're ready to speak to me!");
 */
-            verbalize("˜b‚¹‚é‚æ‚¤‚É‚È‚Á‚½‚ç–ß‚Á‚Ä‚«‚Ä‚â‚éI");
+            verbalize("è©±ã›ã‚‹ã‚ˆã†ã«ãªã£ãŸã‚‰æˆ»ã£ã¦ãã¦ã‚„ã‚‹ï¼");
             mongone(guard);
             return;
         }
@@ -428,8 +428,8 @@ invault()
             getlin(Deaf ? "You are required to supply your name. -"
                         : "\"Hello stranger, who are you?\" -", buf);
 #else
-            getlin(Deaf ? "–¼‘O‚ğŒ¾‚¤‚æ‚¤‚É‹‚ß‚ç‚ê‚½D-"
-                        : "uŒ©‚È‚¢Šç‚¾‚ÈC‚¨‚Ü‚¦‚Í’N‚¾Hv-", buf);
+            getlin(Deaf ? "åå‰ã‚’è¨€ã†ã‚ˆã†ã«æ±‚ã‚ã‚‰ã‚ŒãŸï¼-"
+                        : "ã€Œè¦‹ãªã„é¡”ã ãªï¼ŒãŠã¾ãˆã¯èª°ã ï¼Ÿã€-", buf);
 #endif
             (void) mungspaces(buf);
 #if 0 /*JP*/
@@ -450,7 +450,7 @@ invault()
 #else
     if (!strcmpi(buf, "Croesus") || !strcmpi(buf, "Kroisos")
         || !strcmpi(buf, "Creosote")
-        || !strcmp(buf, "ƒNƒƒCƒ\ƒX") || !strcmp(buf, "ƒNƒŒƒIƒ\[ƒg")) {
+        || !strcmp(buf, "ã‚¯ãƒ­ã‚¤ã‚½ã‚¹") || !strcmp(buf, "ã‚¯ãƒ¬ã‚ªã‚½ãƒ¼ãƒˆ")) {
 #endif
             if (!mvitals[PM_CROESUS].died) {
                 if (Deaf) {
@@ -458,13 +458,13 @@ invault()
 /*JP
                         pline("%s waves goodbye.", noit_Monnam(guard));
 */
-                        pline("%s‚Í‚³‚æ‚È‚ç‚Æè‚ğU‚Á‚½D", noit_Monnam(guard));
+                        pline("%sã¯ã•ã‚ˆãªã‚‰ã¨æ‰‹ã‚’æŒ¯ã£ãŸï¼", noit_Monnam(guard));
                 } else {
                     verbalize(
 /*JP
                     "Oh, yes, of course.  Sorry to have disturbed you.");
 */
-                    "‚¢‚âC‚±‚è‚áC‚¦[‚ÆC‚¨‘›‚ª‚¹‚µ‚Ü‚µ‚½D");
+                    "ã„ã‚„ï¼Œã“ã‚Šã‚ƒï¼Œãˆãƒ¼ã¨ï¼ŒãŠé¨’ãŒã›ã—ã¾ã—ãŸï¼");
                 }
                 mongone(guard);
             } else {
@@ -475,7 +475,7 @@ invault()
                         pline("%s mouths something and looks very angry!",
                               noit_Monnam(guard));
 #else
-                        pline("%s‚Í‰½‚©‚ğŒ¾‚Á‚Ä‚¢‚éD‚Æ‚Ä‚à“{‚Á‚Ä‚¢‚é‚æ‚¤‚¾I",
+                        pline("%sã¯ä½•ã‹ã‚’è¨€ã£ã¦ã„ã‚‹ï¼ã¨ã¦ã‚‚æ€’ã£ã¦ã„ã‚‹ã‚ˆã†ã ï¼",
                               noit_Monnam(guard));
 #endif
                 } else {
@@ -484,7 +484,7 @@ invault()
                            "Back from the dead, are you?  I'll remedy that!");
 #else
                    verbalize(
-                           "‚Ù‚¤I€‚Ì¢ŠE‚©‚ç–ß‚Á‚Ä‚«‚½‚Ì‚©H‚¤‚»‚È‚çãè‚É‚Â‚¯I");
+                           "ã»ã†ï¼æ­»ã®ä¸–ç•Œã‹ã‚‰æˆ»ã£ã¦ããŸã®ã‹ï¼Ÿã†ããªã‚‰ä¸Šæ‰‹ã«ã¤ã‘ï¼");
 #endif
                 }
                 /* don't want guard to waste next turn wielding a weapon */
@@ -500,13 +500,13 @@ invault()
             pline("%s doesn't %srecognize you.", noit_Monnam(guard),
                     (Blind) ? "" : "appear to ");
 #else
-            pline("%s‚Í‚ ‚È‚½‚Ì‚±‚Æ‚ª•ª‚©‚ç‚È‚¢‚æ‚¤‚¾D", noit_Monnam(guard));
+            pline("%sã¯ã‚ãªãŸã®ã“ã¨ãŒåˆ†ã‹ã‚‰ãªã„ã‚ˆã†ã ï¼", noit_Monnam(guard));
 #endif
         else
 /*JP
         verbalize("I don't know you.");
 */
-        verbalize("’m‚ç‚ñ‚ÈD");
+        verbalize("çŸ¥ã‚‰ã‚“ãªï¼");
         umoney = money_cnt(invent);
         if (!umoney && !hidden_gold()) {
             if (Deaf)
@@ -514,14 +514,14 @@ invault()
                 pline("%s stomps%s.", noit_Monnam(guard),
                       (Blind) ? "" : " and beckons");
 #else
-                pline("%s‚Í‘«‚ğ“¥‚İ–Â‚ç‚µ%s‚½D", noit_Monnam(guard),
-                      (Blind) ? "" : "‚Äèµ‚«‚µ");
+                pline("%sã¯è¶³ã‚’è¸ã¿é³´ã‚‰ã—%sãŸï¼", noit_Monnam(guard),
+                      (Blind) ? "" : "ã¦æ‰‹æ‹›ãã—");
 #endif
             else
 /*JP
             verbalize("Please follow me.");
 */
-            verbalize("„‚ÌŒã‚É‚Â‚¢‚Ä‚«‚È‚³‚¢D");
+            verbalize("ç§ã®å¾Œã«ã¤ã„ã¦ããªã•ã„ï¼");
         } else {
             if (!umoney) {
                 if (Deaf) {
@@ -530,14 +530,14 @@ invault()
                         pline("%s glares at you%s.", noit_Monnam(guard),
                               invent ? "r stuff" : "");
 #else
-                        pline("%s‚Í‚ ‚È‚½%s‚ğ‚É‚ç‚İ‚Â‚¯‚½D", noit_Monnam(guard),
-                              invent ? "‚Ì‚¿•¨" : "");
+                        pline("%sã¯ã‚ãªãŸ%sã‚’ã«ã‚‰ã¿ã¤ã‘ãŸï¼", noit_Monnam(guard),
+                              invent ? "ã®æŒã¡ç‰©" : "");
 #endif
                 } else {
 /*JP
                 verbalize("You have hidden gold.");
 */
-                verbalize("‚Ü‚¾‹à‰İ‚ğ‰B‚µ‚Ä‚é‚ÈD");
+                verbalize("ã¾ã é‡‘è²¨ã‚’éš ã—ã¦ã‚‹ãªï¼");
                 }
             }
             if (Deaf) {
@@ -548,7 +548,7 @@ invault()
                           noit_Monnam(guard), mhis(guard), mhis(guard));
 #else
                     pline(
-                       "%s‚Í•Ğè‚ğ·‚µo‚µC‚à‚¤•Ğè‚Åèµ‚«‚µ‚½D",
+                       "%sã¯ç‰‡æ‰‹ã‚’å·®ã—å‡ºã—ï¼Œã‚‚ã†ç‰‡æ‰‹ã§æ‰‹æ‹›ãã—ãŸï¼",
                           noit_Monnam(guard));
 #endif
             } else {
@@ -556,11 +556,11 @@ invault()
 /*JP
                 "Most likely all your gold was stolen from this vault.");
 */
-                "‘qŒÉ‚©‚ç“‚ñ‚¾‹à‰İ‚ª‚ ‚é‚¾‚ë‚¤D");
+                "å€‰åº«ã‹ã‚‰ç›—ã‚“ã é‡‘è²¨ãŒã‚ã‚‹ã ã‚ã†ï¼");
 /*JP
             verbalize("Please drop that gold and follow me.");
 */
-            verbalize("‚»‚ê‚ğ‚»‚Á‚­‚è–ß‚µ‚Ä‚©‚çC„‚ÌŒã‚É‚Â‚¢‚Ä‚«‚È‚³‚¢D");
+            verbalize("ãã‚Œã‚’ãã£ãã‚Šæˆ»ã—ã¦ã‹ã‚‰ï¼Œç§ã®å¾Œã«ã¤ã„ã¦ããªã•ã„ï¼");
             }
         }
         EGD(guard)->gdx = gx;
@@ -673,22 +673,22 @@ struct monst *grd;
 /*JP
             pline("%s whispers an incantation.", noit_Monnam(grd));
 */
-            pline("%s‚Íô•¶‚ğ‚³‚³‚â‚¢‚½D", noit_Monnam(grd));
+            pline("%sã¯å‘ªæ–‡ã‚’ã•ã•ã‚„ã„ãŸï¼", noit_Monnam(grd));
         else
 /*JP
             You_hear("a distant chant.");
 */
-            You_hear("‰“•û‚Å‚Ìô•¶‚ğ•·‚¢‚½D");
+            You_hear("é æ–¹ã§ã®å‘ªæ–‡ã‚’èã„ãŸï¼");
         if (movedgold)
 /*JP
             pline("A mysterious force moves the gold into the vault.");
 */
-            pline("•sv‹c‚È—Í‚ª‹à‰İ‚ğ‘qŒÉ‚Ö‰^‚ñ‚¾D");
+            pline("ä¸æ€è­°ãªåŠ›ãŒé‡‘è²¨ã‚’å€‰åº«ã¸é‹ã‚“ã ï¼");
         if (fixed)
 /*JP
             pline_The("damaged vault's walls are magically restored!");
 */
-            pline("‚Â‚¢‚½‘qŒÉ‚Ì•Ç‚Í–‚–@‚Å•œŒ³‚³‚ê‚½I");
+            pline("å‚·ã¤ã„ãŸå€‰åº«ã®å£ã¯é­”æ³•ã§å¾©å…ƒã•ã‚ŒãŸï¼");
     }
 }
 
@@ -744,8 +744,8 @@ register struct monst *grd;
             verbalize("How dare you %s that gold, scoundrel!",
                       (egrd->witness & GD_EATGOLD) ? "consume" : "destroy");
 #else
-            verbalize("‚æ‚­‚à‚Ü‚ ‹à‚ğ%s‚à‚Ì‚¾Cˆ«“}‚ßI",
-                      (egrd->witness & GD_EATGOLD) ? "g‚Á‚½" : "‰ó‚µ‚½");
+            verbalize("ã‚ˆãã‚‚ã¾ã‚é‡‘ã‚’%sã‚‚ã®ã ï¼Œæ‚ªå…šã‚ï¼",
+                      (egrd->witness & GD_EATGOLD) ? "ä½¿ã£ãŸ" : "å£Šã—ãŸ");
 #endif
         egrd->witness = 0;
         grd->mpeaceful = 0;
@@ -761,10 +761,10 @@ register struct monst *grd;
                                          : "drop that money and ")
                               : "");
 #else
-                verbalize("ŒJ‚è•Ô‚·I%s„‚É‚Â‚¢‚Ä‚±‚¢I",
+                verbalize("ç¹°ã‚Šè¿”ã™ï¼%sç§ã«ã¤ã„ã¦ã“ã„ï¼",
                           u_carry_gold
-                              ? (!umoney ? "‰B‚µ‚Á‚Ä‚é‹à‚ğ’u‚¢‚Ä"
-                                         : "‹à‚ğ’u‚¢‚Ä")
+                              ? (!umoney ? "éš ã—æŒã£ã¦ã‚‹é‡‘ã‚’ç½®ã„ã¦"
+                                         : "é‡‘ã‚’ç½®ã„ã¦")
                               : "");
 #endif
             if (egrd->warncnt == 7) {
@@ -774,7 +774,7 @@ register struct monst *grd;
 /*JP
                     verbalize("You've been warned, knave!");
 */
-                    verbalize("Œx‚Í‚µ‚½‚¼Cˆ«“}‚ßI");
+                    verbalize("è­¦å‘Šã¯ã—ãŸãï¼Œæ‚ªå…šã‚ï¼");
                 mnexto(grd);
                 levl[m][n].typ = egrd->fakecorr[0].ftyp;
                 newsym(m, n);
@@ -800,7 +800,7 @@ register struct monst *grd;
 /*JP
                     You_hear("the shrill sound of a guard's whistle.");
 */
-                    You_hear("”Ô•º‚Ì‰s‚¢“J‚Ì‰¹‚ğ•·‚¢‚½D");
+                    You_hear("ç•ªå…µã®é‹­ã„ç¬›ã®éŸ³ã‚’èã„ãŸï¼");
                 else
 #if 0 /*JP*/
                     You(um_dist(grd->mx, grd->my, 2)
@@ -810,9 +810,9 @@ register struct monst *grd;
                         x_monnam(grd, ARTICLE_A, "angry", 0, FALSE));
 #else
                     You(um_dist(grd->mx, grd->my, 2)
-                        ? "%s‚ª‹ß‚Ã‚¢‚Ä‚­‚é‚Ì‚ğŒ©‚½D"
-                        : "%s‚Æ‘Î›³‚µ‚½D",
-                        x_monnam(grd, ARTICLE_A, "“{‚Á‚½", 0, FALSE));
+                        ? "%sãŒè¿‘ã¥ã„ã¦ãã‚‹ã®ã‚’è¦‹ãŸï¼"
+                        : "%sã¨å¯¾å³™ã—ãŸï¼",
+                        x_monnam(grd, ARTICLE_A, "æ€’ã£ãŸ", 0, FALSE));
 #endif
                 return -1;
             } else {
@@ -820,7 +820,7 @@ register struct monst *grd;
 /*JP
                     verbalize("Well, begone.");
 */
-                    verbalize("—§‚¿‹‚êD");
+                    verbalize("ç«‹ã¡å»ã‚Œï¼");
                 wallify_vault(grd);
                 egrd->gddone = 1;
                 goto cleanup;
@@ -836,7 +836,7 @@ register struct monst *grd;
 /*JP
             pline("%s, confused, disappears.", noit_Monnam(grd));
 */
-            pline("%s‚Í¬—‚µCÁ‚¦‚½D", noit_Monnam(grd));
+            pline("%sã¯æ··ä¹±ã—ï¼Œæ¶ˆãˆãŸï¼", noit_Monnam(grd));
             disappear_msg_seen = TRUE;
             goto cleanup;
         }
@@ -855,14 +855,14 @@ register struct monst *grd;
                         pline("%s holds out %s palm demandingly!",
                               noit_Monnam(grd), mhis(grd));
 #else
-                        pline("%s‚ÍŒµ‚µ‚¢’²q‚Åè‚Ì‚Ğ‚ç‚ğ·‚µo‚µ‚½I",
+                        pline("%sã¯å³ã—ã„èª¿å­ã§æ‰‹ã®ã²ã‚‰ã‚’å·®ã—å‡ºã—ãŸï¼",
                               noit_Monnam(grd));
 #endif
                 } else {
 /*JP
                     verbalize("Drop all your gold, scoundrel!");
 */
-                    verbalize("‹à‚ğ‘S•”’u‚¢‚Ä‚ä‚¯C‚È‚ç‚¸‚à‚ÌI");
+                    verbalize("é‡‘ã‚’å…¨éƒ¨ç½®ã„ã¦ã‚†ã‘ï¼Œãªã‚‰ãšã‚‚ã®ï¼");
                 }
                 return 0;
             } else {
@@ -872,14 +872,14 @@ register struct monst *grd;
                         pline("%s rubs %s hands with enraged delight!",
                               noit_Monnam(grd), mhis(grd));
 #else
-                        pline("%s‚Í“{‚è‚È‚ª‚çè‚ğ‚·‚è‚ ‚í‚¹‚½I",
+                        pline("%sã¯æ€’ã‚ŠãªãŒã‚‰æ‰‹ã‚’ã™ã‚Šã‚ã‚ã›ãŸï¼",
                               noit_Monnam(grd));
 #endif
                 } else {
 /*JP
                     verbalize("So be it, rogue!");
 */
-                    verbalize("“l‚ßI");
+                    verbalize("ç›—äººã‚ï¼");
                 }
                 grd->mpeaceful = 0;
                 return -1;
@@ -910,7 +910,7 @@ register struct monst *grd;
 /*JP
                     verbalize("Out of my way, scum!");
 */
-                    verbalize("–Ú‚Ì‘O‚©‚çÁ‚¦‚ëCƒNƒ\‚Á‚½‚êI");
+                    verbalize("ç›®ã®å‰ã‹ã‚‰æ¶ˆãˆã‚ï¼Œã‚¯ã‚½ã£ãŸã‚Œï¼");
                 (void) rloc(m_at(m, n), FALSE);
             }
             remove_monster(grd->mx, grd->my);
@@ -923,8 +923,8 @@ register struct monst *grd;
             pline("%s%s picks up the gold.", Monnam(grd),
                   grd->mpeaceful ? " calms down and" : "");
 #else
-            pline("%s‚Í%s‹à‰İ‚ğE‚Á‚½D", Monnam(grd),
-                  grd->mpeaceful ? "“{‚è‚ğÃ‚ß" : "");
+            pline("%sã¯%sé‡‘è²¨ã‚’æ‹¾ã£ãŸï¼", Monnam(grd),
+                  grd->mpeaceful ? "æ€’ã‚Šã‚’é™ã‚" : "");
 #endif
         if (x != grd->mx || y != grd->my) {
             remove_monster(grd->mx, grd->my);
@@ -943,7 +943,7 @@ register struct monst *grd;
 /*JP
             verbalize("Move along!");
 */
-            verbalize("—£‚ê‚é‚ÈI");
+            verbalize("é›¢ã‚Œã‚‹ãªï¼");
         restfakecorr(grd);
         return 0; /* didn't move */
     }
@@ -1067,7 +1067,7 @@ newpos:
 /*JP
                 pline("Suddenly, %s disappears.", noit_mon_nam(grd));
 */
-                pline("“Ë‘RC%s‚ÍÁ‚¦‚½D", noit_mon_nam(grd));
+                pline("çªç„¶ï¼Œ%sã¯æ¶ˆãˆãŸï¼", noit_mon_nam(grd));
             return 1;
         }
         return -2;
@@ -1085,7 +1085,7 @@ newpos:
 /*JP
             pline("%s picks up some gold.", Monnam(grd));
 */
-            pline("%s‚Í‹à‚ğE‚Á‚½D", Monnam(grd));
+            pline("%sã¯é‡‘ã‚’æ‹¾ã£ãŸï¼", Monnam(grd));
     } else
         newsym(grd->mx, grd->my);
     restfakecorr(grd);
@@ -1110,7 +1110,7 @@ paygd()
         Your("%ld %s goes into the Magic Memory Vault.", umoney,
              currency(umoney));
 #else
-        Your("%ld%s‚Í–‚–@‚Ì‹L”O‘qŒÉ‚É“ü‚Á‚½D", umoney,
+        Your("%ld%sã¯é­”æ³•ã®è¨˜å¿µå€‰åº«ã«å…¥ã£ãŸï¼", umoney,
              currency(umoney));
 #endif
         gx = u.ux;
@@ -1124,14 +1124,14 @@ paygd()
 /*JP
         pline("%s remits your gold to the vault.", Monnam(grd));
 */
-        pline("%s‚Í‚ ‚È‚½‚Ì‹à‰İ‚ğ‘qŒÉ‚É‘—‚Á‚½D", Monnam(grd));
+        pline("%sã¯ã‚ãªãŸã®é‡‘è²¨ã‚’å€‰åº«ã«é€ã£ãŸï¼", Monnam(grd));
         gx = rooms[EGD(grd)->vroom].lx + rn2(2);
         gy = rooms[EGD(grd)->vroom].ly + rn2(2);
 #if 0 /*JP*/
         Sprintf(buf, "To Croesus: here's the gold recovered from %s the %s.",
                 plname, mons[u.umonster].mname);
 #else
-        Sprintf(buf, "ƒNƒƒCƒ\ƒX‚Ö: ‚±‚±‚É%s‚Ì%s‚©‚çæ‚è–ß‚µ‚½‹à‰İ‚ğ‘—‚éD",
+        Sprintf(buf, "ã‚¯ãƒ­ã‚¤ã‚½ã‚¹ã¸: ã“ã“ã«%sã®%sã‹ã‚‰å–ã‚Šæˆ»ã—ãŸé‡‘è²¨ã‚’é€ã‚‹ï¼",
                 mons[u.umonster].mname, plname);
 #endif
         make_grave(gx, gy, buf);

@@ -1,815 +1,815 @@
 Sun Dec 26 2018  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.1-0.3ƒŠƒŠ[ƒX
-	* MacOS‚Å‚Ìƒrƒ‹ƒh‚É‘Î‰
-	* Šè‚¢‚Ìˆ—‚ğŠg[
-	* ƒrƒ‹ƒh•û–@‚Ì•¶‘‚ğ’Ç‰Á(japanese/build.md)
-	* AppVeyor‚Å‚Ìƒrƒ‹ƒh‚É‘Î‰
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.1-0.3¥ê¥ê¡¼¥¹
+	* MacOS¤Ç¤Î¥Ó¥ë¥É¤ËÂĞ±ş
+	* ´ê¤¤¤Î½èÍı¤ò³È½¼
+	* ¥Ó¥ë¥ÉÊıË¡¤ÎÊ¸½ñ¤òÄÉ²Ã(japanese/build.md)
+	* AppVeyor¤Ç¤Î¥Ó¥ë¥É¤ËÂĞ±ş
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Oct  7 2018  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.1-0.2ƒŠƒŠ[ƒX
-	* Ÿ‚Ì–â‘è‚ğC³
-	  * #wizwhereƒRƒ}ƒ“ƒh‚ÅƒNƒ‰ƒbƒVƒ…‚·‚é (#38569)
-	  * 2ƒoƒCƒg•¶š•\¦‚É‘®«•ÏX‚ªs‚í‚ê‚È‚¢ (#38566)
-	  * ³‹K•\Œ»‚ª³‚µ‚­“®ì‚µ‚È‚¢ (#38565)
-	  * ‰ö•¨/ƒAƒCƒeƒ€ƒf[ƒ^‚ª3.6.1‚ÉXV‚³‚ê‚Ä‚¢‚È‚¢ (#38576)
-	  * ƒEƒBƒU[ƒhƒ‚[ƒh‚Å–‚–@‚Ìã©‚ğŠè‚¦‚È‚¢ (#38584)
-	  * ƒ^ƒCƒ‹ì¬‚ÉŒx‚ªo‚é (#38608)
-	  * Õ’d•ù‚°ƒƒjƒ…[‚ÅH‚×•¨‚â–‚œ‚¯‚ªƒtƒBƒ‹ƒ^‚³‚ê‚Ä‚¢‚È‚¢ (#38620)
-	* VisualStudio 2015 IDE‚Å‚Ìƒrƒ‹ƒh‚É‘Î‰
-	* ƒRƒ“ƒpƒCƒ‹Œx‚ğ—}§
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.1-0.2¥ê¥ê¡¼¥¹
+	* ¼¡¤ÎÌäÂê¤ò½¤Àµ
+	  * #wizwhere¥³¥Ş¥ó¥É¤Ç¥¯¥é¥Ã¥·¥å¤¹¤ë (#38569)
+	  * 2¥Ğ¥¤¥ÈÊ¸»úÉ½¼¨»ş¤ËÂ°À­ÊÑ¹¹¤¬¹Ô¤ï¤ì¤Ê¤¤ (#38566)
+	  * Àµµ¬É½¸½¤¬Àµ¤·¤¯Æ°ºî¤·¤Ê¤¤ (#38565)
+	  * ²øÊª/¥¢¥¤¥Æ¥à¥Ç¡¼¥¿¤¬3.6.1¤Ë¹¹¿·¤µ¤ì¤Æ¤¤¤Ê¤¤ (#38576)
+	  * ¥¦¥£¥¶¡¼¥É¥â¡¼¥É¤ÇËâË¡¤Îæ«¤ò´ê¤¨¤Ê¤¤ (#38584)
+	  * ¥¿¥¤¥ëºîÀ®»ş¤Ë·Ù¹ğ¤¬½Ğ¤ë (#38608)
+	  * º×ÃÅÊû¤²¥á¥Ë¥å¡¼¤Ç¿©¤ÙÊª¤äËâ½ü¤±¤¬¥Õ¥£¥ë¥¿¤µ¤ì¤Æ¤¤¤Ê¤¤ (#38620)
+	* VisualStudio 2015 IDE¤Ç¤Î¥Ó¥ë¥É¤ËÂĞ±ş
+	* ¥³¥ó¥Ñ¥¤¥ë·Ù¹ğ¤òÍŞÀ©
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Jun 21 2018  Kentaro Shirakata  <argrath@ub32.org>
 
-	* NetHack-3.6.1ƒx[ƒX JNetHackƒeƒXƒgƒŠƒŠ[ƒX(3.6.1-0.1)
+	* NetHack-3.6.1¥Ù¡¼¥¹ JNetHack¥Æ¥¹¥È¥ê¥ê¡¼¥¹(3.6.1-0.1)
 
 Fri Apr 29 2018  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.9ƒŠƒŠ[ƒX
-	* ISO-2022-JP‘Î‰‚ğíœ
-	* UTF-8o—Í‚É‘Î‰ (#37910)
-	* “à•”ƒR[ƒh‚Æ•\¦ƒR[ƒh‚ªˆá‚¤‚Ì–â‘è‚ğC³:
-	  * -uƒIƒvƒVƒ‡ƒ“‚Å“ú–{Œê‚ğg‚¤‚Æ•¶š‰»‚¯‚·‚é (#37911)
-	  * -sƒIƒvƒVƒ‡ƒ“‚Å“ú–{Œê‚ğg‚¤‚Æ•¶š‰»‚¯‚·‚é (#37912)
-	  * “ú–{Œê“ü—Í‚ª³‚µ‚­“®ì‚µ‚È‚¢ (#37913)
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.0-0.9¥ê¥ê¡¼¥¹
+	* ISO-2022-JPÂĞ±ş¤òºï½ü
+	* UTF-8½ĞÎÏ¤ËÂĞ±ş (#37910)
+	* ÆâÉô¥³¡¼¥É¤ÈÉ½¼¨¥³¡¼¥É¤¬°ã¤¦»ş¤ÎÌäÂê¤ò½¤Àµ:
+	  * -u¥ª¥×¥·¥ç¥ó¤ÇÆüËÜ¸ì¤ò»È¤¦¤ÈÊ¸»ú²½¤±¤¹¤ë (#37911)
+	  * -s¥ª¥×¥·¥ç¥ó¤ÇÆüËÜ¸ì¤ò»È¤¦¤ÈÊ¸»ú²½¤±¤¹¤ë (#37912)
+	  * ÆüËÜ¸ìÆşÎÏ¤¬Àµ¤·¤¯Æ°ºî¤·¤Ê¤¤ (#37913)
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Fri Feb 17 2017  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.8ƒŠƒŠ[ƒX
-	* ‰æ–Êã‚Ì‰ö•¨‚ğ/ƒRƒ}ƒ“ƒh‚ÅŒ©‚½Û‚É•¶š‰»‚¯‚·‚é–â‘è‚ğC³ (#36909)
-	* NPC‚Ì‘m—µ/“ò‘m/–@‰¤‚ª_‚Ì–¼‚ğŠ¥‚µ‚Ä‚¢‚È‚¢–â‘è‚ğC³ (#36910)
-	* ƒEƒBƒU[ƒhƒ‚[ƒh‚ÅƒCƒFƒ“ƒ_[‚Ì–‚œ‚¯‚ªŠè‚¦‚È‚¢–â‘è‚ğC³ (#36939)
-	* ƒI[ƒNŠ´’m’†‚ÌƒXƒeƒBƒ“ƒO‚Ì‹P‚«•\¦‚ª–³‚¢–â‘è‚ğC³ (#36953)
-	* Šè‚¢‚Å“¾‚½‚à‚Ì‚ğæ‚è—‚Æ‚µ‚½‚ÌƒƒbƒZ[ƒW‚ª‚¨‚©‚µ‚¢–â‘è‚ğC³
+	* JNetHack-3.6.0-0.8¥ê¥ê¡¼¥¹
+	* ²èÌÌ¾å¤Î²øÊª¤ò/¥³¥Ş¥ó¥É¤Ç¸«¤¿ºİ¤ËÊ¸»ú²½¤±¤¹¤ëÌäÂê¤ò½¤Àµ (#36909)
+	* NPC¤ÎÁÎÎ·/ÆôÁÎ/Ë¡²¦¤¬¿À¤ÎÌ¾¤ò´§¤·¤Æ¤¤¤Ê¤¤ÌäÂê¤ò½¤Àµ (#36910)
+	* ¥¦¥£¥¶¡¼¥É¥â¡¼¥É¤Ç¥¤¥§¥ó¥À¡¼¤ÎËâ½ü¤±¤¬´ê¤¨¤Ê¤¤ÌäÂê¤ò½¤Àµ (#36939)
+	* ¥ª¡¼¥¯´¶ÃÎÃæ¤Î¥¹¥Æ¥£¥ó¥°¤Îµ±¤­É½¼¨¤¬Ìµ¤¤ÌäÂê¤ò½¤Àµ (#36953)
+	* ´ê¤¤¤ÇÆÀ¤¿¤â¤Î¤ò¼è¤êÍî¤È¤·¤¿»ş¤Î¥á¥Ã¥»¡¼¥¸¤¬¤ª¤«¤·¤¤ÌäÂê¤ò½¤Àµ
 	  (#36991)
-	* ‰ö•¨–¼‚Ì•t‚¢‚½•¨‚ªŠè‚¦‚È‚¢–â‘è‚ğC³ (#36992)
-	* –|–ó’Ç‰ÁC³
+	* ²øÊªÌ¾¤ÎÉÕ¤¤¤¿Êª¤¬´ê¤¨¤Ê¤¤ÌäÂê¤ò½¤Àµ (#36992)
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Wed Dec  7 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.7ƒŠƒŠ[ƒX
-	* ˆê•”‚Ì€ˆö‚Åu€‚ñ‚¾v‚ª•\¦‚³‚ê‚È‚¢–â‘è‚ğC³ (#36579)
-	* Windows10‚Ìtty‚Å“ú–{Œê‚ª“ü—Í‚Å‚«‚È‚¢–â‘è‚ğC³ (#36599)
-	* “‘¯ƒNƒGƒXƒg‚ÆƒWƒ‡ƒEƒrƒŒƒbƒNƒXƒtƒƒA‚ÅuáŠQ”­¶v‚ªo‚é–â‘è‚ğC³
+	* JNetHack-3.6.0-0.7¥ê¥ê¡¼¥¹
+	* °ìÉô¤Î»à°ø¤Ç¡Ö»à¤ó¤À¡×¤¬É½¼¨¤µ¤ì¤Ê¤¤ÌäÂê¤ò½¤Àµ (#36579)
+	* Windows10¤Îtty¤ÇÆüËÜ¸ì¤¬ÆşÎÏ¤Ç¤­¤Ê¤¤ÌäÂê¤ò½¤Àµ (#36599)
+	* ÅğÂ±¥¯¥¨¥¹¥È¤È¥¸¥ç¥¦¥Ó¥ì¥Ã¥¯¥¹¥Õ¥í¥¢¤Ç¡Ö¾ã³²È¯À¸¡×¤¬½Ğ¤ëÌäÂê¤ò½¤Àµ
 	  (#36640)
-	* –|–ó’Ç‰ÁC³
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Jun 11 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.6ƒŠƒŠ[ƒX
-	* GCC‚Å‚ÌŒx‚ğ—}§
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.0-0.6¥ê¥ê¡¼¥¹
+	* GCC¤Ç¤Î·Ù¹ğ¤òÍŞÀ©
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Apr  3 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.5ƒŠƒŠ[ƒX
-	* •X‚Ìã‚ğ•à‚­‚ÆuáŠQ”­¶v‚ªo‚é–â‘è‚ğC³ (#36207)
-	* ƒNƒGƒXƒgÅ‰º‘w‚ÅƒNƒGƒXƒg¹Ší‚ª¶¬‚³‚ê‚È‚¢–â‘è‚ğC³ (#36215)
-	* “X‚ÅƒAƒCƒeƒ€‚ğ”„‚é‚Æ‚«‚ÉuáŠQ”­¶v‚ªo‚é–â‘è‚ğC³ (#36223)
-	* “Xå‚ª‚¨‹à‚ğx•¥‚¦‚È‚¢‚Æ‚«‚ÉƒNƒ‰ƒbƒVƒ…‚·‚é–â‘è‚ğC³ (#36224)
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.0-0.5¥ê¥ê¡¼¥¹
+	* É¹¤Î¾å¤òÊâ¤¯¤È¡Ö¾ã³²È¯À¸¡×¤¬½Ğ¤ëÌäÂê¤ò½¤Àµ (#36207)
+	* ¥¯¥¨¥¹¥ÈºÇ²¼ÁØ¤Ç¥¯¥¨¥¹¥ÈÀ»´ï¤¬À¸À®¤µ¤ì¤Ê¤¤ÌäÂê¤ò½¤Àµ (#36215)
+	* Å¹¤Ç¥¢¥¤¥Æ¥à¤òÇä¤ë¤È¤­¤Ë¡Ö¾ã³²È¯À¸¡×¤¬½Ğ¤ëÌäÂê¤ò½¤Àµ (#36223)
+	* Å¹¼ç¤¬¤ª¶â¤ò»ÙÊ§¤¨¤Ê¤¤¤È¤­¤Ë¥¯¥é¥Ã¥·¥å¤¹¤ëÌäÂê¤ò½¤Àµ (#36224)
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Mar 24 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.4ƒŠƒŠ[ƒX
-	* ˆê•”‚Ìƒtƒ@ƒCƒ‹‚Ì•¶šƒR[ƒh‚ªEUC-JP‚É‚È‚Á‚Ä‚¢‚½–â‘è‚ğC³ (#36189)
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.0-0.4¥ê¥ê¡¼¥¹
+	* °ìÉô¤Î¥Õ¥¡¥¤¥ë¤ÎÊ¸»ú¥³¡¼¥É¤¬EUC-JP¤Ë¤Ê¤Ã¤Æ¤¤¤¿ÌäÂê¤ò½¤Àµ (#36189)
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Fri Mar 18 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.3ƒŠƒŠ[ƒX
-	* unix/X11‘Î‰
-	* JNetHack.ad‚ğŒ»ó‚É‡‚¤‚æ‚¤‚ÉXV
-	* VS2013‚ÌIDE‚Åƒrƒ‹ƒho—ˆ‚é‚æ‚¤‚É’²®
-	* ‰\A_‘õAƒwƒ‹ƒv‚Ì–|–ó‚ğ’Ç‰Á
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.0-0.3¥ê¥ê¡¼¥¹
+	* unix/X11ÂĞ±ş
+	* JNetHack.ad¤ò¸½¾õ¤Ë¹ç¤¦¤è¤¦¤Ë¹¹¿·
+	* VS2013¤ÎIDE¤Ç¥Ó¥ë¥É½ĞÍè¤ë¤è¤¦¤ËÄ´À°
+	* ±½¡¢¿ÀÂ÷¡¢¥Ø¥ë¥×¤ÎËİÌõ¤òÄÉ²Ã
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Feb 21 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.6.0-0.2ƒŠƒŠ[ƒX
-	* windows/gui‘Î‰
-	* zRÅ‰º‘w‚â‘qŒÉ”ÔÅI–Ê‚ÅuáŠQ”­¶v‚ªo‚é–â‘è‚ğC³ (#36038)
-	* win/X11/winX.c ‚Ìƒpƒbƒ`“K—p˜R‚ê‚ğC³ (#36039)
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.6.0-0.2¥ê¥ê¡¼¥¹
+	* windows/guiÂĞ±ş
+	* ¹Û»³ºÇ²¼ÁØ¤äÁÒ¸ËÈÖºÇ½ªÌÌ¤Ç¡Ö¾ã³²È¯À¸¡×¤¬½Ğ¤ëÌäÂê¤ò½¤Àµ (#36038)
+	* win/X11/winX.c ¤Î¥Ñ¥Ã¥ÁÅ¬ÍÑÏ³¤ì¤ò½¤Àµ (#36039)
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Feb 14 2016  Kentaro Shirakata  <argrath@ub32.org>
 
-	* NetHack-3.6.0ƒx[ƒX JNetHackƒeƒXƒgƒŠƒŠ[ƒX(3.6.0-0.1)
+	* NetHack-3.6.0¥Ù¡¼¥¹ JNetHack¥Æ¥¹¥È¥ê¥ê¡¼¥¹(3.6.0-0.1)
 
 Sun Apr  8 2013  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.11ƒŠƒŠ[ƒX
-	* è‚¢ƒNƒbƒL[ê—pƒƒbƒZ[ƒWˆ—‚ª“®ì‚µ‚Ä‚¢‚È‚©‚Á‚½–â‘è‚ğC³
+	* JNetHack-3.4.3-0.11¥ê¥ê¡¼¥¹
+	* Àê¤¤¥¯¥Ã¥­¡¼ÀìÍÑ¥á¥Ã¥»¡¼¥¸½èÍı¤¬Æ°ºî¤·¤Æ¤¤¤Ê¤«¤Ã¤¿ÌäÂê¤ò½¤Àµ
 	  (#16381)
-	* Windows”Å‚ÅƒZ[ƒuƒtƒ@ƒCƒ‹–¼‚É“ú–{Œê‚ªg‚¦‚é‚æ‚¤‚ÉC³ (#18272)
-	* •¨‚ğE‚¤‚Æ‚«‚Éƒoƒbƒtƒ@ƒI[ƒo[ƒ‰ƒ“‚·‚é–â‘è‚ğC³ (#26691)
-	* –°‚Á‚Ä‚¢‚é‹Ræƒ‚ƒ“ƒXƒ^[‚ğR‚é‚ÆƒNƒ‰ƒbƒVƒ…‚·‚é–â‘è‚ğC³ (#30923)
-	* –|–ó’Ç‰ÁC³
+	* WindowsÈÇ¤Ç¥»¡¼¥Ö¥Õ¥¡¥¤¥ëÌ¾¤ËÆüËÜ¸ì¤¬»È¤¨¤ë¤è¤¦¤Ë½¤Àµ (#18272)
+	* Êª¤ò½¦¤¦¤È¤­¤Ë¥Ğ¥Ã¥Õ¥¡¥ª¡¼¥Ğ¡¼¥é¥ó¤¹¤ëÌäÂê¤ò½¤Àµ (#26691)
+	* Ì²¤Ã¤Æ¤¤¤ëµ³¾è¥â¥ó¥¹¥¿¡¼¤ò½³¤ë¤È¥¯¥é¥Ã¥·¥å¤¹¤ëÌäÂê¤ò½¤Àµ (#30923)
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun May  4 2008  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.10ƒŠƒŠ[ƒX
-	* °‚Ì’·‚¢ƒƒbƒZ[ƒW‚ğ“Ç‚Ş‚ÆƒNƒ‰ƒbƒVƒ…‚·‚é–â‘è‚ğC³
-	* ˆê•”‚ÌƒAƒCƒeƒ€‚ª“ú–{Œê‚ÅŠè‚¦‚È‚¢–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.10¥ê¥ê¡¼¥¹
+	* ¾²¤ÎÄ¹¤¤¥á¥Ã¥»¡¼¥¸¤òÆÉ¤à¤È¥¯¥é¥Ã¥·¥å¤¹¤ëÌäÂê¤ò½¤Àµ
+	* °ìÉô¤Î¥¢¥¤¥Æ¥à¤¬ÆüËÜ¸ì¤Ç´ê¤¨¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Wed May  2 2007  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.9ƒŠƒŠ[ƒX
-	* WindowCE‚Éˆê•”‘Î‰
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.9¥ê¥ê¡¼¥¹
+	* WindowCE¤Ë°ìÉôÂĞ±ş
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sat Apr  1 2006  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.8ƒŠƒŠ[ƒX
-	* ˆê•”‚ÌƒAƒCƒeƒ€‚ªŠè‚¦‚È‚¢–â‘è‚ğC³
-	* ƒVƒƒƒc‚Ìã‚©‚çƒVƒƒƒc‚ğ’…‚æ‚¤‚Æ‚·‚é‚ÆƒNƒ‰ƒbƒVƒ…‚·‚é–â‘è‚ğC³
-	* “ú–{Œê‚Å‚Ì–¼•t‚¯‚Å¹Ší‚ªì¬‚Å‚«‚È‚¢–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.8¥ê¥ê¡¼¥¹
+	* °ìÉô¤Î¥¢¥¤¥Æ¥à¤¬´ê¤¨¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ¥·¥ã¥Ä¤Î¾å¤«¤é¥·¥ã¥Ä¤òÃå¤è¤¦¤È¤¹¤ë¤È¥¯¥é¥Ã¥·¥å¤¹¤ëÌäÂê¤ò½¤Àµ
+	* ÆüËÜ¸ì¤Ç¤ÎÌ¾ÉÕ¤±¤ÇÀ»´ï¤¬ºîÀ®¤Ç¤­¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Jul 31 2005  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.7ƒŠƒŠ[ƒX
-	* DOS”Å‚ÅƒXƒRƒA•\¦‚ª•¶š‰»‚¯‚µ‚Ä‚¢‚½–â‘è‚ğC³
-	* ƒAƒGƒXƒLƒ…ƒ‰ƒsƒX‚Ìñ‚ªŠè‚¦‚È‚¢–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.7¥ê¥ê¡¼¥¹
+	* DOSÈÇ¤Ç¥¹¥³¥¢É½¼¨¤¬Ê¸»ú²½¤±¤·¤Æ¤¤¤¿ÌäÂê¤ò½¤Àµ
+	* ¥¢¥¨¥¹¥­¥å¥é¥Ô¥¹¤Î¾ó¤¬´ê¤¨¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Mon Apr 28 2005  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.6ƒŠƒŠ[ƒX
-	* ƒAƒCƒeƒ€‚â’nŒ`‚ÌÚ×•\¦‚ª‚³‚ê‚È‚¢–â‘è‚ğC³
-	* ƒNƒGƒXƒg‚ÉŠÖ‚·‚é•\¦‚ªˆê•”—‚ê‚é–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.6¥ê¥ê¡¼¥¹
+	* ¥¢¥¤¥Æ¥à¤äÃÏ·Á¤Î¾ÜºÙÉ½¼¨¤¬¤µ¤ì¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ¥¯¥¨¥¹¥È¤Ë´Ø¤¹¤ëÉ½¼¨¤¬°ìÉôÍğ¤ì¤ëÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Mon Jan  9 2005  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.5ƒŠƒŠ[ƒX
-	* ‘¶İ‚µ‚È‚¢ƒIƒvƒVƒ‡ƒ“‚ğdefault.nh‚Éİ’è‚µ‚½‚Æ‚«‚ÉƒNƒ‰ƒbƒVƒ…‚·‚é
-	  –â‘è‚ğC³
-	* “ú–{Œê‚Åƒf[ƒ^ƒx[ƒX‚ªŒÄ‚Ño‚¹‚È‚¢ê‡‚ª‚ ‚é–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.5¥ê¥ê¡¼¥¹
+	* Â¸ºß¤·¤Ê¤¤¥ª¥×¥·¥ç¥ó¤òdefault.nh¤ËÀßÄê¤·¤¿¤È¤­¤Ë¥¯¥é¥Ã¥·¥å¤¹¤ë
+	  ÌäÂê¤ò½¤Àµ
+	* ÆüËÜ¸ì¤Ç¥Ç¡¼¥¿¥Ù¡¼¥¹¤¬¸Æ¤Ó½Ğ¤»¤Ê¤¤¾ì¹ç¤¬¤¢¤ëÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Mon Aug  2 2004  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.4ƒŠƒŠ[ƒX
-	* •¡”Œ`‚ÅŠè‚Á‚½‚Ìˆ—‚ğ#ifdef‚Å•ª—£
-	* •Ïg‚Æ–¼‘O•Ô“š‚Ì‚É“ú–{Œê‚ªg‚¦‚È‚©‚Á‚½–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.4¥ê¥ê¡¼¥¹
+	* Ê£¿ô·Á¤Ç´ê¤Ã¤¿»ş¤Î½èÍı¤ò#ifdef¤ÇÊ¬Î¥
+	* ÊÑ¿È¤ÈÌ¾Á°ÊÖÅú¤Î»ş¤ËÆüËÜ¸ì¤¬»È¤¨¤Ê¤«¤Ã¤¿ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Apr 29 2004  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.3ƒŠƒŠ[ƒX
-	* ‹sE‚Å“ú–{Œê‚ªg‚¦‚È‚©‚Á‚½–â‘è‚ğC³
-	* æ”n—pƒAƒCƒeƒ€‚ÌŒø‰Ê‚ªŒø‚¢‚Ä‚¢‚È‚©‚Á‚½–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.3¥ê¥ê¡¼¥¹
+	* µÔ»¦¤ÇÆüËÜ¸ì¤¬»È¤¨¤Ê¤«¤Ã¤¿ÌäÂê¤ò½¤Àµ
+	* ¾èÇÏÍÑ¥¢¥¤¥Æ¥à¤Î¸ú²Ì¤¬¸ú¤¤¤Æ¤¤¤Ê¤«¤Ã¤¿ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Feb 19 2004  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.2ƒŠƒŠ[ƒX
-	* win/tty‚ªBCC‚ÅƒRƒ“ƒpƒCƒ‹‚Å‚«‚È‚­‚È‚Á‚Ä‚¢‚½–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.3-0.2¥ê¥ê¡¼¥¹
+	* win/tty¤¬BCC¤Ç¥³¥ó¥Ñ¥¤¥ë¤Ç¤­¤Ê¤¯¤Ê¤Ã¤Æ¤¤¤¿ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Wed Dec 31 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.3-0.1ƒŠƒŠ[ƒX
-	* NetHack-3.4.3ƒx[ƒX‚É‘Î‰
+	* JNetHack-3.4.3-0.1¥ê¥ê¡¼¥¹
+	* NetHack-3.4.3¥Ù¡¼¥¹¤ËÂĞ±ş
 
 Thu Dec  5 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.2-0.2ƒŠƒŠ[ƒX
-	* win/tty‚ÅƒXƒRƒAˆê——•\¦‚ª—‚ê‚é–â‘è‚ğC³
-	* ‘fè‚Å_‚Ìƒuƒƒbƒu‚ğ‰£‚é‚Æ‚Ü‚ê‚ÉƒNƒ‰ƒbƒVƒ…‚·‚é–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.2-0.2¥ê¥ê¡¼¥¹
+	* win/tty¤Ç¥¹¥³¥¢°ìÍ÷É½¼¨¤¬Íğ¤ì¤ëÌäÂê¤ò½¤Àµ
+	* ÁÇ¼ê¤Ç»À¤Î¥Ö¥í¥Ã¥Ö¤ò²¥¤ë¤È¤Ş¤ì¤Ë¥¯¥é¥Ã¥·¥å¤¹¤ëÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Nov 11 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.2-0.1ƒŠƒŠ[ƒX
-	* NetHack-3.4.2ƒx[ƒX‚É‘Î‰
+	* JNetHack-3.4.2-0.1¥ê¥ê¡¼¥¹
+	* NetHack-3.4.2¥Ù¡¼¥¹¤ËÂĞ±ş
 
 Wed Sep  3 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.1-0.4ƒŠƒŠ[ƒX
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.1-0.4¥ê¥ê¡¼¥¹
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sat Aug  9 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.1-0.3ƒŠƒŠ[ƒX
-	* Reportƒpƒbƒ`‚ğ•ª—£
-	* ƒRƒ}ƒ“ƒhƒ‰ƒCƒ“‚Åw’è‚µ‚½–¼‘O‚ÌŠ¿šƒR[ƒh‚ª•ÏŠ·‚³‚ê‚È‚¢–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.1-0.3¥ê¥ê¡¼¥¹
+	* Report¥Ñ¥Ã¥Á¤òÊ¬Î¥
+	* ¥³¥Ş¥ó¥É¥é¥¤¥ó¤Ç»ØÄê¤·¤¿Ì¾Á°¤Î´Á»ú¥³¡¼¥É¤¬ÊÑ´¹¤µ¤ì¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Jun  9 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.1-0.2ƒŠƒŠ[ƒX
-	* winnt/tty‚Å“ú–{Œê“ü—Í‚ªo—ˆ‚È‚¢–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.1-0.2¥ê¥ê¡¼¥¹
+	* winnt/tty¤ÇÆüËÜ¸ìÆşÎÏ¤¬½ĞÍè¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu Apr 10 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.1-0.1ƒŠƒŠ[ƒX
-	* NetHack-3.4.1ƒx[ƒX‚É‘Î‰
+	* JNetHack-3.4.1-0.1¥ê¥ê¡¼¥¹
+	* NetHack-3.4.1¥Ù¡¼¥¹¤ËÂĞ±ş
 
 Sat Feb 14 2003  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.0-0.10ƒŠƒŠ[ƒX
-	* unix/X11‘Î‰ŠJn
-	* Radarƒpƒbƒ`‚ğ•ª—£
-	* Newbieƒpƒbƒ`‚ğ•ª—£
-	* CenterPopupsƒpƒbƒ`‚ğ•ª—£
-	* MinGW‚Å‚ÌƒRƒ“ƒpƒCƒ‹‚É‘Î‰
-	* jjj‚ğ”p~
-	* Œö®ƒZƒLƒ…ƒŠƒeƒBƒpƒbƒ`(C340-137)‚ğ“K—p
-	* winnt/win32‚Å‘½‚­‚ÌƒEƒBƒ“ƒhƒE‚ğ•\¦‚·‚é‚Æ—‚¿‚é–â‘è(W340-14)‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.10¥ê¥ê¡¼¥¹
+	* unix/X11ÂĞ±ş³«»Ï
+	* Radar¥Ñ¥Ã¥Á¤òÊ¬Î¥
+	* Newbie¥Ñ¥Ã¥Á¤òÊ¬Î¥
+	* CenterPopups¥Ñ¥Ã¥Á¤òÊ¬Î¥
+	* MinGW¤Ç¤Î¥³¥ó¥Ñ¥¤¥ë¤ËÂĞ±ş
+	* jjj¤òÇÑ»ß
+	* ¸ø¼°¥»¥­¥å¥ê¥Æ¥£¥Ñ¥Ã¥Á(C340-137)¤òÅ¬ÍÑ
+	* winnt/win32¤ÇÂ¿¤¯¤Î¥¦¥£¥ó¥É¥¦¤òÉ½¼¨¤¹¤ë¤ÈÍî¤Á¤ëÌäÂê(W340-14)¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Fri Dec 20 2002  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.0-0.9ƒŠƒŠ[ƒX
-	* €‚Ì’J‚Åã‚èŠK’i‚ª¶¬‚³‚ê‚È‚¢‚±‚Æ‚ª‚ ‚é–â‘è(C340-27)‚ğC³
-	* •“¬‰Æ‚ÅƒŒƒxƒ‹13‚Ì—â‹C‘Ï«‚ª‚Â‚©‚È‚¢–â‘è‚ğC³
-	* Windows/GUI”Å‚ªWin95Œn‚Å•¶š‰»‚¯‚·‚é–â‘è‚ğC³
-	* Boland C++‚Å‚ÌƒRƒ“ƒpƒCƒ‹‚É‘Î‰
-	* Fighterƒpƒbƒ`‚ğ•ª—£
-	* –{‰Æ‚ÅGnome‘Î‰‚³‚ê‚Ä‚¢‚é‚Ì‚Å‹ŒGTK_GRAPHICSŠÖŒW‚ğíœ
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.9¥ê¥ê¡¼¥¹
+	* »à¤ÎÃ«¤Ç¾å¤ê³¬ÃÊ¤¬À¸À®¤µ¤ì¤Ê¤¤¤³¤È¤¬¤¢¤ëÌäÂê(C340-27)¤ò½¤Àµ
+	* ÉğÆ®²È¤Ç¥ì¥Ù¥ë13¤Î»şÎäµ¤ÂÑÀ­¤¬¤Ä¤«¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* Windows/GUIÈÇ¤¬Win95·Ï¤ÇÊ¸»ú²½¤±¤¹¤ëÌäÂê¤ò½¤Àµ
+	* Boland C++¤Ç¤Î¥³¥ó¥Ñ¥¤¥ë¤ËÂĞ±ş
+	* Fighter¥Ñ¥Ã¥Á¤òÊ¬Î¥
+	* ËÜ²È¤ÇGnomeÂĞ±ş¤µ¤ì¤Æ¤¤¤ë¤Î¤ÇµìGTK_GRAPHICS´Ø·¸¤òºï½ü
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sat Sep 16 2002  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.0-0.8ƒŠƒŠ[ƒX
-	* ƒ{[ƒpƒ‹ƒuƒŒ[ƒh‚Å—H—ì‚ğØ‚é‚Æ—‚¿‚é–â‘è‚ğC³
-	* ‰ö•¨‚ªlŠÔ‚É•Ïg‚µ‚½‚Æ‚«‚ÉE‹Æ•\¦‚ª•¶š‰»‚¯‚·‚é–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.8¥ê¥ê¡¼¥¹
+	* ¥Ü¡¼¥Ñ¥ë¥Ö¥ì¡¼¥É¤ÇÍ©Îî¤òÀÚ¤ë¤ÈÍî¤Á¤ëÌäÂê¤ò½¤Àµ
+	* ²øÊª¤¬¿Í´Ö¤ËÊÑ¿È¤·¤¿¤È¤­¤Ë¿¦¶ÈÉ½¼¨¤¬Ê¸»ú²½¤±¤¹¤ëÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Mon Aug  5 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* dos(djgpp)‘Î‰ŠJn
+	* dos(djgpp)ÂĞ±ş³«»Ï
 
 Sat Aug  3 2002  Kentaro Shirakata  <argrath@ub32.org>
 
-	* JNetHack-3.4.0-0.7ƒŠƒŠ[ƒX
-	* jGuidebook‚ğ’Ç‰Á
-	* data.base,quest.dat‚ğ‚»‚ê‚¼‚êjdata.base,jquest.dat‚É•ÏX
-	* rogueƒŒƒxƒ‹‚Å'@'‚ª•¶š‰»‚¯‚·‚é–â‘è‚ğC³
-	* ’n—‹‚Å‚»‚Ìã‚É‚ ‚é‹Î/‘œ‚ª‰ó‚ê‚é‚Æ—‚¿‚é–â‘è(C340-2)‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.7¥ê¥ê¡¼¥¹
+	* jGuidebook¤òÄÉ²Ã
+	* data.base,quest.dat¤ò¤½¤ì¤¾¤ìjdata.base,jquest.dat¤ËÊÑ¹¹
+	* rogue¥ì¥Ù¥ë¤Ç'@'¤¬Ê¸»ú²½¤±¤¹¤ëÌäÂê¤ò½¤Àµ
+	* ÃÏÍë¤Ç¤½¤Î¾å¤Ë¤¢¤ëµğÀĞ/Áü¤¬²õ¤ì¤ë¤ÈÍî¤Á¤ëÌäÂê(C340-2)¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun Jul  7 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* JNetHack-3.4.0-0.6ƒŠƒŠ[ƒX
-	* ƒtƒƒXƒgƒuƒ‰ƒ“ƒh‚ÌUŒ‚‚ª–½’†‚·‚é‚Æ—‚¿‚é–â‘è‚ğC³
-	* ”š‚ğ"/"ƒRƒ}ƒ“ƒh‚Å’²‚×‚é‚Æ—‚¿‚é–â‘è‚ğC³
-	* ‰¹‚ÉŠÖ‚·‚éƒƒbƒZ[ƒW‚ª‘S‚­•\¦‚³‚ê‚Ä‚¢‚È‚©‚Á‚½–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.6¥ê¥ê¡¼¥¹
+	* ¥Õ¥í¥¹¥È¥Ö¥é¥ó¥É¤Î¹¶·â¤¬Ì¿Ãæ¤¹¤ë¤ÈÍî¤Á¤ëÌäÂê¤ò½¤Àµ
+	* ¿ô»ú¤ò"/"¥³¥Ş¥ó¥É¤ÇÄ´¤Ù¤ë¤ÈÍî¤Á¤ëÌäÂê¤ò½¤Àµ
+	* ²»¤Ë´Ø¤¹¤ë¥á¥Ã¥»¡¼¥¸¤¬Á´¤¯É½¼¨¤µ¤ì¤Æ¤¤¤Ê¤«¤Ã¤¿ÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Fri Jun 14 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* JnetHack-3.4.0-0.5ƒŠƒŠ[ƒX
-	* winnt/tty‚Å•\¦‚ª—‚ê‚é–â‘è‚ğ‰¼C³
-	* ƒAƒCƒeƒ€–½–¼‚ª”½‰f‚³‚ê‚È‚¢‚±‚Æ‚ª‚ ‚é–â‘è‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JnetHack-3.4.0-0.5¥ê¥ê¡¼¥¹
+	* winnt/tty¤ÇÉ½¼¨¤¬Íğ¤ì¤ëÌäÂê¤ò²¾½¤Àµ
+	* ¥¢¥¤¥Æ¥àÌ¿Ì¾¤¬È¿±Ç¤µ¤ì¤Ê¤¤¤³¤È¤¬¤¢¤ëÌäÂê¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Fri May 24 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* JNetHack-3.4.0-0.4ƒŠƒŠ[ƒX
-	* ƒgƒŠƒbƒN‚ÌŠ“‚ğ#loot‚µ‚½‚Æ‚«‚Ìƒ_ƒ[ƒW‚ª‚¨‚©‚µ‚¢ƒoƒO‚ğC³
-	* "."‚Å‹xŒe‚Å‚«‚È‚¢ƒoƒO‚ğC³
-	* ƒvƒŒƒCƒ„[‚ªƒ‚ƒ“ƒXƒ^[‚ğˆù‚İ‚Ş‚Æ–³ğŒ‚ÅÎ‰»‚·‚é‚Ì‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.4¥ê¥ê¡¼¥¹
+	* ¥È¥ê¥Ã¥¯¤Î³ó¤ò#loot¤·¤¿¤È¤­¤Î¥À¥á¡¼¥¸¤¬¤ª¤«¤·¤¤¥Ğ¥°¤ò½¤Àµ
+	* "."¤ÇµÙ·Æ¤Ç¤­¤Ê¤¤¥Ğ¥°¤ò½¤Àµ
+	* ¥×¥ì¥¤¥ä¡¼¤¬¥â¥ó¥¹¥¿¡¼¤ò°û¤ß¹ş¤à¤ÈÌµ¾ò·ï¤ÇÀĞ²½¤¹¤ë¤Î¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu May 16 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* JNetHack-3.4.0-0.3ƒŠƒŠ[ƒX
-	* winnt/tty‘Î‰ŠJn
-	* data.base‚ğˆ—
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.3¥ê¥ê¡¼¥¹
+	* winnt/ttyÂĞ±ş³«»Ï
+	* data.base¤ò½èÍı
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Sun May 12 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* JNetHack-3.4.0-0.2ƒŠƒŠ[ƒX
-	* winnt/win32‘Î‰ŠJn
-	* default.nh‚ğ“Ç‚à‚¤‚Æ‚·‚é‚ÆƒGƒ‰[‚É‚È‚é‚Ì‚ğC³
-	* –|–ó’Ç‰ÁC³
+	* JNetHack-3.4.0-0.2¥ê¥ê¡¼¥¹
+	* winnt/win32ÂĞ±ş³«»Ï
+	* default.nh¤òÆÉ¤â¤¦¤È¤¹¤ë¤È¥¨¥é¡¼¤Ë¤Ê¤ë¤Î¤ò½¤Àµ
+	* ËİÌõÄÉ²Ã½¤Àµ
 
 Thu May  9 2002  Kentaro Shirakata  <argrath@ub32.org>
-	* NetHack-3.4.0ƒx[ƒX JNetHackƒeƒXƒgƒŠƒŠ[ƒX(3.4.0-0.1)
+	* NetHack-3.4.0¥Ù¡¼¥¹ JNetHack¥Æ¥¹¥È¥ê¥ê¡¼¥¹(3.4.0-0.1)
 
 Sun Apr    2 2000	Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.2.0ƒÀƒo[ƒWƒ‡ƒ“ƒŠƒŠ[ƒX
+	* JNetHack-1.2.0¦Â¥Ğ¡¼¥¸¥ç¥ó¥ê¥ê¡¼¥¹
 
-Tue Mar   14 2000	Hideaki YOSHIFUJI (‹g“¡‰p–¾) <yoshfuji@ecei.tohoku.ac.jp>
-	* IPV6‚É‘Î‰
+Tue Mar   14 2000	Hideaki YOSHIFUJI (µÈÆ£±ÑÌÀ) <yoshfuji@ecei.tohoku.ac.jp>
+	* IPV6¤ËÂĞ±ş
 
 Fri Mar   10 2000	Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.2.0ƒ¿ƒo[ƒWƒ‡ƒ“ƒŠƒŠ[ƒX
+	* JNetHack-1.2.0¦Á¥Ğ¡¼¥¸¥ç¥ó¥ê¥ê¡¼¥¹
 
 Wed Mar   1 2000	Issei Numata  <issei@jnethack.org>
-	* ƒI[ƒvƒjƒ“ƒOƒƒbƒZ[ƒW‚ğ•ÏX
-	* NetHack-3.3.0ƒx[ƒX JNetHackŠJ”­ŠJn
+	* ¥ª¡¼¥×¥Ë¥ó¥°¥á¥Ã¥»¡¼¥¸¤òÊÑ¹¹
+	* NetHack-3.3.0¥Ù¡¼¥¹ JNetHack³«È¯³«»Ï
 
 Sat Feb  12 2000	Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.1.5 ƒŠƒŠ[ƒX
+	* JNetHack-1.1.5 ¥ê¥ê¡¼¥¹
 
 Mon Feb  7 2000		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.1.4 ƒŠƒŠ[ƒX
+	* JNetHack-1.1.4 ¥ê¥ê¡¼¥¹
 
 Mon Feb  7 2000		Issei Numata  <issei@jnethack.org>
-	* NetHack-3.2.3‚É‘Î‰
+	* NetHack-3.2.3¤ËÂĞ±ş
 
 Wed Dec  1 1999		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.1.3 ƒŠƒŠ[ƒX
+	* JNetHack-1.1.3 ¥ê¥ê¡¼¥¹
 
 Sun Nov 21 1999		Issei Numata  <issei@jnethack.org>
-	* ƒvƒƒLƒV‚ğƒIƒvƒVƒ‡ƒ“‚Åw’è‚Å‚«‚é‚æ‚¤•ÏX
+	* ¥×¥í¥­¥·¤ò¥ª¥×¥·¥ç¥ó¤Ç»ØÄê¤Ç¤­¤ë¤è¤¦ÊÑ¹¹
 
 Thu Nov 19 1999		Issei Numata  <issei@jnethack.org>
-	* 3Dƒ}ƒbƒv‘Î‰
+	* 3D¥Ş¥Ã¥×ÂĞ±ş
 
 Wed Nov 17 1999		Issei Numata  <issei@jnethack.org>
-	* bonesƒVƒXƒeƒ€“±“ü
+	* bones¥·¥¹¥Æ¥àÆ³Æş
 
 Tue Nov 9 1999		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.1.2 ƒŠƒŠ[ƒX
+	* JNetHack-1.1.2 ¥ê¥ê¡¼¥¹
 
 Tue Nov 9 1999		Issei Numata  <issei@jnethack.org>
-	* proxy‚ğg‚¦‚é‚æ‚¤‚É•ÏX
-	* ×‚©‚¢ƒoƒOC³
+	* proxy¤ò»È¤¨¤ë¤è¤¦¤ËÊÑ¹¹
+	* ºÙ¤«¤¤¥Ğ¥°½¤Àµ
 
 Mon Nov 8 1999		Issei Numata  <issei@jnethack.org>
-	* http‚ÅƒXƒRƒA‚ğ“]‘—‚Å‚«‚é‚æ‚¤‚É•ÏX
+	* http¤Ç¥¹¥³¥¢¤òÅ¾Á÷¤Ç¤­¤ë¤è¤¦¤ËÊÑ¹¹
 
 Tue Nov 2 1999		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.1.1 ƒŠƒŠ[ƒX
+	* JNetHack-1.1.1 ¥ê¥ê¡¼¥¹
 
 Mon Nov 1 1999		Issei Numata  <issei@jnethack.org>
-	* ¼—ï2000”N–â‘è‚É‘Îˆ
-	* menu‚É HP/MP bar‚ğ’Ç‰Á
-	* ×‚©‚¢ƒoƒOC³
+	* À¾Îñ2000Ç¯ÌäÂê¤ËÂĞ½è
+	* menu¤Ë HP/MP bar¤òÄÉ²Ã
+	* ºÙ¤«¤¤¥Ğ¥°½¤Àµ
 
 Thu Oct 28 1999		Issei Numata  <issei@jnethack.org>
-	* monster detection‚È‚Ç‚Å‰æ–Ê‚ª~‚Ü‚ç‚È‚¢–â‘è‚ğC³
-	* “`““I•¶šƒ‚[ƒh‚ğ‘I‘ğ‰Â”\‚É
+	* monster detection¤Ê¤É¤Ç²èÌÌ¤¬»ß¤Ş¤é¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ÅÁÅıÅªÊ¸»ú¥â¡¼¥É¤òÁªÂò²ÄÇ½¤Ë
 
 Mon Oct 24 1999		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.1.0 ƒŠƒŠ[ƒX
-	* ×‚©‚¢ƒoƒOC³
+	* JNetHack-1.1.0 ¥ê¥ê¡¼¥¹
+	* ºÙ¤«¤¤¥Ğ¥°½¤Àµ
 
 Sat Oct 23 1999		Issei Numata  <issei@jnethack.org>
-	* credit‰æ‘œ’Ç‰Á
+	* credit²èÁüÄÉ²Ã
 
 Thu Oct 21 1999		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.0.7.19991021ƒŠƒŠ[ƒX
+	* JNetHack-1.0.7.19991021¥ê¥ê¡¼¥¹
 
 Tue Oct 19 1999		Issei Numata  <issei@jnethack.org>
-	* JNetHack-1.0.7.19991019ƒŠƒŠ[ƒX
+	* JNetHack-1.0.7.19991019¥ê¥ê¡¼¥¹
 
 Sat Oct 16 1999		Issei Numata  <issei@jnethack.org>
-	* warning‚ğŒ¸‚ç‚·
-	* ×‚©‚¢ƒoƒOC³
+	* warning¤ò¸º¤é¤¹
+	* ºÙ¤«¤¤¥Ğ¥°½¤Àµ
 
 Sat Oct 9 1999		Issei Numata  <issei@jnethack.org>
-	* newbieƒ‚[ƒh’Ç‰Á
+	* newbie¥â¡¼¥ÉÄÉ²Ã
 
 Sat Oct 9 1999		Issei Numata  <issei@jnethack.org>
-	* jnethack-1.0.6.3ŒöŠJ
+	* jnethack-1.0.6.3¸ø³«
 
 Fri Oct 8 1999		Issei Numata  <issei@jnethack.org>
-	* ƒ^ƒCƒ‹‚ğg—p‚µ‚È‚¢‚Æ‚«‚Íradar‚ğ”ñ•\¦‚É‚·‚é‚æ‚¤‚ÉC³
-	* radar‚Ìã‚Å ESC‚ğ‰Ÿ‚µ‚½‚ç”ñ•\¦‚ÉC³
-	* option‚É radar‚Ì on/off‚ÌØ‘Ö‚ğ’Ç‰Á
-	* ƒXƒRƒAƒT[ƒo‚ÉÚ‘±‚·‚é‚Æ‚«20•b‚Åƒ^ƒCƒ€ƒAƒEƒg‚·‚é‚æ‚¤•ÏX
-	* ‚»‚Ì‘¼×‚¢ƒoƒO‚ğC³
+	* ¥¿¥¤¥ë¤ò»ÈÍÑ¤·¤Ê¤¤¤È¤­¤Ïradar¤òÈóÉ½¼¨¤Ë¤¹¤ë¤è¤¦¤Ë½¤Àµ
+	* radar¤Î¾å¤Ç ESC¤ò²¡¤·¤¿¤éÈóÉ½¼¨¤Ë½¤Àµ
+	* option¤Ë radar¤Î on/off¤ÎÀÚÂØ¤òÄÉ²Ã
+	* ¥¹¥³¥¢¥µ¡¼¥Ğ¤ËÀÜÂ³¤¹¤ë¤È¤­20ÉÃ¤Ç¥¿¥¤¥à¥¢¥¦¥È¤¹¤ë¤è¤¦ÊÑ¹¹
+	* ¤½¤ÎÂ¾ºÙ¤¤¥Ğ¥°¤ò½¤Àµ
 
 Fri Oct 8 1999		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* ƒXƒRƒA•\¦‚ÌƒoƒO‚ğC³
+	* ¥¹¥³¥¢É½¼¨¤Î¥Ğ¥°¤ò½¤Àµ
 
 Tue Oct 7 1999		ITAKURA Mitsuhiro <ita@gold.koma.jaeri.go.jp>	
-	* “§–¾ƒsƒbƒNƒXƒ}ƒbƒv‚Ì‚‘¬‰»
+	* Æ©ÌÀ¥Ô¥Ã¥¯¥¹¥Ş¥Ã¥×¤Î¹âÂ®²½
 
 Tue Oct 7 1999		Issei Numata  <issei@jnethack.org>
-	* option‚É homeurl‚ğ’Ç‰Á
-	* ƒfƒtƒHƒ‹ƒg‚ÌƒIƒvƒVƒ‡ƒ“•ÏX
+	* option¤Ë homeurl¤òÄÉ²Ã
+	* ¥Ç¥Õ¥©¥ë¥È¤Î¥ª¥×¥·¥ç¥óÊÑ¹¹
 	  perm_invent -> off
-	  TEXT_COLOR‚ğƒfƒtƒHƒ‹ƒg‚Å #define
+	  TEXT_COLOR¤ò¥Ç¥Õ¥©¥ë¥È¤Ç #define
 
 Tue Oct 7 1999		Issei Numata  <issei@jnethack.org>
-	* “§–¾ƒsƒbƒNƒXƒ}ƒbƒv‚É‘Î‰
-	* JNetHack.ad ‚ğ HACKDIR‚É’u‚¯‚é‚æ‚¤‚É•ÏX
+	* Æ©ÌÀ¥Ô¥Ã¥¯¥¹¥Ş¥Ã¥×¤ËÂĞ±ş
+	* JNetHack.ad ¤ò HACKDIR¤ËÃÖ¤±¤ë¤è¤¦¤ËÊÑ¹¹
 
 Tue Oct 6 1999		Issei Numata  <issei@jnethack.org>
-	* jnethack-1.0.6.1ŒöŠJ
+	* jnethack-1.0.6.1¸ø³«
 
 Tue Oct 6 1999		Issei Numata  <issei@jnethack.org>
-	* Linux‚Å‚àŠÈ’P‚ÉƒRƒ“ƒpƒCƒ‹‚Å‚«‚é‚æ‚¤C³
-	* rip‚Ìcolormap‚ª³‚µ‚­İ’è‚³‚ê‚È‚¢–â‘è‚ğC³
-	* ƒŒ[ƒ_[‚Ìã‚Å‚àƒL[‚ğó‚¯‚Â‚¯‚é‚æ‚¤C³
-	* X”Å‚ÍƒIƒvƒVƒ‡ƒ“‚Ì—L–³‚É‚©‚©‚í‚ç‚¸Anumber pad‚ğˆÚ“®‚É
-	  g‚¦‚é‚æ‚¤‚ÉC³
+	* Linux¤Ç¤â´ÊÃ±¤Ë¥³¥ó¥Ñ¥¤¥ë¤Ç¤­¤ë¤è¤¦½¤Àµ
+	* rip¤Îcolormap¤¬Àµ¤·¤¯ÀßÄê¤µ¤ì¤Ê¤¤ÌäÂê¤ò½¤Àµ
+	* ¥ì¡¼¥À¡¼¤Î¾å¤Ç¤â¥­¡¼¤ò¼õ¤±¤Ä¤±¤ë¤è¤¦½¤Àµ
+	* XÈÇ¤Ï¥ª¥×¥·¥ç¥ó¤ÎÍ­Ìµ¤Ë¤«¤«¤ï¤é¤º¡¢number pad¤ò°ÜÆ°¤Ë
+	  »È¤¨¤ë¤è¤¦¤Ë½¤Àµ
 
 Tue Oct 5 1999		Issei Numata  <issei@jnethack.org>
-	* jnethack-1.0.6ŒöŠJ
+	* jnethack-1.0.6¸ø³«
 
 Mon Oct 4 1999		Issei Numata  <issei@jnethack.org>
-	* ƒfƒtƒHƒ‹ƒg‚ÌƒIƒvƒVƒ‡ƒ“’l•ÏX
+	* ¥Ç¥Õ¥©¥ë¥È¤Î¥ª¥×¥·¥ç¥óÃÍÊÑ¹¹
 	  autopickup -> off
 	  perm_invent -> on
 	  mail -> off
 	  windowtype 'tty' -> 'x11'
 
 Sun Oct 3 1999		Issei Numata  <issei@jnethack.org>
-	* ƒŒ[ƒ_[•\¦’Ç‰Á
-	* F”‚ª­‚È‚¢ƒ‚ƒjƒ^‚Å‚à“®ì‚·‚é‚æ‚¤•ÏX
+	* ¥ì¡¼¥À¡¼É½¼¨ÄÉ²Ã
+	* ¿§¿ô¤¬¾¯¤Ê¤¤¥â¥Ë¥¿¤Ç¤âÆ°ºî¤¹¤ë¤è¤¦ÊÑ¹¹
 
 Thu Oct 1 1999		Issei Numata  <issei@jnethack.org>
-	* •W€ƒ^ƒCƒ‹‚ğ32x32‚Ì‚à‚Ì‚É•ÏX
-	* ƒXƒRƒA•\¦‚ğ•ÏX
+	* É¸½à¥¿¥¤¥ë¤ò32x32¤Î¤â¤Î¤ËÊÑ¹¹
+	* ¥¹¥³¥¢É½¼¨¤òÊÑ¹¹
 
 Wed Sep 30 1999		Issei Numata  <issei@jnethack.org>
-	* ƒXƒRƒA‚ğƒzƒXƒg‚É“]‘—‚·‚éƒVƒXƒeƒ€ì¬
+	* ¥¹¥³¥¢¤ò¥Û¥¹¥È¤ËÅ¾Á÷¤¹¤ë¥·¥¹¥Æ¥àºîÀ®
 
 Wed Sep 24 1997		Issei Numata  <issei@nna.so-net.or.jp>
-	* class–¼‚ğ NetHack‚©‚ç JNetHack‚Ö•ÏX
+	* classÌ¾¤ò NetHack¤«¤é JNetHack¤ØÊÑ¹¹
 
 Mon Sep 8 1997		uchidak@creo.co.jp
 Mon Aug 25 1997
-	* ƒƒbƒZ[ƒW‚ÌC³
+	* ¥á¥Ã¥»¡¼¥¸¤Î½¤Àµ
 
 Tue Jul 22 1997		KIHARA Hideto <kihara@shiratori.riec.tohoku.ac.jp>
-	* ƒƒbƒZ[ƒW‚ÌC³
+	* ¥á¥Ã¥»¡¼¥¸¤Î½¤Àµ
 
 Thu Jul 3 1997		Kentaro Shirakata <shira@kdel.info.eng.osaka-cu.ac.jp>
-	* nethack-3.2.2ƒx[ƒX‚Ìjnethack‚ÌŠJ”­‚É’…è
-	* quest.txt‚Ì–óŒêC³D
+	* nethack-3.2.2¥Ù¡¼¥¹¤Îjnethack¤Î³«È¯¤ËÃå¼ê
+	* quest.txt¤ÎÌõ¸ì½¤Àµ¡¥
 
 Tue Dec 24 1996		Issei Numata  <issei@nna.so-net.or.jp>
 	* jnethack-1.0.5.4.1 release
-	* «•Ê—‚ÅK‚ğ‘I‚Ô‚ÆP‚É‚È‚Á‚Ä‚µ‚Ü‚¤ƒoƒO‚ğ–{“–‚ÉC³D
+	* À­ÊÌ½÷¤ÇK¤òÁª¤Ö¤ÈP¤Ë¤Ê¤Ã¤Æ¤·¤Ş¤¦¥Ğ¥°¤òËÜÅö¤Ë½¤Àµ¡¥
 
 Sat Nov 23 1996		Issei Numata  <issei@nna.so-net.or.jp>
 	* jnethack-1.0.5.4 release
-	* ƒhƒLƒ…ƒƒ“ƒg‚ÌC³(‚Æ‚Ä‚à‚±‚±‚É–¼‘O‚Í‘‚«Ø‚ê‚Ü‚¹‚ñ)
-	* ƒƒbƒZ[ƒW‚ÌC³(‚Æ‚Ä‚à‚±‚±‚É–¼‘O‚Í‘‚«Ø‚ê‚Ü‚¹‚ñ)
+	* ¥É¥­¥å¥á¥ó¥È¤Î½¤Àµ(¤È¤Æ¤â¤³¤³¤ËÌ¾Á°¤Ï½ñ¤­ÀÚ¤ì¤Ş¤»¤ó)
+	* ¥á¥Ã¥»¡¼¥¸¤Î½¤Àµ(¤È¤Æ¤â¤³¤³¤ËÌ¾Á°¤Ï½ñ¤­ÀÚ¤ì¤Ş¤»¤ó)
 
 Fri Sep  6 1996		Issei Numata  <issei@jaist.ac.jp>
 	* jnethack-1.0.5.2 release
 
 Fri Aug 23 1996		Issei Numata  <issei@jaist.ac.jp>
-	* ‚e‚Ì€‘Ì‚â—H—ì‚ª—á‚ÌêŠ‚ÉŒ»‚í‚ê‚È‚¢–â‘è‚ÌC³D
+	* £Æ¤Î»àÂÎ¤äÍ©Îî¤¬Îã¤Î¾ì½ê¤Ë¸½¤ï¤ì¤Ê¤¤ÌäÂê¤Î½¤Àµ¡¥
 
 Thu Aug 22 1996		Issei Numata  <issei@jaist.ac.jp>
-	* X11‚Å perminvent‚ğƒIƒvƒVƒ‡ƒ“‚Åw’è‚·‚é‚ÆƒAƒCƒeƒ€‚ğE‚Á‚½‚Æ‚«‚É
-	  —‚¿‚é–â‘è‚ÌC³
-	* ƒ†[ƒeƒBƒŠƒeƒBrecover‚Å‰ñ•œ‚Å‚«‚È‚¢–â‘è‚ÌC³D (NetHack‚ÌƒoƒO) 
-	* Class Genocide‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ª‰pŒê‚ÌC³D 
-	* ¹Ší(ƒA[ƒeƒBƒtƒ@ƒNƒg)‚ğŠè‚Á‚Ä¸”s‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ª‰pŒêD 
+	* X11¤Ç perminvent¤ò¥ª¥×¥·¥ç¥ó¤Ç»ØÄê¤¹¤ë¤È¥¢¥¤¥Æ¥à¤ò½¦¤Ã¤¿¤È¤­¤Ë
+	  Íî¤Á¤ëÌäÂê¤Î½¤Àµ
+	* ¥æ¡¼¥Æ¥£¥ê¥Æ¥£recover¤Ç²óÉü¤Ç¤­¤Ê¤¤ÌäÂê¤Î½¤Àµ¡¥ (NetHack¤Î¥Ğ¥°) 
+	* Class Genocide¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤¬±Ñ¸ì¤Î½¤Àµ¡¥ 
+	* À»´ï(¥¢¡¼¥Æ¥£¥Õ¥¡¥¯¥È)¤ò´ê¤Ã¤Æ¼ºÇÔ¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤¬±Ñ¸ì¡¥ 
 
 Wed Aug 21 1996		Issei Numata  <issei@jaist.ac.jp>
-	* japanese/jlib.c ‚Ì is_kanji1‚ÌC³
-	* E‹Æ F‚Ì Quest‚Å‚Ì Guard‚ÌƒƒbƒZ[ƒW‚ª•Ï
-	* E‹Æ F‚Å Neutral‚Ì_‚ª‰pŒê
-	* –ò‚ªƒWƒ…[ƒX‚â…‚É‚È‚é‚Æ‚«‚ÌƒƒbƒZ[ƒWD
-	* “Å‚ÌUŒ‚‚ğH‚Á‚Ä€‚Ê‚Æ‰ö•¨‚Ì–¼‘OD
-	* ‚½‚Ü‚Éƒ}ƒbƒv‚Ì•¶š‚ª‰»‚¯‚é(‚Æ‚­‚É jis‚Å—V‚ñ‚Å‚¢‚é)–â‘èD
-	* ¹Ší(ƒA[ƒeƒBƒtƒ@ƒNƒg)‚ÉG‚ê‚Ä€‚ñ‚¾‚Æ‚«‚Ì€ˆö‚ª‰pŒê
-	* —‘‚Ì•¶š‚ª‰»‚¯‚é
+	* japanese/jlib.c ¤Î is_kanji1¤Î½¤Àµ
+	* ¿¦¶È F¤Î Quest¤Ç¤Î Guard¤Î¥á¥Ã¥»¡¼¥¸¤¬ÊÑ
+	* ¿¦¶È F¤Ç Neutral¤Î¿À¤¬±Ñ¸ì
+	* Ìô¤¬¥¸¥å¡¼¥¹¤ä¿å¤Ë¤Ê¤ë¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¡¥
+	* ÆÇ¤Î¹¶·â¤ò¿©¤Ã¤Æ»à¤Ì¤È²øÊª¤ÎÌ¾Á°¡¥
+	* ¤¿¤Ş¤Ë¥Ş¥Ã¥×¤ÎÊ¸»ú¤¬²½¤±¤ë(¤È¤¯¤Ë jis¤ÇÍ·¤ó¤Ç¤¤¤ë»ş)ÌäÂê¡¥
+	* À»´ï(¥¢¡¼¥Æ¥£¥Õ¥¡¥¯¥È)¤Ë¿¨¤ì¤Æ»à¤ó¤À¤È¤­¤Î»à°ø¤¬±Ñ¸ì
+	* Íî½ñ¤ÎÊ¸»ú¤¬²½¤±¤ë
 
 Mon Aug 19 1996		Issei Numata  <issei@jaist.ac.jp>
 	* jnethack-1.0.5.1 release
 
 Mon Aug 19 1996		Issei Numata  <issei@jaist.ac.jp>
-	* ‚¢‚­‚Â‚©‚Ì“ú–{ŒêŠÖŒW‚Ì•\¦‚ÌƒoƒO‚ğ‰ğŒˆ
+	* ¤¤¤¯¤Ä¤«¤ÎÆüËÜ¸ì´Ø·¸¤ÎÉ½¼¨¤Î¥Ğ¥°¤ò²ò·è
 
 Fri Aug 16 1996		Issei Numata  <issei@jaist.ac.jp>
 	* jnethack-1.0.5 release
 
 Thu Aug 15 1996		Issei Numata  <issei@jaist.ac.jp>
-	* ’Z‚¢ƒtƒ@ƒCƒ‹ƒl[ƒ€‚ÌƒVƒXƒeƒ€‚É‘Î‰‚Å‚«‚é‚æ‚¤Cjtrns_*.c‚ğ‰ü–¼
+	* Ã»¤¤¥Õ¥¡¥¤¥ë¥Í¡¼¥à¤Î¥·¥¹¥Æ¥à¤ËÂĞ±ş¤Ç¤­¤ë¤è¤¦¡¤jtrns_*.c¤ò²şÌ¾
 
 Wed Aug 14 1996		Issei Numata  <issei@jaist.ac.jp>
-	* DOS/V‚Å tile•\¦‚ğ‰Â”\‚ÉD
+	* DOS/V¤Ç tileÉ½¼¨¤ò²ÄÇ½¤Ë¡¥
 
 Thu Aug  8 1996		Issei Numata  <issei@jaist.ac.jp>
-	* J‚¾‚¯‚ÌƒIƒŠƒWƒiƒ‹E‹Æ(F)‚ğ’Ç‰Á
+	* J¤À¤±¤Î¥ª¥ê¥¸¥Ê¥ë¿¦¶È(F)¤òÄÉ²Ã
 
 Fri Aug  2 1996		juan@super.win.or.jp (Kenji Gotoh)
-	* sjis‚Å wishing‚·‚é‚Æ‚«|‚­‚¢‚©‚È‚¢‚±‚Æ‚ª‚ ‚é–â‘è‚ğC³
+	* sjis¤Ç wishing¤¹¤ë¤È¤­»İ¤¯¤¤¤«¤Ê¤¤¤³¤È¤¬¤¢¤ëÌäÂê¤ò½¤Àµ
 
 Wed Jul 31 1996		Satoh Yoshiyuki <yo-satou@system.hitachi.co.jp>
-	* ‚¢‚­‚Â‚©‚ÌƒƒbƒZ[ƒW‚ÌŠÔˆá‚¢‚ğC³
+	* ¤¤¤¯¤Ä¤«¤Î¥á¥Ã¥»¡¼¥¸¤Î´Ö°ã¤¤¤ò½¤Àµ
 
-Tue Jul 30 1996		Hiramoto Kouji (•½–{Œõ“ñ ) <hiramoto@Nurse.Angel.nanako.or.jp>
-	* PC‚ÅƒXƒ^[ƒg‚É‰pŒê‚ÌƒƒbƒZ[ƒW‚ªo‚é–â‘è‚ÌC³
+Tue Jul 30 1996		Hiramoto Kouji (Ê¿ËÜ¸÷Æó ) <hiramoto@Nurse.Angel.nanako.or.jp>
+	* PC¤Ç¥¹¥¿¡¼¥È»ş¤Ë±Ñ¸ì¤Î¥á¥Ã¥»¡¼¥¸¤¬½Ğ¤ëÌäÂê¤Î½¤Àµ
 
 Mon Jul 29 1996		Hideto KIHARA <kihara@shiratori.riec.tohoku.ac.jp>
-	* ‚¢‚­‚Â‚©‚ÌƒƒbƒZ[ƒW‚ÌŠÔˆá‚¢‚ğC³
+	* ¤¤¤¯¤Ä¤«¤Î¥á¥Ã¥»¡¼¥¸¤Î´Ö°ã¤¤¤ò½¤Àµ
 
 Thu Jul 25 1996		fukui@nm.nmcc.co.jp (Terushige Fukui)
-	* ‘¶İ‚µ‚È‚¢‚à‚Ì‚ğ wish‚µ‚½‚Æ‚«‚É—‚¿‚é–â‘è‚ğC³
+	* Â¸ºß¤·¤Ê¤¤¤â¤Î¤ò wish¤·¤¿¤È¤­¤ËÍî¤Á¤ëÌäÂê¤ò½¤Àµ
 
 Thu Jul 25 1996		Issei Numata  <issei@jaist.ac.jp>
-	* “ú–{Œê‚É‚æ‚é wishing‚ğˆê•”‰Â”\‚É
+	* ÆüËÜ¸ì¤Ë¤è¤ë wishing¤ò°ìÉô²ÄÇ½¤Ë
 
 Wed Jul 24 1996		Hideto KIHARA <kihara@shiratori.riec.tohoku.ac.jp>
-	* jtrns_mon‚Ì•›ì—p‚Ì–â‘è‚ğC³
+	* jtrns_mon¤ÎÉûºîÍÑ¤ÎÌäÂê¤ò½¤Àµ
 
 Tue Jul 23 1996		juan@super.win.or.jp (Kenji Gotoh)
-	* ƒXƒe[ƒ^ƒX—“‚ğ‘S‚Ä‘‚«Š·‚¦‚Ä‚µ‚Ü‚¤–â‘è‚ğC³
+	* ¥¹¥Æ¡¼¥¿¥¹Íó¤òÁ´¤Æ½ñ¤­´¹¤¨¤Æ¤·¤Ş¤¦ÌäÂê¤ò½¤Àµ
 
 Mon Jul 22 1996		Naoki Hamada <nao@sbl.cl.nec.co.jp>
-	* DEC graphics ‚ÅŠ¿š‚ª‰»‚¯‚é–â‘è‚ğC³
+	* DEC graphics ¤Ç´Á»ú¤¬²½¤±¤ëÌäÂê¤ò½¤Àµ
 
 Mon Jul 22 1996		Hideto KIHARA <kihara@shiratori.riec.tohoku.ac.jp>
-	* ƒƒbƒZ[ƒW‚Ì‚Ü‚¿‚ª‚¢‚ğC³
-	* jconj‚ÌƒoƒO‚ÌC³
-	* u‚çv”²‚«Œ¾—t‚ÌC³
+	* ¥á¥Ã¥»¡¼¥¸¤Î¤Ş¤Á¤¬¤¤¤ò½¤Àµ
+	* jconj¤Î¥Ğ¥°¤Î½¤Àµ
+	* ¡Ö¤é¡×È´¤­¸ÀÍÕ¤Î½¤Àµ
 
 Sat Jul 20 1996		shira@kdel.info.eng.osaka-cu.ac.jp (Kentaro Shirakata)
-	* PC‚ÅƒRƒ“ƒpƒCƒ‹ƒGƒ‰[‚ªo‚é‚Ì‚ğC³
+	* PC¤Ç¥³¥ó¥Ñ¥¤¥ë¥¨¥é¡¼¤¬½Ğ¤ë¤Î¤ò½¤Àµ
 
 Fri Jul 19 1996		Issei Numata  <issei@jaist.ac.jp>
-	* ‚¢‚­‚Â‚©‚Ì Warning‚ğíœ
-	* format‚ÌŠÔˆá‚¢‚ğC®
+	* ¤¤¤¯¤Ä¤«¤Î Warning¤òºï½ü
+	* format¤Î´Ö°ã¤¤¤ò½¤À°
 
 Thu Jul 18 1996		Issei Numata  <issei@jaist.ac.jp>
-	* Œ¾Œêƒ‚[ƒh‚ÌØ‘Ö‚ª‚¤‚Ü‚­‚¢‚©‚È‚¢‚Ì‚ğC®
+	* ¸À¸ì¥â¡¼¥É¤ÎÀÚÂØ¤¬¤¦¤Ş¤¯¤¤¤«¤Ê¤¤¤Î¤ò½¤À°
 
 Thu Jul 18 1996		Issei Numata  <issei@jaist.ac.jp>
 	* jnethack-1.0.4-alpha release
 
 Fry Jun 21 1996		Issei Numata  <issei@jaist.ac.jp>
-	* nethack-3.2.1ƒx[ƒX‚Ìjnethack‚ÌŠJ”­‚É’…è
+	* nethack-3.2.1¥Ù¡¼¥¹¤Îjnethack¤Î³«È¯¤ËÃå¼ê
 
 Thu May  2 1996		Issei Numata  <issei@jaist.ac.jp>
-	* nethack-3.2.0ƒx[ƒX‚Ìjnethack‚ÌŠJ”­‚É’…è
+	* nethack-3.2.0¥Ù¡¼¥¹¤Îjnethack¤Î³«È¯¤ËÃå¼ê
 
 Sun Jun  4 1995		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-1.0.3 release
 
 Sun Jun  4 1995		nishi@bsd1.kb.nec.co.jp
-	* nh14.bdf‚ğƒpƒbƒP[ƒW‚É’Ç‰Á
+	* nh14.bdf¤ò¥Ñ¥Ã¥±¡¼¥¸¤ËÄÉ²Ã
 
 Fri Jun  2 1995		Issei Numata <issei@jaist.ac.jp>
-	* ƒXƒRƒAƒŠƒXƒg‚ÌƒƒbƒZ[ƒW‚ÌƒoƒO‚ğC®D
-	* ƒhƒLƒ…ƒƒ“ƒg‚ÌŠÔˆá‚¢‚ğC®D
+	* ¥¹¥³¥¢¥ê¥¹¥È¤Î¥á¥Ã¥»¡¼¥¸¤Î¥Ğ¥°¤ò½¤À°¡¥
+	* ¥É¥­¥å¥á¥ó¥È¤Î´Ö°ã¤¤¤ò½¤À°¡¥
 
-Thu Feb 23 1995		Hiramoto Kouji (•½–{Œõ“ñ ) <hiramoto@kubota.co.jp>
-	* resotre.c ƒƒbƒZ[ƒW‚ğC®D
+Thu Feb 23 1995		Hiramoto Kouji (Ê¿ËÜ¸÷Æó ) <hiramoto@kubota.co.jp>
+	* resotre.c ¥á¥Ã¥»¡¼¥¸¤ò½¤À°¡¥
 
-Thu Feb 21 1995		Hiramoto Kouji (•½–{Œõ“ñ ) <hiramoto@kubota.co.jp>
-	* cmd.c u‚ ‚È‚½‚Ív‚ªd•¡‚·‚é‚Ì‚ğC®D
+Thu Feb 21 1995		Hiramoto Kouji (Ê¿ËÜ¸÷Æó ) <hiramoto@kubota.co.jp>
+	* cmd.c ¡Ö¤¢¤Ê¤¿¤Ï¡×¤¬½ÅÊ£¤¹¤ë¤Î¤ò½¤À°¡¥
 
 Thu Jan 5  1995		asami@cs.berkeley.edu
-	* ‘S”Ê“I‚ÉƒƒbƒZ[ƒW‚ÌŒë–ó‚ğC®D
+	* Á´ÈÌÅª¤Ë¥á¥Ã¥»¡¼¥¸¤Î¸íÌõ¤ò½¤À°¡¥
 
-Tue Dec 27 1994		“¡} ˜aG (FUJIEDA Kazuhiro) <fujieda@jaist.ac.jp>
-	* fountain.c —¬‚µ‘ä‚Ì…‚ğˆù‚ñ‚Å–ò‚ªo‚Ä‚«‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC®
+Tue Dec 27 1994		Æ£»Ş ÏÂ¹¨ (FUJIEDA Kazuhiro) <fujieda@jaist.ac.jp>
+	* fountain.c Î®¤·Âæ¤Î¿å¤ò°û¤ó¤ÇÌô¤¬½Ğ¤Æ¤­¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤À°
 
 Tue Dec 20 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-1.0.2 release
 
 Thu Oct 27 1994		narusawa@nsis.cl.nec.co.jp (Masaru Narusawa)
-	* NEWOS—p‚Ìƒpƒbƒ`’Ç‰ÁD
+	* NEWOSÍÑ¤Î¥Ñ¥Ã¥ÁÄÉ²Ã¡¥
 
 Fri Oct 14 1994		Issei Numata <issei@jaist.ac.jp>
-	* X11”Å‚Å’·‚¢ƒƒbƒZ[ƒW‚ªo‚½‚Æ‚«‚Épanic‚É‚È‚é–â‘è‚ğC³D
-	* ©•ª©g‚ğgenocide‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC³D
+	* X11ÈÇ¤ÇÄ¹¤¤¥á¥Ã¥»¡¼¥¸¤¬½Ğ¤¿¤È¤­¤Ëpanic¤Ë¤Ê¤ëÌäÂê¤ò½¤Àµ¡¥
+	* ¼«Ê¬¼«¿È¤ògenocide¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
 
 Mon Sep 19 1994		Kentaro Shirakata <shira@kdel.info.osaka-cu.ac.jp>
-	* mhitm.c ƒjƒ“ƒt‚ª‘¼‚Ìƒ‚ƒ“ƒXƒ^[‚ğUŒ‚‚µ‚½‚Æ‚«‚Écode‚ğ“f‚­–â‘è‚ğ
-	  C³D
+	* mhitm.c ¥Ë¥ó¥Õ¤¬Â¾¤Î¥â¥ó¥¹¥¿¡¼¤ò¹¶·â¤·¤¿¤È¤­¤Ëcode¤òÅÇ¤¯ÌäÂê¤ò
+	  ½¤Àµ¡¥
 
 Mon Sep 12 1994		Issei Numata <issei@jaist.ac.jp>
-	* ƒIƒŠƒWƒiƒ‹ƒ‚[ƒh‚Å€‚ñ‚¾‚Æ‚«ƒXƒRƒAƒtƒ@ƒCƒ‹‚ª‰p–¼‚É‚È‚é‚Ì‚ğC³D
-	* ‰ö•¨‚ÌUŒ‚‚Å•a‹C‚É‚È‚Á‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC³D
-	* help‚É‰p–¼-˜a–¼‚Ì•ÏŠ·ƒe[ƒuƒ‹’Ç‰ÁD
+	* ¥ª¥ê¥¸¥Ê¥ë¥â¡¼¥É¤Ç»à¤ó¤À¤È¤­¥¹¥³¥¢¥Õ¥¡¥¤¥ë¤¬±ÑÌ¾¤Ë¤Ê¤ë¤Î¤ò½¤Àµ¡¥
+	* ²øÊª¤Î¹¶·â¤ÇÉÂµ¤¤Ë¤Ê¤Ã¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
+	* help¤Ë±ÑÌ¾-ÏÂÌ¾¤ÎÊÑ´¹¥Æ¡¼¥Ö¥ëÄÉ²Ã¡¥
 
 Thu Sep  8 1994		Issei Numata <issei@jaist.ac.jp>
-	* ƒRƒJƒgƒŠƒX‚Ì€‘Ì‚Å€‚ñ‚¾‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC³D
-	* ƒƒfƒ…[ƒT‚ÅÎ‰»‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC³D
-	* –À‹{‚©‚ç’Eo‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC³D
-	* ‚½‚­‚³‚ñ‚ÌŒë–óCŒëš‚ğC³D
-	* quest.txt‚ğ®Œ`D
-	* jisƒ‚[ƒh‚Ì‚Æ‚« \033$@, \033$J‚à—LŒø‚É‚È‚é‚æ‚¤‚ÉC³D
+	* ¥³¥«¥È¥ê¥¹¤Î»àÂÎ¤Ç»à¤ó¤À¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
+	* ¥á¥Ç¥å¡¼¥µ¤ÇÀĞ²½¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
+	* ÌÂµÜ¤«¤éÃ¦½Ğ¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
+	* ¤¿¤¯¤µ¤ó¤Î¸íÌõ¡¤¸í»ú¤ò½¤Àµ¡¥
+	* quest.txt¤òÀ°·Á¡¥
+	* jis¥â¡¼¥É¤Î¤È¤­ \033$@, \033$J¤âÍ­¸ú¤Ë¤Ê¤ë¤è¤¦¤Ë½¤Àµ¡¥
 
 Mon Aug 29 1994		Issei Numata <issei@jaist.ac.jp>
-	* ŠÂ‹«•Ï”‚Æİ’èƒtƒ@ƒCƒ‹—¼•û‚ğİ’è‚µ‚½ê‡‚ÌƒGƒ‰[‚ğC³D
+	* ´Ä¶­ÊÑ¿ô¤ÈÀßÄê¥Õ¥¡¥¤¥ëÎ¾Êı¤òÀßÄê¤·¤¿¾ì¹ç¤Î¥¨¥é¡¼¤ò½¤Àµ¡¥
 
 Mon Aug 29 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-1.0.1 release
 
 Tue Aug 23 1994		Issei Numata <issei@jaist.ac.jp>
-	* vorpale blade‚ªñ‚ğØ‚è—‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğ³‚µ‚­•\¦‚·‚é
- 	  ‚æ‚¤C³D
+	* vorpale blade¤¬¼ó¤òÀÚ¤êÍî¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤òÀµ¤·¤¯É½¼¨¤¹¤ë
+ 	  ¤è¤¦½¤Àµ¡¥
 
 Sat Aug 20 1994		Issei Numata <issei@jaist.ac.jp>
-	* ×‚¢ƒƒbƒZ[ƒW‚ÌC³D
+	* ºÙ¤¤¥á¥Ã¥»¡¼¥¸¤Î½¤Àµ¡¥
 
 Fri Aug 19 1994		Kentaro Shirakata <shira@kdel.info.osaka-cu.ac.jp>
-	* data.base‰ü’ùD
+	* data.base²şÄû¡¥
 
 Wed Aug 17 1994		Masayuki Koba <masa-k@sag.hitachi-sk.co.jp>
-	* NetHack.ad 16ƒhƒbƒgƒtƒHƒ“ƒg‚ğƒfƒtƒHƒ‹ƒg‚Åg‚¤‚æ‚¤C³D
+	* NetHack.ad 16¥É¥Ã¥È¥Õ¥©¥ó¥È¤ò¥Ç¥Õ¥©¥ë¥È¤Ç»È¤¦¤è¤¦½¤Àµ¡¥
 
 Sat Aug 13 1994		Yasuhito Futatsuki <futatuki@jaist.ac.jp>
-	* –À‹{‚©‚ç”²‚¯‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚Ì•s‹ï‡‚ğC³D
+	* ÌÂµÜ¤«¤éÈ´¤±¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ÎÉÔ¶ñ¹ç¤ò½¤Àµ¡¥
 
 Sun Aug  7 1994		Kentaro Shirakata <shira@kdel.info.osaka-cu.ac.jp>
-	* DJGPP”ÅƒpƒbƒP[ƒW’Ç‰ÁD
+	* DJGPPÈÇ¥Ñ¥Ã¥±¡¼¥¸ÄÉ²Ã¡¥
 
-Sun Aug  7 1994		‚“c@K¡ <HAE00146@niftyserve.or.jp>
-	* MSC”ÅƒpƒbƒP[ƒW’Ç‰ÁD
+Sun Aug  7 1994		¹âÅÄ¡¡¹¬¼£ <HAE00146@niftyserve.or.jp>
+	* MSCÈÇ¥Ñ¥Ã¥±¡¼¥¸ÄÉ²Ã¡¥
 
 Thu Aug  4 1994		Yoshiki Ogino <azrael@cosmos.ces.kyutech.ac.jp>
-	* questpgr.c ƒAƒ‰ƒCƒƒ“ƒg•\¦‚ÌƒoƒO‚ğC³D
+	* questpgr.c ¥¢¥é¥¤¥á¥ó¥ÈÉ½¼¨¤Î¥Ğ¥°¤ò½¤Àµ¡¥
  
 Thu Aug  4 1994		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* mk_artifactˆÈŠO‚ÅCartifact‚ğ“¾‚½‚Æ‚«³‚µ‚­ì¬‚³‚ê‚È‚¢‚Ì‚ğC³D
-	* class genocide‚ÅE‚·‚±‚Æ‚ª‚Å‚«‚È‚©‚Á‚½ƒ‚ƒ“ƒXƒ^[‚Ì–¼‘O‚ğ³‚µ‚­
-	  •\¦‚Å‚«‚é‚æ‚¤C³D
+	* mk_artifact°Ê³°¤Ç¡¤artifact¤òÆÀ¤¿¤È¤­Àµ¤·¤¯ºîÀ®¤µ¤ì¤Ê¤¤¤Î¤ò½¤Àµ¡¥
+	* class genocide¤Ç»¦¤¹¤³¤È¤¬¤Ç¤­¤Ê¤«¤Ã¤¿¥â¥ó¥¹¥¿¡¼¤ÎÌ¾Á°¤òÀµ¤·¤¯
+	  É½¼¨¤Ç¤­¤ë¤è¤¦½¤Àµ¡¥
 
 Mon Aug  1 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-1.0.0 release
 
 Mon Aug  1 1994		Issei Numata <issei@jaist.ac.jp>
-	* ×‚©‚¢ƒƒbƒZ[ƒW‚ÌC³D
+	* ºÙ¤«¤¤¥á¥Ã¥»¡¼¥¸¤Î½¤Àµ¡¥
 
 Sun Jul 31 1994		Kentaro Shirakata <shira@kdel.info.osaka-cu.ac.jp>
-	* n‚Ì‚È‚¢•Ší‚ÅUŒ‚‚³‚ê‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚ğC³D
+	* ¿Ï¤Î¤Ê¤¤Éğ´ï¤Ç¹¶·â¤µ¤ì¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
 
 Mon Jul 25 1994		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* magicbaneŠÖŒW‚ÌƒƒbƒZ[ƒW‚ğC³D
+	* magicbane´Ø·¸¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ¡¥
 
 Mon Jul 25 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.3.1 beta test starts
 
 Sut Jul 23 1994		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* artifact.c magicbane‚Ì–ó‚ğC³D
+	* artifact.c magicbane¤ÎÌõ¤ò½¤Àµ¡¥
 
 Mon Jul 25 1994		Issei Numata <issei@jaist.ac.jp>
-	* topl.c ’·‚¢•¶š—ñ‚ÌƒtƒH[ƒ‹ƒfƒBƒ“ƒO‚ğC³D
-	* ’·‚¢–¼‘O‚ğ‚Â‚¯‚½Û‚É•¶š‰»‚¯‚·‚é‚Ì‚ğC³D
+	* topl.c Ä¹¤¤Ê¸»úÎó¤Î¥Õ¥©¡¼¥ë¥Ç¥£¥ó¥°¤ò½¤Àµ¡¥
+	* Ä¹¤¤Ì¾Á°¤ò¤Ä¤±¤¿ºİ¤ËÊ¸»ú²½¤±¤¹¤ë¤Î¤ò½¤Àµ¡¥
 
 Sut Jul 23 1994		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* jtrns_{obj,mon}.dat ×‚¢–óŒê‚ÌŠÔˆá‚¢‚ğC³D
+	* jtrns_{obj,mon}.dat ºÙ¤¤Ìõ¸ì¤Î´Ö°ã¤¤¤ò½¤Àµ¡¥
 
 Sut Jul 23 1994		Issei Numata <issei@jaist.ac.jp>
-	* jGuideBook.txt‚ğ JNetHack‚É‚ ‚í‚¹C³D
+	* jGuideBook.txt¤ò JNetHack¤Ë¤¢¤ï¤»½¤Àµ¡¥
 
 Fri Jul 22 1994		shira@kdel.info.osaka-cu.ac.jp (Kentaro Shirakata)
-	* jGuideBook.txt‚ğƒpƒbƒP[ƒW‚É’Ç‰ÁD
+	* jGuideBook.txt¤ò¥Ñ¥Ã¥±¡¼¥¸¤ËÄÉ²Ã¡¥
 
 Thu Jul 21 1994		Issei Numata <issei@jaist.ac.jp>
-	* jtrns_obj.dat •Ší‚ğ‹­‚­‚·‚éŠª•¨->•Ší‚É–‚–@‚ğ‚©‚¯‚éŠª•¨‚Ö•ÏXD
-	* getline.c kinput2‚©‚çŠ¿š‚ğ“ü—Í‚Å‚«‚é‚æ‚¤‚É•ÏXD
+	* jtrns_obj.dat Éğ´ï¤ò¶¯¤¯¤¹¤ë´¬Êª->Éğ´ï¤ËËâË¡¤ò¤«¤±¤ë´¬Êª¤ØÊÑ¹¹¡¥
+	* getline.c kinput2¤«¤é´Á»ú¤òÆşÎÏ¤Ç¤­¤ë¤è¤¦¤ËÊÑ¹¹¡¥
 
 Thu Jul 21 1994		Yoshiaki KASAHARA <kasahara@csce.kyushu-u.ac.jp>
-	* –ƒáƒ->á¿ò‚É•ÏXD
+	* Ëãáã->âÁÚô¤ËÊÑ¹¹¡¥
 
 Thu Jul 21 1994		Issei Numata <issei@jaist.ac.jp>
-	* objnam.c nemesis‚Ì€‘Ì–¼‚ª³‚µ‚­•\¦‚³‚ê‚é‚æ‚¤C³D
+	* objnam.c nemesis¤Î»àÂÎÌ¾¤¬Àµ¤·¤¯É½¼¨¤µ¤ì¤ë¤è¤¦½¤Àµ¡¥
 
 Thu Jul 21 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.3.0 beta test starts	
 
 Tue Jul 19 1994		s92458km@sfc.keio.ac.jp (the kunedog)
-	* quest.txt Turist ‚Ì–|–ó’Ç‰Á
+	* quest.txt Turist ¤ÎËİÌõÄÉ²Ã
 
 Fri Jul 15 1994		Issei Numata <issei@jaist.ac.jp>
-	* priest.c “Vg‚Ì–¼‘O‚ª³‚µ‚­•\¦‚³‚ê‚é‚æ‚¤C³D
-	* end.c topten.c €‚ñ‚¾‚Æ‚«‚ÌƒƒbƒZ[ƒW‚Ì•s‹ï‡‚ğC³D
-	* objnam.c ’·‚¢–¼‘O‚Ì•¶š‚Åcore‚ğ“f‚­–â‘è‚ğC³D
+	* priest.c Å·»È¤ÎÌ¾Á°¤¬Àµ¤·¤¯É½¼¨¤µ¤ì¤ë¤è¤¦½¤Àµ¡¥
+	* end.c topten.c »à¤ó¤À¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ÎÉÔ¶ñ¹ç¤ò½¤Àµ¡¥
+	* objnam.c Ä¹¤¤Ì¾Á°¤ÎÊ¸»ú¤Çcore¤òÅÇ¤¯ÌäÂê¤ò½¤Àµ¡¥
 
 Thu Jul 14 1994		Issei Numata <issei@jaist.ac.jp>
-	* jconj.c jtrns_obj.dat ¹Ší‚Ì–¼‘O‚ª³‚µ‚­•\¦‚³‚ê‚È‚¢‚Ì‚ğC³D
+	* jconj.c jtrns_obj.dat À»´ï¤ÎÌ¾Á°¤¬Àµ¤·¤¯É½¼¨¤µ¤ì¤Ê¤¤¤Î¤ò½¤Àµ¡¥
 
 Thu Jul 14 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.2.4 beta test starts
 
 Thu Jul 14 1994		Issei Numata <issei@jaist.ac.jp>
-	* termcap.c -dec‚Å•¶š‚ª‰»‚¯‚é‚Ì‚ğC³D
-	* ¹Ší‚É‘S•”˜a–¼‚ğ—^‚¦‚½D
+	* termcap.c -dec¤ÇÊ¸»ú¤¬²½¤±¤ë¤Î¤ò½¤Àµ¡¥
+	* À»´ï¤ËÁ´ÉôÏÂÌ¾¤òÍ¿¤¨¤¿¡¥
 
 Wed Jul 13 1994		Issei Numata <issei@jaist.ac.jp>
-	* jtrns_{obj,dat}‚ğƒ\[ƒX‚É–„‚ß‚±‚İCmakedefs‚Å‘Î‰‚·‚é‚æ‚¤C³D
-	* warning‚ğŒ¸‚ç‚µ‚½D
+	* jtrns_{obj,dat}¤ò¥½¡¼¥¹¤ËËä¤á¤³¤ß¡¤makedefs¤ÇÂĞ±ş¤¹¤ë¤è¤¦½¤Àµ¡¥
+	* warning¤ò¸º¤é¤·¤¿¡¥
 
 Tue Jul 12 1994		Hideharu Miyazaki <hideha-m@ascii.co.jp>
-	* printfŒn‚Ìˆø”‚ÌŠÔˆá‚¢‚ğC³
-	* extern.h locomotion2‚Ìƒvƒƒgƒ^ƒCƒv‚ğ’Ç‰Á
-	* ƒRƒƒ“ƒgƒAƒEƒg‚Ìƒ~ƒX‚ğC³
+	* printf·Ï¤Î°ú¿ô¤Î´Ö°ã¤¤¤ò½¤Àµ
+	* extern.h locomotion2¤Î¥×¥í¥È¥¿¥¤¥×¤òÄÉ²Ã
+	* ¥³¥á¥ó¥È¥¢¥¦¥È¤Î¥ß¥¹¤ò½¤Àµ
 
 Sun Jul 10 1994		Issei Numata <issei@jaist.ac.jp>
-	* eat.c ƒRƒJƒgƒŠƒX‚ÅÎ‰»‚µ‚½‚Æ‚«‚ÌƒƒbƒZ[ƒW‚Ì•s‹ï‡‚ğC³D
+	* eat.c ¥³¥«¥È¥ê¥¹¤ÇÀĞ²½¤·¤¿¤È¤­¤Î¥á¥Ã¥»¡¼¥¸¤ÎÉÔ¶ñ¹ç¤ò½¤Àµ¡¥
 
 Thu Jul 7 1994		<mya@jaist.ac.jp
-	* quest.txt Knight ‚Ì–|–ó’Ç‰Á
+	* quest.txt Knight ¤ÎËİÌõÄÉ²Ã
 
 Thu Jul 7 1994		<nishi@aries.bsd1.kb.nec.co.jp>
-	* options.c malloc‚ª0ƒNƒŠƒA‚µ‚È‚¢–â‘è‚ğC³
+	* options.c malloc¤¬0¥¯¥ê¥¢¤·¤Ê¤¤ÌäÂê¤ò½¤Àµ
 
 Wed Jul 6 1994		Yoshiaki KASAHARA <kasahara@csce.kyushu-u.ac.jp>
-	* config.h ‚Ì•s‹ï‡‚ğC³
+	* config.h ¤ÎÉÔ¶ñ¹ç¤ò½¤Àµ
 
 Tue Jul 5 1994		Issei Numata <issei@jaist.ac.jp>
-	* invent.c ”­Œ©Ï‚İ•óÎ‚ª³‚µ‚­•\¦‚³‚ê‚é‚æ‚¤‚ÉC³
-	* objnam.c –¼‚Ã‚¯‚ç‚ê‚½ƒAƒCƒeƒ€‚ª“ú–{Œê‚ç‚µ‚­‚È‚é‚æ‚¤C³
-	* end.c ƒyƒbƒg‚ÉE‚³‚ê‚½‚Æ‚«‚Ì•æÎ‚ÌƒƒbƒZ[ƒW‚ğC³
-	* wintty.c -dec‚Åƒ_ƒ“ƒWƒ‡ƒ“‚ª‚½‚Ü‚É•¶š‰»‚¯‚·‚é‚Ì‚ğC³
-	* ƒƒbƒZ[ƒW‚âƒAƒCƒeƒ€‚Ì×‚¢C³
+	* invent.c È¯¸«ºÑ¤ßÊõÀĞ¤¬Àµ¤·¤¯É½¼¨¤µ¤ì¤ë¤è¤¦¤Ë½¤Àµ
+	* objnam.c Ì¾¤Å¤±¤é¤ì¤¿¥¢¥¤¥Æ¥à¤¬ÆüËÜ¸ì¤é¤·¤¯¤Ê¤ë¤è¤¦½¤Àµ
+	* end.c ¥Ú¥Ã¥È¤Ë»¦¤µ¤ì¤¿¤È¤­¤ÎÊèÀĞ¤Î¥á¥Ã¥»¡¼¥¸¤ò½¤Àµ
+	* wintty.c -dec¤Ç¥À¥ó¥¸¥ç¥ó¤¬¤¿¤Ş¤ËÊ¸»ú²½¤±¤¹¤ë¤Î¤ò½¤Àµ
+	* ¥á¥Ã¥»¡¼¥¸¤ä¥¢¥¤¥Æ¥à¤ÎºÙ¤¤½¤Àµ
 
 Sun Jul 2 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.2.3 beta test starts
 
 Sun Jul 2 1994		Issei Numata <issei@jaist.ac.jp>
-	* ƒƒbƒZ[ƒW‚âƒAƒCƒeƒ€‚Ì×‚¢C³
+	* ¥á¥Ã¥»¡¼¥¸¤ä¥¢¥¤¥Æ¥à¤ÎºÙ¤¤½¤Àµ
 
 Tue Jun 28 1994		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* quest.txt Elf‚Ì–|–ó’Ç‰Á
+	* quest.txt Elf¤ÎËİÌõÄÉ²Ã
 
 Mon Jun 27 1994		Issei Numata <issei@jaist.ac.jp>
-	* quest.txt Rogue‚Ì–|–ó’Ç‰Á
+	* quest.txt Rogue¤ÎËİÌõÄÉ²Ã
 
 Sun Jun 26 1994		Issei Numata <issei@jaist.ac.jp>
-	* ƒfƒtƒHƒ‹ƒg‚ÌƒvƒƒOƒ‰ƒ€–¼‚ğ nethack -> jnethack‚Ö•ÏX
+	* ¥Ç¥Õ¥©¥ë¥È¤Î¥×¥í¥°¥é¥àÌ¾¤ò nethack -> jnethack¤ØÊÑ¹¹
 
 Sun Jun 26 1994		HAMADA Naoki <nao@jaist.ac.jp>
-	* dialog.c Ctrl-m ƒAƒNƒVƒ‡ƒ“‚ğ’Ç‰Á
+	* dialog.c Ctrl-m ¥¢¥¯¥·¥ç¥ó¤òÄÉ²Ã
 
 Thu Jun 23 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.2.2 beta test starts
 
 Thu Jun 23 1994		<hideki@bsd1.kb.nec.co.jp>
-	* win/X11/winmesg.c X11R6‚ÅƒRƒA‚ğ“f‚­–â‘è‚ğC³D
+	* win/X11/winmesg.c X11R6¤Ç¥³¥¢¤òÅÇ¤¯ÌäÂê¤ò½¤Àµ¡¥
 
 Thu Jun 23 1994		Issei Numata <issei@jaist.ac.jp>
-	* win/X11/*.c ƒŠƒ\[ƒX‚É‘‚©‚È‚­‚Ä‚à‘Û‰»‚É‘Î‰‚·‚é‚æ‚¤C³D
+	* win/X11/*.c ¥ê¥½¡¼¥¹¤Ë½ñ¤«¤Ê¤¯¤Æ¤â¹ñºİ²½¤ËÂĞ±ş¤¹¤ë¤è¤¦½¤Àµ¡¥
 
 Wed Jun 22 1994		Kazuhiro Fujieda <fujieda@jaist.ac.jp>
-	* files.c .jnethackrc‚ğæ‚ÉŒ©‚é‚æ‚¤‚É‚µ‚½D
-	* pager.c ã©‚Ì–¼‘O‚ª³‚µ‚­o‚é‚æ‚¤‚É•ÏXD
-	* jtrns_obj.dat	’ù³
-	* pray.c uŒ£ã‚·‚év‚ğ³‚µ‚­•\¦‚³‚ê‚é‚æ‚¤•ÏXD
+	* files.c .jnethackrc¤òÀè¤Ë¸«¤ë¤è¤¦¤Ë¤·¤¿¡¥
+	* pager.c æ«¤ÎÌ¾Á°¤¬Àµ¤·¤¯½Ğ¤ë¤è¤¦¤ËÊÑ¹¹¡¥
+	* jtrns_obj.dat	ÄûÀµ
+	* pray.c ¡Ö¸¥¾å¤¹¤ë¡×¤òÀµ¤·¤¯É½¼¨¤µ¤ì¤ë¤è¤¦ÊÑ¹¹¡¥
 	
 Tue Jun 21 1994		Yasuhito Futatsuki <futatuki@jaist.ac.jp>
-	* shk.c “X‚Ì‚È‚©‚Å‚à‚Ì‚ğ‰ó‚µ‚½‚Æ‚«‚Écore‚ğ“f‚­‚Ì‚ğC³
+	* shk.c Å¹¤Î¤Ê¤«¤Ç¤â¤Î¤ò²õ¤·¤¿¤È¤­¤Ëcore¤òÅÇ¤¯¤Î¤ò½¤Àµ
 
 Mon Jun 16 1994		Issei Numata <issei@jaist.ac.jp>
-	* data.base‚Ì–|–ó’…è
+	* data.base¤ÎËİÌõÃå¼ê
 
 Mon Jun 16 1994		Issei Numata <issei@jaist.ac.jp>
-	* do_name.c hallucination‚Ìbogus monster‚ğ³‚µ‚­•\¦‚·‚é‚æ‚¤C³
-	* sys/unixmain.c -sƒIƒvƒVƒ‡ƒ“‚É•¶š‰»‚¯‚·‚é‚Ì‚ğ‰ñ”ğ
+	* do_name.c hallucination»ş¤Îbogus monster¤òÀµ¤·¤¯É½¼¨¤¹¤ë¤è¤¦½¤Àµ
+	* sys/unixmain.c -s¥ª¥×¥·¥ç¥ó»ş¤ËÊ¸»ú²½¤±¤¹¤ë¤Î¤ò²óÈò
 
 Mon Jun 15 1994		Issei Numata <issei@jaist.ac.jp>
-	* jconj.c I~Œ`‚©‚ç‚àŠˆ—p‚Å‚«‚é‚æ‚¤‚Éjconj_adj C³
+	* jconj.c ½ª»ß·Á¤«¤é¤â³èÍÑ¤Ç¤­¤ë¤è¤¦¤Ëjconj_adj ½¤Àµ
 
 Mon Jun 14 1994		Issei Numata <issei@jaist.ac.jp>
-	* jconj.c isspace_8 C³
+	* jconj.c isspace_8 ½¤Àµ
 
 Mon Jun 14 1994		Koji Kishi <kis@rqa.sony.co.jp>
-	* engrave.c jconj.c sony news‚Åiskanji2‚ª‚©‚¿‚ ‚¤–â‘è‚ğ‰ñ”ğ
+	* engrave.c jconj.c sony news¤Çiskanji2¤¬¤«¤Á¤¢¤¦ÌäÂê¤ò²óÈò
 
 Mon Jun 14 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.2.1 beta test starts
 
 Tue Jun 14 1994		Issei Numata <issei@jaist.ac.jp>
-	* end.c I—¹‚Écore‚ğ“f‚­‚Ì‚ğC³
+	* end.c ½ªÎ»»ş¤Ëcore¤òÅÇ¤¯¤Î¤ò½¤Àµ
 
 Tue Jun 14 1994		HAMADA Naoki <nao@jaist.ac.jp>
-	* shk.c shopkeeper‚ÌƒZƒŠƒtC³
+	* shk.c shopkeeper¤Î¥»¥ê¥Õ½¤Àµ
 
 Mon Jun 14 1994		Yasuhito Futatsuki <futatuki@jaist.ac.jp>
-	* dokick.c •¨‚ğR‚Á‚Ä€‚ñ‚¾‚Æ‚«‚ÌƒƒbƒZ[ƒW’ù³
+	* dokick.c Êª¤ò½³¤Ã¤Æ»à¤ó¤À¤È¤­¤Î¥á¥Ã¥»¡¼¥¸ÄûÀµ
 
 Mon Jun 13 1994		Issei Numata <issei@jaist.ac.jp>
-	* -sƒIƒvƒVƒ‡ƒ“‚ÅŠ¿šƒR[ƒh‚ğ³‚µ‚­”F¯‚·‚é‚æ‚¤‚É‰ü—Ç
-	* I—¹‚É‰æ–Ê‚ª—‚ê‚é‚Ì‚ğC³
+	* -s¥ª¥×¥·¥ç¥ó¤Ç´Á»ú¥³¡¼¥É¤òÀµ¤·¤¯Ç§¼±¤¹¤ë¤è¤¦¤Ë²şÎÉ
+	* ½ªÎ»»ş¤Ë²èÌÌ¤¬Íğ¤ì¤ë¤Î¤ò½¤Àµ
 
 Mon Jun 13 1994		Issei Numata <issei@jaist.ac.jp>
 	* jnethack-0.2.0 beta test starts
 
 Mon Jun 13 1994		Yasuhito Futatsuki <futatuki@jaist.ac.jp>
-	* dotogglelang‚Ì–ß‚è’l‚ğ 0‚Éİ’è
+	* dotogglelang¤ÎÌá¤êÃÍ¤ò 0¤ËÀßÄê
 
 Mon Jun 13 1994		Issei Numata <issei@jaist.ac.jp>
-	* JIS/SJIS’[––‚Å•\¦‚ª‚Å‚«‚é‚æ‚¤‚É‰ü—Ç
-	* .nethackrc‚ÅŠ¿šƒR[ƒh‚ğ‘I‘ğ‚Å‚«‚é‚æ‚¤‚É‰ü—Ç
+	* JIS/SJISÃ¼Ëö¤ÇÉ½¼¨¤¬¤Ç¤­¤ë¤è¤¦¤Ë²şÎÉ
+	* .nethackrc¤Ç´Á»ú¥³¡¼¥É¤òÁªÂò¤Ç¤­¤ë¤è¤¦¤Ë²şÎÉ
 
 Sun Jun 12 1994		Issei Numata <issei@jaist.ac.jp>
-	* quest.txt ‚É Caveman‚Ì–|–ó’Ç‰Á
+	* quest.txt ¤Ë Caveman¤ÎËİÌõÄÉ²Ã
 
 Sat Jun 11 1994		Issei Numata <issei@jaist.ac.jp>
 	* JNetHack-0.1.9 test starts.
 
 Sat Jun 11 1994		Issei Numata <issei@jaist.ac.jp>	
-	* quest.txt ‚É Barbarian‚Ì–|–ó’Ç‰Á
-	* ƒAƒCƒeƒ€–¼C‰ö•¨–¼ ƒIƒWƒiƒ‹<->“ú–{Œê‚ÌØ‚è‘Ö‚¦ƒTƒ|[ƒg
-	* jtrns_obj.dat‰ü’ù 
+	* quest.txt ¤Ë Barbarian¤ÎËİÌõÄÉ²Ã
+	* ¥¢¥¤¥Æ¥àÌ¾¡¤²øÊªÌ¾ ¥ª¥¸¥Ê¥ë<->ÆüËÜ¸ì¤ÎÀÚ¤êÂØ¤¨¥µ¥İ¡¼¥È
+	* jtrns_obj.dat²şÄû 
 
 Fri Jun 10 1994		Issei Numata <issei@jaist.ac.jp>
-	* ”­Œ©Ï‚İƒAƒCƒeƒ€‚Ì‰p–¼/˜a–¼•¹‹L
-	* u…‚Ì–òv->u…v,uƒtƒ‹[ƒcƒWƒ…[ƒX‚Ì–òv->uƒtƒ‹[ƒcƒWƒ…[ƒXv
-	* rumor.fal‰ü’ù
+	* È¯¸«ºÑ¤ß¥¢¥¤¥Æ¥à¤Î±ÑÌ¾/ÏÂÌ¾Ê»µ­
+	* ¡Ö¿å¤ÎÌô¡×->¡Ö¿å¡×,¡Ö¥Õ¥ë¡¼¥Ä¥¸¥å¡¼¥¹¤ÎÌô¡×->¡Ö¥Õ¥ë¡¼¥Ä¥¸¥å¡¼¥¹¡×
+	* rumor.fal²şÄû
 
 Thu Jun  9 1994		Tomoyuki Shiraishi <tshira@mtl.t.u-tokyo.ac.jp>
-	* quest.txt ‚É Healer‚Ì–|–ó’Ç‰Á
+	* quest.txt ¤Ë Healer¤ÎËİÌõÄÉ²Ã
 
 Tue Jun  7 1994		Issei Numata <issei@jaist.ac.jp>
 	* JNetHack-0.1.8 test starts.

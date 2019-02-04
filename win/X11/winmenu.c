@@ -900,7 +900,7 @@ menu_item **menu_list;
 /*JP
         cancel = XtCreateManagedWidget("cancel", commandWidgetClass, form,
 */
-        cancel = XtCreateManagedWidget("ƒLƒƒƒ“ƒZƒ‹", commandWidgetClass, form,
+        cancel = XtCreateManagedWidget("¥­¥ã¥ó¥»¥ë", commandWidgetClass, form,
                                        args, num_args);
         XtAddCallback(cancel, XtNcallback, menu_cancel, (XtPointer) wp);
         XtSetArg(args[0], XtNwidth, &lblwidth[1]);
@@ -920,7 +920,7 @@ menu_item **menu_list;
 /*JP
         all = XtCreateManagedWidget("all", commandWidgetClass, form,
 */
-        all = XtCreateManagedWidget("‚·‚×‚Ä‘I‘ğ", commandWidgetClass, form,
+        all = XtCreateManagedWidget("¤¹¤Ù¤ÆÁªÂò", commandWidgetClass, form,
                                     args, num_args);
         XtAddCallback(all, XtNcallback, menu_all, (XtPointer) wp);
         XtSetArg(args[0], XtNwidth, &lblwidth[2]);
@@ -939,7 +939,7 @@ menu_item **menu_list;
 /*JP
         none = XtCreateManagedWidget("none", commandWidgetClass, form,
 */
-        none = XtCreateManagedWidget("‚·‚×‚Ä‰ğœ", commandWidgetClass, form,
+        none = XtCreateManagedWidget("¤¹¤Ù¤Æ²ò½ü", commandWidgetClass, form,
                                      args, num_args);
         XtAddCallback(none, XtNcallback, menu_none, (XtPointer) wp);
         XtSetArg(args[0], XtNwidth, &lblwidth[3]);
@@ -958,7 +958,7 @@ menu_item **menu_list;
 /*JP
         invert = XtCreateManagedWidget("invert", commandWidgetClass, form,
 */
-        invert = XtCreateManagedWidget("”½“]", commandWidgetClass, form,
+        invert = XtCreateManagedWidget("È¿Å¾", commandWidgetClass, form,
                                        args, num_args);
         XtAddCallback(invert, XtNcallback, menu_invert, (XtPointer) wp);
         XtSetArg(args[0], XtNwidth, &lblwidth[4]);
@@ -978,7 +978,7 @@ menu_item **menu_list;
 /*JP
         search = XtCreateManagedWidget("search", commandWidgetClass, form,
 */
-        search = XtCreateManagedWidget("ŒŸõ", commandWidgetClass, form,
+        search = XtCreateManagedWidget("¸¡º÷", commandWidgetClass, form,
                                        args, num_args);
         XtAddCallback(search, XtNcallback, menu_search, (XtPointer) wp);
         XtSetArg(args[0], XtNwidth, &lblwidth[5]);

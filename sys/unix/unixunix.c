@@ -169,7 +169,7 @@ getlock()
 /*JP
     "There is already a game in progress under your name.  Destroy old game?";
 */
-    "‚ ‚È‚½‚Ì–¼‘O‚Å•s³I—¹‚µ‚½ƒQ[ƒ€‚ªc‚Á‚Ä‚¢‚Ü‚·D”jŠü‚µ‚Ü‚·‚©H";
+    "¤¢¤Ê¤¿¤ÎÌ¾Á°¤ÇÉÔÀµ½ªÎ»¤·¤¿¥²¡¼¥à¤¬»Ä¤Ã¤Æ¤¤¤Ş¤¹¡¥ÇË´ş¤·¤Ş¤¹¤«¡©";
 
         if (iflags.window_inited) {
             /* this is a candidate for paranoid_confirmation */

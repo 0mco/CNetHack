@@ -47,9 +47,9 @@ $place = { (33,0), (0,12), (25,20), (75,05) }
 SHUFFLE: $place
 
 STAIR:$place[0],down
-MONSTER:('m',"giant mimic"), $place[1], m_feature "下り階段"
-MONSTER:('m',"large mimic"), $place[2], m_feature "下り階段"
-MONSTER:('m',"small mimic"), $place[3], m_feature "下り階段"
+MONSTER:('m',"giant mimic"), $place[1], m_feature "荳九ｊ髫取ｮｵ"
+MONSTER:('m',"large mimic"), $place[2], m_feature "荳九ｊ髫取ｮｵ"
+MONSTER:('m',"small mimic"), $place[3], m_feature "荳九ｊ髫取ｮｵ"
 # Portal arrival point
 BRANCH:(19,09,19,09),(0,0,0,0)
 # Doors (secret)
@@ -307,7 +307,7 @@ NON_DIGGABLE:(00,00,75,20)
 # One trap to keep the gnomes at bay.
 TRAP:"spiked pit",(37,07)
 # Objects
-OBJECT:('(',"skeleton key"),(38,10),blessed,0,name:"盗賊のマスターキー"
+OBJECT:('(',"skeleton key"),(38,10),blessed,0,name:"逶苓ｳ翫�ｮ繝槭せ繧ｿ繝ｼ繧ｭ繝ｼ"
 OBJECT:('%',"tin"),(26,12),montype:"chameleon"
 OBJECT:random,random
 OBJECT:random,random

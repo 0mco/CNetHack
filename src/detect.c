@@ -357,13 +357,13 @@ register struct obj *sobj;
 /*JP
                 Sprintf(buf, "You feel like a million %s!", currency(2L));
 */
-                Strcpy(buf, "‚ ‚È‚½‚Í‹à‚¿‚É‚È‚Á‚½‚æ‚¤‚ÉŠ´‚¶‚½I");
+                Strcpy(buf, "ã‚ãªãŸã¯é‡‘æŒã¡ã«ãªã£ãŸã‚ˆã†ã«æ„Ÿã˜ãŸï¼");
             else if (money_cnt(invent) || hidden_gold())
                 Strcpy(buf,
 /*JP
                    "You feel worried about your future financial situation.");
 */
-                   "‚ ‚È‚½‚Í«—ˆ‚ÌŒoÏó‹µ‚ªS”z‚É‚È‚Á‚½D");
+                   "ã‚ãªãŸã¯å°†æ¥ã®çµŒæ¸ˆçŠ¶æ³ãŒå¿ƒé…ã«ãªã£ãŸï¼");
             else if (steedgold)
 #if 0 /*JP*/
                 Sprintf(buf, "You feel interested in %s financial situation.",
@@ -373,7 +373,7 @@ register struct obj *sobj;
                                           (char *) 0,
                                           SUPPRESS_SADDLE, FALSE)));
 #else
-                Sprintf(buf, "‚ ‚È‚½‚Í%s‚ÌŒoÏó‹µ‚É‹»–¡‚ªo‚Ä‚«‚½D",
+                Sprintf(buf, "ã‚ãªãŸã¯%sã®çµŒæ¸ˆçŠ¶æ³ã«èˆˆå‘³ãŒå‡ºã¦ããŸï¼",
                         x_monnam(u.usteed,
                                           u.usteed->mtame ? ARTICLE_YOUR
                                                           : ARTICLE_THE,
@@ -384,7 +384,7 @@ register struct obj *sobj;
 /*JP
                 Strcpy(buf, "You feel materially poor.");
 */
-                Strcpy(buf, "‚ ‚È‚½‚Í‚Ğ‚à‚¶‚³‚ğŠ´‚¶‚½D");
+                Strcpy(buf, "ã‚ãªãŸã¯ã²ã‚‚ã˜ã•ã‚’æ„Ÿã˜ãŸï¼");
 
             strange_feeling(sobj, buf);
         }
@@ -396,7 +396,7 @@ register struct obj *sobj;
 /*JP
     You("notice some gold between your %s.", makeplural(body_part(FOOT)));
 */
-    You("%s‚ÌŠÔ‚É‹à‰İ‚ª—‚¿‚Ä‚¢‚é‚±‚Æ‚É‹C‚ª‚Â‚¢‚½D", body_part(FOOT));
+    You("%sã®é–“ã«é‡‘è²¨ãŒè½ã¡ã¦ã„ã‚‹ã“ã¨ã«æ°—ãŒã¤ã„ãŸï¼", body_part(FOOT));
     return 0;
 
 outgoldmap:
@@ -457,13 +457,13 @@ outgoldmap:
 /*JP
     You_feel("very greedy, and sense gold!");
 */
-    You("‚Ç‚ñ—~‚É‚È‚Á‚½‚æ‚¤‚È‹C‚ª‚µ‚½C‚»‚µ‚Ä‹à‰İ‚ÌˆÊ’u‚ğŠ´’m‚µ‚½I");
+    You("ã©ã‚“æ¬²ã«ãªã£ãŸã‚ˆã†ãªæ°—ãŒã—ãŸï¼Œãã—ã¦é‡‘è²¨ã®ä½ç½®ã‚’æ„ŸçŸ¥ã—ãŸï¼");
     exercise(A_WIS, TRUE);
 
 /*JP
     browse_map(ter_typ, "gold");
 */
-    browse_map(ter_typ, "‹à");
+    browse_map(ter_typ, "é‡‘");
 
     reconstrain_map();
     docrt();
@@ -488,7 +488,7 @@ register struct obj *sobj;
 /*JP
     const char *what = confused ? something : "food";
 */
-    const char *what = confused ? "ƒnƒ‰ƒwƒŠ" : "H‚×•¨";
+    const char *what = confused ? "ãƒãƒ©ãƒ˜ãƒª" : "é£Ÿã¹ç‰©";
 
     stale = clear_stale_map(oclass, 0);
     if (u.usteed) /* some situations leave steed with stale coordinates */
@@ -520,13 +520,13 @@ register struct obj *sobj;
 /*JP
             You("sense a lack of %s nearby.", what);
 */
-            You("%s‚ªŒ¸‚Á‚Ä‚¢‚é‚Ì‚É‹C‚ª‚Â‚¢‚½D",what);
+            You("%sãŒæ¸›ã£ã¦ã„ã‚‹ã®ã«æ°—ãŒã¤ã„ãŸï¼",what);
             if (sobj && sobj->blessed) {
                 if (!u.uedibility)
 /*JP
                     Your("%s starts to tingle.", body_part(NOSE));
 */
-                    Your("%s‚ª‚Ò‚­‚Á‚Æ“®‚¢‚½D", body_part(NOSE));
+                    Your("%sãŒã´ãã£ã¨å‹•ã„ãŸï¼", body_part(NOSE));
                 u.uedibility = 1;
             }
         } else if (sobj) {
@@ -538,10 +538,10 @@ register struct obj *sobj;
                         ? " then starts to tingle"
                         : "");
 #else
-            Sprintf(buf, "‚ ‚È‚½‚Ì%s‚ª‚Ğ‚­‚Ğ‚­‚Æ“®‚¢%sD", body_part(NOSE),
+            Sprintf(buf, "ã‚ãªãŸã®%sãŒã²ãã²ãã¨å‹•ã„%sï¼", body_part(NOSE),
                     (sobj->blessed && !u.uedibility)
-                        ? "‚ÄC‚¤‚¸‚¤‚¸‚µ‚¾‚µ‚½"
-                        : "‚½");
+                        ? "ã¦ï¼Œã†ãšã†ãšã—ã ã—ãŸ"
+                        : "ãŸ");
 #endif
             if (sobj->blessed && !u.uedibility) {
                 boolean savebeginner = flags.beginner;
@@ -559,13 +559,13 @@ register struct obj *sobj;
 /*JP
         You("%s %s nearby.", sobj ? "smell" : "sense", what);
 */
-        You("‹ß‚­‚Å%s%sD", what, sobj ? "‚Ì‚É‚¨‚¢‚ğ‚©‚¢‚¾" : "‚ğŠ´’m‚µ‚½");
+        You("è¿‘ãã§%s%sï¼", what, sobj ? "ã®ã«ãŠã„ã‚’ã‹ã„ã " : "ã‚’æ„ŸçŸ¥ã—ãŸ");
         if (sobj && sobj->blessed) {
             if (!u.uedibility)
 /*JP
                 pline("Your %s starts to tingle.", body_part(NOSE));
 */
-                pline("‚ ‚È‚½‚Ì%s‚ª‚¤‚¸‚¤‚¸‚µ‚¾‚µ‚½D", body_part(NOSE));
+                pline("ã‚ãªãŸã®%sãŒã†ãšã†ãšã—ã ã—ãŸï¼", body_part(NOSE));
             u.uedibility = 1;
         }
     } else {
@@ -602,26 +602,26 @@ register struct obj *sobj;
                 Your("%s %s to tingle and you smell %s.", body_part(NOSE),
                      u.uedibility ? "continues" : "starts", what);
 #else
-                Your("%s‚Í‚¤‚¸‚¤‚¸‚µ%sC%s‚Ì“õ‚¢‚ğšk‚¬‚Æ‚Á‚½D", body_part(NOSE),
-                     u.uedibility ? "‘±‚¯" : "n‚ß", what);
+                Your("%sã¯ã†ãšã†ãšã—%sï¼Œ%sã®åŒ‚ã„ã‚’å—…ãã¨ã£ãŸï¼", body_part(NOSE),
+                     u.uedibility ? "ç¶šã‘" : "å§‹ã‚", what);
 #endif
                 u.uedibility = 1;
             } else
 /*JP
                 Your("%s tingles and you smell %s.", body_part(NOSE), what);
 */
-                Your("%s‚Í‚¤‚¸‚¤‚¸‚µC%s‚Ì“õ‚¢‚ğšk‚¬‚Æ‚Á‚½D", body_part(NOSE), what);
+                Your("%sã¯ã†ãšã†ãšã—ï¼Œ%sã®åŒ‚ã„ã‚’å—…ãã¨ã£ãŸï¼", body_part(NOSE), what);
         } else
 /*JP
             You("sense %s.", what);
 */
-            You("%s‚ğŠ´’m‚µ‚½D", what);
+            You("%sã‚’æ„ŸçŸ¥ã—ãŸï¼", what);
         exercise(A_WIS, TRUE);
 
 /*JP
         browse_map(ter_typ, "food");
 */
-        browse_map(ter_typ, "H—¿");
+        browse_map(ter_typ, "é£Ÿæ–™");
 
         reconstrain_map();
         docrt();
@@ -676,12 +676,12 @@ int class;            /* an object class, 0 for all */
 /*JP
         Strcpy(stuff, class ? def_oc_syms[class].name : "objects");
 */
-        Strcpy(stuff, class ? def_oc_syms[class].name : "•¨‘Ì");
+        Strcpy(stuff, class ? def_oc_syms[class].name : "ç‰©ä½“");
     if (boulder && class != ROCK_CLASS)
 /*JP
         Strcat(stuff, " and/or large stones");
 */
-        Strcat(stuff, "‚Æ‹Šâ");
+        Strcat(stuff, "ã¨å·¨å²©");
 
     if (do_dknown)
         for (obj = invent; obj; obj = obj->nobj)
@@ -736,14 +736,14 @@ int class;            /* an object class, 0 for all */
 /*JP
                 strange_feeling(detector, "You feel a lack of something.");
 */
-                strange_feeling(detector, "‚ ‚È‚½‚Í‰½‚©‚ªŒ‡–R‚µ‚Ä‚¢‚é‚æ‚¤‚È‹C‚ª‚µ‚½D");
+                strange_feeling(detector, "ã‚ãªãŸã¯ä½•ã‹ãŒæ¬ ä¹ã—ã¦ã„ã‚‹ã‚ˆã†ãªæ°—ãŒã—ãŸï¼");
             return 1;
         }
 
 /*JP
         You("sense %s nearby.", stuff);
 */
-        You("‹ß‚­‚Ì%s‚ğŠ´’m‚µ‚½D", stuff);
+        You("è¿‘ãã®%sã‚’æ„ŸçŸ¥ã—ãŸï¼", stuff);
         return 0;
     }
 
@@ -833,7 +833,7 @@ int class;            /* an object class, 0 for all */
 /*JP
     You("detect the %s of %s.", ct ? "presence" : "absence", stuff);
 */
-    You("%s%sD", stuff, ct ? "‚ğ”­Œ©‚µ‚½" : "‚Í‰½‚à‚È‚¢‚±‚Æ‚ª‚í‚©‚Á‚½" );
+    You("%s%sï¼", stuff, ct ? "ã‚’ç™ºè¦‹ã—ãŸ" : "ã¯ä½•ã‚‚ãªã„ã“ã¨ãŒã‚ã‹ã£ãŸ" );
 
     if (!ct)
         display_nhwindow(WIN_MAP, TRUE);
@@ -841,7 +841,7 @@ int class;            /* an object class, 0 for all */
 /*JP
         browse_map(ter_typ, "object");
 */
-        browse_map(ter_typ, "•¨‘Ì");
+        browse_map(ter_typ, "ç‰©ä½“");
 
     reconstrain_map();
     docrt(); /* this will correctly reset vision */
@@ -883,11 +883,11 @@ int mclass;                /* monster class, 0 for all */
 /*JP
                                       ? "You get the heebie jeebies."
 */
-                                      ? "‚ ‚È‚½‚Í‹à’¹‚Ì‰Ä‚ÅƒLƒ“ƒ`ƒ‡[‚µ‚½D"
+                                      ? "ã‚ãªãŸã¯é‡‘é³¥ã®å¤ã§ã‚­ãƒ³ãƒãƒ§ãƒ¼ã—ãŸï¼"
 /*JP
                                       : "You feel threatened.");
 */
-                                      : "‚ ‚È‚½‚Í‹°•|‚Å‚¼‚­‚Á‚Æ‚µ‚½D");
+                                      : "ã‚ãªãŸã¯ææ€–ã§ããã£ã¨ã—ãŸï¼");
         return 1;
     } else {
         boolean unconstrained, woken = FALSE;
@@ -915,12 +915,12 @@ int mclass;                /* monster class, 0 for all */
 /*JP
         You("sense the presence of monsters.");
 */
-        You("‰ö•¨‚Ì‘¶İ‚ğšk‚¬‚Â‚¯‚½D");
+        You("æ€ªç‰©ã®å­˜åœ¨ã‚’å—…ãã¤ã‘ãŸï¼");
         if (woken)
 /*JP
             pline("Monsters sense the presence of you.");
 */
-            pline("‰ö•¨‚Í‚ ‚È‚½‚Ì‘¶İ‚ğšk‚¬‚Â‚¯‚½D");
+            pline("æ€ªç‰©ã¯ã‚ãªãŸã®å­˜åœ¨ã‚’å—…ãã¤ã‘ãŸï¼");
 
         if ((otmp && otmp->blessed) && !unconstrained) {
             /* persistent detection--just show updated map */
@@ -932,7 +932,7 @@ int mclass;                /* monster class, 0 for all */
 /*JP
             browse_map(TER_DETECT | TER_MON, "monster of interest");
 */
-            browse_map(TER_DETECT | TER_MON, "ŠÖS‚Ì‚ ‚é‰ö•¨");
+            browse_map(TER_DETECT | TER_MON, "é–¢å¿ƒã®ã‚ã‚‹æ€ªç‰©");
             EDetect_monsters &= ~I_SPECIAL;
         }
 
@@ -1084,7 +1084,7 @@ struct obj *sobj; /* null if crystal ball, *scroll if gold detection scroll */
 /*JP
         Sprintf(buf, "Your %s stop itching.", makeplural(body_part(TOE)));
 */
-        Sprintf(buf, "‚ ‚È‚½‚Ì%s‚Ì‚Ş‚¸‚Ş‚¸‚Í‚¨‚³‚Ü‚Á‚½D", makeplural(body_part(TOE)));
+        Sprintf(buf, "ã‚ãªãŸã®%sã®ã‚€ãšã‚€ãšã¯ãŠã•ã¾ã£ãŸï¼", makeplural(body_part(TOE)));
         strange_feeling(sobj, buf);
         return 1;
     }
@@ -1092,7 +1092,7 @@ struct obj *sobj; /* null if crystal ball, *scroll if gold detection scroll */
 /*JP
     Your("%s itch.", makeplural(body_part(TOE)));
 */
-    Your("%s‚Í‚Ş‚¸‚Ş‚¸‚µ‚½D", makeplural(body_part(TOE)));
+    Your("%sã¯ã‚€ãšã‚€ãšã—ãŸï¼", makeplural(body_part(TOE)));
     return 0;
 
 outtrapmap:
@@ -1128,12 +1128,12 @@ outtrapmap:
 /*JP
     You_feel("%s.", cursed_src ? "very greedy" : "entrapped");
 */
-    You("%s‹C‚É‚È‚Á‚½D", cursed_src ? "‚Æ‚Ä‚à‚Ç‚ñ—~‚È" : "‚¾‚Ü‚³‚ê‚Ä‚¢‚é‚æ‚¤‚È");
+    You("%sæ°—æŒã«ãªã£ãŸï¼", cursed_src ? "ã¨ã¦ã‚‚ã©ã‚“æ¬²ãª" : "ã ã¾ã•ã‚Œã¦ã„ã‚‹ã‚ˆã†ãª");
 
 /*JP
     browse_map(ter_typ, "trap of interest");
 */
-    browse_map(ter_typ, "ŠÖS‚Ì‚ ‚éã©");
+    browse_map(ter_typ, "é–¢å¿ƒã®ã‚ã‚‹ç½ ");
 
     reconstrain_map();
     docrt(); /* redraw the screen to remove unseen traps from the map */
@@ -1157,76 +1157,76 @@ d_level *where;
 /*JP
                 return "far away";
 */
-              return "‚Í‚é‚©”Ş•û‚É";
+              return "ã¯ã‚‹ã‹å½¼æ–¹ã«";
             else
 /*JP
                 return "far below";
 */
-        return "‚Í‚é‚©‰º•û‚É";
+        return "ã¯ã‚‹ã‹ä¸‹æ–¹ã«";
         else if (ll < -1)
             if (!indun)
 /*JP
                 return "away below you";
 */
-              return "‚¸‚Á‚Æ‰º•û‚É";
+              return "ãšã£ã¨ä¸‹æ–¹ã«";
             else
 /*JP
                 return "below you";
 */
-              return "‰º•û‚É";
+              return "ä¸‹æ–¹ã«";
         else if (!indun)
 /*JP
             return "in the distance";
 */
-          return "‰“‚­‚É";
+          return "é ãã«";
         else
 /*JP
             return "just below";
 */
-          return "^‰º‚É";
+          return "çœŸä¸‹ã«";
     } else if (ll > 0) {
         if (ll > (8 + rn2(3)))
             if (!indun)
 /*JP
                 return "far away";
 */
-              return "‚Í‚é‚©”Ş•û‚É";
+              return "ã¯ã‚‹ã‹å½¼æ–¹ã«";
             else
 /*JP
                 return "far above";
 */
-              return "‚Í‚é‚©ã•û‚É";
+              return "ã¯ã‚‹ã‹ä¸Šæ–¹ã«";
         else if (ll > 1)
             if (!indun)
 /*JP
                 return "away above you";
 */
-              return "‚¸‚Á‚Æã•û‚É";
+              return "ãšã£ã¨ä¸Šæ–¹ã«";
             else
 /*JP
                 return "above you";
 */
-              return "ã•û‚É";
+              return "ä¸Šæ–¹ã«";
         else if (!indun)
 /*JP
             return "in the distance";
 */
-          return "‰“‚­‚É";
+          return "é ãã«";
         else
 /*JP
             return "just above";
 */
-          return "^ã‚É";
+          return "çœŸä¸Šã«";
     } else if (!indun)
 /*JP
         return "in the distance";
 */
-      return "‰“‚­‚É";
+      return "é ãã«";
     else
 /*JP
         return "near you";
 */
-      return "‹ß‚­‚É";
+      return "è¿‘ãã«";
 }
 
 static const struct {
@@ -1236,19 +1236,19 @@ static const struct {
 /*JP
     { "Delphi", &oracle_level },
 */
-    { "ƒfƒ‹ƒtƒ@ƒC", &oracle_level },
+    { "ãƒ‡ãƒ«ãƒ•ã‚¡ã‚¤", &oracle_level },
 /*JP
     { "Medusa's lair", &medusa_level },
 */
-    { "ƒƒfƒ…[ƒT‚ÌZ‚İ‚©", &medusa_level },
+    { "ãƒ¡ãƒ‡ãƒ¥ãƒ¼ã‚µã®ä½ã¿ã‹", &medusa_level },
 /*JP
     { "a castle", &stronghold_level },
 */
-    { "é", &stronghold_level },
+    { "åŸ", &stronghold_level },
 /*JP
     { "the Wizard of Yendor's tower", &wiz1_level },
 */
-    { "ƒCƒFƒ“ƒ_[‚Ì–‚–@g‚¢‚Ì“ƒ", &wiz1_level },
+    { "ã‚¤ã‚§ãƒ³ãƒ€ãƒ¼ã®é­”æ³•ä½¿ã„ã®å¡”", &wiz1_level },
 };
 
 void
@@ -1263,7 +1263,7 @@ struct obj **optr;
 /*JP
         pline("Too bad you can't see %s.", the(xname(obj)));
 */
-        pline("‚È‚ñ‚Ä‚±‚Æ‚¾D%s‚ğŒ©‚é‚±‚Æ‚ª‚Å‚«‚È‚¢D", the(xname(obj)));
+        pline("ãªã‚“ã¦ã“ã¨ã ï¼%sã‚’è¦‹ã‚‹ã“ã¨ãŒã§ããªã„ï¼", the(xname(obj)));
         return;
     }
     oops = (rnd(20) > ACURR(A_INT) || obj->cursed);
@@ -1273,13 +1273,13 @@ struct obj **optr;
 /*JP
             pline("%s too much to comprehend!", Tobjnam(obj, "are"));
 */
-            pline("%s‚ğ”`‚¢‚½‚ª‰½‚Ì‚±‚Æ‚¾‚©‚³‚Á‚Ï‚è‚í‚©‚ç‚È‚©‚Á‚½I", xname(obj));
+            pline("%sã‚’è¦—ã„ãŸãŒä½•ã®ã“ã¨ã ã‹ã•ã£ã±ã‚Šã‚ã‹ã‚‰ãªã‹ã£ãŸï¼", xname(obj));
             break;
         case 2:
 /*JP
             pline("%s you!", Tobjnam(obj, "confuse"));
 */
-            pline("%s‚ğ”`‚¢‚Ä‚é‚Æ‚Ó‚ç‚Â‚¢‚Ä‚«‚½I", xname(obj));
+            pline("%sã‚’è¦—ã„ã¦ã‚‹ã¨ãµã‚‰ã¤ã„ã¦ããŸï¼", xname(obj));
             make_confused((HConfusion & TIMEOUT) + (long) rnd(100), FALSE);
             break;
         case 3:
@@ -1287,7 +1287,7 @@ struct obj **optr;
 /*JP
                 pline("%s your vision!", Tobjnam(obj, "damage"));
 */
-                pline("%s‚ğ”`‚¢‚Ä‚¢‚é‚Æ‹Šo‚ª‚¨‚©‚µ‚­‚È‚Á‚Ä‚«‚½I", xname(obj));
+                pline("%sã‚’è¦—ã„ã¦ã„ã‚‹ã¨è¦–è¦šãŒãŠã‹ã—ããªã£ã¦ããŸï¼", xname(obj));
                 make_blinded((Blinded & TIMEOUT) + (long) rnd(100), FALSE);
                 if (!Blind)
                     Your1(vision_clears);
@@ -1295,18 +1295,18 @@ struct obj **optr;
 /*JP
                 pline("%s your vision.", Tobjnam(obj, "assault"));
 */
-                pline("%s‚ª‚ ‚È‚½‚Ì‹ŠE‚É”—‚Á‚Ä‚«‚½D", xname(obj));
+                pline("%sãŒã‚ãªãŸã®è¦–ç•Œã«è¿«ã£ã¦ããŸï¼", xname(obj));
 /*JP
                 You("are unaffected!");
 */
-                pline("‚µ‚©‚µC‚ ‚È‚½‚Í‰e‹¿‚ğó‚¯‚È‚©‚Á‚½I");
+                pline("ã—ã‹ã—ï¼Œã‚ãªãŸã¯å½±éŸ¿ã‚’å—ã‘ãªã‹ã£ãŸï¼");
             }
             break;
         case 4:
 /*JP
             pline("%s your mind!", Tobjnam(obj, "zap"));
 */
-            pline("%s‚ğ”`‚¢‚Ä‚¢‚é‚ÆŒÜŠ´‚ª‚¨‚©‚µ‚­‚È‚Á‚Ä‚«‚½I", xname(obj));
+            pline("%sã‚’è¦—ã„ã¦ã„ã‚‹ã¨äº”æ„ŸãŒãŠã‹ã—ããªã£ã¦ããŸï¼", xname(obj));
             (void) make_hallucinated(
                 (HHallucination & TIMEOUT) + (long) rnd(100), FALSE, 0L);
             break;
@@ -1314,14 +1314,14 @@ struct obj **optr;
 /*JP
             pline("%s!", Tobjnam(obj, "explode"));
 */
-            pline("%s‚Í”š”­‚µ‚½I", xname(obj));
+            pline("%sã¯çˆ†ç™ºã—ãŸï¼", xname(obj));
             useup(obj);
             *optr = obj = 0; /* it's gone */
             /* physical damage cause by the shards and force */
 /*JP
             losehp(Maybe_Half_Phys(rnd(30)), "exploding crystal ball",
 */
-            losehp(Maybe_Half_Phys(rnd(30)), "…»‹Ê‚Ì”š”­‚Å",
+            losehp(Maybe_Half_Phys(rnd(30)), "æ°´æ™¶ç‰ã®çˆ†ç™ºã§",
                    KILLED_BY_AN);
             break;
         }
@@ -1335,50 +1335,50 @@ struct obj **optr;
 /*JP
             pline("All you see is funky %s haze.", hcolor((char *) 0));
 */
-            pline("‚¨‚¨Iƒtƒ@ƒ“ƒL[ƒ‚ƒ“ƒL[‚È%s‚à‚â‚ªŒ©‚¦‚éD", hcolor((char *)0));
+            pline("ãŠãŠï¼ãƒ•ã‚¡ãƒ³ã‚­ãƒ¼ãƒ¢ãƒ³ã‚­ãƒ¼ãª%sã‚‚ã‚„ãŒè¦‹ãˆã‚‹ï¼", hcolor((char *)0));
         } else {
             switch (rnd(6)) {
             case 1:
 /*JP
                 You("grok some groovy globs of incandescent lava.");
 */
-                You("…–å‚ÌŒ®‚ğ‚à‚Á‚½…ŒË‰©–å‚ª•Ç‚Ì‰e‚É‰B‚ê‚Ä‚¢‚é‚Ì‚ªŒ©‚¦‚½D");
+                You("æ°´é–€ã®éµã‚’ã‚‚ã£ãŸæ°´æˆ¸é»„é–€ãŒå£ã®å½±ã«éš ã‚Œã¦ã„ã‚‹ã®ãŒè¦‹ãˆãŸï¼");
                 break;
             case 2:
 #if 0 /*JP:T*/
                 pline("Whoa!  Psychedelic colors, %s!",
                       poly_gender() == 1 ? "babe" : "dude");
 #else
-                pline("ƒ[ƒIIƒ‰ƒŠ‚Á‚Ä‚é‚©‚¢H%sI",
-                      poly_gender() == 1 ? "ƒxƒCƒr[" : "ƒ†[");
+                pline("ãƒ¯ãƒ¼ã‚ªï¼ãƒ©ãƒªã£ã¦ã‚‹ã‹ã„ï¼Ÿ%sï¼",
+                      poly_gender() == 1 ? "ãƒ™ã‚¤ãƒ“ãƒ¼" : "ãƒ¦ãƒ¼");
 #endif
                 break;
             case 3:
 /*JP
                 pline_The("crystal pulses with sinister %s light!",
 */
-                pline("…»‚Í•s‹g‚È%sƒpƒ‹ƒX‚ğ”­‚µ‚½I", 
+                pline("æ°´æ™¶ã¯ä¸å‰ãª%sãƒ‘ãƒ«ã‚¹ã‚’ç™ºã—ãŸï¼", 
                           hcolor((char *) 0));
                 break;
             case 4:
 /*JP
                 You_see("goldfish swimming above fluorescent rocks.");
 */
-                You("ŒuŒõŠâ‚Ìã‚ğ‹à‹›‚ª‰j‚¢‚Å‚¢‚é‚Ì‚ğŒ©‚½D");
+                You("è›å…‰å²©ã®ä¸Šã‚’é‡‘é­šãŒæ³³ã„ã§ã„ã‚‹ã®ã‚’è¦‹ãŸï¼");
                 break;
             case 5:
 #if 0 /*JP*/
                 You_see(
                     "tiny snowflakes spinning around a miniature farmhouse.");
 #else
-                    You("¬‚³‚¢á•Ğ‚ªƒ~ƒjƒ`ƒ…ƒA‚Ì”_‰Æ‚Ì‰Æ‚Ì‚Ü‚í‚è‚ğ•‘‚Á‚Ä‚é‚Ì‚ğŒ©‚½D");
+                    You("å°ã•ã„é›ªç‰‡ãŒãƒŸãƒ‹ãƒãƒ¥ã‚¢ã®è¾²å®¶ã®å®¶ã®ã¾ã‚ã‚Šã‚’èˆã£ã¦ã‚‹ã®ã‚’è¦‹ãŸï¼");
 #endif
                 break;
             default:
 /*JP
                 pline("Oh wow... like a kaleidoscope!");
 */
-                pline("ƒ[ƒID–œ‰Ø‹¾‚Ì‚æ‚¤‚¾I");
+                pline("ãƒ¯ãƒ¼ã‚ªï¼ä¸‡è¯é¡ã®ã‚ˆã†ã ï¼");
                 break;
             }
             consume_obj_charge(obj, TRUE);
@@ -1391,11 +1391,11 @@ struct obj **optr;
 /*JP
         You("may look for an object or monster symbol.");
 */
-        You("•¨‘Ì‚â‰ö•¨‚Ì‹L†‚ğ’T‚¹‚éD");
+        You("ç‰©ä½“ã‚„æ€ªç‰©ã®è¨˜å·ã‚’æ¢ã›ã‚‹ï¼");
 /*JP
     ch = yn_function("What do you look for?", (char *) 0, '\0');
 */
-    ch = yn_function("‰½‚ğ’T‚µ‚Ü‚·‚©H", (char *)0, '\0');
+    ch = yn_function("ä½•ã‚’æ¢ã—ã¾ã™ã‹ï¼Ÿ", (char *)0, '\0');
     /* Don't filter out ' ' here; it has a use */
     if ((ch != def_monsyms[S_GHOST].sym) && index(quitchars, ch)) {
         if (flags.verbose)
@@ -1405,18 +1405,18 @@ struct obj **optr;
 /*JP
     You("peer into %s...", the(xname(obj)));
 */
-    You("%s‚ğ”`‚«‚±‚ñ‚¾DDD", the(xname(obj)));
+    You("%sã‚’è¦—ãã“ã‚“ã ï¼ï¼ï¼", the(xname(obj)));
     nomul(-rnd(10));
 /*JP
     multi_reason = "gazing into a crystal ball";
 */
-    multi_reason = "…»‹…‚ğ”`‚«‚ñ‚Å‚¢‚é‚É";
+    multi_reason = "æ°´æ™¶çƒã‚’è¦—ãè¾¼ã‚“ã§ã„ã‚‹æ™‚ã«";
     nomovemsg = "";
     if (obj->spe <= 0) {
 /*JP
         pline_The("vision is unclear.");
 */
-        pline("‰f‘œ‚Í•s‘N–¾‚¾‚Á‚½D");
+        pline("æ˜ åƒã¯ä¸é®®æ˜ã ã£ãŸï¼");
     } else {
         int class, i;
         int ret = 0;
@@ -1447,7 +1447,7 @@ struct obj **optr;
                 You_see("%s, %s.", level_detects[i].what,
                         level_distance(level_detects[i].where));
 #else
-                You_see("%s‚ğ%sŒ©‚½D", level_detects[i].what,
+                You_see("%sã‚’%sè¦‹ãŸï¼", level_detects[i].what,
                         level_distance(level_detects[i].where));
 #endif
                 ret = 0;
@@ -1459,12 +1459,12 @@ struct obj **optr;
 /*JP
                 You_see("the Wizard of Yendor gazing out at you.");
 */
-                You("ƒCƒFƒ“ƒ_[‚Ì–‚–@g‚¢‚ª‚ ‚È‚½‚ğ‚É‚ç‚ñ‚Å‚¢‚é‚Ì‚ğŒ©‚½D");
+                You("ã‚¤ã‚§ãƒ³ãƒ€ãƒ¼ã®é­”æ³•ä½¿ã„ãŒã‚ãªãŸã‚’ã«ã‚‰ã‚“ã§ã„ã‚‹ã®ã‚’è¦‹ãŸï¼");
             else
 /*JP
                 pline_The("vision is unclear.");
 */
-                pline("‰f‘œ‚Í•s‘N–¾‚É‚È‚Á‚½D");
+                pline("æ˜ åƒã¯ä¸é®®æ˜ã«ãªã£ãŸï¼");
         }
     }
     return;
@@ -1534,7 +1534,7 @@ do_mapping()
                    "anything of interest");
 #else
         browse_map(TER_DETECT | TER_MAP | TER_TRP | TER_OBJ,
-                   "ŠÖS‚Ì‚ ‚é‚à‚Ì");
+                   "é–¢å¿ƒã®ã‚ã‚‹ã‚‚ã®");
 #endif
         docrt();
     }
@@ -1580,7 +1580,7 @@ struct obj *sobj; /* scroll--actually fake spellbook--object */
 /*JP
         You("sense your surroundings.");
 */
-        You("‚Ü‚í‚è‚Ì‚à‚Ì‚ğŠ´’m‚µ‚½D");
+        You("ã¾ã‚ã‚Šã®ã‚‚ã®ã‚’æ„ŸçŸ¥ã—ãŸï¼");
         if (extended || glyph_is_monster(glyph_at(u.ux, u.uy)))
             ter_typ |= TER_MON;
         if (extended)
@@ -1588,7 +1588,7 @@ struct obj *sobj; /* scroll--actually fake spellbook--object */
 /*JP
         browse_map(ter_typ, "anything of interest");
 */
-        browse_map(ter_typ, "ŠÖS‚Ì‚ ‚é‚à‚Ì");
+        browse_map(ter_typ, "é–¢å¿ƒã®ã‚ã‚‹ã‚‚ã®");
         EDetect_monsters &= ~I_SPECIAL;
         refresh = TRUE;
     }
@@ -1687,16 +1687,16 @@ genericptr_t num;
 /*JP
                 b_trapped("door", 0);
 */
-                b_trapped("”à", 0);
+                b_trapped("æ‰‰", 0);
             else
 #if 0 /*JP*/
                 Norep("You %s an explosion!",
                       cansee(zx, zy) ? "see" : (!Deaf ? "hear"
                                                       : "feel the shock of"));
 #else
-                Norep("‚ ‚È‚½‚Í”š”­%sI",
-                      cansee(zx, zy) ? "‚ğŒ©‚½" : (!Deaf ? "‰¹‚ğ•·‚¢‚½"
-                                                         : "‚ÌÕŒ‚‚ğŠ´‚¶‚½"));
+                Norep("ã‚ãªãŸã¯çˆ†ç™º%sï¼",
+                      cansee(zx, zy) ? "ã‚’è¦‹ãŸ" : (!Deaf ? "éŸ³ã‚’èã„ãŸ"
+                                                         : "ã®è¡æ’ƒã‚’æ„Ÿã˜ãŸ"));
 #endif
             wake_nearto(zx, zy, 11 * 11);
             levl[zx][zy].doormask = D_NODOOR;
@@ -1754,12 +1754,12 @@ openit()
 /*JP
                 pline("Its mouth opens!");
 */
-                pline("‰½Ò‚©‚ÌŒû‚ªŠJ‚¢‚½I");
+                pline("ä½•è€…ã‹ã®å£ãŒé–‹ã„ãŸï¼");
             else
 /*JP
                 pline("%s opens its mouth!", Monnam(u.ustuck));
 */
-                pline("%s‚ÍŒû‚ğŠJ‚¢‚½I", Monnam(u.ustuck));
+                pline("%sã¯å£ã‚’é–‹ã„ãŸï¼", Monnam(u.ustuck));
         }
         expels(u.ustuck, u.ustuck->data, TRUE);
         return -1;
@@ -1799,7 +1799,7 @@ struct trap *trap;
 /*JP
     You("find %s.", an(defsyms[trap_to_defsym(tt)].explanation));
 */
-    You("%s‚ğŒ©‚Â‚¯‚½D", defsyms[trap_to_defsym(tt)].explanation);
+    You("%sã‚’è¦‹ã¤ã‘ãŸï¼", defsyms[trap_to_defsym(tt)].explanation);
 
     if (cleared) {
         display_nhwindow(WIN_MAP, TRUE); /* wait */
@@ -1834,7 +1834,7 @@ boolean via_warning;
 /*JP
                                     You_feel("an unseen monster!");
 */
-                                    You("Œ©‚¦‚È‚¢‰ö•¨‚Ì‹C”z‚ğŠ´‚¶‚½I");
+                                    You("è¦‹ãˆãªã„æ€ªç‰©ã®æ°—é…ã‚’æ„Ÿã˜ãŸï¼");
                 map_invisible(x, y);
             }
         } else if (!sensemon(mtmp))
@@ -1842,7 +1842,7 @@ boolean via_warning;
                 You("find %s.",
                     mtmp->mtame ? y_monnam(mtmp) : a_monnam(mtmp));
 #else
-                You("%s‚ğŒ©‚Â‚¯‚½D",
+                You("%sã‚’è¦‹ã¤ã‘ãŸï¼",
                     mtmp->mtame ? y_monnam(mtmp) : a_monnam(mtmp));
 #endif
         return 1;
@@ -1855,8 +1855,8 @@ boolean via_warning;
                 Your("warning senses cause you to take a second %s.",
                      Blind ? "to check nearby" : "look close by");
 #else
-                Your("Œx‰úS‚ª%s‚µ‚Î‚ç‚­‚©‚©‚Á‚½D",
-                     Blind ? "‚Ü‚í‚è‚ğ’²‚×‚é‚Ì‚É" : "‹ß‚­‚ğŒ©‚é‚Ì‚É");
+                Your("è­¦æˆ’å¿ƒãŒ%sã—ã°ã‚‰ãã‹ã‹ã£ãŸï¼",
+                     Blind ? "ã¾ã‚ã‚Šã‚’èª¿ã¹ã‚‹ã®ã«" : "è¿‘ãã‚’è¦‹ã‚‹ã®ã«");
 #endif
                 display_nhwindow(WIN_MESSAGE, FALSE); /* flush messages */
             }
@@ -1889,7 +1889,7 @@ register int aflag; /* intrinsic autosearch vs explicit searching */
 /*JP
             pline("What are you looking for?  The exit?");
 */
-            pline("‰½‚ğ’T‚·‚ñ‚¾‚¢H”ñíŒûH");
+            pline("ä½•ã‚’æ¢ã™ã‚“ã ã„ï¼Ÿéå¸¸å£ï¼Ÿ");
     } else {
         int fund = (uwep && uwep->oartifact
                     && spec_ability(uwep, SPFX_SEARCH)) ? uwep->spe : 0;
@@ -1917,7 +1917,7 @@ register int aflag; /* intrinsic autosearch vs explicit searching */
 /*JP
                     You("find a hidden door.");
 */
-                    You("‰B‚³‚ê‚½”à‚ğŒ©‚Â‚¯‚½D");
+                    You("éš ã•ã‚ŒãŸæ‰‰ã‚’è¦‹ã¤ã‘ãŸï¼");
                 } else if (levl[x][y].typ == SCORR) {
                     if (rnl(7 - fund))
                         continue;
@@ -1929,7 +1929,7 @@ register int aflag; /* intrinsic autosearch vs explicit searching */
 /*JP
                     You("find a hidden passage.");
 */
-                    You("‰B‚³‚ê‚½’Ê˜H‚ğŒ©‚Â‚¯‚½D");
+                    You("éš ã•ã‚ŒãŸé€šè·¯ã‚’è¦‹ã¤ã‘ãŸï¼");
                 } else {
                     /* Be careful not to find anything in an SCORR or SDOOR */
                     if ((mtmp = m_at(x, y)) != 0 && !aflag) {
@@ -2160,7 +2160,7 @@ int which_subset; /* when not full, whether to suppress objs and/or traps */
 /*JP
         You("are too disoriented for this.");
 */
-        You("¬—‚µ‚Ä‚¢‚é‚Ì‚Å‚»‚ê‚Í‚Å‚«‚È‚¢D");
+        You("æ··ä¹±ã—ã¦ã„ã‚‹ã®ã§ãã‚Œã¯ã§ããªã„ï¼");
     } else {
         int x, y, glyph, default_glyph;
         char buf[BUFSZ];
@@ -2188,18 +2188,18 @@ int which_subset; /* when not full, whether to suppress objs and/or traps */
 /*JP
             Strcpy(buf, "underlying terrain");
 */
-            Strcpy(buf, "‰º‚É‚ ‚é’nŒ`");
+            Strcpy(buf, "ä¸‹ã«ã‚ã‚‹åœ°å½¢");
         } else {
 /*JP
             Strcpy(buf, "known terrain");
 */
-            Strcpy(buf, "’m‚Á‚Ä‚¢‚é’nŒ`");
+            Strcpy(buf, "çŸ¥ã£ã¦ã„ã‚‹åœ°å½¢");
             if (keep_traps)
 #if 0 /*JP*/
                 Sprintf(eos(buf), "%s traps",
                         (keep_objs || keep_mons) ? "," : " and");
 #else
-                Strcat(buf, "‚Æã©");
+                Strcat(buf, "ã¨ç½ ");
 #endif
             if (keep_objs)
 #if 0 /*JP*/
@@ -2207,20 +2207,20 @@ int which_subset; /* when not full, whether to suppress objs and/or traps */
                         (keep_traps || keep_mons) ? "," : "",
                         keep_mons ? "" : " and");
 #else
-                Strcat(buf, "‚Æ•¨‘Ì");
+                Strcat(buf, "ã¨ç‰©ä½“");
 #endif
             if (keep_mons)
 #if 0 /*JP*/
                 Sprintf(eos(buf), "%s and monsters",
                         (keep_traps || keep_objs) ? "," : "");
 #else
-                Strcat(buf, "‚Æ‰ö•¨");
+                Strcat(buf, "ã¨æ€ªç‰©");
 #endif
         }
 /*JP
         pline("Showing %s only...", buf);
 */
-        pline("%s‚¾‚¯‚ğŒ©‚éDDD", buf);
+        pline("%sã ã‘ã‚’è¦‹ã‚‹ï¼ï¼ï¼", buf);
 
         /* allow player to move cursor around and get autodescribe feedback
            based on what is visible now rather than what is on 'real' map */

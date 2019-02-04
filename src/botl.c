@@ -17,8 +17,8 @@ extern const char *hu_stat[]; /* defined in eat.c */
 const char *const enc_stat[] = { "",         "Burdened",  "Stressed",
                                  "Strained", "Overtaxed", "Overloaded" };
 #else
-const char *const enc_stat[] = { "",     "ÇÊÇÎÇﬂÇ´", "à≥îó",
-                                 "å¿äE", "â◊èd",     "í¥âﬂ"};
+const char *const enc_stat[] = { "",     "„Çà„Çç„ÇÅ„Åç", "ÂúßËø´",
+                                 "ÈôêÁïå", "Ëç∑Èáç",     "Ë∂ÖÈÅé"};
 #endif
 
 STATIC_OVL NEARDATA int mrank_sz = 0; /* loaded by max_rank_sz (from u_init) */
@@ -93,7 +93,7 @@ do_statusline1()
             ACURR(A_DEX), ACURR(A_CON), ACURR(A_INT), ACURR(A_WIS),
             ACURR(A_CHA));
 #else
-    Sprintf(nb = eos(nb), "ã≠:%s ëÅ:%-1d ëœ:%-1d ím:%-1d å´:%-1d ñ£:%-1d ",
+    Sprintf(nb = eos(nb), "Âº∑:%s Êó©:%-1d ËÄê:%-1d Áü•:%-1d Ë≥¢:%-1d È≠Ö:%-1d ",
             get_strength_str(),
             ACURR(A_DEX), ACURR(A_CON), ACURR(A_INT), ACURR(A_WIS),
             ACURR(A_CHA));
@@ -106,15 +106,15 @@ do_statusline1()
 #else
     Sprintf(nb = eos(nb),
             (u.ualign.type == A_CHAOTIC)
-                ? "ç¨ì◊"
-                : (u.ualign.type == A_NEUTRAL) ? "íÜóß" : "íÅèò");
+                ? "Ê∑∑Ê≤å"
+                : (u.ualign.type == A_NEUTRAL) ? "‰∏≠Á´ã" : "Áß©Â∫è");
 #endif
 #ifdef SCORE_ON_BOTL
     if (flags.showscore)
 /*JP
         Sprintf(nb = eos(nb), " S:%ld", botl_score());
 */
-        Sprintf(nb = eos(nb), "%ldì_", botl_score());
+        Sprintf(nb = eos(nb), "%ldÁÇπ", botl_score());
 #endif
     return newbot1;
 }
@@ -173,7 +173,7 @@ do_statusline2()
             min(hp, 9999), min(hpmax, 9999),
             min(u.uen, 9999), min(u.uenmax, 9999), u.uac);
 #else
-    Sprintf(hlth, "ëÃ:%d(%d) ñÇ:%d(%d) äZ:%-2d",
+    Sprintf(hlth, "‰Ωì:%d(%d) È≠î:%d(%d) Èéß:%-2d",
             min(hp, 9999), min(hpmax, 9999),
             min(u.uen, 9999), min(u.uenmax, 9999), u.uac);
 #endif
@@ -186,12 +186,12 @@ do_statusline2()
 /*JP
         Sprintf(expr, "Xp:%u/%-1ld", u.ulevel, u.uexp);
 */
-        Sprintf(expr, "åoå±:%u/%-1ld", u.ulevel, u.uexp);
+        Sprintf(expr, "ÁµåÈ®ì:%u/%-1ld", u.ulevel, u.uexp);
     else
 /*JP
         Sprintf(expr, "Exp:%u", u.ulevel);
 */
-        Sprintf(expr, "åoå±:%u", u.ulevel);
+        Sprintf(expr, "ÁµåÈ®ì:%u", u.ulevel);
     xln = strlen(expr);
 
     /* time/move counter */
@@ -199,7 +199,7 @@ do_statusline2()
 /*JP
         Sprintf(tmmv, "T:%ld", moves);
 */
-        Sprintf(tmmv, "ï‡:%ld", moves);
+        Sprintf(tmmv, "Ê≠©:%ld", moves);
     else
         tmmv[0] = '\0';
     tln = strlen(tmmv);
@@ -217,28 +217,28 @@ do_statusline2()
 /*JP
         Strcpy(nb = eos(nb), " Stone");
 */
-        Strcpy(nb = eos(nb), " êŒâª");
+        Strcpy(nb = eos(nb), " Áü≥Âåñ");
     if (Slimed)
 /*JP
         Strcpy(nb = eos(nb), " Slime");
 */
-        Strcpy(nb = eos(nb), " Ç«ÇÎÇ«ÇÎ");
+        Strcpy(nb = eos(nb), " „Å©„Çç„Å©„Çç");
     if (Strangled)
 /*JP
         Strcpy(nb = eos(nb), " Strngl");
 */
-        Strcpy(nb = eos(nb), " íÇëß");
+        Strcpy(nb = eos(nb), " Á™íÊÅØ");
     if (Sick) {
         if (u.usick_type & SICK_VOMITABLE)
 /*JP
             Strcpy(nb = eos(nb), " FoodPois");
 */
-            Strcpy(nb = eos(nb), " êHì≈");
+            Strcpy(nb = eos(nb), " È£üÊØí");
         if (u.usick_type & SICK_NONVOMITABLE)
 /*JP
             Strcpy(nb = eos(nb), " TermIll");
 */
-            Strcpy(nb = eos(nb), " ïaãC");
+            Strcpy(nb = eos(nb), " ÁóÖÊ∞ó");
     }
     if (u.uhs != NOT_HUNGRY)
         Sprintf(nb = eos(nb), " %s", hu_stat[u.uhs]);
@@ -248,43 +248,43 @@ do_statusline2()
 /*JP
         Strcpy(nb = eos(nb), " Blind");
 */
-        Strcpy(nb = eos(nb), " ñ”ñ⁄");
+        Strcpy(nb = eos(nb), " Áõ≤ÁõÆ");
     if (Deaf)
 /*JP
         Strcpy(nb = eos(nb), " Deaf");
 */
-        Strcpy(nb = eos(nb), " é®òW");
+        Strcpy(nb = eos(nb), " ËÄ≥ËÅæ");
     if (Stunned)
 /*JP
         Strcpy(nb = eos(nb), " Stun");
 */
-        Strcpy(nb = eos(nb), " ·øùÚ");
+        Strcpy(nb = eos(nb), " Áú©Êöà");
     if (Confusion)
 /*JP
         Strcpy(nb = eos(nb), " Conf");
 */
-        Strcpy(nb = eos(nb), " ç¨óê");
+        Strcpy(nb = eos(nb), " Ê∑∑‰π±");
     if (Hallucination)
 /*JP
         Strcpy(nb = eos(nb), " Hallu");
 */
-        Strcpy(nb = eos(nb), " å∂äo");
+        Strcpy(nb = eos(nb), " ÂπªË¶ö");
     /* levitation and flying are mutually exclusive; riding is not */
     if (Levitation)
 /*JP
         Strcpy(nb = eos(nb), " Lev");
 */
-        Strcpy(nb = eos(nb), " ïÇóV");
+        Strcpy(nb = eos(nb), " ÊµÆÈÅä");
     if (Flying)
 /*JP
         Strcpy(nb = eos(nb), " Fly");
 */
-        Strcpy(nb = eos(nb), " îÚçs");
+        Strcpy(nb = eos(nb), " È£õË°å");
     if (u.usteed)
 /*JP
         Strcpy(nb = eos(nb), " Ride");
 */
-        Strcpy(nb = eos(nb), " ãRèÊ");
+        Strcpy(nb = eos(nb), " È®é‰πó");
     cln = strlen(cond);
 
     /*
@@ -384,7 +384,7 @@ boolean female;
 /*JP
     return "Player";
 */
-    return "ÉvÉåÉCÉÑÅ[";
+    return "„Éó„É¨„Ç§„É§„Éº";
 }
 
 STATIC_OVL const char *
@@ -472,18 +472,18 @@ char *buf;
 /*JP
         Sprintf(buf, "Home %d ", dunlev(&u.uz));
 */
-        Sprintf(buf, "åÃãΩ %d ", dunlev(&u.uz));
+        Sprintf(buf, "ÊïÖÈÉ∑ %d ", dunlev(&u.uz));
     else if (In_endgame(&u.uz))
 /*JP
         Sprintf(buf, Is_astralevel(&u.uz) ? "Astral Plane " : "End Game ");
 */
-        Sprintf(buf, Is_astralevel(&u.uz) ? "ê∏óÏäE " : "ç≈èIééó˚ ");
+        Sprintf(buf, Is_astralevel(&u.uz) ? "Á≤æÈúäÁïå " : "ÊúÄÁµÇË©¶Á∑¥ ");
     else {
         /* ports with more room may expand this one */
 /*JP
         Sprintf(buf, "Dlvl:%-2d ", depth(&u.uz));
 */
-        Sprintf(buf, "ínâ∫:%-2d ", depth(&u.uz));
+        Sprintf(buf, "Âú∞‰∏ã:%-2d ", depth(&u.uz));
         ret = 0;
     }
     return ret;
@@ -681,10 +681,10 @@ bot_via_windowport()
                                                : "Lawful");
 #else
     Strcpy(blstats[idx][BL_ALIGN].val, (u.ualign.type == A_CHAOTIC)
-                                          ? "ç¨ì◊"
+                                          ? "Ê∑∑Ê≤å"
                                           : (u.ualign.type == A_NEUTRAL)
-                                               ? "íÜóß"
-                                               : "íÅèò");
+                                               ? "‰∏≠Á´ã"
+                                               : "Áß©Â∫è");
 #endif
 
     /* Score */

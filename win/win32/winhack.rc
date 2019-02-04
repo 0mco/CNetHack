@@ -51,7 +51,7 @@ BEGIN
 /*JP
     POPUP "&File"
 */
-    POPUP "ÉtÉ@ÉCÉã(&F)"
+    POPUP "•’•°•§•Î(&F)"
     BEGIN
         MENUITEM "&Save and Exit",              IDM_SAVE
         MENUITEM SEPARATOR
@@ -60,12 +60,12 @@ BEGIN
 /*JP
     POPUP "&Map"
 */
-    POPUP "ï\é¶(&M)"
+    POPUP "…Ωº®(&M)"
     BEGIN
 /*JP
         MENUITEM "&0 - Use Tiles",              IDM_MAP_TILES
 */
-        MENUITEM "&0 - É^ÉCÉãÇégópÇ∑ÇÈ",       IDM_MAP_TILES
+        MENUITEM "&0 - •ø•§•Î§Úª»Õ—§π§Î",       IDM_MAP_TILES
         MENUITEM "&1 - ASCII (4x6)",            IDM_MAP_ASCII4X6
         MENUITEM "&2 - ASCII (6x8)",            IDM_MAP_ASCII6X8
         MENUITEM "&3 - ASCII (8x8)",            IDM_MAP_ASCII8X8
@@ -79,7 +79,7 @@ BEGIN
 /*JP
         MENUITEM "&Fit To Screen ",             IDM_MAP_FIT_TO_SCREEN
 */
-        MENUITEM "ÉEÉCÉìÉhÉEÇ…çáÇÌÇπÇÈ(&F)",    IDM_MAP_FIT_TO_SCREEN
+        MENUITEM "•¶•§•Û•…•¶§ÀπÁ§Ô§ª§Î(&F)",    IDM_MAP_FIT_TO_SCREEN
         MENUITEM SEPARATOR
         MENUITEM "&Copy To Clipboard (ASCII)",  IDM_SETTING_SCREEN_TO_CLIPBOARD
         MENUITEM "&Save to File (ASCII)",       IDM_SETTING_SCREEN_TO_FILE
@@ -87,17 +87,17 @@ BEGIN
 /*JP
     POPUP "Windows &Settings"
 */
-    POPUP "ê›íË(&S)"
+    POPUP "¿ﬂƒÍ(&S)"
     BEGIN
 /*JP
         MENUITEM "NetHack Mode",                IDM_NHMODE
 */
-        MENUITEM "NetHackÉÇÅ[Éh(&N)",               IDM_NHMODE
+        MENUITEM "NetHack•‚°º•…(&N)",               IDM_NHMODE
         MENUITEM SEPARATOR
 /*JP
         MENUITEM "&Clear All Settings",         IDM_CLEARSETTINGS
 */
-        MENUITEM "Ç∑Ç◊ÇƒÇÃê›íËÇÉNÉäÉA(&C)",    IDM_CLEARSETTINGS
+        MENUITEM "§π§Ÿ§∆§Œ¿ﬂƒÍ§Ú•Ø•Í•¢(&C)",    IDM_CLEARSETTINGS
         MENUITEM SEPARATOR
         MENUITEM "Auto &Arrange Windows",       IDM_SETTING_AUTOLAYOUT
         MENUITEM "&Lock Windows",               IDM_SETTING_LOCKWINDOWS
@@ -105,52 +105,52 @@ BEGIN
 /*JP
     POPUP "&Help"
 */
-    POPUP "ÉwÉãÉv(&H)"
+    POPUP "•ÿ•Î•◊(&H)"
     BEGIN
 /*JP
         MENUITEM "&About ...",                  IDM_ABOUT
 */
-        MENUITEM "NetHackÇ…Ç¬Ç¢Çƒ(&A)...",               IDM_ABOUT
+        MENUITEM "NetHack§À§ƒ§§§∆(&A)...",               IDM_ABOUT
 /*JP
         MENUITEM "&Long description of the game", IDM_HELP_LONG
 */
-        MENUITEM "ÉQÅ[ÉÄÇ®ÇÊÇ—ÉRÉ}ÉìÉhÇÃâê‡(í∑ï∂)(&L)", IDM_HELP_LONG
+        MENUITEM "•≤°º•‡§™§Ë§”•≥•ﬁ•Û•…§Œ≤Ú¿‚(ƒπ ∏)(&L)", IDM_HELP_LONG
 /*JP
         MENUITEM "List of &commands",           IDM_HELP_COMMANDS
 */
-        MENUITEM "ÉRÉ}ÉìÉhàÍóó(&C)",                     IDM_HELP_COMMANDS
+        MENUITEM "•≥•ﬁ•Û•…∞ÏÕ˜(&C)",                     IDM_HELP_COMMANDS
 /*JP
         MENUITEM "&History of NetHack",         IDM_HELP_HISTORY
 */
-        MENUITEM "NetHackÇÃä»íPÇ»óéj(&H)",              IDM_HELP_HISTORY
+        MENUITEM "NetHack§Œ¥ √±§ ŒÚªÀ(&H)",              IDM_HELP_HISTORY
 /*JP
         MENUITEM "&Info on a character",        IDM_HELP_INFO_CHAR
 */
-        MENUITEM "âÊñ Ç…ï\é¶Ç≥ÇÍÇÈï∂éöÇÃê‡ñæ(&I)",       IDM_HELP_INFO_CHAR
+        MENUITEM "≤ËÃÃ§À…Ωº®§µ§Ï§Î ∏ª˙§Œ¿‚Ã¿(&I)",       IDM_HELP_INFO_CHAR
 /*JP
         MENUITEM "Info on what a given &key does", IDM_HELP_INFO_KEY
 */
-        MENUITEM "Ç±ÇÃÉLÅ[Ç™âΩÇà”ñ°Ç∑ÇÈÇ©ÇÃê‡ñæ(&K)",   IDM_HELP_INFO_KEY
+        MENUITEM "§≥§Œ•≠°º§¨≤ø§Ú∞’Ã£§π§Î§´§Œ¿‚Ã¿(&K)",   IDM_HELP_INFO_KEY
 /*JP
         MENUITEM "List of game &options",       IDM_HELP_OPTIONS
 */
-        MENUITEM "ÉQÅ[ÉÄÇÃÉIÉvÉVÉáÉìàÍóó(&O)",           IDM_HELP_OPTIONS
+        MENUITEM "•≤°º•‡§Œ•™•◊•∑•Á•Û∞ÏÕ˜(&O)",           IDM_HELP_OPTIONS
 /*JP
         MENUITEM "&Longer list of game options", IDM_HELP_OPTIONS_LONG
 */
-        MENUITEM "ÉQÅ[ÉÄÇÃÉIÉvÉVÉáÉìàÍóó(í∑ï∂)(&U)",     IDM_HELP_OPTIONS_LONG
+        MENUITEM "•≤°º•‡§Œ•™•◊•∑•Á•Û∞ÏÕ˜(ƒπ ∏)(&U)",     IDM_HELP_OPTIONS_LONG
 /*JP
         MENUITEM "List of e&xtended commands",  IDM_HELP_EXTCMD
 */
-        MENUITEM "ägí£ÉRÉ}ÉìÉhàÍóó(&X)",                 IDM_HELP_EXTCMD
+        MENUITEM "≥»ƒ••≥•ﬁ•Û•…∞ÏÕ˜(&X)",                 IDM_HELP_EXTCMD
 /*JP
         MENUITEM "The &NetHack license",        IDM_HELP_LICENSE
 */
-        MENUITEM "NetHackÇÃÉâÉCÉZÉìÉX(&N)",              IDM_HELP_LICENSE
+        MENUITEM "NetHack§Œ•È•§•ª•Û•π(&N)",              IDM_HELP_LICENSE
 /*JP
         MENUITEM "NetHack for &Windows help",   IDM_HELP_PORTHELP
 */
-        MENUITEM "WindowsÇ…ì¡óLÇÃÉwÉãÉvÇ®ÇÊÇ—ÉRÉ}ÉìÉh(&W)",  IDM_HELP_PORTHELP
+        MENUITEM "Windows§À∆√Õ≠§Œ•ÿ•Î•◊§™§Ë§”•≥•ﬁ•Û•…(&W)",  IDM_HELP_PORTHELP
     END
 END
 
@@ -178,7 +178,7 @@ CAPTION "About"
 /*JP
 FONT 8, "System"
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN"
+FONT 10, "£Õ£” £–•¥•∑•√•Ø"
 BEGIN
     LTEXT           "NetHack",IDC_ABOUT_VERSION,10,10,170,15,SS_NOPREFIX
     LTEXT           "Copyright",IDC_ABOUT_COPYRIGHT,10,30,210,40
@@ -191,7 +191,7 @@ EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTROLPARENT
 /*JP
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN", 0, 0, 0x1
+FONT 10, "£Õ£” £–•¥•∑•√•Ø", 0, 0, 0x1
 BEGIN
     EDITTEXT        IDC_TEXT_CONTROL,0,0,172,160,ES_MULTILINE | ES_OEMCONVERT | ES_READONLY | WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
     DEFPUSHBUTTON   "OK",IDOK,54,163,50,14,BS_FLAT | NOT WS_TABSTOP
@@ -203,7 +203,7 @@ EXSTYLE WS_EX_CLIENTEDGE | WS_EX_CONTROLPARENT
 /*JP
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN", 0, 0, 0x1
+FONT 10, "£Õ£” £–•¥•∑•√•Ø", 0, 0, 0x1
 BEGIN
     LISTBOX         IDC_MENU_LIST,10,10,170,55,LBS_SORT | NOT WS_BORDER
     EDITTEXT        IDC_MENU_TEXT,10,70,170,60,ES_MULTILINE | ES_OEMCONVERT | ES_READONLY | NOT WS_BORDER | WS_VSCROLL | WS_HSCROLL | NOT WS_TABSTOP
@@ -217,7 +217,7 @@ CAPTION "Question?"
 /*JP
 FONT 8, "MS Sans Serif"
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN"
+FONT 10, "£Õ£” £–•¥•∑•√•Ø"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,0,15,65,14
     PUSHBUTTON      "Cancel",IDCANCEL,65,15,65,14
@@ -230,7 +230,7 @@ CAPTION "Extended Commands"
 /*JP
 FONT 8, "MS Sans Serif"
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN"
+FONT 10, "£Õ£” £–•¥•∑•√•Ø"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,80,7,50,14
     PUSHBUTTON      "Cancel",IDCANCEL,80,24,50,14
@@ -243,7 +243,7 @@ CAPTION "What are you?"
 /*JP
 FONT 8, "MS Sans Serif", 0, 0, 0x0
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN", 0, 0, 0x0
+FONT 10, "£Õ£” £–•¥•∑•√•Ø", 0, 0, 0x0
 BEGIN
 /*JP
     DEFPUSHBUTTON   "Play",IDOK,12,192,54,14,WS_GROUP
@@ -254,47 +254,47 @@ BEGIN
 /*JP
     CONTROL         "Neutral",IDC_PLSEL_ALIGN_NEUTRAL,"Button",BS_AUTORADIOBUTTON,168,60,37,10
 */
-    CONTROL         "íÜóß",IDC_PLSEL_ALIGN_NEUTRAL,"Button",BS_AUTORADIOBUTTON,168,60,37,10
+    CONTROL         "√ÊŒ©",IDC_PLSEL_ALIGN_NEUTRAL,"Button",BS_AUTORADIOBUTTON,168,60,37,10
 /*JP
     CONTROL         "Lawful",IDC_PLSEL_ALIGN_LAWFUL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,48,35,10
 */
-    CONTROL         "íÅèò",IDC_PLSEL_ALIGN_LAWFUL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,48,35,10
+    CONTROL         "√·Ω¯",IDC_PLSEL_ALIGN_LAWFUL,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,48,35,10
 /*JP
     CONTROL         "Chaotic",IDC_PLSEL_ALIGN_CHAOTIC,"Button",BS_AUTORADIOBUTTON,168,72,38,10
 */
-    CONTROL         "ç¨ì◊",IDC_PLSEL_ALIGN_CHAOTIC,"Button",BS_AUTORADIOBUTTON,168,72,38,10
+    CONTROL         "∫Æ∆Ÿ",IDC_PLSEL_ALIGN_CHAOTIC,"Button",BS_AUTORADIOBUTTON,168,72,38,10
 /*JP
     CONTROL         "Male",IDC_PLSEL_GENDER_MALE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,108,30,10
 */
-    CONTROL         "íjê´",IDC_PLSEL_GENDER_MALE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,108,30,10
+    CONTROL         "√À¿≠",IDC_PLSEL_GENDER_MALE,"Button",BS_AUTORADIOBUTTON | WS_GROUP,168,108,30,10
 /*JP
     CONTROL         "Female",IDC_PLSEL_GENDER_FEMALE,"Button",BS_AUTORADIOBUTTON,168,120,38,10
 */
-    CONTROL         "èóê´",IDC_PLSEL_GENDER_FEMALE,"Button",BS_AUTORADIOBUTTON,168,120,38,10
+    CONTROL         "Ω˜¿≠",IDC_PLSEL_GENDER_FEMALE,"Button",BS_AUTORADIOBUTTON,168,120,38,10
 /*JP
     GROUPBOX        "Alignment",IDC_STATIC,162,36,48,54
 */
-    GROUPBOX        "ëÆê´",IDC_STATIC,162,36,48,54
+    GROUPBOX        "¬∞¿≠",IDC_STATIC,162,36,48,54
 /*JP
     GROUPBOX        "Gender",IDC_STATIC,162,96,48,42
 */
-    GROUPBOX        "ê´ï ",IDC_STATIC,162,96,48,42
+    GROUPBOX        "¿≠ Ã",IDC_STATIC,162,96,48,42
 /*JP
     GROUPBOX        "Role",IDC_STATIC,6,36,72,150
 */
-    GROUPBOX        "êEã∆",IDC_STATIC,6,36,72,150
+    GROUPBOX        "ø¶∂»",IDC_STATIC,6,36,72,150
 /*JP
     GROUPBOX        "Race",IDC_STATIC,84,36,72,72
 */
-    GROUPBOX        "éÌë∞",IDC_STATIC,84,36,72,72
+    GROUPBOX        "ºÔ¬≤",IDC_STATIC,84,36,72,72
 /*JP
     PUSHBUTTON      "Random",IDC_PLSEL_RANDOM,90,192,54,14,WS_GROUP
 */
-    PUSHBUTTON      "ÉâÉìÉ_ÉÄ",IDC_PLSEL_RANDOM,90,192,54,14,WS_GROUP
+    PUSHBUTTON      "•È•Û•¿•‡",IDC_PLSEL_RANDOM,90,192,54,14,WS_GROUP
 /*JP
     GROUPBOX        "Name",IDC_STATIC,6,0,120,30
 */
-    GROUPBOX        "ñºëO",IDC_STATIC,6,0,120,30
+    GROUPBOX        "Ãæ¡∞",IDC_STATIC,6,0,120,30
     CONTROL         "",IDC_PLSEL_ROLE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_BORDER | WS_GROUP | WS_TABSTOP,12,48,60,130
     CONTROL         "",IDC_PLSEL_RACE_LIST,"SysListView32",LVS_REPORT | LVS_SINGLESEL | LVS_OWNERDRAWFIXED | LVS_ALIGNLEFT | LVS_NOSCROLL | LVS_NOCOLUMNHEADER | WS_BORDER | WS_GROUP | WS_TABSTOP,90,48,60,51
 END
@@ -305,7 +305,7 @@ CAPTION "Here lies..."
 /*JP
 FONT 8, "MS Sans Serif", 0, 0, 0x1
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN", 0, 0
+FONT 10, "£Õ£” £–•¥•∑•√•Ø", 0, 0
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,82,188,50,14
 END
@@ -316,7 +316,7 @@ CAPTION "Welcome to NetHack"
 /*JP
 FONT 8, "MS Sans Serif"
 */
-FONT 10, "ÇlÇr ÇoÉSÉVÉbÉN"
+FONT 10, "£Õ£” £–•¥•∑•√•Ø"
 BEGIN
     DEFPUSHBUTTON   "OK",IDOK,224,236,50,14
     EDITTEXT        IDC_EXTRAINFO,7,176,267,52,ES_MULTILINE | ES_READONLY | WS_VSCROLL

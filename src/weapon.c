@@ -53,10 +53,10 @@ STATIC_VAR NEARDATA const char *const odd_skill_names[] = {
     "attack spells", "healing spells", "divination spells",
     "enchantment spells", "clerical spells", "escape spells", "matter spells",
 #else
-    "no skill", "‘fè", /* use barehands_or_martial[] instead */
-    "“ñ“—¬", "‹Ræ", "’·•€", "ƒT[ƒxƒ‹", "ƒnƒ“ƒ}[", "•Ú",
-    "UŒ‚", "¡–ü", "—\’m",
-    "•â•", "‘m—µ", "’Eo", "•¨¿",
+    "no skill", "ç´ æ‰‹", /* use barehands_or_martial[] instead */
+    "äºŒåˆ€æµ", "é¨ä¹—", "é•·æ–§", "ã‚µãƒ¼ãƒ™ãƒ«", "ãƒãƒ³ãƒãƒ¼", "é­",
+    "æ”»æ’ƒ", "æ²»ç™’", "äºˆçŸ¥",
+    "è£œåŠ©", "åƒ§ä¾¶", "è„±å‡º", "ç‰©è³ª",
 #endif
 };
 /* indexed vis `is_martial() */
@@ -64,7 +64,7 @@ STATIC_VAR NEARDATA const char *const barehands_or_martial[] = {
 #if 0 /*JP*/
     "bare handed combat", "martial arts"
 #else
-    "‘fè", "‘Ìp"
+    "ç´ æ‰‹", "ä½“è¡“"
 #endif
 };
 
@@ -80,12 +80,12 @@ int skill;
                                               ? "spell casting "
                                               : "fighting ");
 #else
-    You("%sƒXƒLƒ‹‚ğ‚‚ß‚é©M‚ª—N‚¢‚Ä‚«‚½D",
+    You("%sã‚¹ã‚­ãƒ«ã‚’é«˜ã‚ã‚‹è‡ªä¿¡ãŒæ¹§ã„ã¦ããŸï¼",
         skill == P_NONE ? "" : skill <= P_LAST_WEAPON
-            ? "•Ší‚Ì"
+            ? "æ­¦å™¨ã®"
             : skill <= P_LAST_SPELL
-                  ? "–‚–@‚Ì"
-                  : "í‚¢‚Ì");
+                  ? "é­”æ³•ã®"
+                  : "æˆ¦ã„ã®");
 #endif
 }
 
@@ -134,13 +134,13 @@ struct obj *obj;
 /*JP
                         ? "stone"
 */
-                        ? "Î"
+                        ? "çŸ³"
                         /* avoid "rock"; what about known glass? */
                         : (obj->oclass == GEM_CLASS)
 /*JP
                             ? "gem"
 */
-                            ? "•óÎ"
+                            ? "å®çŸ³"
                             /* in case somebody adds odd sling ammo */
                             : def_oc_syms[(int) obj->oclass].name;
         break;
@@ -149,21 +149,21 @@ struct obj *obj;
 /*JP
             descr = "arrow";
 */
-            descr = "–î";
+            descr = "çŸ¢";
         break;
     case P_CROSSBOW:
         if (is_ammo(obj))
 /*JP
             descr = "bolt";
 */
-            descr = "ƒ{ƒ‹ƒg";
+            descr = "ãƒœãƒ«ãƒˆ";
         break;
     case P_FLAIL:
         if (obj->otyp == GRAPPLING_HOOK)
 /*JP
             descr = "hook";
 */
-            descr = "ƒtƒbƒN";
+            descr = "ãƒ•ãƒƒã‚¯";
         break;
     case P_PICK_AXE:
         /* even if "dwarvish mattock" hasn't been discovered yet */
@@ -171,7 +171,7 @@ struct obj *obj;
 /*JP
             descr = "mattock";
 */
-            descr = "‚Â‚é‚Í‚µ";
+            descr = "ã¤ã‚‹ã¯ã—";
         break;
     default:
         break;
@@ -636,14 +636,14 @@ boolean polyspot;
 /*JP
             pline("%s drops %s.", Monnam(mon), distant_name(obj, doname));
 */
-            pline("%s‚Í%s‚ğ’u‚¢‚½D", Monnam(mon), distant_name(obj, doname));
+            pline("%sã¯%sã‚’ç½®ã„ãŸï¼", Monnam(mon), distant_name(obj, doname));
             newsym(mon->mx, mon->my);
         }
         /* might be dropping object into water or lava */
 /*JP
         if (!flooreffects(obj, mon->mx, mon->my, "drop")) {
 */
-        if (!flooreffects(obj, mon->mx, mon->my, "—‚¿‚é")) {
+        if (!flooreffects(obj, mon->mx, mon->my, "è½ã¡ã‚‹")) {
             if (polyspot)
                 bypass_obj(obj);
             place_object(obj, mon->mx, mon->my);
@@ -748,24 +748,24 @@ register struct monst *mon;
                     pline("Since %s weapon%s %s,", s_suffix(mon_nam(mon)),
                           plur(mw_tmp->quan), welded_buf);
 #else
-                    pline("%s‚Í•Ší‚ğè‚É‚µ‚æ‚¤‚Æ‚µ‚½‚ªC", mon_nam(mon));
+                    pline("%sã¯æ­¦å™¨ã‚’æ‰‹ã«ã—ã‚ˆã†ã¨ã—ãŸãŒï¼Œ", mon_nam(mon));
 #endif
 #if 0 /*JP*/
                     pline("%s cannot wield that %s.", mon_nam(mon),
                           xname(obj));
 #else
-                    pline("%s‚Í%s‚ğ‘•”õ‚Å‚«‚È‚©‚Á‚½D", mon_nam(mon),
+                    pline("%sã¯%sã‚’è£…å‚™ã§ããªã‹ã£ãŸï¼", mon_nam(mon),
                           xname(obj));
 #endif
                 } else {
 /*JP
                     pline("%s tries to wield %s.", Monnam(mon), doname(obj));
 */
-                    pline("%s‚Í%s‚ğ‘•”õ‚µ‚æ‚¤‚Æ‚µ‚½D", Monnam(mon), doname(obj));
+                    pline("%sã¯%sã‚’è£…å‚™ã—ã‚ˆã†ã¨ã—ãŸï¼", Monnam(mon), doname(obj));
 /*JP
                     pline("%s %s!", Yname2(mw_tmp), welded_buf);
 */
-                    pline("%s‚Í%s‚ğè‚É‚µ‚½I", Monnam(mon), xname(mw_tmp));
+                    pline("%sã¯%sã‚’æ‰‹ã«ã—ãŸï¼", Monnam(mon), xname(mw_tmp));
                 }
                 mw_tmp->bknown = 1;
             }
@@ -779,14 +779,14 @@ register struct monst *mon;
 /*JP
             pline("%s wields %s!", Monnam(mon), doname(obj));
 */
-            pline("%s‚Í%s‚ğ‘•”õ‚µ‚½I", Monnam(mon), doname(obj));
+            pline("%sã¯%sã‚’è£…å‚™ã—ãŸï¼", Monnam(mon), doname(obj));
             if (mwelded(mw_tmp)) {
 #if 0 /*JP*/
                 pline("%s %s to %s %s!", Tobjnam(obj, "weld"),
                       is_plural(obj) ? "themselves" : "itself",
                       s_suffix(mon_nam(mon)), mbodypart(mon, HAND));
 #else
-                pline("%s‚ÍŸè‚É%s‚Ì%s‚É‘•”õ‚³‚ê‚½I",
+                pline("%sã¯å‹æ‰‹ã«%sã®%sã«è£…å‚™ã•ã‚ŒãŸï¼",
                       xname(obj),
                       mon_nam(mon), mbodypart(mon, HAND));
 #endif
@@ -801,7 +801,7 @@ register struct monst *mon;
                       arti_light_description(obj), s_suffix(mon_nam(mon)),
                       mbodypart(mon, HAND));
 #else
-                pline("%s‚Í%s‚Ì%s‚Ì’†‚Å%s‹P‚¢‚½I",
+                pline("%sã¯%sã®%sã®ä¸­ã§%sè¼ã„ãŸï¼",
                       xname(obj), mon_nam(mon),
                       mbodypart(mon, HAND), arti_light_description(obj));
 #endif
@@ -909,8 +909,8 @@ boolean verbose;
                                      : (!obj->spe ? "wet" : "wetter");
 #else
             const char *wetness = (newspe < 3)
-                                     ? (!obj->spe ? "¼‚Á‚½" : "‚³‚ç‚É¼‚Á‚½")
-                                     : (!obj->spe ? "”G‚ê‚½" : "‚³‚ç‚É”G‚ê‚½");
+                                     ? (!obj->spe ? "æ¹¿ã£ãŸ" : "ã•ã‚‰ã«æ¹¿ã£ãŸ")
+                                     : (!obj->spe ? "æ¿¡ã‚ŒãŸ" : "ã•ã‚‰ã«æ¿¡ã‚ŒãŸ");
 #endif
 
             if (carried(obj))
@@ -918,7 +918,7 @@ boolean verbose;
                 pline("%s gets %s.", Yobjnam2(obj, (const char *) 0),
                       wetness);
 #else
-                pline("%s‚Í%sD", Yobjnam2(obj, (const char *) 0),
+                pline("%sã¯%sï¼", Yobjnam2(obj, (const char *) 0),
                       wetness);
 #endif
             else if (mcarried(obj) && canseemon(obj->ocarry))
@@ -926,7 +926,7 @@ boolean verbose;
                 pline("%s %s gets %s.", s_suffix(Monnam(obj->ocarry)),
                       xname(obj), wetness);
 #else
-                pline("%s‚Ì%s‚Í%sD", Monnam(obj->ocarry),
+                pline("%sã®%sã¯%sï¼", Monnam(obj->ocarry),
                       xname(obj), wetness);
 #endif
         }
@@ -956,16 +956,16 @@ boolean verbose;
                 pline("%s dries%s.", Yobjnam2(obj, (const char *) 0),
                       !newspe ? " out" : "");
 #else
-                pline("%s‚Í%sD", Yobjnam2(obj, (const char *) 0),
-                      !newspe ? "Š£‚«‚«‚Á‚½" : "Š£‚¢‚½");
+                pline("%sã¯%sï¼", Yobjnam2(obj, (const char *) 0),
+                      !newspe ? "ä¹¾ããã£ãŸ" : "ä¹¾ã„ãŸ");
 #endif
             else if (mcarried(obj) && canseemon(obj->ocarry))
 #if 0 /*JP*/
                 pline("%s %s drie%s.", s_suffix(Monnam(obj->ocarry)),
                       xname(obj), !newspe ? " out" : "");
 #else
-                pline("%s‚Ì%s‚Í%sD", Monnam(obj->ocarry),
-                      xname(obj), !newspe ? "Š£‚«‚«‚Á‚½" : "Š£‚¢‚½");
+                pline("%sã®%sã¯%sï¼", Monnam(obj->ocarry),
+                      xname(obj), !newspe ? "ä¹¾ããã£ãŸ" : "ä¹¾ã„ãŸ");
 #endif
         }
     }
@@ -991,44 +991,44 @@ char *buf;
 /*JP
         ptr = "Unskilled";
 */
-        ptr = "‰SÒ";
+        ptr = "åˆå¿ƒè€…";
         break;
     case P_BASIC:
 /*JP
         ptr = "Basic";
 */
-        ptr = "“ü–åÒ";
+        ptr = "å…¥é–€è€…";
         break;
     case P_SKILLED:
 /*JP
         ptr = "Skilled";
 */
-        ptr = "n—ûÒ";
+        ptr = "ç†Ÿç·´è€…";
         break;
     case P_EXPERT:
 /*JP
         ptr = "Expert";
 */
-        ptr = "ƒGƒLƒXƒp[ƒg";
+        ptr = "ã‚¨ã‚­ã‚¹ãƒ‘ãƒ¼ãƒˆ";
         break;
     /* these are for unarmed combat/martial arts only */
     case P_MASTER:
 /*JP
         ptr = "Master";
 */
-        ptr = "ƒ}ƒXƒ^[";
+        ptr = "ãƒã‚¹ã‚¿ãƒ¼";
         break;
     case P_GRAND_MASTER:
 /*JP
         ptr = "Grand Master";
 */
-        ptr = "ƒOƒ‰ƒ“ƒhƒ}ƒXƒ^[";
+        ptr = "ã‚°ãƒ©ãƒ³ãƒ‰ãƒã‚¹ã‚¿ãƒ¼";
         break;
     default:
 /*JP
         ptr = "Unknown";
 */
-        ptr = "•s–¾";
+        ptr = "ä¸æ˜";
         break;
     }
     Strcpy(buf, ptr);
@@ -1121,9 +1121,9 @@ int skill;
         P_SKILL(skill) >= P_MAX_SKILL(skill) ? "most" : "more",
         P_NAME(skill));
 #else
-    Your("%s‚ÌƒXƒLƒ‹‚ğ%s‚‚ß‚½D", 
+    Your("%sã®ã‚¹ã‚­ãƒ«ã‚’%sé«˜ã‚ãŸï¼", 
          P_NAME(skill),
-         P_SKILL(skill) >= P_MAX_SKILL(skill) ? "Å‚‚É" : "‚³‚ç‚É");
+         P_SKILL(skill) >= P_MAX_SKILL(skill) ? "æœ€é«˜ã«" : "ã•ã‚‰ã«");
 #endif
 }
 
@@ -1134,15 +1134,15 @@ static const struct skill_range {
 /*JP
     { P_FIRST_H_TO_H, P_LAST_H_TO_H, "Fighting Skills" },
 */
-    { P_FIRST_H_TO_H, P_LAST_H_TO_H, "í‚¢‚ÌƒXƒLƒ‹" },
+    { P_FIRST_H_TO_H, P_LAST_H_TO_H, "æˆ¦ã„ã®ã‚¹ã‚­ãƒ«" },
 /*JP
     { P_FIRST_WEAPON, P_LAST_WEAPON, "Weapon Skills" },
 */
-    { P_FIRST_WEAPON, P_LAST_WEAPON, "•Ší‚ÌƒXƒLƒ‹" },
+    { P_FIRST_WEAPON, P_LAST_WEAPON, "æ­¦å™¨ã®ã‚¹ã‚­ãƒ«" },
 /*JP
     { P_FIRST_SPELL, P_LAST_SPELL, "Spellcasting Skills" },
 */
-    { P_FIRST_SPELL,  P_LAST_SPELL,  "–‚–@‚ÌƒXƒLƒ‹" },
+    { P_FIRST_SPELL,  P_LAST_SPELL,  "é­”æ³•ã®ã‚¹ã‚­ãƒ«" },
 };
 
 /*
@@ -1198,10 +1198,10 @@ enhance_weapon_skill()
                             ? "when you're more experienced"
                             : "if skill slots become available");
 #else
-                Sprintf(buf, "(\"*\"‚ª‚Â‚¢‚Ä‚¢‚éƒXƒLƒ‹‚Í%s‚‚ß‚ç‚ê‚éD)",
+                Sprintf(buf, "(\"*\"ãŒã¤ã„ã¦ã„ã‚‹ã‚¹ã‚­ãƒ«ã¯%sé«˜ã‚ã‚‰ã‚Œã‚‹ï¼)",
                         (u.ulevel < MAXULEV)
-                            ? "‚à‚Á‚ÆŒoŒ±‚ğ‚Â‚ß‚Î"
-                            : "ƒXƒLƒ‹ƒXƒƒbƒg‚ªg‚¦‚é‚æ‚¤‚É‚È‚ê‚Î");
+                            ? "ã‚‚ã£ã¨çµŒé¨“ã‚’ã¤ã‚ã°"
+                            : "ã‚¹ã‚­ãƒ«ã‚¹ãƒ­ãƒƒãƒˆãŒä½¿ãˆã‚‹ã‚ˆã†ã«ãªã‚Œã°");
 #endif
                 add_menu(win, NO_GLYPH, &any, 0, 0, ATR_NONE, buf,
                          MENU_UNSELECTED);
@@ -1213,7 +1213,7 @@ enhance_weapon_skill()
                         plur(maxxed_cnt));
 #else
                 Sprintf(buf,
-                        "(\"#\"‚ª‚Â‚¢‚Ä‚¢‚éƒXƒLƒ‹‚Í‚±‚êˆÈã‚‚ß‚ç‚ê‚È‚¢D)");
+                        "(\"#\"ãŒã¤ã„ã¦ã„ã‚‹ã‚¹ã‚­ãƒ«ã¯ã“ã‚Œä»¥ä¸Šé«˜ã‚ã‚‰ã‚Œãªã„ï¼)");
 #endif
                 add_menu(win, NO_GLYPH, &any, 0, 0, ATR_NONE, buf,
                          MENU_UNSELECTED);
@@ -1282,8 +1282,8 @@ enhance_weapon_skill()
         Strcpy(buf, (to_advance > 0) ? "Pick a skill to advance:"
                                      : "Current skills:");
 #else
-        Strcpy(buf, (to_advance > 0) ? "ƒXƒLƒ‹‚ğ‘I‘ğ‚µ‚Ä‚­‚¾‚³‚¢F"
-                                     : "Œ»İ‚ÌƒXƒLƒ‹F");
+        Strcpy(buf, (to_advance > 0) ? "ã‚¹ã‚­ãƒ«ã‚’é¸æŠã—ã¦ãã ã•ã„ï¼š"
+                                     : "ç¾åœ¨ã®ã‚¹ã‚­ãƒ«ï¼š");
 #endif
         if (wizard && !speedy)
             Sprintf(eos(buf), "  (%d slot%s available)", u.weapon_slots,
@@ -1302,7 +1302,7 @@ enhance_weapon_skill()
 /*JP
                         You_feel("you could be more dangerous!");
 */
-                        You("‚³‚ç‚ÉƒXƒLƒ‹‚ğ‚‚ß‚é‚±‚Æ‚ª‚Å‚«‚»‚¤‚È‹C‚ª‚µ‚½I");
+                        You("ã•ã‚‰ã«ã‚¹ã‚­ãƒ«ã‚’é«˜ã‚ã‚‹ã“ã¨ãŒã§ããã†ãªæ°—ãŒã—ãŸï¼");
                     n++;
                     break;
                 }
@@ -1689,7 +1689,7 @@ register struct obj *obj;
                   s_suffix(mon_nam(mon)), mbodypart(mon, HAND),
                   otense(obj, "stop"));
 #else
-            pline("%s‚ª‚Â%s‚Ì‹P‚«‚ªÁ‚¦‚½D",
+            pline("%sãŒæŒã¤%sã®è¼ããŒæ¶ˆãˆãŸï¼",
                   mon_nam(mon), xname(obj));
 #endif
     }

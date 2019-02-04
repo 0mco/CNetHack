@@ -700,7 +700,7 @@ struct monst *mon;
 /*JP
         You("are blasted by %s power!", s_suffix(the(xname(obj))));
 */
-        You("%sÇÃóÕÇóÅÇ—ÇΩÅI", xname(obj));
+        You("%s„ÅÆÂäõ„ÇíÊµ¥„Å≥„ÅüÔºÅ", xname(obj));
         touch_blasted = TRUE;
         dmg = d((Antimagic ? 2 : 4), (self_willed ? 10 : 4));
         /* add half (maybe quarter) of the usual silver damage bonus */
@@ -709,7 +709,7 @@ struct monst *mon;
 /*JP
         Sprintf(buf, "touching %s", oart->name);
 */
-        Sprintf(buf, "%sÇ…êGÇÍÇƒ", oart->name);
+        Sprintf(buf, "%s„Å´Ëß¶„Çå„Å¶", oart->name);
         losehp(dmg, buf, KILLED_BY); /* magic damage, not physical */
         exercise(A_WIS, FALSE);
     }
@@ -721,12 +721,12 @@ struct monst *mon;
 /*JP
                 pline("%s your grasp!", Tobjnam(obj, "evade"));
 */
-                pline("%sÇÕà¨ÇÎÇ§Ç∆Ç∑ÇÈÇ∆Ç∑ÇÈÇËÇ∆î≤ÇØÇΩÅI", xname(obj));
+                pline("%s„ÅØÊè°„Çç„ÅÜ„Å®„Åô„Çã„Å®„Åô„Çã„Çä„Å®Êäú„Åë„ÅüÔºÅ", xname(obj));
             else
 /*JP
                 pline("%s beyond your control!", Tobjnam(obj, "are"));
 */
-                pline("%sÇÕêßå‰Ç≈Ç´Ç»Ç¢ÅI", xname(obj));
+                pline("%s„ÅØÂà∂Âæ°„Åß„Åç„Å™„ÅÑÔºÅ", xname(obj));
         }
         return 0;
     }
@@ -934,7 +934,7 @@ winid tmpwin; /* supplied by dodiscover() */
 /*JP
             putstr(tmpwin, iflags.menu_headings, "Artifacts");
 */
-            putstr(tmpwin, iflags.menu_headings, "êπäÌ");
+            putstr(tmpwin, iflags.menu_headings, "ËÅñÂô®");
         m = artidisco[i];
         otyp = artilist[m].otyp;
         Sprintf(buf, "  %s [%s %s]", artiname(m),
@@ -980,9 +980,9 @@ static const char *const mb_verb[2][NUM_MB_INDICES] = {
     { "probe", "stun", "scare", "cancel" },
     { "prod", "amaze", "tickle", "purge" },
 #else
-    /* Mb_hit() Ç≈ "%sÇΩ"ÇÃå`Ç≈óòóp */
-    {"í≤ç∏Çµ", "Ç≠ÇÁÇ≠ÇÁÇ≥Çπ", "ãØÇ¶Ç≥Çπ", "èÚâªÇµ"},
-    { "ó„Ç‹Çµ", "ã¡Ç©Çπ", "Ç≠Ç∑ÇÆÇ¡", "ê¥Çﬂ" },
+    /* Mb_hit() „Åß "%s„Åü"„ÅÆÂΩ¢„ÅßÂà©Áî® */
+    {"Ë™øÊüª„Åó", "„Åè„Çâ„Åè„Çâ„Åï„Åõ", "ÊÄØ„Åà„Åï„Åõ", "ÊµÑÂåñ„Åó"},
+    { "Âä±„Åæ„Åó", "È©ö„Åã„Åõ", "„Åè„Åô„Åê„Å£", "Ê∏Ö„ÇÅ" },
 #endif
 };
 
@@ -1051,7 +1051,7 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
         pline_The("magic-absorbing blade %s %s!",
                   vtense((const char *) 0, verb), hittee);
 #else
-        pline("ñÇóÕÇãzÇ¢Ç∆ÇÈênÇ™%sÇ%sÇΩÅI",
+        pline("È≠îÂäõ„ÇíÂê∏„ÅÑ„Å®„ÇãÂàÉ„Åå%s„Çí%s„ÅüÔºÅ",
                   hittee, verb);
 #endif
         /* assume probing has some sort of noticeable feedback
@@ -1079,7 +1079,7 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
 /*JP
                     You("lose magical energy!");
 */
-                    You("ñÇñ@ÇÃÉGÉlÉãÉMÅ[Çé∏Ç¡ÇΩÅI");
+                    You("È≠îÊ≥ï„ÅÆ„Ç®„Éç„É´„ÇÆ„Éº„ÇíÂ§±„Å£„ÅüÔºÅ");
                     u.uenmax--;
                     if (u.uen > 0)
                         u.uen--;
@@ -1092,7 +1092,7 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
 /*JP
                     You("absorb magical energy!");
 */
-                    You("ñÇñ@ÇÃÉGÉlÉãÉMÅ[ÇãzÇ¢Ç∆Ç¡ÇΩÅI");
+                    You("È≠îÊ≥ï„ÅÆ„Ç®„Éç„É´„ÇÆ„Éº„ÇíÂê∏„ÅÑ„Å®„Å£„ÅüÔºÅ");
                     u.uenmax++;
                     u.uen++;
                     context.botl = 1;
@@ -1110,14 +1110,14 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
 /*JP
                 multi_reason = "being scared stiff";
 */
-                multi_reason = "ã∞ï|Ç≈òTîÇÇµÇΩåÑÇ…";
+                multi_reason = "ÊÅêÊÄñ„ÅßÁãºÁãΩ„Åó„ÅüÈöô„Å´";
                 nomovemsg = "";
                 if (magr && magr == u.ustuck && sticks(youmonst.data)) {
                     u.ustuck = (struct monst *) 0;
 /*JP
                     You("release %s!", mon_nam(magr));
 */
-                    You("%sÇâï˙ÇµÇΩÅI", mon_nam(magr));
+                    You("%s„ÇíËß£Êîæ„Åó„ÅüÔºÅ", mon_nam(magr));
                 }
             }
         } else {
@@ -1139,7 +1139,7 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
 /*JP
             pline_The("%s is insightful.", verb);
 */
-            pline("ëäéËÇ%sÇΩÅD", verb);
+            pline("Áõ∏Êâã„Çí%s„ÅüÔºé", verb);
             /* pre-damage status */
             probe_monster(mdef);
         }
@@ -1175,7 +1175,7 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
 /*JP
             pline("%s %s!", hittee, vtense(fakename, "resist"));
 */
-            pline("%sÇÕñhÇ¢ÇæÅI", hittee);
+            pline("%s„ÅØÈò≤„ÅÑ„Å†ÔºÅ", hittee);
             shieldeff(youdefend ? u.ux : mdef->mx,
                       youdefend ? u.uy : mdef->my);
         }
@@ -1194,13 +1194,13 @@ char *hittee;              /* target's name: "you" or mon_nam(mdef) */
                   (do_stun && do_confuse) ? '!' : '.');
 #else
             if (do_stun && do_confuse)
-                Strcat(buf, "ÇÊÇÎÇﬂÇ¢Çƒ");
+                Strcat(buf, "„Çà„Çç„ÇÅ„ÅÑ„Å¶");
             else if (do_stun)
-                Strcat(buf, "ÇÊÇÎÇﬂÇ¢ÇΩ");
+                Strcat(buf, "„Çà„Çç„ÇÅ„ÅÑ„Åü");
             if (do_confuse)
-                Strcat(buf, "ç¨óêÇµÇΩ");
-            pline("%sÇÕ%s%s", hittee,
-                  buf, (do_stun && do_confuse) ? "ÅI" : "ÅD");
+                Strcat(buf, "Ê∑∑‰π±„Åó„Åü");
+            pline("%s„ÅØ%s%s", hittee,
+                  buf, (do_stun && do_confuse) ? "ÔºÅ" : "Ôºé");
 #endif
         }
     }
@@ -1233,7 +1233,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
     static const char you[] = "you";
 */
-    static const char you[] = "Ç†Ç»ÇΩ";
+    static const char you[] = "„ÅÇ„Å™„Åü";
     char hittee[BUFSZ];
 
     Strcpy(hittee, youdefend ? you : mon_nam(mdef));
@@ -1265,13 +1265,13 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                                 : "burns",
                       hittee, !spec_dbon_applies ? '.' : '!');
 #else
-            pline_The("ñ“âŒÇ™%s%s",
+            pline_The("ÁåõÁÅ´„Åå%s%s",
                       hittee,
                       !spec_dbon_applies
-                          ? "Ç…ñΩíÜÇµÇΩÅD"
+                          ? "„Å´ÂëΩ‰∏≠„Åó„ÅüÔºé"
                           : (mdef->data == &mons[PM_WATER_ELEMENTAL])
-                                ? "ÇÃàÍïîÇè¡ñ≈Ç≥ÇπÇΩÅI"
-                                : "ÇèƒÇ¢ÇΩÅI");
+                                ? "„ÅÆ‰∏ÄÈÉ®„ÇíÊ∂àÊªÖ„Åï„Åõ„ÅüÔºÅ"
+                                : "„ÇíÁÑº„ÅÑ„ÅüÔºÅ");
 #endif
         if (!rn2(4))
             (void) destroy_mitem(mdef, POTION_CLASS, AD_FIRE);
@@ -1290,9 +1290,9 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                       !spec_dbon_applies ? "hits" : "freezes", hittee,
                       !spec_dbon_applies ? '.' : '!');
 #else
-            pline_The("ñ“êÅê·Ç™%s%s",
+            pline_The("ÁåõÂêπÈõ™„Åå%s%s",
                       hittee,
-                      !spec_dbon_applies ? "Ç…ñΩíÜÇµÇΩÅD" : "ÇèPÇ¡ÇΩÅI");
+                      !spec_dbon_applies ? "„Å´ÂëΩ‰∏≠„Åó„ÅüÔºé" : "„ÇíË•≤„Å£„ÅüÔºÅ");
 #endif
         if (!rn2(4))
             (void) destroy_mitem(mdef, POTION_CLASS, AD_COLD);
@@ -1305,8 +1305,8 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                       !spec_dbon_applies ? "" : "!  Lightning strikes",
                       hittee, !spec_dbon_applies ? '.' : '!');
 #else
-            pline("ãêëÂÇ»ÉnÉìÉ}Å[ÇÕ%sÇ…ñΩíÜÇµÇΩ%s", hittee,
-                      !spec_dbon_applies ? "ÅD" : "ÅIìdåÇÇ™èPÇ¡ÇΩÅI");
+            pline("Â∑®Â§ß„Å™„Éè„É≥„Éû„Éº„ÅØ%s„Å´ÂëΩ‰∏≠„Åó„Åü%s", hittee,
+                      !spec_dbon_applies ? "Ôºé" : "ÔºÅÈõªÊíÉ„ÅåË•≤„Å£„ÅüÔºÅ");
 #endif
         if (!rn2(5))
             (void) destroy_mitem(mdef, RING_CLASS, AD_ELEC);
@@ -1323,10 +1323,10 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                           : "!  A hail of magic missiles strikes",
                       hittee, !spec_dbon_applies ? '.' : '!');
 #else
-            pline("é¿ëÃÇéùÇΩÇ»Ç¢ï®ëÃÇ™%sÇçUåÇÇµÇΩ%s",
+            pline("ÂÆü‰Ωì„ÇíÊåÅ„Åü„Å™„ÅÑÁâ©‰Ωì„Åå%s„ÇíÊîªÊíÉ„Åó„Åü%s",
                       hittee,
-                      !spec_dbon_applies ? "ÅD" :
-                      "ÅIñÇñ@ÇÃñÓÇ™âJÇ†ÇÁÇÍÇ∆ñΩíÜÇµÇΩÅI");
+                      !spec_dbon_applies ? "Ôºé" :
+                      "ÔºÅÈ≠îÊ≥ï„ÅÆÁü¢„ÅåÈõ®„ÅÇ„Çâ„Çå„Å®ÂëΩ‰∏≠„Åó„ÅüÔºÅ");
 #endif
         return realizes_damage;
     }
@@ -1349,13 +1349,13 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
             wepdesc = "The razor-sharp blade";
 */
-            wepdesc = "éaìSåï";
+            wepdesc = "Êñ¨ÈâÑÂâ£";
             /* not really beheading, but so close, why add another SPFX */
             if (youattack && u.uswallow && mdef == u.ustuck) {
 /*JP
                 You("slice %s wide open!", mon_nam(mdef));
 */
-                You("%sÇó÷êÿÇËÇ…ÇµÇΩÅI", mon_nam(mdef));
+                You("%s„ÇíËº™Âàá„Çä„Å´„Åó„ÅüÔºÅ", mon_nam(mdef));
                 *dmgptr = 2 * mdef->mhp + FATAL_DAMAGE_MODIFIER;
                 return TRUE;
             }
@@ -1369,13 +1369,13 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                         You("slice deeply into %s!", mon_nam(mdef));
 */
-                        You("%sÇ…ê[Ç≠éaÇËÇ¬ÇØÇΩÅI",mon_nam(mdef));
+                        You("%s„Å´Ê∑±„ÅèÊñ¨„Çä„Å§„Åë„ÅüÔºÅ",mon_nam(mdef));
                     else if (vis)
 #if 0 /*JP*/
                         pline("%s cuts deeply into %s!", Monnam(magr),
                               hittee);
 #else
-                        pline("%sÇÕ%sÇ…ê[Ç≠éaÇËÇ¬ÇØÇΩÅI", Monnam(magr),
+                        pline("%s„ÅØ%s„Å´Ê∑±„ÅèÊñ¨„Çä„Å§„Åë„ÅüÔºÅ", Monnam(magr),
                               hittee);
 #endif
                     *dmgptr *= 2;
@@ -1385,7 +1385,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                 pline("%s cuts %s in half!", wepdesc, mon_nam(mdef));
 */
-                pline("%sÇ™%sÇê^Ç¡ìÒÇ¬Ç…ÇµÇΩÅI", wepdesc, mon_nam(mdef));
+                pline("%s„Åå%s„ÇíÁúü„Å£‰∫å„Å§„Å´„Åó„ÅüÔºÅ", wepdesc, mon_nam(mdef));
                 otmp->dknown = TRUE;
                 return TRUE;
             } else {
@@ -1393,7 +1393,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                     pline("%s cuts deeply into you!",
 */
-                    pline("%sÇÕÇ†Ç»ÇΩÇ…ê[Ç≠éaÇËÇ¬ÇØÇΩÅI",
+                    pline("%s„ÅØ„ÅÇ„Å™„Åü„Å´Ê∑±„ÅèÊñ¨„Çä„Å§„Åë„ÅüÔºÅ",
                           magr ? Monnam(magr) : wepdesc);
                     *dmgptr *= 2;
                     return TRUE;
@@ -1408,7 +1408,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                 pline("%s cuts you in half!", wepdesc);
 */
-                pline("%sÇ™Ç†Ç»ÇΩÇê^Ç¡ìÒÇ¬Ç…ÇµÇΩÅI", wepdesc);
+                pline("%s„Åå„ÅÇ„Å™„Åü„ÇíÁúü„Å£‰∫å„Å§„Å´„Åó„ÅüÔºÅ", wepdesc);
                 otmp->dknown = TRUE;
                 return TRUE;
             }
@@ -1418,8 +1418,8 @@ int dieroll; /* needed for Magicbane and vorpal blades */
             static const char *const behead_msg[2] = { "%s beheads %s!",
                                                        "%s decapitates %s!" };
 #else
-            static const char *const behead_msg[2] = { "%sÇÕ%sÇÃéÒÇêÿÇ¡ÇΩÅI",
-                                                       "%sÇÕ%sÇÃéÒÇêÿÇËóéÇµÇΩÅI" };
+            static const char *const behead_msg[2] = { "%s„ÅØ%s„ÅÆÈ¶ñ„ÇíÂàá„Å£„ÅüÔºÅ",
+                                                       "%s„ÅØ%s„ÅÆÈ¶ñ„ÇíÂàá„ÇäËêΩ„Åó„ÅüÔºÅ" };
 #endif
 
             if (youattack && u.uswallow && mdef == u.ustuck)
@@ -1431,12 +1431,12 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                         pline("Somehow, you miss %s wildly.", mon_nam(mdef));
 */
-                        pline("Ç»Ç∫Ç©ÅC%sÇ÷ÇÃçUåÇÇÕëÂÇ´Ç≠ÇÕÇ∏ÇÍÇΩÅD", mon_nam(mdef));
+                        pline("„Å™„Åú„ÅãÔºå%s„Å∏„ÅÆÊîªÊíÉ„ÅØÂ§ß„Åç„Åè„ÅØ„Åö„Çå„ÅüÔºé", mon_nam(mdef));
                     else if (vis)
 /*JP
                         pline("Somehow, %s misses wildly.", mon_nam(magr));
 */
-                        pline("Ç»Ç∫Ç©ÅC%sÇÃçUåÇÇÕëÂÇ´Ç≠ÇÕÇ∏ÇÍÇΩÅD", mon_nam(magr));
+                        pline("„Å™„Åú„ÅãÔºå%s„ÅÆÊîªÊíÉ„ÅØÂ§ß„Åç„Åè„ÅØ„Åö„Çå„ÅüÔºé", mon_nam(magr));
                     *dmgptr = 0;
                     return (boolean) (youattack || vis);
                 }
@@ -1445,7 +1445,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                     pline("%s slices through %s %s.", wepdesc,
                           s_suffix(mon_nam(mdef)), mbodypart(mdef, NECK));
 #else
-                    pline("%sÇÕ%sÇÃ%sÇêÿÇËóéÇµÇΩÅD", wepdesc,
+                    pline("%s„ÅØ%s„ÅÆ%s„ÇíÂàá„ÇäËêΩ„Åó„ÅüÔºé", wepdesc,
                           mon_nam(mdef), mbodypart(mdef, NECK));
 #endif
                     return TRUE;
@@ -1457,7 +1457,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                     pline("Good job Henry, but that wasn't Anne.");
 */
-                    pline("ÉwÉìÉäÅ[ÇÊÇ≠Ç‚Ç¡ÇΩÅCÇæÇ™ÇªÇ¢Ç¬ÇÕÉAÉìÇ∂Ç·Ç»Ç¢ÅD");
+                    pline("„Éò„É≥„É™„Éº„Çà„Åè„ÇÑ„Å£„ÅüÔºå„Å†„Åå„Åù„ÅÑ„Å§„ÅØ„Ç¢„É≥„Åò„ÇÉ„Å™„ÅÑÔºé");
                 otmp->dknown = TRUE;
                 return TRUE;
             } else {
@@ -1465,7 +1465,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                     pline("Somehow, %s misses you wildly.",
 */
-                    pline("Ç»Ç∫Ç©ÅC%sÇÃçUåÇÇÕëÂÇ´Ç≠ÇÕÇ∏ÇÍÇΩÅD",
+                    pline("„Å™„Åú„ÅãÔºå%s„ÅÆÊîªÊíÉ„ÅØÂ§ß„Åç„Åè„ÅØ„Åö„Çå„ÅüÔºé",
                           magr ? mon_nam(magr) : wepdesc);
                     *dmgptr = 0;
                     return TRUE;
@@ -1474,7 +1474,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                     pline("%s slices through your %s.", wepdesc,
 */
-                    pline("%sÇÕÇ†Ç»ÇΩÇÃ%sÇêÿÇËóéÇµÇΩÅD", wepdesc,
+                    pline("%s„ÅØ„ÅÇ„Å™„Åü„ÅÆ%s„ÇíÂàá„ÇäËêΩ„Åó„ÅüÔºé", wepdesc,
                           body_part(NECK));
                     return TRUE;
                 }
@@ -1482,7 +1482,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
                 pline(behead_msg[rn2(SIZE(behead_msg))], wepdesc, "you");
 */
-                pline(behead_msg[rn2(SIZE(behead_msg))], wepdesc, "Ç†Ç»ÇΩ");
+                pline(behead_msg[rn2(SIZE(behead_msg))], wepdesc, "„ÅÇ„Å™„Åü");
                 otmp->dknown = TRUE;
                 /* Should amulets fall off? */
                 return TRUE;
@@ -1495,7 +1495,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
 /*JP
         const char *life = nonliving(mdef->data) ? "animating force" : "life";
 */
-        const char *life = nonliving(mdef->data) ? "ìÆçÏóÕ" : "ê∂ñΩóÕ";
+        const char *life = nonliving(mdef->data) ? "Âãï‰ΩúÂäõ" : "ÁîüÂëΩÂäõ";
 
         if (!youdefend) {
             if (vis) {
@@ -1504,7 +1504,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                     pline_The("%s blade draws the %s from %s!",
                               hcolor(NH_BLACK), life, mon_nam(mdef));
 #else
-                    pline("%sênÇ™%sÇÃ%sÇíDÇ¡ÇΩÅI",
+                    pline("%sÂàÉ„Åå%s„ÅÆ%s„ÇíÂ•™„Å£„ÅüÔºÅ",
                               hcolor(NH_BLACK), mon_nam(mdef), life);
 #endif
                 else
@@ -1513,7 +1513,7 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                           The(distant_name(otmp, xname)), life,
                           mon_nam(mdef));
 #else
-                    pline("%sÇÕ%sÇÃ%sÇíDÇ¡ÇΩÅI",
+                    pline("%s„ÅØ%s„ÅÆ%s„ÇíÂ•™„Å£„ÅüÔºÅ",
                           The(distant_name(otmp, xname)),
                           mon_nam(mdef), life);
 #endif
@@ -1542,29 +1542,29 @@ int dieroll; /* needed for Magicbane and vorpal blades */
                             : "object",
                          life);
 #else
-                pline("%sÇ…%sÇíDÇÌÇÍÇΩÇÊÇ§Ç»ãCÇ™ÇµÇΩÅI",
+                pline("%s„Å´%s„ÇíÂ•™„Çè„Çå„Åü„Çà„ÅÜ„Å™Ê∞ó„Åå„Åó„ÅüÔºÅ",
                          (otmp->oartifact == ART_STORMBRINGER)
-                            ? "ïsèÚÇ»ên"
-                            : "âΩÇ©",
+                            ? "‰∏çÊµÑ„Å™ÂàÉ"
+                            : "‰Ωï„Åã",
                          life);
 #endif
             else if (otmp->oartifact == ART_STORMBRINGER)
 /*JP
                 pline_The("%s blade drains your %s!", hcolor(NH_BLACK), life);
 */
-                pline("%sênÇ™Ç†Ç»ÇΩÇÃ%sÇíDÇ¡ÇΩÅI", hcolor(NH_BLACK), life);
+                pline("%sÂàÉ„Åå„ÅÇ„Å™„Åü„ÅÆ%s„ÇíÂ•™„Å£„ÅüÔºÅ", hcolor(NH_BLACK), life);
             else
 #if 0 /*JP*/
                 pline("%s drains your %s!", The(distant_name(otmp, xname)),
                       life);
 #else
-                pline("%sÇ™Ç†Ç»ÇΩÇÃ%sÇíDÇ¡ÇΩÅI", The(distant_name(otmp, xname)),
+                pline("%s„Åå„ÅÇ„Å™„Åü„ÅÆ%s„ÇíÂ•™„Å£„ÅüÔºÅ", The(distant_name(otmp, xname)),
                       life);
 #endif
 /*JP
             losexp("life drainage");
 */
-            losexp("ê∂ñΩóÕÇãzé˚Ç≥ÇÍÇƒ");
+            losexp("ÁîüÂëΩÂäõ„ÇíÂê∏Âèé„Åï„Çå„Å¶");
             if (magr && magr->mhp < magr->mhpmax) {
                 magr->mhp += (oldhpmax - u.uhpmax) / 2;
                 if (magr->mhp > magr->mhpmax)
@@ -1619,7 +1619,7 @@ struct obj *obj;
             You_feel("that %s %s ignoring you.", the(xname(obj)),
                      otense(obj, "are"));
 #else
-            You_feel("%sÇ™ñ≥éãÇµÇƒÇ¢ÇÈÇÊÇ§Ç…ä¥Ç∂ÇΩÅD", xname(obj));
+            You_feel("%s„ÅåÁÑ°Ë¶ñ„Åó„Å¶„ÅÑ„Çã„Çà„ÅÜ„Å´ÊÑü„Åò„ÅüÔºé", xname(obj));
 #endif
             /* and just got more so; patience is essential... */
             obj->age += (long) d(3, 10);
@@ -1647,7 +1647,7 @@ struct obj *obj;
 /*JP
                 You_feel("better.");
 */
-                You_feel("ãCï™Ç™ÇÊÇ≠Ç»Ç¡ÇΩÅD");
+                You_feel("Ê∞óÂàÜ„Åå„Çà„Åè„Å™„Å£„ÅüÔºé");
             else
                 goto nothing_special;
             if (healamt > 0) {
@@ -1675,7 +1675,7 @@ struct obj *obj;
 /*JP
                 You_feel("re-energized.");
 */
-                You("ÉGÉlÉãÉMÅ[Ç≈ñûÇΩÇ≥ÇÍÇΩÅD");
+                You("„Ç®„Éç„É´„ÇÆ„Éº„ÅßÊ∫Ä„Åü„Åï„Çå„ÅüÔºé");
                 u.uen += epboost;
                 context.botl = 1;
             } else
@@ -1728,7 +1728,7 @@ struct obj *obj;
 /*JP
             end_menu(tmpwin, "Open a portal to which dungeon?");
 */
-            end_menu(tmpwin, "Ç«ÇÃñ¿ã{Ç÷ÇÃñÇñ@ÇÃì¸å˚ÇäJÇ´Ç‹Ç∑Ç©ÅH");
+            end_menu(tmpwin, "„Å©„ÅÆËø∑ÂÆÆ„Å∏„ÅÆÈ≠îÊ≥ï„ÅÆÂÖ•Âè£„ÇíÈñã„Åç„Åæ„Åô„ÅãÔºü");
             if (num_ok_dungeons > 1) {
                 /* more than one entry; display menu for choices */
                 menu_item *selected;
@@ -1762,18 +1762,18 @@ struct obj *obj;
 /*JP
                 You_feel("very disoriented for a moment.");
 */
-                You("àÍèuï˚å¸ä¥äoÇé∏Ç¡ÇΩÅD");
+                You("‰∏ÄÁû¨ÊñπÂêëÊÑüË¶ö„ÇíÂ§±„Å£„ÅüÔºé");
             } else {
                 if (!Blind)
 /*JP
                     You("are surrounded by a shimmering sphere!");
 */
-                    You("É`ÉJÉ`ÉJåıÇÈãÖëÃÇ…ï¢ÇÌÇÍÇΩÅI");
+                    You("„ÉÅ„Ç´„ÉÅ„Ç´ÂÖâ„ÇãÁêÉ‰Ωì„Å´Ë¶Ü„Çè„Çå„ÅüÔºÅ");
                 else
 /*JP
                     You_feel("weightless for a moment.");
 */
-                    You_feel("àÍèuÅCñ≥èdóÕä¥Çä¥Ç∂ÇΩÅD");
+                    You_feel("‰∏ÄÁû¨ÔºåÁÑ°ÈáçÂäõÊÑü„ÇíÊÑü„Åò„ÅüÔºé");
                 goto_level(&newlev, FALSE, FALSE, FALSE);
             }
             break;
@@ -1803,7 +1803,7 @@ struct obj *obj;
             otmp = hold_another_object(otmp, "Suddenly %s out.",
                                        aobjnam(otmp, "fall"), (char *) 0);
 #else
-            otmp = hold_another_object(otmp, "ìÀëR%sÇ™óéÇøÇΩÅD",
+            otmp = hold_another_object(otmp, "Á™ÅÁÑ∂%s„ÅåËêΩ„Å°„ÅüÔºé",
                                        xname(otmp), 0);
 #endif
             break;
@@ -1821,7 +1821,7 @@ struct obj *obj;
             You_feel("that %s %s ignoring you.", the(xname(obj)),
                      otense(obj, "are"));
 #else
-            You_feel("%sÇ™ñ≥éãÇµÇƒÇ¢ÇÈÇÊÇ§Ç…ä¥Ç∂ÇΩÅD", xname(obj));
+            You_feel("%s„ÅåÁÑ°Ë¶ñ„Åó„Å¶„ÅÑ„Çã„Çà„ÅÜ„Å´ÊÑü„Åò„ÅüÔºé", xname(obj));
 #endif
             /* can't just keep repeatedly trying */
             obj->age += (long) d(3, 10);
@@ -1839,7 +1839,7 @@ struct obj *obj;
 /*JP
                 You_feel("a surge of power, but nothing seems to happen.");
 */
-                You("óÕÇÃçÇÇ‹ÇËÇä¥Ç∂ÇΩÇ™ÅCâΩÇ‡ãNÇ´Ç»Ç©Ç¡ÇΩÇÊÇ§ÇæÅD");
+                You("Âäõ„ÅÆÈ´ò„Åæ„Çä„ÇíÊÑü„Åò„Åü„ÅåÔºå‰Ωï„ÇÇËµ∑„Åç„Å™„Åã„Å£„Åü„Çà„ÅÜ„Å†Ôºé");
             return 1;
         }
         switch (oart->inv_prop) {
@@ -1848,12 +1848,12 @@ struct obj *obj;
 /*JP
                 You_feel("like a rabble-rouser.");
 */
-                You("ñØèOêÓìÆâ∆ÇÃÇÊÇ§Ç»ãCÇ™ÇµÇΩÅD");
+                You("Ê∞ëË°ÜÊâáÂãïÂÆ∂„ÅÆ„Çà„ÅÜ„Å™Ê∞ó„Åå„Åó„ÅüÔºé");
             else
 /*JP
                 You_feel("the tension decrease around you.");
 */
-                pline("Ç‹ÇÌÇËÇÃãŸí£ä¥Ç™Ç»Ç≠Ç»Ç¡ÇΩÇÊÇ§Ç»ãCÇ™ÇµÇΩÅD");
+                pline("„Åæ„Çè„Çä„ÅÆÁ∑äÂºµÊÑü„Åå„Å™„Åè„Å™„Å£„Åü„Çà„ÅÜ„Å™Ê∞ó„Åå„Åó„ÅüÔºé");
             break;
         case LEVITATION:
             if (on) {
@@ -1871,14 +1871,14 @@ struct obj *obj;
                 Your("body takes on a %s transparency...",
                      Hallucination ? "normal" : "strange");
 #else
-                pline("%sÅCëÃÇÕìßâﬂê´ÇÇ‡Ç¡ÇΩÅDÅDÅD",
-                      Hallucination ? "Ç†ÇΩÇËÇ‹Ç¶ÇÃÇ±Ç∆ÇæÇ™" : "äÔñ≠Ç»Ç±Ç∆Ç…");
+                pline("%sÔºå‰Ωì„ÅØÈÄèÈÅéÊÄß„Çí„ÇÇ„Å£„ÅüÔºéÔºéÔºé",
+                      Hallucination ? "„ÅÇ„Åü„Çä„Åæ„Åà„ÅÆ„Åì„Å®„Å†„Åå" : "Â•áÂ¶ô„Å™„Åì„Å®„Å´");
 #endif
             else
 /*JP
                 Your("body seems to unfade...");
 */
-                Your("ëÃÇÕéüëÊÇ…å©Ç¶ÇÈÇÊÇ§Ç…Ç»Ç¡ÇƒÇ´ÇΩÅDÅDÅD");
+                Your("‰Ωì„ÅØÊ¨°Á¨¨„Å´Ë¶ã„Åà„Çã„Çà„ÅÜ„Å´„Å™„Å£„Å¶„Åç„ÅüÔºéÔºéÔºé");
             break;
         }
     }
@@ -1940,11 +1940,11 @@ struct obj *obj;
 /*JP
         line = "NetHack rumors file closed for renovation.";
 */
-        line = "â\ÇÃê^ëäÇÕêVëïÇÃÇΩÇﬂàÍéûï¬ìXÅD";
+        line = "ÂôÇ„ÅÆÁúüÁõ∏„ÅØÊñ∞Ë£Ö„ÅÆ„Åü„ÇÅ‰∏ÄÊôÇÈñâÂ∫óÔºé";
 /*JP
     pline("%s:", Tobjnam(obj, "whisper"));
 */
-    pline("%sÇÕÇ≥Ç≥Ç‚Ç¢ÇΩÅF", xname(obj));
+    pline("%s„ÅØ„Åï„Åï„ÇÑ„ÅÑ„ÅüÔºö", xname(obj));
     verbalize1(line);
     return;
 }
@@ -2079,29 +2079,29 @@ long *abil;
 }
 
 #if 1 /*JP*/
-/*JP colornamesÇÕê›íËÉtÉ@ÉCÉãÇ≈égÇ§ÇÃÇ≈ñ|ñÛÇπÇ∏ÅA
-     ì˙ñ{åÍêÍópÇÃîzóÒÇï Ç…ópà”Ç∑ÇÈÅB
+/*JP colornames„ÅØË®≠ÂÆö„Éï„Ç°„Ç§„É´„Åß‰Ωø„ÅÜ„ÅÆ„ÅßÁøªË®≥„Åõ„Åö„ÄÅ
+     Êó•Êú¨Ë™ûÂ∞ÇÁî®„ÅÆÈÖçÂàó„ÇíÂà•„Å´Áî®ÊÑè„Åô„Çã„ÄÇ
 */
 static const struct {
     const char *name;
     const int color;
 } colornames2[] = {
-    { "çïÇ¢", CLR_BLACK },
-    { "ê‘Ç¢", CLR_RED },
-    { "óŒêFÇÃ", CLR_GREEN },
-    { "íÉêFÇ¢", CLR_BROWN },
-    { "ê¬Ç¢", CLR_BLUE },
-    { "É}É[ÉìÉ^êFÇÃ", CLR_MAGENTA },
-    { "ÉVÉAÉìêFÇÃ", CLR_CYAN },
-    { "äDêFÇÃ", CLR_GRAY },
-    { "äDêFÇÃ", CLR_GRAY },
-    { "ÉIÉåÉìÉWêFÇÃ", CLR_ORANGE },
-    { "íWóŒêFÇÃ", CLR_BRIGHT_GREEN },
-    { "â©êFÇ¢", CLR_YELLOW },
-    { "íWê¬êFÇÃ", CLR_BRIGHT_BLUE },
-    { "ñæÇÈÇ¢É}É[ÉìÉ^êFÇÃ", CLR_BRIGHT_MAGENTA },
-    { "ñæÇÈÇ¢ÉVÉAÉìêFÇÃ", CLR_BRIGHT_CYAN },
-    { "îíÇ¢", CLR_WHITE }
+    { "Èªí„ÅÑ", CLR_BLACK },
+    { "Ëµ§„ÅÑ", CLR_RED },
+    { "Á∑ëËâ≤„ÅÆ", CLR_GREEN },
+    { "Ëå∂Ëâ≤„ÅÑ", CLR_BROWN },
+    { "Èùí„ÅÑ", CLR_BLUE },
+    { "„Éû„Çº„É≥„ÇøËâ≤„ÅÆ", CLR_MAGENTA },
+    { "„Ç∑„Ç¢„É≥Ëâ≤„ÅÆ", CLR_CYAN },
+    { "ÁÅ∞Ëâ≤„ÅÆ", CLR_GRAY },
+    { "ÁÅ∞Ëâ≤„ÅÆ", CLR_GRAY },
+    { "„Ç™„É¨„É≥„Ç∏Ëâ≤„ÅÆ", CLR_ORANGE },
+    { "Ê∑°Á∑ëËâ≤„ÅÆ", CLR_BRIGHT_GREEN },
+    { "ÈªÑËâ≤„ÅÑ", CLR_YELLOW },
+    { "Ê∑°ÈùíËâ≤„ÅÆ", CLR_BRIGHT_BLUE },
+    { "Êòé„Çã„ÅÑ„Éû„Çº„É≥„ÇøËâ≤„ÅÆ", CLR_BRIGHT_MAGENTA },
+    { "Êòé„Çã„ÅÑ„Ç∑„Ç¢„É≥Ëâ≤„ÅÆ", CLR_BRIGHT_CYAN },
+    { "ÁôΩ„ÅÑ", CLR_WHITE }
 };
 
 static const char *
@@ -2147,8 +2147,8 @@ int orc_count; /* new count (warn_obj_cnt is old count); -1 is a flag value */
             pline("%s is %s.", bare_artifactname(uwep),
                   !Blind ? "glowing" : "quivering");
 #else
-            pline("%sÇÕ%sÇƒÇ¢ÇÈÅD", bare_artifactname(uwep),
-                  !Blind ? "ãPÇ¢" : "êkÇ¶");
+            pline("%s„ÅØ%s„Å¶„ÅÑ„ÇãÔºé", bare_artifactname(uwep),
+                  !Blind ? "Ëºù„ÅÑ" : "Èúá„Åà");
 #endif
         } else if (orc_count > 0 && warn_obj_cnt == 0) {
             /* 'start' message */
@@ -2157,22 +2157,22 @@ int orc_count; /* new count (warn_obj_cnt is old count); -1 is a flag value */
                 pline("%s %s %s!", bare_artifactname(uwep),
                       otense(uwep, "glow"), glow_color(uwep->oartifact));
 #else
-                pline("%sÇÕ%sãPÇ¢ÇΩÅI", bare_artifactname(uwep),
+                pline("%s„ÅØ%sËºù„ÅÑ„ÅüÔºÅ", bare_artifactname(uwep),
                       glow_color(uwep->oartifact));
 #endif
             else
 /*JP
                 pline("%s quivers slightly.", bare_artifactname(uwep));
 */
-                pline("%sÇÕè≠ÇµêkÇ¶ÇΩÅD", bare_artifactname(uwep));
+                pline("%s„ÅØÂ∞ë„ÅóÈúá„Åà„ÅüÔºé", bare_artifactname(uwep));
         } else if (orc_count == 0 && warn_obj_cnt > 0) {
             /* 'stop' message */
 #if 0 /*JP*/
             pline("%s stops %s.", bare_artifactname(uwep),
                   !Blind ? "glowing" : "quivering");
 #else
-            pline("%sÇÃ%sÇÕé~Ç‹Ç¡ÇΩÅD", bare_artifactname(uwep),
-                  !Blind ? "ãPÇ´" : "êkÇ¶");
+            pline("%s„ÅÆ%s„ÅØÊ≠¢„Åæ„Å£„ÅüÔºé", bare_artifactname(uwep),
+                  !Blind ? "Ëºù„Åç" : "Èúá„Åà");
 #endif
         }
     }
@@ -2204,7 +2204,7 @@ boolean loseit;    /* whether to drop it if hero can longer touch it */
         You_cant("handle %s%s!", yname(obj),
                  obj->owornmask ? " anymore" : "");
 #else
-        You_cant("%s%sÇàµÇ¶Ç»Ç¢ÅI", obj->owornmask ? "Ç‡Ç§" : "",
+        You_cant("%s%s„ÇíÊâ±„Åà„Å™„ÅÑÔºÅ", obj->owornmask ? "„ÇÇ„ÅÜ" : "",
                  xname(obj));
 #endif
         /* also inflict damage unless touch_artifact() already did so */
@@ -2218,7 +2218,7 @@ boolean loseit;    /* whether to drop it if hero can longer touch it */
 /*JP
             Sprintf(buf, "handling %s", killer_xname(obj));
 */
-            Sprintf(buf, "%sÇàµÇ¡Çƒ", killer_xname(obj));
+            Sprintf(buf, "%s„ÇíÊâ±„Å£„Å¶", killer_xname(obj));
             losehp(dmg, buf, KILLED_BY);
             exercise(A_CON, FALSE);
         }
@@ -2250,7 +2250,7 @@ boolean loseit;    /* whether to drop it if hero can longer touch it */
                 pline("%s to the %s.", Tobjnam(obj, "fall"),
                       surface(u.ux, u.uy));
 #else
-                pline("%sÇÕ%sÇ…óéÇøÇΩÅD", xname(obj),
+                pline("%s„ÅØ%s„Å´ËêΩ„Å°„ÅüÔºé", xname(obj),
                       surface(u.ux, u.uy));
 #endif
             dropx(obj);
@@ -2368,7 +2368,7 @@ int dropflag; /* 0==don't drop, 1==drop all, 2==drop weapon */
 /*JP
         selftouch("After losing your gloves, you");
 */
-        selftouch("è¨éËÇé∏Ç¡ÇΩÇ†Ç∆ÅCÇ†Ç»ÇΩÇÕ");
+        selftouch("Â∞èÊâã„ÇíÂ§±„Å£„Åü„ÅÇ„Å®Ôºå„ÅÇ„Å™„Åü„ÅØ");
 
     if (!--nesting)
         clear_bypasses(); /* reset upon final exit */
@@ -2432,8 +2432,8 @@ mkot_trap_warn()
     };
 #else
     static const char *const heat[7] = {
-        "ó‚ÇΩÇ≠", "è≠Çµâ∑Ç©Ç≠", "â∑Ç©Ç≠", "Ç∆ÇƒÇ‡â∑Ç©Ç≠",
-        "îMÇ≠", "Ç∆ÇƒÇ‡îMÇ≠", "âäÇÃÇÊÇ§Ç…"
+        "ÂÜ∑„Åü„Åè", "Â∞ë„ÅóÊ∏©„Åã„Åè", "Ê∏©„Åã„Åè", "„Å®„Å¶„ÇÇÊ∏©„Åã„Åè",
+        "ÁÜ±„Åè", "„Å®„Å¶„ÇÇÁÜ±„Åè", "ÁÇé„ÅÆ„Çà„ÅÜ„Å´"
     };
 #endif
 
@@ -2445,7 +2445,7 @@ mkot_trap_warn()
 /*JP
             pline_The("Key feels %s%c", heat[idx], (ntraps > 3) ? '!' : '.');
 */
-            pline_The("åÆÇÕ%sä¥Ç∂ÇΩ%s", heat[idx], (ntraps > 3) ? "ÅI" : "ÅD");
+            pline_The("Èçµ„ÅØ%sÊÑü„Åò„Åü%s", heat[idx], (ntraps > 3) ? "ÔºÅ" : "Ôºé");
         }
         mkot_trap_warn_count = ntraps;
     } else

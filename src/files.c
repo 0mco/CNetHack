@@ -573,7 +573,7 @@ char errbuf[];
         Sprintf(errbuf, "Cannot open file \"%s\" for level %d (errno %d).",
                 lock, lev, errno);
 #else
-        Sprintf(errbuf, "’n‰º%dŠK‚Ìƒtƒ@ƒCƒ‹\"%s\"‚ğŠJ‚¯‚È‚¢(errno %d)D",
+        Sprintf(errbuf, "åœ°ä¸‹%déšã®ãƒ•ã‚¡ã‚¤ãƒ«\"%s\"ã‚’é–‹ã‘ãªã„(errno %d)ï¼",
                 lev, lock, errno);
 #endif
 
@@ -2032,7 +2032,7 @@ int src;
         return fp;
 #else /* should be only UNIX left */
     envp = nh_getenv("HOME");
-#if 1 /*JP*//*".jnethackrc"‚ğ—Dæ‚µ‚Ä“Ç‚İ‚İ*/
+#if 1 /*JP*//*".jnethackrc"ã‚’å„ªå…ˆã—ã¦èª­ã¿è¾¼ã¿*/
     if (!envp)
         Strcpy(tmp_config, ".jnethackrc");
     else
@@ -3994,7 +3994,7 @@ unsigned oid; /* book identifier */
 /*JP
     const char *badtranslation = "an incomprehensible foreign translation";
 */
-    const char *badtranslation = "•sŠ®‘S‚ÈŠO‘Œê–|–ó";
+    const char *badtranslation = "ä¸å®Œå…¨ãªå¤–å›½èªç¿»è¨³";
     boolean matchedsection = FALSE, matchedtitle = FALSE;
     winid tribwin = WIN_ERR;
     boolean grasped = FALSE;
@@ -4009,7 +4009,7 @@ unsigned oid; /* book identifier */
 /*JP
             pline("It's %s of \"%s\"!", badtranslation, tribtitle);
 */
-            pline("‚±‚ê‚Íu%sv‚Ì%s‚¾I", tribtitle, badtranslation);
+            pline("ã“ã‚Œã¯ã€Œ%sã€ã®%sã ï¼", tribtitle, badtranslation);
         return grasped;
     }
 
@@ -4023,7 +4023,7 @@ unsigned oid; /* book identifier */
 /*JP
             pline("You feel too overwhelmed to continue!");
 */
-            pline("‚ ‚È‚½‚Í‘±‚¯‚ç‚ê‚È‚¢‚Ù‚Çˆ³“|‚³‚ê‚½I");
+            pline("ã‚ãªãŸã¯ç¶šã‘ã‚‰ã‚Œãªã„ã»ã©åœ§å€’ã•ã‚ŒãŸï¼");
         return grasped;
     }
 
@@ -4158,7 +4158,7 @@ cleanup:
 /*JP
             pline("It seems to be %s of \"%s\"!", badtranslation, tribtitle);
 */
-            pline("‚±‚ê‚Íu%sv‚Ì%s‚Ì‚æ‚¤‚¾I", tribtitle, badtranslation);
+            pline("ã“ã‚Œã¯ã€Œ%sã€ã®%sã®ã‚ˆã†ã ï¼", tribtitle, badtranslation);
     }
     return grasped;
 }

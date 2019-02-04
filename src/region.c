@@ -961,7 +961,7 @@ genericptr_t p2;
 /*JP
             Your("%s sting.", makeplural(body_part(EYE)));
 */
-            Your("%s‚ªƒ`ƒNƒ`ƒN‚µ‚½D", body_part(EYE));
+            Your("%sãŒãƒã‚¯ãƒã‚¯ã—ãŸï¼Ž", body_part(EYE));
             make_blinded(1L, FALSE);
         }
         if (!Poison_resistance) {
@@ -969,22 +969,22 @@ genericptr_t p2;
             pline("%s is burning your %s!", Something,
                   makeplural(body_part(LUNG)));
 #else
-            pline("‰½‚©–­‚È‚à‚Ì‚ð‹z‚¢‚±‚ñ‚¾I");
+            pline("ä½•ã‹å¦™ãªã‚‚ã®ã‚’å¸ã„ã“ã‚“ã ï¼");
 #endif
 /*JP
             You("cough and spit blood!");
 */
-            You("ŠP‚«‚±‚ÝCŒŒ‚ð“f‚¢‚½I");
+            You("å’³ãã“ã¿ï¼Œè¡€ã‚’åã„ãŸï¼");
 /*JP
             losehp(Maybe_Half_Phys(rnd(dam) + 5), "gas cloud", KILLED_BY_AN);
 */
-            losehp(Maybe_Half_Phys(rnd(dam) + 5), "ƒKƒX‰_‚Å", KILLED_BY_AN);
+            losehp(Maybe_Half_Phys(rnd(dam) + 5), "ã‚¬ã‚¹é›²ã§", KILLED_BY_AN);
             return FALSE;
         } else {
 /*JP
             You("cough!");
 */
-            You("ŠP‚«‚±‚ñ‚¾I");
+            You("å’³ãã“ã‚“ã ï¼");
             return FALSE;
         }
     } else { /* A monster is inside the cloud */
@@ -1003,7 +1003,7 @@ genericptr_t p2;
 /*JP
                 pline("%s coughs!", Monnam(mtmp));
 */
-                pline("%s‚ÍŠP‚«‚±‚ñ‚¾I", Monnam(mtmp));
+                pline("%sã¯å’³ãã“ã‚“ã ï¼", Monnam(mtmp));
             if (heros_fault(reg))
                 setmangry(mtmp, TRUE);
             if (haseyes(mtmp->data) && mtmp->mcansee) {
@@ -1020,7 +1020,7 @@ genericptr_t p2;
 /*JP
                     monkilled(mtmp, "gas cloud", AD_DRST);
 */
-                    monkilled(mtmp, "ƒKƒX‰_", AD_DRST);
+                    monkilled(mtmp, "ã‚¬ã‚¹é›²", AD_DRST);
                 if (mtmp->mhp <= 0) { /* not lifesaved */
                     return TRUE;
                 }
@@ -1120,13 +1120,13 @@ region_safety()
 /*JP
         pline_The("gas cloud enveloping you dissipates.");
 */
-        pline("‚ ‚È‚½‚ð•ï‚ñ‚Å‚¢‚½ƒKƒX‰_‚ÍÁ‚¦‚½D");
+        pline("ã‚ãªãŸã‚’åŒ…ã‚“ã§ã„ãŸã‚¬ã‚¹é›²ã¯æ¶ˆãˆãŸï¼Ž");
     } else {
         /* cloud dissipated on its own, so nothing needs to be done */
 /*JP
         pline_The("gas cloud has dissipated.");
 */
-        pline("ƒKƒX‰_‚ÍÁ‚¦‚½D");
+        pline("ã‚¬ã‚¹é›²ã¯æ¶ˆãˆãŸï¼Ž");
     }
     /* maybe cure blindness too */
     if ((Blinded & TIMEOUT) == 1L)

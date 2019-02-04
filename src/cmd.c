@@ -338,7 +338,7 @@ doextcmd(VOID_ARGS)
 /*JP
             You("can't do that.");
 */
-            pline("‚»‚ê‚Í‚Å‚«‚Ü‚¹‚ñD");
+            pline("ãã‚Œã¯ã§ãã¾ã›ã‚“ï¼");
             return 0;
         }
         if (iflags.menu_requested && !accept_menu_prefix(func)) {
@@ -347,7 +347,7 @@ doextcmd(VOID_ARGS)
                   visctrl(Cmd.spkeys[NHKF_REQMENU]),
                   extcmdlist[idx].ef_txt);
 #else
-            pline("'%s'Ú“ª«‚Í%sƒRƒ}ƒ“ƒh‚É‚Í–³ŒøD",
+            pline("'%s'æ¥é ­è¾ã¯%sã‚³ãƒãƒ³ãƒ‰ã«ã¯ç„¡åŠ¹ï¼",
                   visctrl(Cmd.spkeys[NHKF_REQMENU]),
                   extcmdlist[idx].ef_txt);
 #endif
@@ -373,14 +373,14 @@ doextlist(VOID_ARGS)
 /*JP
     putstr(datawin, 0, "            Extended Commands List");
 */
-    putstr(datawin, 0, "            Šg’£ƒRƒ}ƒ“ƒhˆê——");
+    putstr(datawin, 0, "            æ‹¡å¼µã‚³ãƒãƒ³ãƒ‰ä¸€è¦§");
     putstr(datawin, 0, "");
     if (ch) {
 #if 0 /*JP*/
         Sprintf(buf, "    Press '%s', then type:",
                 visctrl(ch));
 #else
-        Sprintf(buf, "    '%s'‚ğ‰Ÿ‚µ‚½‚ ‚Æƒ^ƒCƒv‚¹‚æ:",
+        Sprintf(buf, "    '%s'ã‚’æŠ¼ã—ãŸã‚ã¨ã‚¿ã‚¤ãƒ—ã›ã‚ˆ:",
                 visctrl(ch));
 #endif
         putstr(datawin, 0, buf);
@@ -400,7 +400,7 @@ doextlist(VOID_ARGS)
 /*JP
     putstr(datawin, 0, "    Commands marked with a * will be autocompleted.");
 */
-    putstr(datawin, 0, "    *•t‚«‚ÌƒRƒ}ƒ“ƒh‚Í©“®•âŠ®‚³‚ê‚Ü‚·D");
+    putstr(datawin, 0, "    *ä»˜ãã®ã‚³ãƒãƒ³ãƒ‰ã¯è‡ªå‹•è£œå®Œã•ã‚Œã¾ã™ï¼");
     display_nhwindow(datawin, FALSE);
     destroy_nhwindow(datawin);
     return 0;
@@ -508,7 +508,7 @@ extcmd_via_menu()
                 Sprintf(prompt, "%s%s [%s]", wastoolong ? "or " : "",
                         choices[i]->ef_txt, choices[i]->ef_desc);
 #else
-                Sprintf(prompt, "%s%s [%s]", wastoolong ? "‚Ü‚½‚Í" : "",
+                Sprintf(prompt, "%s%s [%s]", wastoolong ? "ã¾ãŸã¯" : "",
                         choices[i]->ef_txt, choices[i]->ef_desc);
 #endif
             } else if (acount == 1) {
@@ -516,14 +516,14 @@ extcmd_via_menu()
                 Sprintf(prompt, "%s%s or %s", wastoolong ? "or " : "",
                         choices[i - 1]->ef_txt, choices[i]->ef_txt);
 #else
-                Sprintf(prompt, "%s%s‚Ü‚½‚Í%s", wastoolong ? "‚Ü‚½‚Í" : "",
+                Sprintf(prompt, "%s%sã¾ãŸã¯%s", wastoolong ? "ã¾ãŸã¯" : "",
                         choices[i - 1]->ef_txt, choices[i]->ef_txt);
 #endif
             } else {
 /*JP
                 Strcat(prompt, " or ");
 */
-                Strcat(prompt," ‚Ü‚½‚Í ");
+                Strcat(prompt," ã¾ãŸã¯ ");
                 Strcat(prompt, choices[i]->ef_txt);
             }
             ++acount;
@@ -538,7 +538,7 @@ extcmd_via_menu()
 /*JP
         Sprintf(prompt, "Extended Command: %s", cbuf);
 */
-        Sprintf(prompt, "Šg’£ƒRƒ}ƒ“ƒh: %s", cbuf);
+        Sprintf(prompt, "æ‹¡å¼µã‚³ãƒãƒ³ãƒ‰: %s", cbuf);
         end_menu(win, prompt);
         n = select_menu(win, PICK_ONE, &pick_list);
         destroy_nhwindow(win);
@@ -595,7 +595,7 @@ domonability(VOID_ARGS)
 /*JP
             There("is no fountain here.");
 */
-            pline("‚±‚±‚É‚Íò‚Í‚È‚¢D");
+            pline("ã“ã“ã«ã¯æ³‰ã¯ãªã„ï¼");
     } else if (is_unicorn(youmonst.data)) {
         use_unicorn_horn((struct obj *) 0);
         return 1;
@@ -603,12 +603,12 @@ domonability(VOID_ARGS)
 /*JP
         You("shriek.");
 */
-        You("‹àØ‚èº‚ğ‚ ‚°‚½D");
+        You("é‡‘åˆ‡ã‚Šå£°ã‚’ã‚ã’ãŸï¼");
         if (u.uburied)
 /*JP
             pline("Unfortunately sound does not carry well through rock.");
 */
-            pline("c”O‚È‚ª‚ç‰¹‚ÍŠâ‚ğ‚¤‚Ü‚­“`‚í‚ç‚È‚¢D");
+            pline("æ®‹å¿µãªãŒã‚‰éŸ³ã¯å²©ã‚’ã†ã¾ãä¼ã‚ã‚‰ãªã„ï¼");
         else
             aggravate();
     } else if (youmonst.data->mlet == S_VAMPIRE)
@@ -617,12 +617,12 @@ domonability(VOID_ARGS)
 /*JP
         pline("Any special ability you may have is purely reflexive.");
 */
-        pline("‚ ‚È‚½‚Ì‚Á‚Ä‚¢‚é“Áê”\—Í‚Í‚Ç‚ê‚àó“®“I‚¾D");
+        pline("ã‚ãªãŸã®æŒã£ã¦ã„ã‚‹ç‰¹æ®Šèƒ½åŠ›ã¯ã©ã‚Œã‚‚å—å‹•çš„ã ï¼");
     else
 /*JP
         You("don't have a special ability in your normal form!");
 */
-        You("•’i‚Ìp‚Å‚Ì“Áê”\—Í‚ğ‚Á‚Ä‚¢‚È‚¢I");
+        You("æ™®æ®µã®å§¿ã§ã®ç‰¹æ®Šèƒ½åŠ›ã‚’æŒã£ã¦ã„ãªã„ï¼");
     return 0;
 }
 
@@ -633,12 +633,12 @@ enter_explore_mode(VOID_ARGS)
 /*JP
         You("are in debug mode.");
 */
-        You("‚·‚Å‚ÉƒfƒoƒbƒOƒ‚[ƒh‚¾D");
+        You("ã™ã§ã«ãƒ‡ãƒãƒƒã‚°ãƒ¢ãƒ¼ãƒ‰ã ï¼");
     } else if (discover) {
 /*JP
         You("are already in explore mode.");
 */
-        You("‚·‚Å‚É’TŒŸƒ‚[ƒh‚¾D");
+        You("ã™ã§ã«æ¢æ¤œãƒ¢ãƒ¼ãƒ‰ã ï¼");
     } else {
 #ifdef SYSCF
 #if defined(UNIX)
@@ -647,7 +647,7 @@ enter_explore_mode(VOID_ARGS)
 /*JP
             You("cannot access explore mode.");
 */
-            You("’TŒŸƒ‚[ƒh‚ÉƒAƒNƒZƒX‚Å‚«‚È‚¢D");
+            You("æ¢æ¤œãƒ¢ãƒ¼ãƒ‰ã«ã‚¢ã‚¯ã‚»ã‚¹ã§ããªã„ï¼");
             return 0;
         }
 #endif
@@ -656,24 +656,24 @@ enter_explore_mode(VOID_ARGS)
 /*JP
         "Beware!  From explore mode there will be no return to normal game.");
 */
-        "ŒxI”­Œ©ƒ‚[ƒh‚É“ü‚Á‚½‚ç’Êíƒ‚[ƒh‚É‚Í–ß‚ê‚È‚¢D");
+        "è­¦å‘Šï¼ç™ºè¦‹ãƒ¢ãƒ¼ãƒ‰ã«å…¥ã£ãŸã‚‰é€šå¸¸ãƒ¢ãƒ¼ãƒ‰ã«ã¯æˆ»ã‚Œãªã„ï¼");
         if (paranoid_query(ParanoidQuit,
 /*JP
                            "Do you want to enter explore mode?")) {
 */
-                           "”­Œ©ƒ‚[ƒh‚ÉˆÚ‚è‚Ü‚·‚©H")) {
+                           "ç™ºè¦‹ãƒ¢ãƒ¼ãƒ‰ã«ç§»ã‚Šã¾ã™ã‹ï¼Ÿ")) {
             clear_nhwindow(WIN_MESSAGE);
 /*JP
             You("are now in non-scoring explore mode.");
 */
-            You("ƒXƒRƒA‚ª‚Ì‚ç‚È‚¢”­Œ©ƒ‚[ƒh‚ÉˆÚs‚µ‚½D");
+            You("ã‚¹ã‚³ã‚¢ãŒã®ã‚‰ãªã„ç™ºè¦‹ãƒ¢ãƒ¼ãƒ‰ã«ç§»è¡Œã—ãŸï¼");
             discover = TRUE;
         } else {
             clear_nhwindow(WIN_MESSAGE);
 /*JP
             pline("Resuming normal game.");
 */
-            pline("’Êíƒ‚[ƒh‚ğ‘±‚¯‚éD");
+            pline("é€šå¸¸ãƒ¢ãƒ¼ãƒ‰ã‚’ç¶šã‘ã‚‹ï¼");
         }
     }
     return 0;
@@ -694,7 +694,7 @@ wiz_wish(VOID_ARGS) /* Unlimited wishes for debug mode by Paul Polderman */
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_wish)));
     return 0;
 }
@@ -712,7 +712,7 @@ wiz_identify(VOID_ARGS)
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_identify)));
     return 0;
 }
@@ -770,7 +770,7 @@ wiz_map(VOID_ARGS)
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_map)));
     return 0;
 }
@@ -785,7 +785,7 @@ wiz_genesis(VOID_ARGS)
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_genesis)));
     return 0;
 }
@@ -800,7 +800,7 @@ wiz_where(VOID_ARGS)
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_where)));
     return 0;
 }
@@ -815,7 +815,7 @@ wiz_detect(VOID_ARGS)
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_detect)));
     return 0;
 }
@@ -830,7 +830,7 @@ wiz_level_tele(VOID_ARGS)
 /*JP
         pline("Unavailable command '%s'.",
 */
-        pline("'%s'ƒRƒ}ƒ“ƒh‚Íg‚¦‚È‚¢D",
+        pline("'%s'ã‚³ãƒãƒ³ãƒ‰ã¯ä½¿ãˆãªã„ï¼",
               visctrl((int) cmd_from_func(wiz_level_tele)));
     return 0;
 }
@@ -844,8 +844,8 @@ wiz_mon_polycontrol(VOID_ARGS)
     pline("Monster polymorph control is %s.",
           iflags.mon_polycontrol ? "on" : "off");
 #else
-    pline("‰ö•¨‚Ì•Ï‰»§Œä: %s",
-          iflags.mon_polycontrol ? "ƒIƒ“" : "ƒIƒt");
+    pline("æ€ªç‰©ã®å¤‰åŒ–åˆ¶å¾¡: %s",
+          iflags.mon_polycontrol ? "ã‚ªãƒ³" : "ã‚ªãƒ•");
 #endif
     return 0;
 }
@@ -861,7 +861,7 @@ wiz_level_change(VOID_ARGS)
 /*JP
     getlin("To what experience level do you want to be set?", buf);
 */
-    getlin("ŒoŒ±ƒŒƒxƒ‹‚ğ‚¢‚­‚Â‚Éİ’è‚µ‚Ü‚·‚©H", buf);
+    getlin("çµŒé¨“ãƒ¬ãƒ™ãƒ«ã‚’ã„ãã¤ã«è¨­å®šã—ã¾ã™ã‹ï¼Ÿ", buf);
     (void) mungspaces(buf);
     if (buf[0] == '\033' || buf[0] == '\0')
         ret = 0;
@@ -876,13 +876,13 @@ wiz_level_change(VOID_ARGS)
 /*JP
         You("are already that experienced.");
 */
-        You("‚·‚Å‚É‚»‚ÌŒoŒ±ƒŒƒxƒ‹‚¾D");
+        You("ã™ã§ã«ãã®çµŒé¨“ãƒ¬ãƒ™ãƒ«ã ï¼");
     } else if (newlevel < u.ulevel) {
         if (u.ulevel == 1) {
 /*JP
             You("are already as inexperienced as you can get.");
 */
-            You("‚·‚Å‚É‰Â”\‚ÈŒÀ‚è‚ÌÅ’á‚ÌŒoŒ±ƒŒƒxƒ‹‚¾D");
+            You("ã™ã§ã«å¯èƒ½ãªé™ã‚Šã®æœ€ä½ã®çµŒé¨“ãƒ¬ãƒ™ãƒ«ã ï¼");
             return 0;
         }
         if (newlevel < 1)
@@ -891,13 +891,13 @@ wiz_level_change(VOID_ARGS)
 /*JP
             losexp("#levelchange");
 */
-            losexp("#levelchangeƒRƒ}ƒ“ƒh‚Å");
+            losexp("#levelchangeã‚³ãƒãƒ³ãƒ‰ã§");
     } else {
         if (u.ulevel >= MAXULEV) {
 /*JP
             You("are already as experienced as you can get.");
 */
-            You("‚·‚Å‚É‰Â”\‚ÈŒÀ‚è‚ÌÅ‘å‚ÌŒoŒ±ƒŒƒxƒ‹‚¾D");
+            You("ã™ã§ã«å¯èƒ½ãªé™ã‚Šã®æœ€å¤§ã®çµŒé¨“ãƒ¬ãƒ™ãƒ«ã ï¼");
             return 0;
         }
         if (newlevel > MAXULEV)
@@ -916,7 +916,7 @@ wiz_panic(VOID_ARGS)
 /*JP
     if (yn("Do you want to call panic() and end your game?") == 'y')
 */
-    if (yn("panic()ŠÖ”‚ğŒÄ‚Ño‚µ‚ÄƒQ[ƒ€‚ğI—¹‚³‚¹‚Ü‚·‚©H") == 'y')
+    if (yn("panic()é–¢æ•°ã‚’å‘¼ã³å‡ºã—ã¦ã‚²ãƒ¼ãƒ ã‚’çµ‚äº†ã•ã›ã¾ã™ã‹ï¼Ÿ") == 'y')
         panic("Crash test.");
     return 0;
 }
@@ -1443,21 +1443,21 @@ doterrain(VOID_ARGS)
 /*JP
              "known map without monsters, objects, and traps",
 */
-             "‰ö•¨C•¨Cã©‚È‚µ‚Ì’n}",
+             "æ€ªç‰©ï¼Œç‰©ï¼Œç½ ãªã—ã®åœ°å›³",
              MENU_SELECTED);
     any.a_int = 2;
     add_menu(men, NO_GLYPH, &any, 0, 0, ATR_NONE,
 /*JP
              "known map without monsters and objects",
 */
-             "‰ö•¨C•¨‚È‚µ‚Ì’n}",
+             "æ€ªç‰©ï¼Œç‰©ãªã—ã®åœ°å›³",
              MENU_UNSELECTED);
     any.a_int = 3;
     add_menu(men, NO_GLYPH, &any, 0, 0, ATR_NONE,
 /*JP
              "known map without monsters",
 */
-             "‰ö•¨‚È‚µ‚Ì’n}",
+             "æ€ªç‰©ãªã—ã®åœ°å›³",
              MENU_UNSELECTED);
     if (discover || wizard) {
         any.a_int = 4;
@@ -1465,7 +1465,7 @@ doterrain(VOID_ARGS)
 /*JP
                  "full map without monsters, objects, and traps",
 */
-                 "‰ö•¨C•¨Cã©‚È‚µ‚ÌŠ®‘S‚È’n}",
+                 "æ€ªç‰©ï¼Œç‰©ï¼Œç½ ãªã—ã®å®Œå…¨ãªåœ°å›³",
                  MENU_UNSELECTED);
         if (wizard) {
             any.a_int = 5;
@@ -1481,7 +1481,7 @@ doterrain(VOID_ARGS)
 /*JP
     end_menu(men, "View which?");
 */
-    end_menu(men, "‚Ç‚ê‚ğŒ©‚éH");
+    end_menu(men, "ã©ã‚Œã‚’è¦‹ã‚‹ï¼Ÿ");
 
     n = select_menu(men, PICK_ONE, &sel);
     destroy_nhwindow(men);
@@ -1529,11 +1529,11 @@ static const char You_[] = "You ", are[] = "are ", were[] = "were ",
                   have[] = "have ", had[] = "had ", can[] = "can ",
                   could[] = "could ";
 #else
-static const char You_[] = "‚ ‚È‚½‚Í", 
-                  are[]  = "‚Å‚ ‚é",       were[]  = "‚Å‚ ‚Á‚½",
-                  have[] = "‚ğ‚à‚Á‚Ä‚¢‚é", had[]   = "‚ğ‚à‚Á‚Ä‚¢‚½",
-                  can[]  = "‚Å‚«‚é",       could[] = "‚Å‚«‚½",
-                  iru[]  = "‚¢‚é",         ita[]   = "‚¢‚½";
+static const char You_[] = "ã‚ãªãŸã¯", 
+                  are[]  = "ã§ã‚ã‚‹",       were[]  = "ã§ã‚ã£ãŸ",
+                  have[] = "ã‚’ã‚‚ã£ã¦ã„ã‚‹", had[]   = "ã‚’ã‚‚ã£ã¦ã„ãŸ",
+                  can[]  = "ã§ãã‚‹",       could[] = "ã§ããŸ",
+                  iru[]  = "ã„ã‚‹",         ita[]   = "ã„ãŸ";
 #endif
 #if 0 /*JP*//* not used */
 static const char have_been[] = "have been ", have_never[] = "have never ",
@@ -1559,14 +1559,14 @@ static const char have_been[] = "have been ", have_never[] = "have never ",
     enl_msg(You_, have_never, never, badthing, "")
 #else
 #define you_have_never(badthing) \
-    enl_msg(badthing, "‚Ä‚¢‚È‚¢", "‚È‚©‚Á‚½", "", "")
+    enl_msg(badthing, "ã¦ã„ãªã„", "ãªã‹ã£ãŸ", "", "")
 #endif
 #if 0 /*JP*/
 #define you_have_X(something) \
     enl_msg(You_, have, (const char *) "", something, "")
 #else
 #define you_have_X(something) \
-    enl_msg(something, "‚Ä‚¢‚é", "‚½", "", "")
+    enl_msg(something, "ã¦ã„ã‚‹", "ãŸ", "", "")
 #endif
 #if 1 /*JP*/
 #define you_are_ing(goodthing, ps) enl_msg(You_, iru, ita, goodthing, ps)
@@ -1581,7 +1581,7 @@ const char *start, *middle, *end, *ps;
 /*JP
     Sprintf(buf, " %s%s%s%s.", start, middle, end, ps);
 */
-    Sprintf(buf, "%s%s%s%sD", start, middle, end, ps);
+    Sprintf(buf, "%s%s%s%sï¼", start, middle, end, ps);
     putstr(en_win, 0, buf);
 }
 
@@ -1605,7 +1605,7 @@ char *outbuf;
 #if 0 /*JP*/
     if (!strcmp(inctyp, "defense"))
 #else
-    if (!strcmp(inctyp, "–hŒä"))
+    if (!strcmp(inctyp, "é˜²å¾¡"))
 #endif
         absamt = (absamt * 2) / 3;
 
@@ -1613,22 +1613,22 @@ char *outbuf;
 /*JP
         modif = "small";
 */
-        modif = "‹Í‚©‚È";
+        modif = "åƒ…ã‹ãª";
     else if (absamt <= 6)
 /*JP
         modif = "moderate";
 */
-        modif = "’†’ö“x‚Ì";
+        modif = "ä¸­ç¨‹åº¦ã®";
     else if (absamt <= 12)
 /*JP
         modif = "large";
 */
-        modif = "‘å‚«‚È";
+        modif = "å¤§ããª";
     else
 /*JP
         modif = "huge";
 */
-        modif = "‹­‘å‚È";
+        modif = "å¼·å¤§ãª";
 
 #if 0 /*JP*/
     modif = !incamt ? "no" : an(modif); /* ("no" case shouldn't happen) */
@@ -1636,7 +1636,7 @@ char *outbuf;
 /*JP
     bonus = (incamt >= 0) ? "bonus" : "penalty";
 */
-    bonus = (incamt > 0) ? "ƒ{[ƒiƒX" : "ƒyƒiƒ‹ƒeƒB";
+    bonus = (incamt > 0) ? "ãƒœãƒ¼ãƒŠã‚¹" : "ãƒšãƒŠãƒ«ãƒ†ã‚£";
     /* "bonus <foo>" (to hit) vs "<bar> bonus" (damage, defense) */
 #if 0 /*JP*/
     invrt = strcmp(inctyp, "to hit") ? TRUE : FALSE;
@@ -1646,7 +1646,7 @@ char *outbuf;
     Sprintf(outbuf, "%s %s %s", modif, invrt ? inctyp : bonus,
             invrt ? bonus : inctyp);
 #else
-    Sprintf(outbuf, "%s‚É%s%s", inctyp, modif, bonus);
+    Sprintf(outbuf, "%sã«%s%s", inctyp, modif, bonus);
 #endif
     if (final || wizard)
         Sprintf(eos(outbuf), " (%s%d)", (incamt > 0) ? "+" : "", incamt);
@@ -1668,19 +1668,19 @@ int final;
 /*JP
         category_name = "physical";
 */
-        category_name = "•¨—";
+        category_name = "ç‰©ç†";
         break;
     case HALF_SPDAM:
 /*JP
         category_name = "spell";
 */
-        category_name = "ô•¶";
+        category_name = "å‘ªæ–‡";
         break;
     default:
 /*JP
         category_name = "unknown";
 */
-        category_name = "•s–¾";
+        category_name = "ä¸æ˜";
         break;
     }
 #if 0 /*JP*/
@@ -1688,9 +1688,9 @@ int final;
             category_name);
     enl_msg(You_, "take", "took", buf, from_what(category));
 #else
-    Sprintf(buf, " %sƒ_ƒ[ƒW‚ğ%s", (final || wizard) ? "”¼Œ¸" : "Œ¸­",
+    Sprintf(buf, " %sãƒ€ãƒ¡ãƒ¼ã‚¸ã‚’%s", (final || wizard) ? "åŠæ¸›" : "æ¸›å°‘",
             category_name);
-    enl_msg(You_, "‚µ‚Ä‚¢‚é", "‚µ‚Ä‚¢‚½", buf, from_what(category));
+    enl_msg(You_, "ã—ã¦ã„ã‚‹", "ã—ã¦ã„ãŸ", buf, from_what(category));
 #endif
 }
 
@@ -1758,7 +1758,7 @@ int final; /* ENL_GAMEINPROGRESS:0, ENL_GAMEOVERALIVE, ENL_GAMEOVERDEAD */
                 ? urole.name.f
                 : urole.name.m);
 #else
-    Sprintf(buf, "%s‚Ì%s‚Ì‘®«:",
+    Sprintf(buf, "%sã®%sã®å±æ€§:",
             ((Upolyd ? u.mfemale : flags.female) && urole.name.f)
                 ? urole.name.f
                 : urole.name.m,
@@ -1813,7 +1813,7 @@ int final;
 /*JP
     putstr(en_win, 0, "Background:");
 */
-    putstr(en_win, 0, "”wŒiî•ñ:");
+    putstr(en_win, 0, "èƒŒæ™¯æƒ…å ±:");
 
     /* if polymorphed, report current shape before underlying role;
        will be repeated as first status: "you are transformed" and also
@@ -1830,12 +1830,12 @@ int final;
 /*JP
             Sprintf(tmpbuf, "%s ", genders[flags.female ? 1 : 0].adj);
 */
-            Sprintf(tmpbuf, "%s‚Ì", genders[flags.female ? 1 : 0].adj);
+            Sprintf(tmpbuf, "%sã®", genders[flags.female ? 1 : 0].adj);
 #if 0 /*JP*/
         Sprintf(buf, "%sin %s%s form", !final ? "currently " : "", tmpbuf,
                 uasmon->mname);
 #else
-        Sprintf(buf, "%s%s%s‚Ìp", !final ? "¡‚Ì‚Æ‚±‚ë" : "", tmpbuf,
+        Sprintf(buf, "%s%s%sã®å§¿", !final ? "ä»Šã®ã¨ã“ã‚" : "", tmpbuf,
                 uasmon->mname);
 #endif
 /*JP
@@ -1858,7 +1858,7 @@ int final;
 #if 0 /*JP*/
         Strcpy(buf, "actually "); /* "You are actually a ..." */
 #else
-        Strcpy(buf, "ÀÛ‚É‚Í"); /* "‚ ‚È‚½‚ÍÀÛ‚É‚Í..." */
+        Strcpy(buf, "å®Ÿéš›ã«ã¯"); /* "ã‚ãªãŸã¯å®Ÿéš›ã«ã¯..." */
 #endif
     if (!strcmpi(rank_titl, role_titl)) {
         /* omit role when rank title matches it */
@@ -1866,7 +1866,7 @@ int final;
         Sprintf(eos(buf), "%s, level %d %s%s", an(rank_titl), u.ulevel,
                 tmpbuf, urace.noun);
 #else
-        Sprintf(eos(buf), "ƒŒƒxƒ‹%d‚Ì%s‚Ì%s%s", u.ulevel,
+        Sprintf(eos(buf), "ãƒ¬ãƒ™ãƒ«%dã®%sã®%s%s", u.ulevel,
                 tmpbuf, urace.adj, role_titl);
 #endif
     } else {
@@ -1874,7 +1874,7 @@ int final;
         Sprintf(eos(buf), "%s, a level %d %s%s %s", an(rank_titl), u.ulevel,
                 tmpbuf, urace.adj, role_titl);
 #else
-        Sprintf(eos(buf), "ƒŒƒxƒ‹%d‚Ì%s‚Ì%s%s‚Ì%s", u.ulevel,
+        Sprintf(eos(buf), "ãƒ¬ãƒ™ãƒ«%dã®%sã®%s%sã®%s", u.ulevel,
                 tmpbuf, urace.adj, role_titl, rank_titl);
 #endif
     }
@@ -1905,14 +1905,14 @@ int final;
                      : "",
             u_gname());
 #else
-    Sprintf(buf, "‚ ‚È‚½‚Í%s‚Å, %s%s‚Ì‚½‚ß‚Ì”C–±‚ğs‚Á‚Ä%sD",
+    Sprintf(buf, "ã‚ãªãŸã¯%sã§, %s%sã®ãŸã‚ã®ä»»å‹™ã‚’è¡Œã£ã¦%sï¼",
             align_str(u.ualign.type),
             /* helm of opposite alignment (might hide conversion) */
-            (u.ualign.type != u.ualignbase[A_CURRENT]) ? "ˆê“I‚É"
+            (u.ualign.type != u.ualignbase[A_CURRENT]) ? "ä¸€æ™‚çš„ã«"
                /* permanent conversion */
-               : (u.ualign.type != u.ualignbase[A_ORIGINAL]) ? "Œ»İ"
+               : (u.ualign.type != u.ualignbase[A_ORIGINAL]) ? "ç¾åœ¨"
                   /* atheist (ignored in very early game) */
-                  : (!u.uconduct.gnostic && moves > 1000L) ? "–¼‹`ã"
+                  : (!u.uconduct.gnostic && moves > 1000L) ? "åç¾©ä¸Š"
                      /* lastly, normal case */
                      : "",
             u_gname(), !final ? iru : ita);
@@ -1924,14 +1924,14 @@ int final;
 #if 0 /*JP*/
     Sprintf(buf, " who %s opposed by", !final ? "is" : "was");
 #else
-    Strcpy(buf, "‚ ‚È‚½‚Í");
+    Strcpy(buf, "ã‚ãªãŸã¯");
 #endif
     if (u.ualign.type != A_LAWFUL)
 #if 0 /*JP*/
         Sprintf(eos(buf), " %s (%s) and", align_gname(A_LAWFUL),
                 align_str(A_LAWFUL));
 #else
-        Sprintf(eos(buf), "%s(%s)‚¨‚æ‚Ñ", align_gname(A_LAWFUL),
+        Sprintf(eos(buf), "%s(%s)ãŠã‚ˆã³", align_gname(A_LAWFUL),
                 align_str(A_LAWFUL));
 #endif
     if (u.ualign.type != A_NEUTRAL)
@@ -1942,7 +1942,7 @@ int final;
 #else
         Sprintf(eos(buf), "%s(%s)%s", align_gname(A_NEUTRAL),
                 align_str(A_NEUTRAL),
-                (u.ualign.type != A_CHAOTIC) ? "‚¨‚æ‚Ñ" : "");
+                (u.ualign.type != A_CHAOTIC) ? "ãŠã‚ˆã³" : "");
 #endif
 #if 0 /*JP*/
     if (u.ualign.type != A_CHAOTIC)
@@ -1956,7 +1956,7 @@ int final;
 #if 0 /*JP*/
     Strcat(buf, "."); /* terminate sentence */
 #else
-    Sprintf(eos(buf), "‚Æ‘Î—§‚µ‚Ä%sD", !final ? iru : ita);
+    Sprintf(eos(buf), "ã¨å¯¾ç«‹ã—ã¦%sï¼", !final ? iru : ita);
 #endif
     putstr(en_win, 0, buf);
 
@@ -1972,11 +1972,11 @@ int final;
 /*JP
         Sprintf(buf, "actually %s", align_str(u.ualignbase[A_CURRENT]));
 */
-        Sprintf(buf, "ÀÛ‚É‚Í%s", align_str(u.ualignbase[A_CURRENT]));
+        Sprintf(buf, "å®Ÿéš›ã«ã¯%s", align_str(u.ualignbase[A_CURRENT]));
 /*JP
         you_are(buf, "");
 */
-        enl_msg(buf, "‚Ä‚¢‚é", "‚Ä‚¢‚½", "", "");
+        enl_msg(buf, "ã¦ã„ã‚‹", "ã¦ã„ãŸ", "", "");
         difalgn &= ~1; /* suppress helm from "started out <foo>" message */
     }
     if (difgend || difalgn) { /* sex change or perm align change or both */
@@ -1986,9 +1986,9 @@ int final;
                 (difgend && difalgn) ? " and " : "",
                 difalgn ? align_str(u.ualignbase[A_ORIGINAL]) : "");
 #else
-        Sprintf(buf, "‚ ‚È‚½‚Í%s%s%s‚ÅŠJn‚µ‚½D",
+        Sprintf(buf, "ã‚ãªãŸã¯%s%s%sã§é–‹å§‹ã—ãŸï¼",
                 difgend ? genders[flags.initgend].adj : "",
-                (difgend && difalgn) ? "‚©‚Â" : "",
+                (difgend && difalgn) ? "ã‹ã¤" : "",
                 difalgn ? align_str(u.ualignbase[A_ORIGINAL]) : "");
 #endif
         putstr(en_win, 0, buf);
@@ -2013,27 +2013,27 @@ int final;
 /*JP
            final ? "Final Characteristics:" : "Current Characteristics:");
 */
-           final ? "ÅI‘®«F" : "Œ»İ‚Ì‘®«F");
+           final ? "æœ€çµ‚å±æ€§ï¼š" : "ç¾åœ¨ã®å±æ€§ï¼š");
 
     if (hp < 0)
         hp = 0;
 /*JP
     Sprintf(buf, "%d hit points (max:%d)", hp, hpmax);
 */
-    Sprintf(buf, "%dƒqƒbƒgƒ|ƒCƒ“ƒg(Å‘å:%d)", hp, hpmax);
+    Sprintf(buf, "%dãƒ’ãƒƒãƒˆãƒã‚¤ãƒ³ãƒˆ(æœ€å¤§:%d)", hp, hpmax);
     you_have(buf, "");
 
 /*JP
     Sprintf(buf, "%d magic power (max:%d)", u.uen, u.uenmax);
 */
-    Sprintf(buf, "%d–‚—Íƒ|ƒCƒ“ƒg(Å‘å:%d)", u.uen, u.uenmax);
+    Sprintf(buf, "%dé­”åŠ›ãƒã‚¤ãƒ³ãƒˆ(æœ€å¤§:%d)", u.uen, u.uenmax);
     you_have(buf, "");
 
     Sprintf(buf, "%d", u.uac);
 /*JP
     enl_msg("Your armor class ", "is ", "was ", buf, "");
 */
-    enl_msg("‚ ‚È‚½‚Ì–hŒä’l‚Í", "‚Å‚ ‚é", "‚Å‚ ‚Á‚½", buf, "");
+    enl_msg("ã‚ãªãŸã®é˜²å¾¡å€¤ã¯", "ã§ã‚ã‚‹", "ã§ã‚ã£ãŸ", buf, "");
 
     if (Upolyd) {
         switch (mons[u.umonnum].mlevel) {
@@ -2042,7 +2042,7 @@ int final;
 /*JP
             Strcpy(buf, "0 hit dice (actually 1/2)");
 */
-            Strcpy(buf, "HD0(ÀÛ‚É‚Í1/2)");
+            Strcpy(buf, "HD0(å®Ÿéš›ã«ã¯1/2)");
             break;
         case 1:
 /*JP
@@ -2064,7 +2064,7 @@ int final;
         Sprintf(buf, "%-1ld experience point%s",
                 u.uexp, plur(u.uexp));
 #else
-        Sprintf(buf, "ŒoŒ±’l%-1ldƒ|ƒCƒ“ƒg",
+        Sprintf(buf, "çµŒé¨“å€¤%-1ldãƒã‚¤ãƒ³ãƒˆ",
                 u.uexp);
 #endif
     }
@@ -2074,7 +2074,7 @@ int final;
 /*JP
     Sprintf(buf, "the dungeon %ld turn%s ago", moves, plur(moves));
 */
-    Sprintf(buf, "%ldƒ^[ƒ“‘O‚É–À‹{‚É“ü‚Á‚½", moves);
+    Sprintf(buf, "%ldã‚¿ãƒ¼ãƒ³å‰ã«è¿·å®®ã«å…¥ã£ãŸ", moves);
     /* same phrasing at end of game:  "entered" is unconditional */
     enlght_line(You_, "", buf, "");
 
@@ -2088,8 +2088,8 @@ int final;
         enl_msg("Your score ", "is ", "was ", buf, "");
 #else
         Sprintf(buf, "%s%ld", botl_score(),
-                !final ? "" : "ƒQ[ƒ€I—¹‚Ì’²®‘O‚Í");
-        enl_msg("‚ ‚È‚½‚ÌƒXƒRƒA‚Í", "‚Å‚ ‚é", "‚Å‚ ‚Á‚½", buf, "");
+                !final ? "" : "ã‚²ãƒ¼ãƒ çµ‚äº†æ™‚ã®èª¿æ•´å‰ã¯");
+        enl_msg("ã‚ãªãŸã®ã‚¹ã‚³ã‚¢ã¯", "ã§ã‚ã‚‹", "ã§ã‚ã£ãŸ", buf, "");
 #endif
     }
 #endif
@@ -2160,7 +2160,7 @@ int mode, final, attrindx;
 /*JP
     Sprintf(subjbuf, "Your %s ", attrname[attrindx]);
 */
-    Sprintf(subjbuf, "‚ ‚È‚½‚Ì%s‚Í", attrname[attrindx]);
+    Sprintf(subjbuf, "ã‚ãªãŸã®%sã¯", attrname[attrindx]);
 
     if (!hide_innate_value) {
         /* show abase, amax, and/or attrmax if acurr doesn't match abase
@@ -2180,13 +2180,13 @@ int mode, final, attrindx;
 /*JP
         paren_pfx = final ? " (" : " (current; ";
 */
-        paren_pfx = final ? " (" : " (Œ»İ; ";
+        paren_pfx = final ? " (" : " (ç¾åœ¨; ";
         if (acurrent != abase) {
 #if 0 /*JP*/
             Sprintf(eos(valubuf), "%sbase:%s", paren_pfx,
                     attrval(attrindx, abase, valstring));
 #else
-            Sprintf(eos(valubuf), "%sŠî–{:%s", paren_pfx,
+            Sprintf(eos(valubuf), "%såŸºæœ¬:%s", paren_pfx,
                     attrval(attrindx, abase, valstring));
 #endif
             paren_pfx = ", ";
@@ -2196,7 +2196,7 @@ int mode, final, attrindx;
             Sprintf(eos(valubuf), "%speak:%s", paren_pfx,
                     attrval(attrindx, apeak, valstring));
 #else
-            Sprintf(eos(valubuf), "%sÅ‘å:%s", paren_pfx,
+            Sprintf(eos(valubuf), "%sæœ€å¤§:%s", paren_pfx,
                     attrval(attrindx, apeak, valstring));
 #endif
             paren_pfx = ", ";
@@ -2208,9 +2208,9 @@ int mode, final, attrindx;
                     (acurrent > alimit) ? "innate " : "",
                     attrval(attrindx, alimit, valstring));
 #else
-            Sprintf(eos(valubuf), "%s%sãŒÀ:%s", paren_pfx,
+            Sprintf(eos(valubuf), "%s%sä¸Šé™:%s", paren_pfx,
                     /* more verbose if exceeding 'limit' due to magic bonus */
-                    (acurrent > alimit) ? "–{—ˆ‚Ì" : "",
+                    (acurrent > alimit) ? "æœ¬æ¥ã®" : "",
                     attrval(attrindx, alimit, valstring));
 #endif
             /* paren_pfx = ", "; */
@@ -2221,7 +2221,7 @@ int mode, final, attrindx;
 /*JP
     enl_msg(subjbuf, "is ", "was ", valubuf, "");
 */
-    enl_msg(subjbuf, "‚¾", "‚¾‚Á‚½", valubuf, "");
+    enl_msg(subjbuf, "ã ", "ã ã£ãŸ", valubuf, "");
 }
 
 /* status: selected obvious capabilities, assorted troubles */
@@ -2240,7 +2240,7 @@ int final;
 /*JP
                            && !strcmp(killer.name, "riding accident")));
 */
-                           && !strcmp(killer.name, "‹Ræ–ŒÌ‚Å")));
+                           && !strcmp(killer.name, "é¨ä¹—äº‹æ•…ã§")));
     const char *steedname = (!Riding ? (char *) 0
                       : x_monnam(u.usteed,
                                  u.usteed->mtame ? ARTICLE_YOUR : ARTICLE_THE,
@@ -2256,7 +2256,7 @@ int final;
 /*JP
     putstr(en_win, 0, final ? "Final Status:" : "Current Status:");
 */
-    putstr(en_win, 0, final ? "ÅIó‘Ô:" : "Œ»İ‚Ìó‘Ô:");
+    putstr(en_win, 0, final ? "æœ€çµ‚çŠ¶æ…‹:" : "ç¾åœ¨ã®çŠ¶æ…‹:");
 
     Strcpy(youtoo, You_);
     /* not a traditional status but inherently obvious to player; more
@@ -2268,8 +2268,8 @@ int final;
             Sprintf(eos(buf), " and %s %s inside",
                     final ? "felt" : "feel", udeadinside());
         you_are(buf, "");
-#else /*JP:TODO:•Ï‰»+‹sEƒpƒ^[ƒ“*/
-        you_are_ing("•Ï‰»‚µ‚Ä", "");
+#else /*JP:TODO:å¤‰åŒ–+è™æ®ºãƒ‘ã‚¿ãƒ¼ãƒ³*/
+        you_are_ing("å¤‰åŒ–ã—ã¦", "");
 #endif
     }
     /* not a trouble, but we want to display riding status before maybe
@@ -2279,13 +2279,13 @@ int final;
         Sprintf(buf, "riding %s", steedname);
         you_are(buf, "");
 #else
-        Sprintf(buf, "%s‚Éæ‚Á‚Ä", steedname);
+        Sprintf(buf, "%sã«ä¹—ã£ã¦", steedname);
         you_are_ing(buf, "");
 #endif
 /*JP
         Sprintf(eos(youtoo), "and %s ", steedname);
 */
-        Sprintf(youtoo, "‚ ‚È‚½‚Æ%s‚Í", steedname);
+        Sprintf(youtoo, "ã‚ãªãŸã¨%sã¯", steedname);
     }
     /* other movement situations that hero should always know */
     if (Levitation) {
@@ -2293,28 +2293,28 @@ int final;
 /*JP
             you_are("levitating, at will", "");
 */
-            you_are_ing("©•ª‚ÌˆÓu‚Å•‚—V‚µ‚Ä", "");
+            you_are_ing("è‡ªåˆ†ã®æ„å¿—ã§æµ®éŠã—ã¦", "");
         else
 /*JP
             enl_msg(youtoo, are, were, "levitating", from_what(LEVITATION));
 */
-            enl_msg(youtoo, "‚¢‚é", "‚¢‚½", "•‚—V‚µ‚Ä", from_what(LEVITATION));
+            enl_msg(youtoo, "ã„ã‚‹", "ã„ãŸ", "æµ®éŠã—ã¦", from_what(LEVITATION));
     } else if (Flying) { /* can only fly when not levitating */
 /*JP
         enl_msg(youtoo, are, were, "flying", from_what(FLYING));
 */
-        enl_msg(youtoo, "‚¢‚é", "‚¢‚½", "”ò‚ñ‚Å", from_what(FLYING));
+        enl_msg(youtoo, "ã„ã‚‹", "ã„ãŸ", "é£›ã‚“ã§", from_what(FLYING));
     }
     if (Underwater) {
 /*JP
         you_are("underwater", "");
 */
-        enl_msg(You_, "‚¢‚é", "‚¢‚½", "…–Ê‰º‚É", "");
+        enl_msg(You_, "ã„ã‚‹", "ã„ãŸ", "æ°´é¢ä¸‹ã«", "");
     } else if (u.uinwater) {
 /*JP
         you_are(Swimming ? "swimming" : "in water", from_what(SWIMMING));
 */
-        enl_msg(You_, Swimming ? "‰j‚¢‚Å" : "…’†‚É", "‚¢‚é", "‚¢‚½", from_what(SWIMMING));
+        enl_msg(You_, Swimming ? "æ³³ã„ã§" : "æ°´ä¸­ã«", "ã„ã‚‹", "ã„ãŸ", from_what(SWIMMING));
     } else if (walking_on_water()) {
         /* show active Wwalking here, potential Wwalking elsewhere */
 #if 0 /*JP*/
@@ -2324,9 +2324,9 @@ int final;
                   : surface(u.ux, u.uy)); /* catchall; shouldn't happen */
         you_are(buf, from_what(WWALKING));
 #else
-        Sprintf(buf, "%s‚Ìã‚ğ•à‚¢‚Ä",
-                is_pool(u.ux, u.uy) ? "…"
-                : is_lava(u.ux, u.uy) ? "—nŠâ"
+        Sprintf(buf, "%sã®ä¸Šã‚’æ­©ã„ã¦",
+                is_pool(u.ux, u.uy) ? "æ°´"
+                : is_lava(u.ux, u.uy) ? "æº¶å²©"
                   : surface(u.ux, u.uy)); /* catchall; shouldn't happen */
         you_are_ing(buf, from_what(WWALKING));
 #endif
@@ -2339,29 +2339,29 @@ int final;
 /*JP
         you_are("turning to stone", "");
 */
-        enl_msg("‚ ‚È‚½‚Í", "‚È‚è‚Â‚Â‚ ‚é", "‚È‚Á‚½", "Î‚É", "");
+        enl_msg("ã‚ãªãŸã¯", "ãªã‚Šã¤ã¤ã‚ã‚‹", "ãªã£ãŸ", "çŸ³ã«", "");
     if (Slimed)
 /*JP
         you_are("turning into slime", "");
 */
-        enl_msg("‚ ‚È‚½‚Í", "‚È‚è‚Â‚Â‚ ‚é", "‚È‚Á‚½", "ƒXƒ‰ƒCƒ€‚É", "");
+        enl_msg("ã‚ãªãŸã¯", "ãªã‚Šã¤ã¤ã‚ã‚‹", "ãªã£ãŸ", "ã‚¹ãƒ©ã‚¤ãƒ ã«", "");
     if (Strangled) {
         if (u.uburied) {
 /*JP
             you_are("buried", "");
 */
-            you_are_ing("’‚‘§‚µ‚Ä", "");
+            you_are_ing("çª’æ¯ã—ã¦", "");
         } else {
 /*JP
             Strcpy(buf, "being strangled");
 */
-            Strcpy(buf, "ñ‚ği‚ß‚ç‚ê‚Ä");
+            Strcpy(buf, "é¦–ã‚’çµã‚ã‚‰ã‚Œã¦");
             if (wizard)
                 Sprintf(eos(buf), " (%ld)", (Strangled & TIMEOUT));
 /*JP
             you_are(buf, from_what(STRANGLED));
 */
-            enl_msg("‚ ‚È‚½‚Í", "‚¢‚é", "‚¢‚½", buf, from_what(STRANGLED));
+            enl_msg("ã‚ãªãŸã¯", "ã„ã‚‹", "ã„ãŸ", buf, from_what(STRANGLED));
         }
     }
     if (Sick) {
@@ -2370,33 +2370,33 @@ int final;
 /*JP
             you_are("terminally sick from illness", "");
 */
-            enl_msg("‚ ‚È‚½‚Í•a‹C‚Å’v–½“I‚É‹C•ª‚ªˆ«", "‚¢", "‚©‚Á‚½", "", "");
+            enl_msg("ã‚ãªãŸã¯ç—…æ°—ã§è‡´å‘½çš„ã«æ°—åˆ†ãŒæ‚ª", "ã„", "ã‹ã£ãŸ", "", "");
         if (u.usick_type & SICK_VOMITABLE)
 /*JP
             you_are("terminally sick from food poisoning", "");
 */
-            enl_msg("‚ ‚È‚½‚ÍH’†“Å‚Å’v–½“I‚É‹C•ª‚ªˆ«", "‚¢", "‚©‚Á‚½", "", "");
+            enl_msg("ã‚ãªãŸã¯é£Ÿä¸­æ¯’ã§è‡´å‘½çš„ã«æ°—åˆ†ãŒæ‚ª", "ã„", "ã‹ã£ãŸ", "", "");
     }
     if (Vomiting)
 /*JP
         you_are("nauseated", "");
 */
-        enl_msg(You_, "“f‚«‹C‚ª", "‚ ‚é", "‚ ‚Á‚½", "");
+        enl_msg(You_, "åãæ°—ãŒ", "ã‚ã‚‹", "ã‚ã£ãŸ", "");
     if (Stunned)
 /*JP
         you_are("stunned", "");
 */
-        you_are("‚­‚ç‚­‚çó‘Ô", "");
+        you_are("ãã‚‰ãã‚‰çŠ¶æ…‹", "");
     if (Confusion)
 /*JP
         you_are("confused", "");
 */
-        you_are("¬—ó‘Ô", "");
+        you_are("æ··ä¹±çŠ¶æ…‹", "");
     if (Hallucination)
 /*JP
         you_are("hallucinating", "");
 */
-        you_are("Œ¶Šoó‘Ô", "");
+        you_are("å¹»è¦šçŠ¶æ…‹", "");
     if (Blind) {
         /* from_what() (currently wizard-mode only) checks !haseyes()
            before u.uroleplay.blind, so we should too */
@@ -2408,12 +2408,12 @@ int final;
                   : Blindfolded_only ? "deliberately"
                     : "temporarily");
 #else
-        Sprintf(buf, "%s–Ó–Ú",
-                !haseyes(youmonst.data) ? "¶‚Ü‚ê‚È‚ª‚ç‚É"
-                : u.uroleplay.blind ? "P‹v“I‚É"
+        Sprintf(buf, "%sç›²ç›®",
+                !haseyes(youmonst.data) ? "ç”Ÿã¾ã‚ŒãªãŒã‚‰ã«"
+                : u.uroleplay.blind ? "æ’ä¹…çš„ã«"
                   /* better phrasing desperately wanted... */
-                  : Blindfolded_only ? "ŒÌˆÓ‚É"
-                    : "ˆê“I‚É");
+                  : Blindfolded_only ? "æ•…æ„ã«"
+                    : "ä¸€æ™‚çš„ã«");
 #endif
         if (wizard && (Blinded & TIMEOUT) != 0L
             && !u.uroleplay.blind && haseyes(youmonst.data))
@@ -2425,7 +2425,7 @@ int final;
 /*JP
         you_are("deaf", from_what(DEAF));
 */
-        you_are("¨‚ª•·‚±‚¦‚È‚¢ó‘Ô", from_what(DEAF));
+        you_are("è€³ãŒèã“ãˆãªã„çŠ¶æ…‹", from_what(DEAF));
 
     /* external troubles, more or less */
     if (Punished) {
@@ -2433,13 +2433,13 @@ int final;
 /*JP
             Sprintf(buf, "chained to %s", ansimpleoname(uball));
 */
-            Sprintf(buf, "%s‚É‚Â‚È‚ª‚ê‚Ä", ansimpleoname(uball));
+            Sprintf(buf, "%sã«ã¤ãªãŒã‚Œã¦", ansimpleoname(uball));
         } else {
             impossible("Punished without uball?");
 /*JP
             Strcpy(buf, "punished");
 */
-            Strcpy(buf, "”±‚ğó‚¯‚Ä");
+            Strcpy(buf, "ç½°ã‚’å—ã‘ã¦");
         }
         you_are(buf, "");
     }
@@ -2452,12 +2452,12 @@ int final;
 /*JP
             Strcpy(predicament, "tethered to something buried");
 */
-            Strcpy(predicament, "‰½‚©–„‚Ü‚Á‚Ä‚¢‚é‚à‚Ì‚É‚Â‚È‚ª‚ê‚Ä");
+            Strcpy(predicament, "ä½•ã‹åŸ‹ã¾ã£ã¦ã„ã‚‹ã‚‚ã®ã«ã¤ãªãŒã‚Œã¦");
         } else if (u.utraptype == TT_INFLOOR || u.utraptype == TT_LAVA) {
 /*JP
             Sprintf(predicament, "stuck in %s", the(surface(u.ux, u.uy)));
 */
-            Sprintf(predicament, "%s‚É–„‚Ü‚Á‚Ä", surface(u.ux, u.uy));
+            Sprintf(predicament, "%sã«åŸ‹ã¾ã£ã¦", surface(u.ux, u.uy));
         } else {
 #if 0 /*JP*/
             Strcpy(predicament, "trapped");
@@ -2467,9 +2467,9 @@ int final;
 #else
             predicament[0] = '\0';
             if ((t = t_at(u.ux, u.uy)) != 0)
-                Sprintf(predicament, "%s‚É",
+                Sprintf(predicament, "%sã«",
                         defsyms[trap_to_defsym(t->ttyp)].explanation);
-            Strcat(predicament, "‚Ğ‚Á‚©‚©‚Á‚Ä");
+            Strcat(predicament, "ã²ã£ã‹ã‹ã£ã¦");
 #endif
         }
         if (u.usteed) { /* not `Riding' here */
@@ -2479,8 +2479,8 @@ int final;
             enl_msg(buf, (anchored ? "are " : "is "),
                     (anchored ? "were " : "was "), predicament, "");
 #else
-            Sprintf(buf, "%s%s‚Í", anchored ? "‚ ‚È‚½‚Æ" : "", steedname);
-            enl_msg(buf, "‚¢‚é", "‚¢‚½" , predicament, "");
+            Sprintf(buf, "%s%sã¯", anchored ? "ã‚ãªãŸã¨" : "", steedname);
+            enl_msg(buf, "ã„ã‚‹", "ã„ãŸ" , predicament, "");
 #endif
         } else
             you_are(predicament, "");
@@ -2489,7 +2489,7 @@ int final;
 /*JP
         Sprintf(buf, "swallowed by %s", a_monnam(u.ustuck));
 */
-        Sprintf(buf, "%s‚Éˆù‚İ‚Ü‚ê‚Ä", a_monnam(u.ustuck));
+        Sprintf(buf, "%sã«é£²ã¿è¾¼ã¾ã‚Œã¦", a_monnam(u.ustuck));
         if (wizard)
             Sprintf(eos(buf), " (%u)", u.uswldtim);
         you_are(buf, "");
@@ -2502,7 +2502,7 @@ int final;
 #else
         Sprintf(buf, "%s%s",
                 a_monnam(u.ustuck),
-                (Upolyd && sticks(youmonst.data)) ? "‚ğ•ß‚Ü‚¦‚Ä" : "‚É•ß‚Ü‚Á‚Ä");
+                (Upolyd && sticks(youmonst.data)) ? "ã‚’æ•ã¾ãˆã¦" : "ã«æ•ã¾ã£ã¦");
         you_are_ing(buf, "");
 #endif
     }
@@ -2515,7 +2515,7 @@ int final;
                     simpleonames(saddle));
             you_are(buf, "");
 #else
-            Sprintf(buf, "%s‚Ì%s‚É‚Â‚©‚Ü‚Á‚Ä", steedname,
+            Sprintf(buf, "%sã®%sã«ã¤ã‹ã¾ã£ã¦", steedname,
                     simpleonames(saddle));
             you_are_ing(buf, "");
 #endif
@@ -2531,7 +2531,7 @@ int final;
                 *buf = highc(*buf);
                 enl_msg(buf, " has", " had", " wounded legs", "");
 #else
-                enl_msg(buf, iru, ita, "‚Íˆ‚ğ‰ö‰ä‚µ‚Ä", "");
+                enl_msg(buf, iru, ita, "ã¯è‚¢ã‚’æ€ªæˆ‘ã—ã¦", "");
 #endif
             }
         } else {
@@ -2539,7 +2539,7 @@ int final;
             Sprintf(buf, "wounded %s", makeplural(body_part(LEG)));
             you_have(buf, "");
 #else
-            Sprintf(buf, "%s‚ğ‰ö‰ä‚µ‚Ä", makeplural(body_part(LEG)));
+            Sprintf(buf, "%sã‚’æ€ªæˆ‘ã—ã¦", makeplural(body_part(LEG)));
             you_are_ing(buf, "");
 #endif
         }
@@ -2549,7 +2549,7 @@ int final;
         Sprintf(buf, "slippery %s", makeplural(body_part(FINGER)));
         you_have(buf, "");
 #else
-        Sprintf(buf, "%s‚ª‚Ê‚é‚Ê‚é‚µ‚Ä", body_part(FINGER));
+        Sprintf(buf, "%sãŒã¬ã‚‹ã¬ã‚‹ã—ã¦", body_part(FINGER));
         enl_msg(buf, iru, ita, "", "");
 #endif
     }
@@ -2558,7 +2558,7 @@ int final;
 /*JP
             enl_msg(You_, "fumble", "fumbled", "", from_what(FUMBLING));
 */
-            you_are_ing("•sŠí—p‚É‚È‚Á‚Ä", from_what(FUMBLING));
+            you_are_ing("ä¸å™¨ç”¨ã«ãªã£ã¦", from_what(FUMBLING));
     }
     if (Sleepy) {
         if (magic || cause_known(SLEEPY)) {
@@ -2568,7 +2568,7 @@ int final;
 /*JP
             enl_msg("You ", "fall", "fell", " asleep uncontrollably", buf);
 */
-            you_are_ing("–°‚Á‚Ä", buf);
+            you_are_ing("çœ ã£ã¦", buf);
         }
     }
     /* hunger/nutrition */
@@ -2578,7 +2578,7 @@ int final;
             enl_msg(You_, "hunger", "hungered", " rapidly",
                     from_what(HUNGER));
 #else
-            enl_msg("‚ ‚È‚½‚Í‚·‚®‚É• ‚ªŒ¸‚éó‘Ô", "‚Å‚ ‚é", "‚¾‚Á‚½", "", "");
+            enl_msg("ã‚ãªãŸã¯ã™ãã«è…¹ãŒæ¸›ã‚‹çŠ¶æ…‹", "ã§ã‚ã‚‹", "ã ã£ãŸ", "", "");
 #endif
     }
     Strcpy(buf, hu_stat[u.uhs]); /* hunger status; omitted if "normal" */
@@ -2592,7 +2592,7 @@ int final;
             Strcat(buf, " due to starvation");
         you_are(buf, "");
 #else
-        Strcat(buf, "ó‘Ô");
+        Strcat(buf, "çŠ¶æ…‹");
         you_are(buf, "");
 #endif
     }
@@ -2624,7 +2624,7 @@ int final;
                 (cap < OVERLOADED) ? " slowed" : "");
         you_are(buf, "");
 #else
-        Sprintf(buf, "‰×•¨‚É‚æ‚Á‚Ä%só‘Ô", enc_stat[cap]);
+        Sprintf(buf, "è·ç‰©ã«ã‚ˆã£ã¦%sçŠ¶æ…‹", enc_stat[cap]);
         you_are(buf, "");
 #endif
     } else {
@@ -2634,7 +2634,7 @@ int final;
 /*JP
         you_are("unencumbered", "");
 */
-        you_are("‰×•¨‚Í×–‚‚É‚È‚ç‚È‚¢ó‘Ô", "");
+        you_are("è·ç‰©ã¯é‚ªé­”ã«ãªã‚‰ãªã„çŠ¶æ…‹", "");
     }
     /* report being weaponless; distinguish whether gloves are worn */
     if (!uwep) {
@@ -2647,14 +2647,14 @@ int final;
                          : "not wielding anything",
                 "");
 #else
-        enl_msg(You_, "‚¢", "‚©‚Á‚½", "•Ší‚ğ‘•”õ‚µ‚Ä‚¢‚È", "");
+        enl_msg(You_, "ã„", "ã‹ã£ãŸ", "æ­¦å™¨ã‚’è£…å‚™ã—ã¦ã„ãª", "");
 #endif
     /* two-weaponing implies a weapon (not other odd stuff) in each hand */
     } else if (u.twoweap) {
 /*JP
         you_are("wielding two weapons at once", "");
 */
-        you_are("“ñ“—¬", "");
+        you_are("äºŒåˆ€æµ", "");
     /* report most weapons by their skill class (so a katana will be
        described as a long sword, for instance; mattock and hook are
        exceptions), or wielded non-weapon item by its object class */
@@ -2670,8 +2670,8 @@ int final;
                     (uwep->quan == 1L) ? an(what) : makeplural(what));
         you_are(buf, "");
 #else
-        Sprintf(buf, "%s‚ğ‘•”õ‚µ‚Ä", what);
-        enl_msg(You_, "‚¢‚é", "‚¢‚½", buf, "");
+        Sprintf(buf, "%sã‚’è£…å‚™ã—ã¦", what);
+        enl_msg(You_, "ã„ã‚‹", "ã„ãŸ", buf, "");
 #endif
     }
     /* report 'nudity' */
@@ -2680,13 +2680,13 @@ int final;
 #if 0 /*JP*/
             enl_msg(You_, "do", "did", " not wear any armor", "");
 #else
-            enl_msg(You_, "‚¢", "‚©‚Á‚½", "‰½‚ÌŠZ‚à‘•”õ‚µ‚È", "");
+            enl_msg(You_, "ã„", "ã‹ã£ãŸ", "ä½•ã®é§ã‚‚è£…å‚™ã—ãª", "");
 #endif
         else
 #if 0 /*JP*/
             you_are("not wearing any armor", "");
 #else
-            enl_msg(You_, "‚¢", "‚©‚Á‚½", "‰½‚ÌŠZ‚à‘•”õ‚µ‚Ä‚¢‚È", "");
+            enl_msg(You_, "ã„", "ã‹ã£ãŸ", "ä½•ã®é§ã‚‚è£…å‚™ã—ã¦ã„ãª", "");
 #endif
     }
 }
@@ -2711,7 +2711,7 @@ int final;
 /*JP
     putstr(en_win, 0, final ? "Final Attributes:" : "Current Attributes:");
 */
-    putstr(en_win, 0, final ? "ÅI‘®«:" : "Œ»İ‚Ì‘®«:");
+    putstr(en_win, 0, final ? "æœ€çµ‚å±æ€§:" : "ç¾åœ¨ã®å±æ€§:");
 
     if (u.uevent.uhand_of_elbereth) {
 #if 0 /*JP*/
@@ -2719,9 +2719,9 @@ int final;
                                                     "the Envoy of Balance",
                                                     "the Glory of Arioch" };
 #else
-        static const char *const hofe_titles[3] = { "ƒGƒ‹ƒxƒŒƒX‚ÌŒäè",
-                                                    "’²˜a‚ÌgÒ",
-                                                    "ƒAƒŠƒIƒbƒ`‚Ì–¼—_" };
+        static const char *const hofe_titles[3] = { "ã‚¨ãƒ«ãƒ™ãƒ¬ã‚¹ã®å¾¡æ‰‹",
+                                                    "èª¿å’Œã®ä½¿è€…",
+                                                    "ã‚¢ãƒªã‚ªãƒƒãƒã®åèª‰" };
 #endif
         you_are(hofe_titles[u.uevent.uhand_of_elbereth - 1], "");
     }
@@ -2729,7 +2729,7 @@ int final;
 /*JP
     Sprintf(buf, "%s", piousness(TRUE, "aligned"));
 */
-    Sprintf(buf, "%s", piousness(TRUE, "M‹ÂS"));
+    Sprintf(buf, "%s", piousness(TRUE, "ä¿¡ä»°å¿ƒ"));
     if (u.ualign.record >= 0)
         you_are(buf, "");
     else
@@ -2740,8 +2740,8 @@ int final;
         Sprintf(buf, " %d", u.ualign.record);
         enl_msg("Your alignment ", "is", "was", buf, "");
 #else
-        Sprintf(buf, "‚ ‚È‚½‚Ì‘®«’l‚Í%d", u.ualign.record);
-        enl_msg(buf, "‚Å‚ ‚é", "‚¾‚Á‚½", "", "");
+        Sprintf(buf, "ã‚ãªãŸã®å±æ€§å€¤ã¯%d", u.ualign.record);
+        enl_msg(buf, "ã§ã‚ã‚‹", "ã ã£ãŸ", "", "");
 #endif
     }
 
@@ -2750,74 +2750,74 @@ int final;
 /*JP
         you_are("invulnerable", from_what(INVULNERABLE));
 */
-        you_are("•s€g", from_what(INVULNERABLE));
+        you_are("ä¸æ­»èº«", from_what(INVULNERABLE));
     if (Antimagic)
 /*JP
         you_are("magic-protected", from_what(ANTIMAGIC));
 */
-        you_have("–‚–@–hŒä”\—Í", from_what(ANTIMAGIC));
+        you_have("é­”æ³•é˜²å¾¡èƒ½åŠ›", from_what(ANTIMAGIC));
     if (Fire_resistance)
 /*JP
         you_are("fire resistant", from_what(FIRE_RES));
 */
-        you_have("‰Î‚Ö‚Ì‘Ï«", from_what(FIRE_RES));
+        you_have("ç«ã¸ã®è€æ€§", from_what(FIRE_RES));
     if (Cold_resistance)
 /*JP
         you_are("cold resistant", from_what(COLD_RES));
 */
-        you_have("Š¦‚³‚Ö‚Ì‘Ï«", from_what(COLD_RES));
+        you_have("å¯’ã•ã¸ã®è€æ€§", from_what(COLD_RES));
     if (Sleep_resistance)
 /*JP
         you_are("sleep resistant", from_what(SLEEP_RES));
 */
-        you_have("–°‚è‚Ö‚Ì‘Ï«", from_what(SLEEP_RES));
+        you_have("çœ ã‚Šã¸ã®è€æ€§", from_what(SLEEP_RES));
     if (Disint_resistance)
 /*JP
         you_are("disintegration-resistant", from_what(DISINT_RES));
 */
-        you_have("•²Ó‚Ö‚Ì‘Ï«", from_what(DISINT_RES));
+        you_have("ç²‰ç •ã¸ã®è€æ€§", from_what(DISINT_RES));
     if (Shock_resistance)
 /*JP
         you_are("shock resistant", from_what(SHOCK_RES));
 */
-        you_have("“dŒ‚‚Ö‚Ì‘Ï«", from_what(SHOCK_RES));
+        you_have("é›»æ’ƒã¸ã®è€æ€§", from_what(SHOCK_RES));
     if (Poison_resistance)
 /*JP
         you_are("poison resistant", from_what(POISON_RES));
 */
-        you_have("“Å‚Ö‚Ì‘Ï«", from_what(POISON_RES));
+        you_have("æ¯’ã¸ã®è€æ€§", from_what(POISON_RES));
     if (Acid_resistance)
 /*JP
         you_are("acid resistant", from_what(ACID_RES));
 */
-        you_have("_‚Ö‚Ì‘Ï«", from_what(ACID_RES));
+        you_have("é…¸ã¸ã®è€æ€§", from_what(ACID_RES));
     if (Drain_resistance)
 /*JP
         you_are("level-drain resistant", from_what(DRAIN_RES));
 */
-        you_have("ƒŒƒxƒ‹ƒ_ƒEƒ“‚Ö‚Ì‘Ï«", from_what(DRAIN_RES));
+        you_have("ãƒ¬ãƒ™ãƒ«ãƒ€ã‚¦ãƒ³ã¸ã®è€æ€§", from_what(DRAIN_RES));
     if (Sick_resistance)
 /*JP
         you_are("immune to sickness", from_what(SICK_RES));
 */
-        you_have("•a‹C‚É‘Î‚·‚é–Æ‰u", from_what(SICK_RES));
+        you_have("ç—…æ°—ã«å¯¾ã™ã‚‹å…ç–«", from_what(SICK_RES));
     if (Stone_resistance)
 /*JP
         you_are("petrification resistant", from_what(STONE_RES));
 */
-        you_have("Î‰»‚Ö‚Ì‘Ï«", from_what(STONE_RES));
+        you_have("çŸ³åŒ–ã¸ã®è€æ€§", from_what(STONE_RES));
     if (Halluc_resistance)
 #if 0 /*JP*/
         enl_msg(You_, "resist", "resisted", " hallucinations",
                 from_what(HALLUC_RES));
 #else
-        you_have("Œ¶Šo‚Ö‚Ì‘Ï«", from_what(HALLUC_RES));
+        you_have("å¹»è¦šã¸ã®è€æ€§", from_what(HALLUC_RES));
 #endif
     if (u.uedibility)
 /*JP
         you_can("recognize detrimental food", "");
 */
-        you_can("—LŠQ‚ÈH—¿‚ğ¯•Ê", "");
+        you_can("æœ‰å®³ãªé£Ÿæ–™ã‚’è­˜åˆ¥", "");
 
     /*** Vision and senses ***/
     if (!Blind && (Blinded || !haseyes(youmonst.data)))
@@ -2827,26 +2827,26 @@ int final;
 /*JP
             enl_msg(You_, "see", "saw", " invisible", from_what(SEE_INVIS));
 */
-            enl_msg("‚ ‚È‚½‚Í“§–¾‚È‚à‚Ì‚ğŒ©‚ç‚ê", "‚é", "‚½", "", from_what(SEE_INVIS));
+            enl_msg("ã‚ãªãŸã¯é€æ˜ãªã‚‚ã®ã‚’è¦‹ã‚‰ã‚Œ", "ã‚‹", "ãŸ", "", from_what(SEE_INVIS));
         else
 #if 0 /*JP*/
             enl_msg(You_, "will see", "would have seen",
                     " invisible when not blind", from_what(SEE_INVIS));
 #else
-            enl_msg(You_, "‚é", "‚½",
-                    "–Ó–Ú‚Å‚È‚¢‚Æ‚«‚É‚Í“§–¾‚È‚à‚Ì‚ğŒ©‚ç‚ê", from_what(SEE_INVIS));
+            enl_msg(You_, "ã‚‹", "ãŸ",
+                    "ç›²ç›®ã§ãªã„ã¨ãã«ã¯é€æ˜ãªã‚‚ã®ã‚’è¦‹ã‚‰ã‚Œ", from_what(SEE_INVIS));
 #endif
     }
     if (Blind_telepat)
 /*JP
         you_are("telepathic", from_what(TELEPAT));
 */
-        you_have("ƒeƒŒƒpƒV[", from_what(TELEPAT));
+        you_have("ãƒ†ãƒ¬ãƒ‘ã‚·ãƒ¼", from_what(TELEPAT));
     if (Warning)
 /*JP
         you_are("warned", from_what(WARNING));
 */
-        you_have("Œx‰ú”\—Í", from_what(WARNING));
+        you_have("è­¦æˆ’èƒ½åŠ›", from_what(WARNING));
     if (Warn_of_mon && context.warntype.obj) {
 #if 0 /*JP*/
         Sprintf(buf, "aware of the presence of %s",
@@ -2855,10 +2855,10 @@ int final;
                 : (context.warntype.obj & M2_DEMON) ? "demons" : something);
         you_are(buf, from_what(WARN_OF_MON));
 #else
-        Sprintf(buf, "%s‚Ì‘¶İ‚ğŠ´‚¶‚é”\—Í",
-                (context.warntype.obj & M2_ORC) ? "ƒI[ƒN"
-                : (context.warntype.obj & M2_ELF) ? "ƒGƒ‹ƒt"
-                : (context.warntype.obj & M2_DEMON) ? "ˆ«–‚" : something);
+        Sprintf(buf, "%sã®å­˜åœ¨ã‚’æ„Ÿã˜ã‚‹èƒ½åŠ›",
+                (context.warntype.obj & M2_ORC) ? "ã‚ªãƒ¼ã‚¯"
+                : (context.warntype.obj & M2_ELF) ? "ã‚¨ãƒ«ãƒ•"
+                : (context.warntype.obj & M2_DEMON) ? "æ‚ªé­”" : something);
         you_have(buf, "");
 #endif
     }
@@ -2879,19 +2879,19 @@ int final;
                                             : "certain monsters");
         you_are(buf, "");
 #else
-        Sprintf(buf, "%s‚Ì‘¶İ‚ğŠ´‚¶‚é”\—Í",
+        Sprintf(buf, "%sã®å­˜åœ¨ã‚’æ„Ÿã˜ã‚‹èƒ½åŠ›",
                 ((context.warntype.polyd & (M2_HUMAN | M2_ELF))
                  == (M2_HUMAN | M2_ELF))
-                    ? "lŠÔ‚ÆƒGƒ‹ƒt"
+                    ? "äººé–“ã¨ã‚¨ãƒ«ãƒ•"
                     : (context.warntype.polyd & M2_HUMAN)
-                          ? "lŠÔ"
+                          ? "äººé–“"
                           : (context.warntype.polyd & M2_ELF)
-                                ? "ƒGƒ‹ƒt"
+                                ? "ã‚¨ãƒ«ãƒ•"
                                 : (context.warntype.polyd & M2_ORC)
-                                      ? "ƒI[ƒN"
+                                      ? "ã‚ªãƒ¼ã‚¯"
                                       : (context.warntype.polyd & M2_DEMON)
-                                            ? "ˆ«–‚"
-                                            : "‚ ‚éí‚Ì‰ö•¨");
+                                            ? "æ‚ªé­”"
+                                            : "ã‚ã‚‹ç¨®ã®æ€ªç‰©");
         you_have(buf, "");
 #endif
     }
@@ -2901,7 +2901,7 @@ int final;
                 makeplural(mons[context.warntype.speciesidx].mname));
         you_are(buf, from_what(WARN_OF_MON));
 #else
-        Sprintf(buf, "%s‚Ì‘¶İ‚ğŠ´‚¶‚é”\—Í",
+        Sprintf(buf, "%sã®å­˜åœ¨ã‚’æ„Ÿã˜ã‚‹èƒ½åŠ›",
                 mons[context.warntype.speciesidx].mname);
         you_have(buf, from_what(WARN_OF_MON));
 #endif
@@ -2910,17 +2910,17 @@ int final;
 /*JP
         you_are("warned of undead", from_what(WARN_UNDEAD));
 */
-        you_have("•s€‚Ì¶•¨‚Ö‚ÌŒx‰ú”\—Í", from_what(WARN_UNDEAD));
+        you_have("ä¸æ­»ã®ç”Ÿç‰©ã¸ã®è­¦æˆ’èƒ½åŠ›", from_what(WARN_UNDEAD));
     if (Searching)
 /*JP
         you_have("automatic searching", from_what(SEARCHING));
 */
-        you_have("’T¸”\—Í", from_what(SEARCHING));
+        you_have("æ¢æŸ»èƒ½åŠ›", from_what(SEARCHING));
     if (Clairvoyant)
 /*JP
         you_are("clairvoyant", from_what(CLAIRVOYANT));
 */
-        you_have("ç—¢Šá”\—Í", from_what(CLAIRVOYANT));
+        you_have("åƒé‡Œçœ¼èƒ½åŠ›", from_what(CLAIRVOYANT));
     else if ((HClairvoyant || EClairvoyant) && BClairvoyant) {
         Strcpy(buf, from_what(-CLAIRVOYANT));
 #if 0 /*JP*/
@@ -2929,28 +2929,28 @@ int final;
             (void) strncpy(buf, " if not for ", 12);
         enl_msg(You_, "could be", "could have been", " clairvoyant", buf);
 #else
-        /*JP:uc‚É‚æ‚Á‚Äv*/
-        if (!strncmp(buf, "‚É‚æ‚Á‚Ä", 8))
-            /*JP:uc‚ª‚È‚¯‚ê‚Îv‚É‘‚«Š·‚¦‚é*/
-            strcpy(eos(buf) - 8, "‚ª‚È‚¯‚ê‚Î");
-        you_have("ç—¢Šá”\—Í", buf);
+        /*JP:ã€Œâ€¦ã«ã‚ˆã£ã¦ã€*/
+        if (!strncmp(buf, "ã«ã‚ˆã£ã¦", 8))
+            /*JP:ã€Œâ€¦ãŒãªã‘ã‚Œã°ã€ã«æ›¸ãæ›ãˆã‚‹*/
+            strcpy(eos(buf) - 8, "ãŒãªã‘ã‚Œã°");
+        you_have("åƒé‡Œçœ¼èƒ½åŠ›", buf);
 #endif
     }
     if (Infravision)
 /*JP
         you_have("infravision", from_what(INFRAVISION));
 */
-        you_have("ÔŠOü‚ªŒ©‚¦‚é‹Šo", from_what(INFRAVISION));
+        you_have("èµ¤å¤–ç·šãŒè¦‹ãˆã‚‹è¦–è¦š", from_what(INFRAVISION));
     if (Detect_monsters)
 /*JP
         you_are("sensing the presence of monsters", "");
 */
-        you_have("‰ö•¨‚ğ’T‚·”\—Í", "");
+        you_have("æ€ªç‰©ã‚’æ¢ã™èƒ½åŠ›", "");
     if (u.umconf)
 /*JP
         you_are("going to confuse monsters", "");
 */
-        you_have("‰ö•¨‚ğ¬—‚³‚¹‚é”\—Í", "");
+        you_have("æ€ªç‰©ã‚’æ··ä¹±ã•ã›ã‚‹èƒ½åŠ›", "");
 
     /*** Appearance and behavior ***/
     if (Adornment) {
@@ -2968,67 +2968,67 @@ int final;
                 (adorn > 0) ? "more " : (adorn < 0) ? "less " : "");
         you_are(buf, from_what(ADORNED));
 #else
-        Sprintf(buf, "–£—Í%s‚Ä",
-                (adorn > 0) ? "‚ª‘‰Á‚µ" : (adorn < 0) ? "‚ªŒ¸­‚µ" : "“I‚É‚È‚Á");
-        enl_msg(You_, "‚Ä‚¢‚é", "‚½", buf, "");
+        Sprintf(buf, "é­…åŠ›%sã¦",
+                (adorn > 0) ? "ãŒå¢—åŠ ã—" : (adorn < 0) ? "ãŒæ¸›å°‘ã—" : "çš„ã«ãªã£");
+        enl_msg(You_, "ã¦ã„ã‚‹", "ãŸ", buf, "");
 #endif
     }
     if (Invisible)
 /*JP
         you_are("invisible", from_what(INVIS));
 */
-        you_are("“§–¾", from_what(INVIS));
+        you_are("é€æ˜", from_what(INVIS));
     else if (Invis)
 /*JP
         you_are("invisible to others", from_what(INVIS));
 */
-        you_are("‘¼l‚É‘Î‚µ‚Ä“§–¾", from_what(INVIS));
+        you_are("ä»–äººã«å¯¾ã—ã¦é€æ˜", from_what(INVIS));
     /* ordinarily "visible" is redundant; this is a special case for
        the situation when invisibility would be an expected attribute */
     else if ((HInvis || EInvis) && BInvis)
 /*JP
         you_are("visible", from_what(-INVIS));
 */
-        you_are("•s“§–¾", from_what(-INVIS));
+        you_are("ä¸é€æ˜", from_what(-INVIS));
     if (Displaced)
 /*JP
         you_are("displaced", from_what(DISPLACED));
 */
-        you_have("Œ¶‰e”\—Í", from_what(DISPLACED));
+        you_have("å¹»å½±èƒ½åŠ›", from_what(DISPLACED));
     if (Stealth)
 /*JP
         you_are("stealthy", from_what(STEALTH));
 */
-        you_have("l–Ú‚ğ“‚Ş”\—Í", from_what(STEALTH));
+        you_have("äººç›®ã‚’ç›—ã‚€èƒ½åŠ›", from_what(STEALTH));
     if (Aggravate_monster)
 #if 0 /*JP*/
         enl_msg("You aggravate", "", "d", " monsters",
                 from_what(AGGRAVATE_MONSTER));
 #else
-        you_are_ing("”½Š´‚ğ‚©‚Á‚Ä", from_what(AGGRAVATE_MONSTER));
+        you_are_ing("åæ„Ÿã‚’ã‹ã£ã¦", from_what(AGGRAVATE_MONSTER));
 #endif
     if (Conflict)
 /*JP
         enl_msg("You cause", "", "d", " conflict", from_what(CONFLICT));
 */
-        you_are_ing("“¬‘ˆ‚ğˆø‚«‹N‚±‚µ‚Ä", from_what(CONFLICT));
+        you_are_ing("é—˜äº‰ã‚’å¼•ãèµ·ã“ã—ã¦", from_what(CONFLICT));
 
     /*** Transportation ***/
     if (Jumping)
 /*JP
         you_can("jump", from_what(JUMPING));
 */
-        you_can("’µ–ô‚·‚é‚±‚Æ‚ª", from_what(JUMPING));
+        you_can("è·³èºã™ã‚‹ã“ã¨ãŒ", from_what(JUMPING));
     if (Teleportation)
 /*JP
         you_can("teleport", from_what(TELEPORT));
 */
-        you_can("uŠÔˆÚ“®‚ª", from_what(TELEPORT));
+        you_can("ç¬é–“ç§»å‹•ãŒ", from_what(TELEPORT));
     if (Teleport_control)
 /*JP
         you_have("teleport control", from_what(TELEPORT_CONTROL));
 */
-        you_have("uŠÔˆÚ“®‚Ì§Œä”\—Í", from_what(TELEPORT_CONTROL));
+        you_have("ç¬é–“ç§»å‹•ã®åˆ¶å¾¡èƒ½åŠ›", from_what(TELEPORT_CONTROL));
     /* actively levitating handled earlier as a status condition */
     if (BLevitation) { /* levitation is blocked */
         long save_BLev = BLevitation;
@@ -3039,7 +3039,7 @@ int final;
             enl_msg(You_, "would levitate", "would have levitated",
                     if_surroundings_permitted, "");
 #else
-            you_are("ó‹µ‚ª‹–‚¹‚Î•‚—V‚·‚éó‘Ô", "");
+            you_are("çŠ¶æ³ãŒè¨±ã›ã°æµ®éŠã™ã‚‹çŠ¶æ…‹", "");
 #endif
         BLevitation = save_BLev;
     }
@@ -3059,14 +3059,14 @@ int final;
                           : " if circumstances permitted",
                     "");
 #else
-            enl_msg(You_, "‚Å‚«‚é", "‚Å‚«‚½",
-                    "”ò‚Ô‚±‚Æ‚ª",
+            enl_msg(You_, "ã§ãã‚‹", "ã§ããŸ",
+                    "é£›ã¶ã“ã¨ãŒ",
                     Levitation
-                       ? "•‚—V‚µ‚Ä‚¢‚È‚¯‚ê‚Î"
+                       ? "æµ®éŠã—ã¦ã„ãªã‘ã‚Œã°"
                        : (save_BFly == FROMOUTSIDE)
-                          ? "ó‹µ‚ª‹–‚¹‚Î"
+                          ? "çŠ¶æ³ãŒè¨±ã›ã°"
                           /* both surroundings and [latent] levitation */
-                          : "–î‚ª‹–‚¹‚Î");
+                          : "äº‹æƒ…ãŒè¨±ã›ã°");
 #endif
         BFlying = save_BFly;
     }
@@ -3075,50 +3075,50 @@ int final;
 /*JP
         you_can("walk on water", from_what(WWALKING));
 */
-        you_can("…‚Ìã‚ğ•à‚­‚±‚Æ‚ª", from_what(WWALKING));
+        you_can("æ°´ã®ä¸Šã‚’æ­©ãã“ã¨ãŒ", from_what(WWALKING));
     /* actively swimming (in water but not under it) handled earlier */
     if (Swimming && (Underwater || !u.uinwater))
 /*JP
         you_can("swim", from_what(SWIMMING));
 */
-        you_can("‰j‚®‚±‚Æ‚ª", from_what(SWIMMING));
+        you_can("æ³³ãã“ã¨ãŒ", from_what(SWIMMING));
     if (Breathless)
 /*JP
         you_can("survive without air", from_what(MAGICAL_BREATHING));
 */
-        you_can("‹ó‹C‚È‚µ‚Å¶‚«‰„‚Ñ‚é‚±‚Æ‚ª", from_what(MAGICAL_BREATHING));
+        you_can("ç©ºæ°—ãªã—ã§ç”Ÿãå»¶ã³ã‚‹ã“ã¨ãŒ", from_what(MAGICAL_BREATHING));
     else if (Amphibious)
 /*JP
         you_can("breathe water", from_what(MAGICAL_BREATHING));
 */
-        you_can("…’†‚ÅŒÄ‹z‚ª", from_what(MAGICAL_BREATHING));
+        you_can("æ°´ä¸­ã§å‘¼å¸ãŒ", from_what(MAGICAL_BREATHING));
     if (Passes_walls)
 /*JP
         you_can("walk through walls", from_what(PASSES_WALLS));
 */
-        you_can("•Ç‚ğ’Ê‚è”²‚¯‚é‚±‚Æ‚ª", from_what(PASSES_WALLS));
+        you_can("å£ã‚’é€šã‚ŠæŠœã‘ã‚‹ã“ã¨ãŒ", from_what(PASSES_WALLS));
 
     /*** Physical attributes ***/
     if (Regeneration)
 /*JP
         enl_msg("You regenerate", "", "d", "", from_what(REGENERATION));
 */
-        you_have("Ä¶”\—Í", from_what(REGENERATION));
+        you_have("å†ç”Ÿèƒ½åŠ›", from_what(REGENERATION));
     if (Slow_digestion)
 /*JP
         you_have("slower digestion", from_what(SLOW_DIGESTION));
 */
-        enl_msg("H•¨‚ÌÁ‰»‚ª’x", "‚¢", "‚©‚Á‚½", "", from_what(SLOW_DIGESTION));
+        enl_msg("é£Ÿç‰©ã®æ¶ˆåŒ–ãŒé…", "ã„", "ã‹ã£ãŸ", "", from_what(SLOW_DIGESTION));
     if (u.uhitinc)
 /*JP
         you_have(enlght_combatinc("to hit", u.uhitinc, final, buf), "");
 */
-        you_have(enlght_combatinc("–½’†—¦", u.uhitinc, final, buf), "");
+        you_have(enlght_combatinc("å‘½ä¸­ç‡", u.uhitinc, final, buf), "");
     if (u.udaminc)
 /*JP
         you_have(enlght_combatinc("damage", u.udaminc, final, buf), "");
 */
-        you_have(enlght_combatinc("ƒ_ƒ[ƒW", u.udaminc, final, buf), "");
+        you_have(enlght_combatinc("ãƒ€ãƒ¡ãƒ¼ã‚¸", u.udaminc, final, buf), "");
     if (u.uspellprot || Protection) {
         int prot = 0;
 
@@ -3133,7 +3133,7 @@ int final;
 /*JP
             you_have(enlght_combatinc("defense", prot, final, buf), "");
 */
-            you_have(enlght_combatinc("–hŒä", prot, final, buf), "");
+            you_have(enlght_combatinc("é˜²å¾¡", prot, final, buf), "");
     }
     if ((armpro = magic_negation(&youmonst)) > 0) {
         /* magic cancellation factor, conferred by worn armor */
@@ -3141,7 +3141,7 @@ int final;
 #if 0 /*JP*/
             "" /*ordinary*/, "warded", "guarded", "protected",
 #else
-            "" /*ordinary*/, "‰q‚ç‚ê‚Ä", "Œì‚ç‚ê‚Ä", "ç‚ç‚ê‚Ä",
+            "" /*ordinary*/, "è¡›ã‚‰ã‚Œã¦", "è­·ã‚‰ã‚Œã¦", "å®ˆã‚‰ã‚Œã¦",
 #endif
         };
         /* sanity check */
@@ -3162,7 +3162,7 @@ int final;
         you_are("protected from shape changers",
                 from_what(PROT_FROM_SHAPE_CHANGERS));
 #else
-        you_have("•Ï‰»‰ö•¨‚Ö‚Ì‘Ï«", from_what(PROT_FROM_SHAPE_CHANGERS));
+        you_have("å¤‰åŒ–æ€ªç‰©ã¸ã®è€æ€§", from_what(PROT_FROM_SHAPE_CHANGERS));
 #endif
     if (Unchanging) {
         const char *what = 0;
@@ -3171,19 +3171,19 @@ int final;
 /*JP
             you_can("not change from your current form",
 */
-            you_are("Œ»İ‚Ìp‚©‚ç•Ï‰»‚Å‚«‚È‚¢ó‘Ô",
+            you_are("ç¾åœ¨ã®å§¿ã‹ã‚‰å¤‰åŒ–ã§ããªã„çŠ¶æ…‹",
                     from_what(UNCHANGING));
         /* blocked shape changes */
         if (Polymorph)
 /*JP
             what = !final ? "polymorph" : "have polymorphed";
 */
-            what = "•Ï‰»‚µ‚Ä";
+            what = "å¤‰åŒ–ã—ã¦";
         else if (u.ulycn >= LOW_PM)
 /*JP
             what = !final ? "change shape" : "have changed shape";
 */
-            what = "p‚ğ•Ï‚¦‚Ä";
+            what = "å§¿ã‚’å¤‰ãˆã¦";
         if (what) {
 #if 0 /*JP*/
             Sprintf(buf, "would %s periodically", what);
@@ -3191,7 +3191,7 @@ int final;
             enl_msg(You_, buf, buf, " if not locked into your current form",
                     "");
 #else
-            Sprintf(buf, "‚à‚µŒ»İ‚Ìp‚ÉŒÅ’è‚³‚ê‚Ä‚¢‚È‚¯‚ê‚Î’èŠú“I‚É%s", what);
+            Sprintf(buf, "ã‚‚ã—ç¾åœ¨ã®å§¿ã«å›ºå®šã•ã‚Œã¦ã„ãªã‘ã‚Œã°å®šæœŸçš„ã«%s", what);
             you_are_ing(buf, "");
 #endif
         }
@@ -3199,19 +3199,19 @@ int final;
 /*JP
         you_are("polymorphing periodically", from_what(POLYMORPH));
 */
-        you_are("’èŠú“I‚É•Ï‰»‚µ‚Ä", from_what(POLYMORPH));
+        you_are("å®šæœŸçš„ã«å¤‰åŒ–ã—ã¦", from_what(POLYMORPH));
     }
     if (Polymorph_control)
 /*JP
         you_have("polymorph control", from_what(POLYMORPH_CONTROL));
 */
-        you_have("•Ï‰»‚Ì§Œä”\—Í", from_what(POLYMORPH_CONTROL));
+        you_have("å¤‰åŒ–ã®åˆ¶å¾¡èƒ½åŠ›", from_what(POLYMORPH_CONTROL));
     if (Upolyd && u.umonnum != u.ulycn) {
         /* foreign shape (except were-form which is handled below) */
 /*JP
         Sprintf(buf, "polymorphed into %s", an(youmonst.data->mname));
 */
-        Sprintf(buf, "%s‚É•Ï‰»‚µ‚Ä", youmonst.data->mname);
+        Sprintf(buf, "%sã«å¤‰åŒ–ã—ã¦", youmonst.data->mname);
         if (wizard)
             Sprintf(eos(buf), " (%d)", u.mtimedone);
         you_are(buf, "");
@@ -3220,7 +3220,7 @@ int final;
 /*JP
         you_can("lay eggs", "");
 */
-        you_can("—‘‚ğY‚Ş‚±‚Æ‚ª", "");
+        you_can("åµã‚’ç”£ã‚€ã“ã¨ãŒ", "");
     if (u.ulycn >= LOW_PM) {
 #if 0 /*JP*/
         /* "you are a werecreature [in beast form]" */
@@ -3231,10 +3231,10 @@ int final;
                 Sprintf(eos(buf), " (%d)", u.mtimedone);
         }
 #else
-        /*JP:u‚ ‚È‚½‚Í[b‚Ìp‚Ì]››lŠÔ‚Å‚ ‚év*/
+        /*JP:ã€Œã‚ãªãŸã¯[ç£ã®å§¿ã®]â—‹â—‹äººé–“ã§ã‚ã‚‹ã€*/
         buf[0] = '\0';
         if (u.umonnum == u.ulycn) {
-            Strcpy(buf, "b‚Ìp‚Ì");
+            Strcpy(buf, "ç£ã®å§¿ã®");
             if (wizard)
                 Sprintf(eos(buf), " (%d)", u.mtimedone);
         }
@@ -3246,38 +3246,38 @@ int final;
 /*JP
         you_can("not change from your current form", from_what(UNCHANGING));
 */
-        enl_msg("¡‚Ìp‚©‚ç•Ï‰»‚·‚é‚±‚Æ‚ª‚Å‚«‚È", "‚¢", "‚©‚Á‚½", "", from_what(UNCHANGING));
+        enl_msg("ä»Šã®å§¿ã‹ã‚‰å¤‰åŒ–ã™ã‚‹ã“ã¨ãŒã§ããª", "ã„", "ã‹ã£ãŸ", "", from_what(UNCHANGING));
     if (Hate_silver)
 /*JP
         you_are("harmed by silver", "");
 */
-        enl_msg("‚ ‚È‚½‚Í‹â‚Éã", "‚¢", "‚©‚Á‚½", "", "");
+        enl_msg("ã‚ãªãŸã¯éŠ€ã«å¼±", "ã„", "ã‹ã£ãŸ", "", "");
     /* movement and non-armor-based protection */
     if (Fast)
 /*JP
         you_are(Very_fast ? "very fast" : "fast", from_what(FAST));
 */
-        you_have(Very_fast ? "‚Æ‚Ä‚à‘f‘‚­s“®‚·‚é”\—Í" : "‘f‘‚­s“®‚·‚é”\—Í", from_what(FAST));
+        you_have(Very_fast ? "ã¨ã¦ã‚‚ç´ æ—©ãè¡Œå‹•ã™ã‚‹èƒ½åŠ›" : "ç´ æ—©ãè¡Œå‹•ã™ã‚‹èƒ½åŠ›", from_what(FAST));
     if (Reflecting)
 /*JP
         you_have("reflection", from_what(REFLECTING));
 */
-        you_have("”½Ë”\—Í", from_what(REFLECTING));
+        you_have("åå°„èƒ½åŠ›", from_what(REFLECTING));
     if (Free_action)
 /*JP
         you_have("free action", from_what(FREE_ACTION));
 */
-        you_have("S‘©‚³‚ê‚È‚¢”\—Í", from_what(FREE_ACTION));
+        you_have("æ‹˜æŸã•ã‚Œãªã„èƒ½åŠ›", from_what(FREE_ACTION));
     if (Fixed_abil)
 /*JP
         you_have("fixed abilities", from_what(FIXED_ABIL));
 */
-        enl_msg("”\—Í‚ª•Ï‰»‚µ‚È", "‚¢", "‚©‚Á‚½", "", from_what(FIXED_ABIL));
+        enl_msg("èƒ½åŠ›ãŒå¤‰åŒ–ã—ãª", "ã„", "ã‹ã£ãŸ", "", from_what(FIXED_ABIL));
     if (Lifesaved)
 /*JP
         enl_msg("Your life ", "will be", "would have been", " saved", "");
 */
-        enl_msg("‚ ‚È‚½‚Ì¶–½‚Í•Û‘¶‚³‚ê‚Ä", iru, ita, "", "");
+        enl_msg("ã‚ãªãŸã®ç”Ÿå‘½ã¯ä¿å­˜ã•ã‚Œã¦", iru, ita, "", "");
 
     /*** Miscellany ***/
     if (Luck) {
@@ -3288,8 +3288,8 @@ int final;
                 Luck < 0 ? "un" : "");
 #else
         Sprintf(buf, "%s%s",
-                ltmp >= 10 ? "–Ò—ó‚É" : ltmp >= 5 ? "‚Æ‚Ä‚à" : "",
-                Luck < 0 ? "•sK" : "K•Ÿ");
+                ltmp >= 10 ? "çŒ›çƒˆã«" : ltmp >= 5 ? "ã¨ã¦ã‚‚" : "",
+                Luck < 0 ? "ä¸å¹¸" : "å¹¸ç¦");
 #endif
         if (wizard)
             Sprintf(eos(buf), " (%d)", Luck);
@@ -3298,29 +3298,29 @@ int final;
 /*JP
         enl_msg("Your luck ", "is", "was", " zero", "");
 */
-        enl_msg("‚ ‚È‚½‚Ì‰^‚Íƒ[ƒ", "‚Å‚ ‚é", "‚¾‚Á‚½", "", "");
+        enl_msg("ã‚ãªãŸã®é‹ã¯ã‚¼ãƒ­", "ã§ã‚ã‚‹", "ã ã£ãŸ", "", "");
     if (u.moreluck > 0)
 /*JP
         you_have("extra luck", "");
 */
-        you_have("‚³‚ç‚È‚éK‰^", "");
+        you_have("ã•ã‚‰ãªã‚‹å¹¸é‹", "");
     else if (u.moreluck < 0)
 /*JP
         you_have("reduced luck", "");
 */
-        you_have("‚³‚ç‚È‚é•s‰^", "");
+        you_have("ã•ã‚‰ãªã‚‹ä¸é‹", "");
     if (carrying(LUCKSTONE) || stone_luck(TRUE)) {
         ltmp = stone_luck(0);
         if (ltmp <= 0)
 /*JP
             enl_msg("Bad luck ", "does", "did", " not time out for you", "");
 */
-            enl_msg("•s‰^‚ÍŠÔØ‚ê‚É‚È‚ç‚È", "‚¢", "‚©‚Á‚½", "", "");
+            enl_msg("ä¸é‹ã¯æ™‚é–“åˆ‡ã‚Œã«ãªã‚‰ãª", "ã„", "ã‹ã£ãŸ", "", "");
         if (ltmp >= 0)
 /*JP
             enl_msg("Good luck ", "does", "did", " not time out for you", "");
 */
-            enl_msg("K‰^‚ÍŠÔØ‚ê‚É‚È‚ç‚È", "‚¢", "‚©‚Á‚½", "", "");
+            enl_msg("å¹¸é‹ã¯æ™‚é–“åˆ‡ã‚Œã«ãªã‚‰ãª", "ã„", "ã‹ã£ãŸ", "", "");
     }
 
     if (u.ugangr) {
@@ -3328,8 +3328,8 @@ int final;
         Sprintf(buf, " %sangry with you",
                 u.ugangr > 6 ? "extremely " : u.ugangr > 3 ? "very " : "");
 #else
-        Sprintf(buf, "%s‚Í%s“{‚Á‚Ä%s", u_gname(),
-                u.ugangr > 6 ? "–Ò—ó‚É" : u.ugangr > 3 ? "‚Æ‚Ä‚à" : "", final ? ita : iru);
+        Sprintf(buf, "%sã¯%sæ€’ã£ã¦%s", u_gname(),
+                u.ugangr > 6 ? "çŒ›çƒˆã«" : u.ugangr > 3 ? "ã¨ã¦ã‚‚" : "", final ? ita : iru);
 #endif
         if (wizard)
             Sprintf(eos(buf), " (%d)", u.ugangr);
@@ -3357,8 +3357,8 @@ int final;
                 Sprintf(eos(buf), " (%d)", u.ublesscnt);
             you_can(buf, "");
 #else /*JP*/
-            Sprintf(buf, "‚ ‚È‚½‚ÍˆÀ‘S‚É‹F‚é‚±‚Æ‚ª");
-            Strcat(buf, can_pray(FALSE) ? can : "‚Å‚«‚È‚¢");
+            Sprintf(buf, "ã‚ãªãŸã¯å®‰å…¨ã«ç¥ˆã‚‹ã“ã¨ãŒ");
+            Strcat(buf, can_pray(FALSE) ? can : "ã§ããªã„");
             if (wizard)
               Sprintf(eos(buf), " (%d)", u.ublesscnt);
             enl_msg(buf, "", "", "", "");
@@ -3380,21 +3380,21 @@ int final;
 /*JP
             Sprintf(buf, "Fruit #%d ", f->fid);
 */
-            Sprintf(buf, "fruit $%d ‚Í", f->fid);
+            Sprintf(buf, "fruit $%d ã¯", f->fid);
 /*JP
             enl_msg(buf, "is ", "was ", f->fname, "");
 */
-            enl_msg(buf, "‚¾", "‚¾‚Á‚½", f->fname, "");
+            enl_msg(buf, "ã ", "ã ã£ãŸ", f->fname, "");
         }
 /*JP
         enl_msg("The current fruit ", "is ", "was ", pl_fruit, "");
 */
-        enl_msg("Œ»İ‚Ì fruit ‚Í", "‚¾", "‚¾‚Á‚½", pl_fruit, "");
+        enl_msg("ç¾åœ¨ã® fruit ã¯", "ã ", "ã ã£ãŸ", pl_fruit, "");
         Sprintf(buf, "%d", flags.made_fruit);
 /*JP
         enl_msg("The made fruit flag ", "is ", "was ", buf, "");
 */
-        enl_msg("made fruit flag ‚Í", "‚¾", "‚¾‚Á‚½", buf, "");
+        enl_msg("made fruit flag ã¯", "ã ", "ã ã£ãŸ", buf, "");
     }
 #endif
 
@@ -3406,44 +3406,44 @@ int final;
 /*JP
             p = "survived after being killed ";
 */
-            p = "€‚ñ‚¾Œã•œŠˆ‚µ‚Ä‚¢‚½";
+            p = "æ­»ã‚“ã å¾Œå¾©æ´»ã—ã¦ã„ãŸ";
             switch (u.umortality) {
             case 0:
 /*JP
                 p = !final ? (char *) 0 : "survived";
 */
-                p = !final ? (char *)0 : "¶‚«‰„‚Ñ‚½";
+                p = !final ? (char *)0 : "ç”Ÿãå»¶ã³ãŸ";
                 break;
             case 1:
 /*JP
                 Strcpy(buf, "once");
 */
-                Strcpy(buf, "ˆê“x");
+                Strcpy(buf, "ä¸€åº¦");
                 break;
             case 2:
 /*JP
                 Strcpy(buf, "twice");
 */
-                Strcpy(buf, "“ñ“x");
+                Strcpy(buf, "äºŒåº¦");
                 break;
             case 3:
 /*JP
                 Strcpy(buf, "thrice");
 */
-                Strcpy(buf, "O“x");
+                Strcpy(buf, "ä¸‰åº¦");
                 break;
             default:
 /*JP
                 Sprintf(buf, "%d times", u.umortality);
 */
-                Sprintf(buf, "%d‰ñ", u.umortality);
+                Sprintf(buf, "%då›", u.umortality);
                 break;
             }
         } else { /* game ended in character's death */
 /*JP
             p = "are dead";
 */
-            p = "€‚ñ‚Å‚¢‚é";
+            p = "æ­»ã‚“ã§ã„ã‚‹";
             switch (u.umortality) {
             case 0:
                 impossible("dead without dying?");
@@ -3454,7 +3454,7 @@ int final;
                 Sprintf(buf, " (%d%s time!)", u.umortality,
                         ordin(u.umortality));
 #else
-                 Sprintf(buf, "(%d‰ñI)", u.umortality);
+                 Sprintf(buf, "(%då›ï¼)", u.umortality);
 #endif
                 break;
             }
@@ -3463,7 +3463,7 @@ int final;
 /*JP
             enl_msg(You_, "have been killed ", p, buf, "");
 */
-            enl_msg(You_, "€‚ñ‚Å‚¢‚é", p, buf, "");
+            enl_msg(You_, "æ­»ã‚“ã§ã„ã‚‹", p, buf, "");
     }
 }
 
@@ -3501,36 +3501,36 @@ minimal_enlightenment()
 /*JP
              "Starting", FALSE);
 */
-             "ŠJn", FALSE);
+             "é–‹å§‹", FALSE);
 
     /* Starting name, race, role, gender */
 /*JP
     Sprintf(buf, fmtstr, "name", plname);
 */
-    Sprintf(buf, fmtstr, "–¼‘O", plname);
+    Sprintf(buf, fmtstr, "åå‰", plname);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 /*JP
     Sprintf(buf, fmtstr, "race", urace.noun);
 */
-    Sprintf(buf, fmtstr, "í‘°", urace.noun);
+    Sprintf(buf, fmtstr, "ç¨®æ—", urace.noun);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 /*JP
     Sprintf(buf, fmtstr, "role",
 */
-    Sprintf(buf, fmtstr, "E‹Æ",
+    Sprintf(buf, fmtstr, "è·æ¥­",
             (flags.initgend && urole.name.f) ? urole.name.f : urole.name.m);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 /*JP
     Sprintf(buf, fmtstr, "gender", genders[flags.initgend].adj);
 */
-    Sprintf(buf, fmtstr, "«•Ê", genders[flags.initgend].adj);
+    Sprintf(buf, fmtstr, "æ€§åˆ¥", genders[flags.initgend].adj);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 
     /* Starting alignment */
 /*JP
     Sprintf(buf, fmtstr, "alignment", align_str(u.ualignbase[A_ORIGINAL]));
 */
-    Sprintf(buf, fmtstr, "‘®«", align_str(u.ualignbase[A_ORIGINAL]));
+    Sprintf(buf, fmtstr, "å±æ€§", align_str(u.ualignbase[A_ORIGINAL]));
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 
     /* Current name, race, role, gender */
@@ -3539,17 +3539,17 @@ minimal_enlightenment()
 /*JP
              "Current", FALSE);
 */
-             "Œ»İ", FALSE);
+             "ç¾åœ¨", FALSE);
 /*JP
     Sprintf(buf, fmtstr, "race", Upolyd ? youmonst.data->mname : urace.noun);
 */
-    Sprintf(buf, fmtstr, "í‘°", Upolyd ? youmonst.data->mname : urace.noun);
+    Sprintf(buf, fmtstr, "ç¨®æ—", Upolyd ? youmonst.data->mname : urace.noun);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
     if (Upolyd) {
 /*JP
         Sprintf(buf, fmtstr, "role (base)",
 */
-        Sprintf(buf, fmtstr, "E‹Æ(Šî–{)",
+        Sprintf(buf, fmtstr, "è·æ¥­(åŸºæœ¬)",
                 (u.mfemale && urole.name.f) ? urole.name.f
                                             : urole.name.m);
         add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
@@ -3557,7 +3557,7 @@ minimal_enlightenment()
 /*JP
         Sprintf(buf, fmtstr, "role",
 */
-        Sprintf(buf, fmtstr, "E‹Æ",
+        Sprintf(buf, fmtstr, "è·æ¥­",
                 (flags.female && urole.name.f) ? urole.name.f
                                                : urole.name.m);
         add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
@@ -3567,13 +3567,13 @@ minimal_enlightenment()
 /*JP
     Sprintf(buf, fmtstr, "gender", genders[genidx].adj);
 */
-    Sprintf(buf, fmtstr, "«•Ê", genders[genidx].adj);
+    Sprintf(buf, fmtstr, "æ€§åˆ¥", genders[genidx].adj);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
     if (Upolyd && (int) u.mfemale != genidx) {
 /*JP
         Sprintf(buf, fmtstr, "gender (base)", genders[u.mfemale].adj);
 */
-        Sprintf(buf, fmtstr, "«•Ê(Šî–{)", genders[u.mfemale].adj);
+        Sprintf(buf, fmtstr, "æ€§åˆ¥(åŸºæœ¬)", genders[u.mfemale].adj);
         add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
     }
 
@@ -3581,7 +3581,7 @@ minimal_enlightenment()
 /*JP
     Sprintf(buf, fmtstr, "alignment", align_str(u.ualign.type));
 */
-    Sprintf(buf, fmtstr, "‘®«", align_str(u.ualign.type));
+    Sprintf(buf, fmtstr, "å±æ€§", align_str(u.ualign.type));
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 
     /* Deity list */
@@ -3590,7 +3590,7 @@ minimal_enlightenment()
 /*JP
              "Deities", FALSE);
 */
-             "_", FALSE);
+             "ç¥", FALSE);
 #if 0 /*JP*/
     Sprintf(buf2, deity_fmtstr, align_gname(A_CHAOTIC),
             (u.ualignbase[A_ORIGINAL] == u.ualign.type
@@ -3600,14 +3600,14 @@ minimal_enlightenment()
 #else
     Sprintf(buf2, deity_fmtstr, align_gname(A_CHAOTIC),
             (u.ualignbase[A_ORIGINAL] == u.ualign.type
-             && u.ualign.type == A_CHAOTIC)               ? " (‰CŒ»)"
-                : (u.ualignbase[A_ORIGINAL] == A_CHAOTIC) ? " (‰)"
-                : (u.ualign.type   == A_CHAOTIC)          ? " (Œ»)" : "");
+             && u.ualign.type == A_CHAOTIC)               ? " (åˆï¼Œç¾)"
+                : (u.ualignbase[A_ORIGINAL] == A_CHAOTIC) ? " (åˆ)"
+                : (u.ualign.type   == A_CHAOTIC)          ? " (ç¾)" : "");
 #endif
 /*JP
     Sprintf(buf, fmtstr, "Chaotic", buf2);
 */
-    Sprintf(buf, fmtstr, "¬“×", buf2);
+    Sprintf(buf, fmtstr, "æ··æ²Œ", buf2);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 
 #if 0 /*JP*/
@@ -3619,14 +3619,14 @@ minimal_enlightenment()
 #else
     Sprintf(buf2, deity_fmtstr, align_gname(A_NEUTRAL),
             (u.ualignbase[A_ORIGINAL] == u.ualign.type
-             && u.ualign.type == A_NEUTRAL)               ? " (‰CŒ»)"
-                : (u.ualignbase[A_ORIGINAL] == A_NEUTRAL) ? " (‰)"
-                : (u.ualign.type   == A_NEUTRAL)          ? " (Œ»)" : "");
+             && u.ualign.type == A_NEUTRAL)               ? " (åˆï¼Œç¾)"
+                : (u.ualignbase[A_ORIGINAL] == A_NEUTRAL) ? " (åˆ)"
+                : (u.ualign.type   == A_NEUTRAL)          ? " (ç¾)" : "");
 #endif
 /*JP
     Sprintf(buf, fmtstr, "Neutral", buf2);
 */
-    Sprintf(buf, fmtstr, "’†—§", buf2);
+    Sprintf(buf, fmtstr, "ä¸­ç«‹", buf2);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 
 #if 0 /*JP*/
@@ -3638,20 +3638,20 @@ minimal_enlightenment()
 #else
     Sprintf(buf2, deity_fmtstr, align_gname(A_LAWFUL),
             (u.ualignbase[A_ORIGINAL] == u.ualign.type
-             && u.ualign.type == A_LAWFUL)                ? " (‰CŒ»)"
-                : (u.ualignbase[A_ORIGINAL] == A_LAWFUL)  ? " (‰)"
-                : (u.ualign.type   == A_LAWFUL)           ? " (Œ»)" : "");
+             && u.ualign.type == A_LAWFUL)                ? " (åˆï¼Œç¾)"
+                : (u.ualignbase[A_ORIGINAL] == A_LAWFUL)  ? " (åˆ)"
+                : (u.ualign.type   == A_LAWFUL)           ? " (ç¾)" : "");
 #endif
 /*JP
     Sprintf(buf, fmtstr, "Lawful", buf2);
 */
-    Sprintf(buf, fmtstr, "’˜", buf2);
+    Sprintf(buf, fmtstr, "ç§©åº", buf2);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
 
 /*JP
     end_menu(tmpwin, "Base Attributes");
 */
-    end_menu(tmpwin, "Šî–{‘®«");
+    end_menu(tmpwin, "åŸºæœ¬å±æ€§");
     n = select_menu(tmpwin, PICK_NONE, &selected);
     destroy_nhwindow(tmpwin);
     return (boolean) (n != -1);
@@ -3682,12 +3682,12 @@ int msgflag;          /* for variant message phrasing */
 /*JP
     Strcpy(buf, "hiding");
 */
-    Strcpy(buf, "‰B‚ê");
+    Strcpy(buf, "éš ã‚Œ");
     if (youmonst.m_ap_type != M_AP_NOTHING) {
         /* mimic; hero is only able to mimic a strange object or gold
            or hallucinatory alternative to gold, so we skip the details
            for the hypothetical furniture and monster cases */
-#if 0 /*JP*//*Œã‚ë‚É‰ñ‚·*//* not used */
+#if 0 /*JP*//*å¾Œã‚ã«å›ã™*//* not used */
         bp = eos(strcpy(buf, "mimicking"));
 #endif
         if (youmonst.m_ap_type == M_AP_OBJECT) {
@@ -3699,17 +3699,17 @@ int msgflag;          /* for variant message phrasing */
 /*JP
             Strcpy(bp, " something");
 */
-            Strcpy(buf, "‰½‚©");
+            Strcpy(buf, "ä½•ã‹");
         } else if (youmonst.m_ap_type == M_AP_MONSTER) {
 /*JP
             Strcpy(bp, " someone");
 */
-            Strcpy(buf, "‰½Ò‚©");
+            Strcpy(buf, "ä½•è€…ã‹");
         } else {
             ; /* something unexpected; leave 'buf' as-is */
         }
-#if 1 /*JP*//*‚±‚±‚Å’Ç‰Á*/
-        Strcat(buf, "‚Ì‚Ó‚è‚ğ‚µ");
+#if 1 /*JP*//*ã“ã“ã§è¿½åŠ */
+        Strcat(buf, "ã®ãµã‚Šã‚’ã—");
 #endif
     } else if (u.uundetected) {
         bp = eos(buf); /* points past "hiding" */
@@ -3718,7 +3718,7 @@ int msgflag;          /* for variant message phrasing */
 /*JP
                 Sprintf(bp, " in the %s", waterbody_name(u.ux, u.uy));
 */
-                Sprintf(bp, "%s‚Ì’†‚É", waterbody_name(u.ux, u.uy));
+                Sprintf(bp, "%sã®ä¸­ã«", waterbody_name(u.ux, u.uy));
         } else if (hides_under(youmonst.data)) {
             struct obj *o = level.objects[u.ux][u.uy];
 
@@ -3726,13 +3726,13 @@ int msgflag;          /* for variant message phrasing */
 /*JP
                 Sprintf(bp, " underneath %s", ansimpleoname(o));
 */
-                Sprintf(bp, "%s‚Ì‰º‚É", ansimpleoname(o));
+                Sprintf(bp, "%sã®ä¸‹ã«", ansimpleoname(o));
         } else if (is_clinger(youmonst.data) || Flying) {
             /* Flying: 'lurker above' hides on ceiling but doesn't cling */
 /*JP
             Sprintf(bp, " on the %s", ceiling(u.ux, u.uy));
 */
-            Sprintf(bp, "%s‚É", ceiling(u.ux, u.uy));
+            Sprintf(bp, "%sã«", ceiling(u.ux, u.uy));
         } else {
             /* on floor; is_hider() but otherwise not special: 'trapper' */
             if (u.utrap && u.utraptype == TT_PIT) {
@@ -3742,17 +3742,17 @@ int msgflag;          /* for variant message phrasing */
                 Sprintf(bp, " in a %spit",
                         (t && t->ttyp == SPIKED_PIT) ? "spiked " : "");
 #else
-                Sprintf(bp, "%s—‚µŒŠ‚Ì’†‚É",
-                        (t && t->ttyp == SPIKED_PIT) ? "ƒgƒQ‚¾‚ç‚¯‚Ì" : "");
+                Sprintf(bp, "%sè½ã—ç©´ã®ä¸­ã«",
+                        (t && t->ttyp == SPIKED_PIT) ? "ãƒˆã‚²ã ã‚‰ã‘ã®" : "");
 #endif
             } else
 /*JP
                 Sprintf(bp, " on the %s", surface(u.ux, u.uy));
 */
-                Sprintf(bp, "%s‚É", surface(u.ux, u.uy));
+                Sprintf(bp, "%sã«", surface(u.ux, u.uy));
         }
-#if 1 /*JP*//*‚±‚±‚Å’Ç‰Á*/
-        Strcat(buf, "‰B‚ê");
+#if 1 /*JP*//*ã“ã“ã§è¿½åŠ */
+        Strcat(buf, "éš ã‚Œ");
 #endif
     } else {
         ; /* shouldn't happen; will result in generic "you are hiding" */
@@ -3768,9 +3768,9 @@ int msgflag;          /* for variant message phrasing */
         You("are %s %s.", msgflag ? "already" : "now", buf);
 #else
         if (msgflag) {
-            You("‚·‚Å‚É%s‚Ä‚¢‚éD", buf);
+            You("ã™ã§ã«%sã¦ã„ã‚‹ï¼", buf);
         } else {
-            You("%s‚½D", buf);
+            You("%sãŸï¼", buf);
         }
 #endif
     }
@@ -3798,54 +3798,54 @@ int final;
 /*JP
     putstr(en_win, 0, "Voluntary challenges:");
 */
-    putstr(en_win, 0, "©”­“I’§í:");
+    putstr(en_win, 0, "è‡ªç™ºçš„æŒ‘æˆ¦:");
 
     if (u.uroleplay.blind)
 /*JP
         you_have_been("blind from birth");
 */
-        you_have_been("¶‚Ü‚ê‚È‚ª‚ç‚É–Ó–Ú");
+        you_have_been("ç”Ÿã¾ã‚ŒãªãŒã‚‰ã«ç›²ç›®");
     if (u.uroleplay.nudist)
 /*JP
         you_have_been("faithfully nudist");
 */
-        you_have_been("’‰À‚È—‡‘°");
+        you_have_been("å¿ å®Ÿãªè£¸æ—");
 
     if (!u.uconduct.food)
 /*JP
         enl_msg(You_, "have gone", "went", " without food", "");
 */
-        enl_msg("‚ ‚È‚½‚ÍH–‚ğ‚µ", "‚Ä‚¢‚È‚¢", "‚È‚©‚Á‚½", "", "");
+        enl_msg("ã‚ãªãŸã¯é£Ÿäº‹ã‚’ã—", "ã¦ã„ãªã„", "ãªã‹ã£ãŸ", "", "");
         /* but beverages are okay */
     else if (!u.uconduct.unvegan)
 /*JP
         you_have_X("followed a strict vegan diet");
 */
-        you_have_been("ŒµŠi‚ÈØHå‹`Ò");
+        you_have_been("å³æ ¼ãªèœé£Ÿä¸»ç¾©è€…");
     else if (!u.uconduct.unvegetarian)
 /*JP
         you_have_been("vegetarian");
 */
-        you_have_been("ØHå‹`Ò");
+        you_have_been("èœé£Ÿä¸»ç¾©è€…");
 
     if (!u.uconduct.gnostic)
 /*JP
         you_have_been("an atheist");
 */
-        you_have_been("–³_˜_Ò");
+        you_have_been("ç„¡ç¥è«–è€…");
 
     if (!u.uconduct.weaphit) {
 /*JP
         you_have_never("hit with a wielded weapon");
 */
-        you_have_never("‚ ‚È‚½‚Í‘•”õ‚µ‚Ä‚¢‚é•Ší‚ÅUŒ‚‚µ");
+        you_have_never("ã‚ãªãŸã¯è£…å‚™ã—ã¦ã„ã‚‹æ­¦å™¨ã§æ”»æ’ƒã—");
     } else if (wizard) {
 #if 0 /*JP*/
         Sprintf(buf, "used a wielded weapon %ld time%s", u.uconduct.weaphit,
                 plur(u.uconduct.weaphit));
         you_have_X(buf);
 #else
-        Sprintf(buf, "‚ ‚È‚½‚Í%ld‰ñ‘•”õ‚µ‚½•Ší‚ğg—p‚µ", u.uconduct.weaphit);
+        Sprintf(buf, "ã‚ãªãŸã¯%ldå›è£…å‚™ã—ãŸæ­¦å™¨ã‚’ä½¿ç”¨ã—", u.uconduct.weaphit);
         you_have_X(buf);
 #endif
     }
@@ -3853,20 +3853,20 @@ int final;
 /*JP
         you_have_been("a pacifist");
 */
-        you_have_been("•½˜aå‹`Ò");
+        you_have_been("å¹³å’Œä¸»ç¾©è€…");
 
     if (!u.uconduct.literate) {
 /*JP
         you_have_been("illiterate");
 */
-        you_have_never("‚ ‚È‚½‚Í“Ç‚İ‘‚«‚µ");
+        you_have_never("ã‚ãªãŸã¯èª­ã¿æ›¸ãã—");
     } else if (wizard) {
 #if 0 /*JP:T*/
         Sprintf(buf, "read items or engraved %ld time%s", u.uconduct.literate,
                 plur(u.uconduct.literate));
         you_have_X(buf);
 #else
-        Sprintf(buf, "%ld‰ñ“Ç‚ñ‚¾‚è‘‚¢‚½‚è‚µ", u.uconduct.literate);
+        Sprintf(buf, "%ldå›èª­ã‚“ã ã‚Šæ›¸ã„ãŸã‚Šã—", u.uconduct.literate);
         you_have_X(buf);
 #endif
     }
@@ -3876,14 +3876,14 @@ int final;
 /*JP
         you_have_never("genocided any monsters");
 */
-        you_have_never("‚ ‚È‚½‚Í‰ö•¨‚ğ‹sE‚µ");
+        you_have_never("ã‚ãªãŸã¯æ€ªç‰©ã‚’è™æ®ºã—");
     } else {
 #if 0 /*JP:T*/
         Sprintf(buf, "genocided %d type%s of monster%s", ngenocided,
                 plur(ngenocided), plur(ngenocided));
         you_have_X(buf);
 #else
-        Sprintf(buf, "%dí‚Ì‰ö•¨‚ğ‹sE‚µ", ngenocided);
+        Sprintf(buf, "%dç¨®ã®æ€ªç‰©ã‚’è™æ®ºã—", ngenocided);
         you_have_X(buf);
 #endif
     }
@@ -3892,14 +3892,14 @@ int final;
 /*JP
         you_have_never("polymorphed an object");
 */
-        you_have_never("‚ ‚È‚½‚Í•¨‘Ì‚ğ•Ï‰»‚³‚¹");
+        you_have_never("ã‚ãªãŸã¯ç‰©ä½“ã‚’å¤‰åŒ–ã•ã›");
     } else if (wizard) {
 #if 0 /*JP:T*/
         Sprintf(buf, "polymorphed %ld item%s", u.uconduct.polypiles,
                 plur(u.uconduct.polypiles));
         you_have_X(buf);
 #else
-        Sprintf(buf, "%ldŒÂ‚Ì•¨‚ğ•Ï‰»‚³‚¹", u.uconduct.polypiles);
+        Sprintf(buf, "%ldå€‹ã®ç‰©ã‚’å¤‰åŒ–ã•ã›", u.uconduct.polypiles);
         you_have_X(buf);
 #endif
     }
@@ -3908,14 +3908,14 @@ int final;
 /*JP
         you_have_never("changed form");
 */
-        you_have_never("‚ ‚È‚½‚Í•Ï‰»‚µ");
+        you_have_never("ã‚ãªãŸã¯å¤‰åŒ–ã—");
     } else if (wizard) {
 #if 0 /*JP:T*/
         Sprintf(buf, "changed form %ld time%s", u.uconduct.polyselfs,
                 plur(u.uconduct.polyselfs));
         you_have_X(buf);
 #else
-        Sprintf(buf, "%ld‰ñp‚ğ•Ï‚¦", u.uconduct.polyselfs);
+        Sprintf(buf, "%ldå›å§¿ã‚’å¤‰ãˆ", u.uconduct.polyselfs);
         you_have_X(buf);
 #endif
     }
@@ -3924,13 +3924,13 @@ int final;
 /*JP
         you_have_X("used no wishes");
 */
-        you_have_never("‚ ‚È‚½‚ÍŠè‚¢–‚ğ‚µ");
+        you_have_never("ã‚ãªãŸã¯é¡˜ã„äº‹ã‚’ã—");
     } else {
 #if 0 /*JP*/
         Sprintf(buf, "used %ld wish%s", u.uconduct.wishes,
                 (u.uconduct.wishes > 1L) ? "es" : "");
 #else
-        Sprintf(buf, "%ld‰ñŠè‚¢–‚ğ‚µ", u.uconduct.wishes);
+        Sprintf(buf, "%ldå›é¡˜ã„äº‹ã‚’ã—", u.uconduct.wishes);
 #endif
         if (u.uconduct.wisharti) {
             /* if wisharti == wishes
@@ -3959,7 +3959,7 @@ int final;
             enl_msg(You_, "have not wished", "did not wish",
                     " for any artifacts", "");
 #else
-            enl_msg("‚ ‚È‚½‚Í¹Ší‚ğŠè", "‚Á‚Ä‚¢‚È‚¢", "‚í‚È‚©‚Á‚½", "", "");
+            enl_msg("ã‚ãªãŸã¯è–å™¨ã‚’é¡˜", "ã£ã¦ã„ãªã„", "ã‚ãªã‹ã£ãŸ", "", "");
 #endif
     }
 
@@ -3992,19 +3992,19 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('?'), "?", "list all extended commands",
 #else
-    { M('?'), "?", "‚±‚ÌŠg’£ƒRƒ}ƒ“ƒhˆê——‚ğ•\¦‚·‚é",
+    { M('?'), "?", "ã“ã®æ‹¡å¼µã‚³ãƒãƒ³ãƒ‰ä¸€è¦§ã‚’è¡¨ç¤ºã™ã‚‹",
 #endif
             doextlist, IFBURIED | AUTOCOMPLETE | GENERALCMD },
 #if 0 /*JP*/
     { M('a'), "adjust", "adjust inventory letters",
 #else
-    { M('a'), "adjust", "‚¿•¨ˆê——‚Ì’²®",
+    { M('a'), "adjust", "æŒã¡ç‰©ä¸€è¦§ã®èª¿æ•´",
 #endif
             doorganize, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { M('A'), "annotate", "name current level",
 #else
-    { M('A'), "annotate", "Œ»İ‚ÌŠK‚É–¼‘O‚ğ‚Â‚¯‚é",
+    { M('A'), "annotate", "ç¾åœ¨ã®éšã«åå‰ã‚’ã¤ã‘ã‚‹",
 #endif
             donamelevel, IFBURIED | AUTOCOMPLETE },
     { 'a', "apply", "apply (use) a tool (pick-axe, key, lamp...)",
@@ -4018,19 +4018,19 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('c'), "chat", "talk to someone", dotalk, IFBURIED | AUTOCOMPLETE },
 #else
-    { M('c'), "chat", "’N‚©‚Æ˜b‚·", dotalk, IFBURIED | AUTOCOMPLETE },
+    { M('c'), "chat", "èª°ã‹ã¨è©±ã™", dotalk, IFBURIED | AUTOCOMPLETE },
 #endif
     { 'c', "close", "close a door", doclose },
 #if 0 /*JP*/
     { M('C'), "conduct", "list voluntary challenges you have maintained",
 #else
-    { M('C'), "conduct", "‚Ç‚¤‚¢‚¤s“®‚ğ‚Æ‚Á‚½‚©Œ©‚é",
+    { M('C'), "conduct", "ã©ã†ã„ã†è¡Œå‹•ã‚’ã¨ã£ãŸã‹è¦‹ã‚‹",
 #endif
             doconduct, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { M('d'), "dip", "dip an object into something", dodip, AUTOCOMPLETE },
 #else
-    { M('d'), "dip", "‰½‚©‚É•¨‚ğZ‚·", dodip, AUTOCOMPLETE },
+    { M('d'), "dip", "ä½•ã‹ã«ç‰©ã‚’æµ¸ã™", dodip, AUTOCOMPLETE },
 #endif
     { '>', "down", "go down a staircase", dodown },
     { 'd', "drop", "drop an item", dodrop },
@@ -4040,20 +4040,20 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('e'), "enhance", "advance or check weapon and spell skills",
 #else
-    { M('e'), "enhance", "•Šín—û“x‚ğ‚‚ß‚é",
+    { M('e'), "enhance", "æ­¦å™¨ç†Ÿç·´åº¦ã‚’é«˜ã‚ã‚‹",
 #endif
             enhance_weapon_skill, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { '\0', "exploremode", "enter explore (discovery) mode",
 #else
-    { '\0', "exploremode", "’TŒŸ(”­Œ©)ƒ‚[ƒh‚É“ü‚é",
+    { '\0', "exploremode", "æ¢æ¤œ(ç™ºè¦‹)ãƒ¢ãƒ¼ãƒ‰ã«å…¥ã‚‹",
 #endif
             enter_explore_mode, IFBURIED },
     { 'f', "fire", "fire ammunition from quiver", dofire },
 #if 0 /*JP*/
     { M('f'), "force", "force a lock", doforce, AUTOCOMPLETE },
 #else
-    { M('f'), "force", "Œ®‚ğ‚±‚¶‚ ‚¯‚é", doforce, AUTOCOMPLETE },
+    { M('f'), "force", "éµã‚’ã“ã˜ã‚ã‘ã‚‹", doforce, AUTOCOMPLETE },
 #endif
     { ';', "glance", "show what type of thing a map symbol corresponds to",
             doquickwhatis, IFBURIED | GENERALCMD },
@@ -4068,13 +4068,13 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('i'), "invoke", "invoke an object's special powers",
 #else
-    { M('i'), "invoke", "•¨‚Ì“Á•Ê‚È—Í‚ğg‚¤",
+    { M('i'), "invoke", "ç‰©ã®ç‰¹åˆ¥ãªåŠ›ã‚’ä½¿ã†",
 #endif
             doinvoke, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { M('j'), "jump", "jump to another location", dojump, AUTOCOMPLETE },
 #else
-    { M('j'), "jump", "‘¼‚ÌˆÊ’u‚É”ò‚Ñ‚¤‚Â‚é", dojump, AUTOCOMPLETE },
+    { M('j'), "jump", "ä»–ã®ä½ç½®ã«é£›ã³ã†ã¤ã‚‹", dojump, AUTOCOMPLETE },
 #endif
     { C('d'), "kick", "kick something", dokick },
     { '\\', "known", "show what object types have been discovered",
@@ -4084,51 +4084,51 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "levelchange", "change experience level",
 #else
-    { '\0', "levelchange", "ŒoŒ±ƒŒƒxƒ‹‚ğ•Ï‚¦‚é",
+    { '\0', "levelchange", "çµŒé¨“ãƒ¬ãƒ™ãƒ«ã‚’å¤‰ãˆã‚‹",
 #endif
             wiz_level_change, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #if 0 /*JP*/
     { '\0', "lightsources", "show mobile light sources",
 #else
-    { '\0', "lightsources", "ˆÚ“®ŒõŒ¹‚ğŒ©‚é",
+    { '\0', "lightsources", "ç§»å‹•å…‰æºã‚’è¦‹ã‚‹",
 #endif
             wiz_light_sources, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
     { ':', "look", "look at what is here", dolook, IFBURIED },
 #if 0 /*JP*/
     { M('l'), "loot", "loot a box on the floor", doloot, AUTOCOMPLETE },
 #else
-    { M('l'), "loot", "°‚Ìã‚Ì” ‚ğŠJ‚¯‚é", doloot, AUTOCOMPLETE },
+    { M('l'), "loot", "åºŠã®ä¸Šã®ç®±ã‚’é–‹ã‘ã‚‹", doloot, AUTOCOMPLETE },
 #endif
 #ifdef DEBUG_MIGRATING_MONS
 #if 0 /*JP*/
     { '\0', "migratemons", "migrate N random monsters",
 #else
-    { '\0', "migratemons", "ƒ‰ƒ“ƒ_ƒ€‚È‰ö•¨‚ğ‰½‘Ì‚©ˆÚZ‚³‚¹‚é",
+    { '\0', "migratemons", "ãƒ©ãƒ³ãƒ€ãƒ ãªæ€ªç‰©ã‚’ä½•ä½“ã‹ç§»ä½ã•ã›ã‚‹",
 #endif
             wiz_migrate_mons, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #endif
 #if 0 /*JP*/
     { '\0', "monpolycontrol", "control monster polymorphs",
 #else
-    { '\0', "monpolycontrol", "‰ö•¨‚Ö‚Ì•Ï‰»‚ğ§Œä‚·‚é",
+    { '\0', "monpolycontrol", "æ€ªç‰©ã¸ã®å¤‰åŒ–ã‚’åˆ¶å¾¡ã™ã‚‹",
 #endif
             wiz_mon_polycontrol, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #if 0 /*JP*/
     { M('m'), "monster", "use monster's special ability",
 #else
-    { M('m'), "monster", "‰ö•¨‚Ì“Á•Ê”\—Í‚ğg‚¤",
+    { M('m'), "monster", "æ€ªç‰©ã®ç‰¹åˆ¥èƒ½åŠ›ã‚’ä½¿ã†",
 #endif
             domonability, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { 'N', "name", "name a monster or an object",
 #else
-    { 'N', "name", "ƒAƒCƒeƒ€‚â•¨‚É–¼‘O‚ğ‚Â‚¯‚é",
+    { 'N', "name", "ã‚¢ã‚¤ãƒ†ãƒ ã‚„ç‰©ã«åå‰ã‚’ã¤ã‘ã‚‹",
 #endif
             docallcmd, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { M('o'), "offer", "offer a sacrifice to the gods",
 #else
-    { M('o'), "offer", "_‚É‹Ÿ•¨‚ğ•ù‚°‚é",
+    { M('o'), "offer", "ç¥ã«ä¾›ç‰©ã‚’æ§ã’ã‚‹",
 #endif
             dosacrifice, AUTOCOMPLETE },
     { 'o', "open", "open a door", doopen },
@@ -4137,13 +4137,13 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { C('o'), "overview", "show a summary of the explored dungeon",
 #else
-    { C('o'), "overview", "’Tõ‚µ‚½–À‹{‚ÌŠT—v‚ğ•\¦‚·‚é",
+    { C('o'), "overview", "æ¢ç´¢ã—ãŸè¿·å®®ã®æ¦‚è¦ã‚’è¡¨ç¤ºã™ã‚‹",
 #endif
             dooverview, IFBURIED | AUTOCOMPLETE },
 #if 0 /*JP*/
     { '\0', "panic", "test panic routine (fatal to game)",
 #else
-    { '\0', "panic", "ƒpƒjƒbƒNƒ‹[ƒ`ƒ“‚ğƒeƒXƒg‚·‚é(’v–½“I)",
+    { '\0', "panic", "ãƒ‘ãƒ‹ãƒƒã‚¯ãƒ«ãƒ¼ãƒãƒ³ã‚’ãƒ†ã‚¹ãƒˆã™ã‚‹(è‡´å‘½çš„)",
 #endif
             wiz_panic, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
     { 'p', "pay", "pay your shopping bill", dopay },
@@ -4151,21 +4151,21 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "polyself", "polymorph self",
 #else
-    { '\0', "polyself", "•Ï‰»‚·‚é",
+    { '\0', "polyself", "å¤‰åŒ–ã™ã‚‹",
 #endif
             wiz_polyself, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #ifdef PORT_DEBUG
 #if 0 /*JP*/
     { '\0', "portdebug", "wizard port debug command",
 #else
-    { '\0', "portdebug", "ƒEƒBƒU[ƒhƒ|[ƒgƒfƒoƒbƒOƒRƒ}ƒ“ƒh",
+    { '\0', "portdebug", "ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰ãƒãƒ¼ãƒˆãƒ‡ãƒãƒƒã‚°ã‚³ãƒãƒ³ãƒ‰",
 #endif
             wiz_port_debug, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #endif
 #if 0 /*JP*/
     { M('p'), "pray", "pray to the gods for help",
 #else
-    { M('p'), "pray", "_‚É‹F‚é",
+    { M('p'), "pray", "ç¥ã«ç¥ˆã‚‹",
 #endif
             dopray, IFBURIED | AUTOCOMPLETE },
     { C('p'), "prevmsg", "view recent game messages",
@@ -4175,7 +4175,7 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('q'), "quit", "exit without saving current game",
 #else
-    { M('q'), "quit", "ƒZ[ƒu‚µ‚È‚¢‚ÅI—¹",
+    { M('q'), "quit", "ã‚»ãƒ¼ãƒ–ã—ãªã„ã§çµ‚äº†",
 #endif
             done2, IFBURIED | AUTOCOMPLETE | GENERALCMD },
     { 'Q', "quiver", "select ammunition for quiver", dowieldquiver },
@@ -4185,21 +4185,21 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('R'), "ride", "mount or dismount a saddled steed",
 #else
-    { M('R'), "ride", "‰ö•¨‚Éæ‚é(‚Ü‚½‚Í~‚è‚é)",
+    { M('R'), "ride", "æ€ªç‰©ã«ä¹—ã‚‹(ã¾ãŸã¯é™ã‚Šã‚‹)",
 #endif
             doride, AUTOCOMPLETE },
 #if 0 /*JP*/
     { M('r'), "rub", "rub a lamp or a stone", dorub, AUTOCOMPLETE },
 #else
-    { M('r'), "rub", "ƒ‰ƒ“ƒv‚ğ‚±‚·‚é", dorub, AUTOCOMPLETE },
+    { M('r'), "rub", "ãƒ©ãƒ³ãƒ—ã‚’ã“ã™ã‚‹", dorub, AUTOCOMPLETE },
 #endif
     { 'S', "save", "save the game and exit", dosave, IFBURIED | GENERALCMD },
 #if 0 /*JP*/
     { 's', "search", "search for traps and secret doors",
             dosearch, IFBURIED, "searching" },
 #else
-    { 's', "search", "ã©‚â‰B‚µ”à‚ğ’T‚·",
-            dosearch, IFBURIED, "’T‚·" },
+    { 's', "search", "ç½ ã‚„éš ã—æ‰‰ã‚’æ¢ã™",
+            dosearch, IFBURIED, "æ¢ã™" },
 #endif
     { '*', "seeall", "show all equipment in use", doprinuse, IFBURIED },
     { AMULET_SYM, "seeamulet", "show the amulet currently worn",
@@ -4210,7 +4210,7 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "seenv", "show seen vectors",
 #else
-    { '\0', "seenv", "‹üƒxƒNƒgƒ‹‚ğŒ©‚é",
+    { '\0', "seenv", "è¦–ç·šãƒ™ã‚¯ãƒˆãƒ«ã‚’è¦‹ã‚‹",
 #endif
             wiz_show_seenv, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
     { RING_SYM, "seerings", "show the ring(s) currently worn",
@@ -4229,8 +4229,8 @@ struct ext_func_tab extcmdlist[] = {
     { M('s'), "sit", "sit down", dosit, AUTOCOMPLETE },
     { '\0', "stats", "show memory statistics",
 #else
-    { M('s'), "sit", "À‚é", dosit, AUTOCOMPLETE },
-    { '\0', "stats", "ƒƒ‚ƒŠó‘Ô‚ğŒ©‚é",
+    { M('s'), "sit", "åº§ã‚‹", dosit, AUTOCOMPLETE },
+    { '\0', "stats", "ãƒ¡ãƒ¢ãƒªçŠ¶æ…‹ã‚’è¦‹ã‚‹",
 #endif
             wiz_show_stats, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #ifdef SUSPEND
@@ -4244,7 +4244,7 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "terrain", "show map without obstructions",
 #else
-    { '\0', "terrain", "×–‚‚³‚ê‚¸‚É’n}‚ğŒ©‚é",
+    { '\0', "terrain", "é‚ªé­”ã•ã‚Œãšã«åœ°å›³ã‚’è¦‹ã‚‹",
 #endif
             doterrain, IFBURIED | AUTOCOMPLETE },
     { '\0', "therecmdmenu",
@@ -4254,58 +4254,58 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "timeout", "look at timeout queue and hero's timed intrinsics",
 #else
-    { '\0', "timeout", "ŠÔØ‚êƒLƒ…[‚ÆƒvƒŒƒCƒ„[‚ÌŠÔŒo‰ß‚ğŒ©‚é",
+    { '\0', "timeout", "æ™‚é–“åˆ‡ã‚Œã‚­ãƒ¥ãƒ¼ã¨ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®æ™‚é–“çµŒéã‚’è¦‹ã‚‹",
 #endif
             wiz_timeout_queue, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #if 0 /*JP*/
     { M('T'), "tip", "empty a container", dotip, AUTOCOMPLETE },
 #else
-    { M('T'), "tip", "“ü‚ê•¨‚ğ‹ó‚É‚·‚é", dotip, AUTOCOMPLETE },
+    { M('T'), "tip", "å…¥ã‚Œç‰©ã‚’ç©ºã«ã™ã‚‹", dotip, AUTOCOMPLETE },
 #endif
     { '_', "travel", "travel to a specific location on the map", dotravel },
 #if 0 /*JP*/
     { M('t'), "turn", "turn undead away", doturn, IFBURIED | AUTOCOMPLETE },
 #else
-    { M('t'), "turn", "ƒAƒ“ƒfƒbƒg‚ğ“y‚É•Ô‚·", doturn, IFBURIED | AUTOCOMPLETE },
+    { M('t'), "turn", "ã‚¢ãƒ³ãƒ‡ãƒƒãƒˆã‚’åœŸã«è¿”ã™", doturn, IFBURIED | AUTOCOMPLETE },
 #endif
 #if 0 /*JP*/
     { 'X', "twoweapon", "toggle two-weapon combat",
 #else
-    { 'X', "twoweapon", "—¼è‚¿‚ÌØ‚è‘Ö‚¦",
+    { 'X', "twoweapon", "ä¸¡æ‰‹æŒã¡ã®åˆ‡ã‚Šæ›¿ãˆ",
 #endif
             dotwoweapon, AUTOCOMPLETE },
 #if 0 /*JP*/
     { M('u'), "untrap", "untrap something", dountrap, AUTOCOMPLETE },
 #else
-    { M('u'), "untrap", "ã©‚ğ‚Í‚¸‚·", dountrap, AUTOCOMPLETE },
+    { M('u'), "untrap", "ç½ ã‚’ã¯ãšã™", dountrap, AUTOCOMPLETE },
 #endif
     { '<', "up", "go up a staircase", doup },
 #if 0 /*JP*/
     { '\0', "vanquished", "list vanquished monsters",
 #else
-    { '\0', "vanquished", "“|‚µ‚½‰ö•¨‚Ìˆê——‚ğŒ©‚é",
+    { '\0', "vanquished", "å€’ã—ãŸæ€ªç‰©ã®ä¸€è¦§ã‚’è¦‹ã‚‹",
 #endif
             dovanquished, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
     { M('v'), "version",
 #if 0 /*JP*/
             "list compile time options for this version of NetHack",
 #else
-            "ƒRƒ“ƒpƒCƒ‹‚ÌƒIƒvƒVƒ‡ƒ“‚ğ•\¦‚·‚é",
+            "ã‚³ãƒ³ãƒ‘ã‚¤ãƒ«æ™‚ã®ã‚ªãƒ—ã‚·ãƒ§ãƒ³ã‚’è¡¨ç¤ºã™ã‚‹",
 #endif
             doextversion, IFBURIED | AUTOCOMPLETE | GENERALCMD },
     { 'v', "versionshort", "show version", doversion, IFBURIED | GENERALCMD },
 #if 0 /*JP*/
     { '\0', "vision", "show vision array",
 #else
-    { '\0', "vision", "‹ŠE”z—ñ‚ğŒ©‚é",
+    { '\0', "vision", "è¦–ç•Œé…åˆ—ã‚’è¦‹ã‚‹",
 #endif
             wiz_show_vision, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #if 0 /*JP*/
     { '.', "wait", "rest one move while doing nothing",
             donull, IFBURIED, "waiting" },
 #else
-    { '.', "wait", "ˆê•à•ª‰½‚à‚µ‚È‚¢",
-            donull, IFBURIED, "‹xŒe‚·‚é" },
+    { '.', "wait", "ä¸€æ­©åˆ†ä½•ã‚‚ã—ãªã„",
+            donull, IFBURIED, "ä¼‘æ†©ã™ã‚‹" },
 #endif
     { 'W', "wear", "wear a piece of armor", dowear },
     { '&', "whatdoes", "tell what a command does", dowhatdoes, IFBURIED },
@@ -4315,19 +4315,19 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { M('w'), "wipe", "wipe off your face", dowipe, AUTOCOMPLETE },
 #else
-    { M('w'), "wipe", "Šç‚ğ@‚¤", dowipe, AUTOCOMPLETE },
+    { M('w'), "wipe", "é¡”ã‚’æ‹­ã†", dowipe, AUTOCOMPLETE },
 #endif
 #ifdef DEBUG
 #if 0 /*JP*/
     { '\0', "wizdebug_bury", "wizard debug: bury objs under and around you",
 #else
-    { '\0', "wizdebug_bury", "ƒEƒBƒU[ƒh‚ÅƒoƒbƒO: •¨‚ğ‚ ‚È‚½‚Ìü‚è‚É–„‚ß‚é",
+    { '\0', "wizdebug_bury", "ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰ã§ãƒãƒƒã‚°: ç‰©ã‚’ã‚ãªãŸã®å‘¨ã‚Šã«åŸ‹ã‚ã‚‹",
 #endif
             wiz_debug_cmd_bury, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #if 0 /*JP*/
     { '\0', "wizdebug_traveldisplay", "wizard debug: toggle travel display",
 #else
-    { '\0', "wizdebug_traveldisplay", "ƒEƒBƒU[ƒhƒfƒoƒbƒO: ˆÚ“®•\¦‚ğØ‚è‘Ö‚¦‚é",
+    { '\0', "wizdebug_traveldisplay", "ã‚¦ã‚£ã‚¶ãƒ¼ãƒ‰ãƒ‡ãƒãƒƒã‚°: ç§»å‹•è¡¨ç¤ºã‚’åˆ‡ã‚Šæ›¿ãˆã‚‹",
 #endif
           wiz_debug_cmd_traveldisplay, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #endif
@@ -4348,13 +4348,13 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "wizrumorcheck", "verify rumor boundaries",
 #else
-    { '\0', "wizrumorcheck", "‰\‚Ì‹«ŠE‚ğŒŸØ‚·‚é",
+    { '\0', "wizrumorcheck", "å™‚ã®å¢ƒç•Œã‚’æ¤œè¨¼ã™ã‚‹",
 #endif
             wiz_rumor_check, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
 #if 0 /*JP*/
     { '\0', "wizsmell", "smell monster",
 #else
-    { '\0', "wizsmell", "‰ö•¨‚Ì“õ‚¢‚ğšk‚®",
+    { '\0', "wizsmell", "æ€ªç‰©ã®åŒ‚ã„ã‚’å—…ã",
 #endif
             wiz_smell, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
     { '\0', "wizwhere", "show locations of special levels",
@@ -4364,7 +4364,7 @@ struct ext_func_tab extcmdlist[] = {
 #if 0 /*JP*/
     { '\0', "wmode", "show wall modes",
 #else
-    { '\0', "wmode", "•Çƒ‚[ƒh‚ğŒ©‚é",
+    { '\0', "wmode", "å£ãƒ¢ãƒ¼ãƒ‰ã‚’è¦‹ã‚‹",
 #endif
             wiz_show_wmodes, IFBURIED | AUTOCOMPLETE | WIZMODECMD },
     { 'z', "zap", "zap a wand", dozap },
@@ -5522,7 +5522,7 @@ register char *cmd;
 /*JP
         You_cant("get there from here...");
 */
-        You_cant("‚±‚±‚©‚ç‚»‚±‚Ö‚Ís‚¯‚Ü‚¹‚ñDDD");
+        You_cant("ã“ã“ã‹ã‚‰ãã“ã¸ã¯è¡Œã‘ã¾ã›ã‚“ï¼ï¼ï¼");
         context.run = 0;
         context.nopick = context.forcefight = FALSE;
         context.move = context.mv = FALSE;
@@ -5563,13 +5563,13 @@ register char *cmd;
 /*JP
                 You_cant("do that!");
 */
-                pline("‚»‚ê‚Í‚Å‚«‚Ü‚¹‚ñI");
+                pline("ãã‚Œã¯ã§ãã¾ã›ã‚“ï¼");
                 res = 0;
             } else if (u.uburied && !(tlist->flags & IFBURIED)) {
 /*JP
                 You_cant("do that while you are buried!");
 */
-                You("–„‚Ü‚Á‚Ä‚¢‚é‚É‚»‚ñ‚È‚±‚Æ‚Í‚Å‚«‚È‚¢I");
+                You("åŸ‹ã¾ã£ã¦ã„ã‚‹æ™‚ã«ãã‚“ãªã“ã¨ã¯ã§ããªã„ï¼");
                 res = 0;
             } else {
                 /* we discard 'const' because some compilers seem to have
@@ -5600,11 +5600,11 @@ register char *cmd;
 /*JP
         if (!prefix_seen || !help_dir(c1, spkey, "Invalid direction key!"))
 */
-        if (!prefix_seen || !help_dir(c1, spkey, "–³Œø‚È•ûŒüw’è‚Å‚·I"))
+        if (!prefix_seen || !help_dir(c1, spkey, "ç„¡åŠ¹ãªæ–¹å‘æŒ‡å®šã§ã™ï¼"))
 /*JP
             Norep("Unknown command '%s'.", expcmd);
 */
-            Norep("'%s'ƒRƒ}ƒ“ƒhH", expcmd);
+            Norep("'%s'ã‚³ãƒãƒ³ãƒ‰ï¼Ÿ", expcmd);
     }
     /* didn't move */
     context.move = FALSE;
@@ -5737,7 +5737,7 @@ retry:
 /*JP
         dirsym = yn_function((s && *s != '^') ? s : "In what direction?",
 */
-        dirsym = yn_function((s && *s != '^') ? s : "‚Ç‚Ì•ûŒüH",
+        dirsym = yn_function((s && *s != '^') ? s : "ã©ã®æ–¹å‘ï¼Ÿ",
                              (char *) 0, '\0');
     /* remove the prompt string so caller won't have to */
     clear_nhwindow(WIN_MESSAGE);
@@ -5763,7 +5763,7 @@ retry:
 /*JP
                                             : "Invalid direction key!");
 */
-                                            : "–³Œø‚È•ûŒüw’è‚Å‚·I");
+                                            : "ç„¡åŠ¹ãªæ–¹å‘æŒ‡å®šã§ã™ï¼");
                 if (help_requested)
                     goto retry;
             }
@@ -5771,14 +5771,14 @@ retry:
 /*JP
                 pline("What a strange direction!");
 */
-                pline("‚¸‚¢‚Ô‚ñ‚ÆŠï–­‚È•ûŒü‚¾I");
+                pline("ãšã„ã¶ã‚“ã¨å¥‡å¦™ãªæ–¹å‘ã ï¼");
         }
         return 0;
     } else if (is_mov && !dxdy_moveok()) {
 /*JP
         You_cant("orient yourself that direction.");
 */
-        You_cant("Œü‚«‚É©•ª©g‚ğw’è‚Å‚«‚È‚¢D");
+        You_cant("å‘ãã«è‡ªåˆ†è‡ªèº«ã‚’æŒ‡å®šã§ããªã„ï¼");
         return 0;
     }
     if (!u.dz && (Stunned || (Confusion && !rn2(5))))
@@ -5970,7 +5970,7 @@ const char *msg;
 /*JP
                "(Suppress this message with !cmdassist in config file.)");
 */
-               "(‚±‚ÌƒƒbƒZ[ƒW‚ğ•\¦‚µ‚½‚­‚È‚¢ê‡‚Íİ’èƒtƒ@ƒCƒ‹‚É !cmdassist ‚ğİ’è‚µ‚Ä‚­‚¾‚³‚¢D)");
+               "(ã“ã®ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºã—ãŸããªã„å ´åˆã¯è¨­å®šãƒ•ã‚¡ã‚¤ãƒ«ã« !cmdassist ã‚’è¨­å®šã—ã¦ãã ã•ã„ï¼)");
     }
     display_nhwindow(win, FALSE);
     destroy_nhwindow(win);
@@ -6435,12 +6435,12 @@ boolean historical; /* whether to include in message history: True => yes */
 /*JP
                 Sprintf(qbuf, "Count: ");
 */
-                Sprintf(qbuf, "”: ");
+                Sprintf(qbuf, "æ•°: ");
             } else {
 /*JP
                 Sprintf(qbuf, "Count: %ld", cnt);
 */
-                Sprintf(qbuf, "”: %ld", cnt);
+                Sprintf(qbuf, "æ•°: %ld", cnt);
                 backspaced = FALSE;
             }
             /* bypassing pline() keeps intermediate prompt out of
@@ -6454,7 +6454,7 @@ boolean historical; /* whether to include in message history: True => yes */
 /*JP
         Sprintf(qbuf, "Count: %ld ", *count);
 */
-        Sprintf(qbuf, "”: %ld ", *count);
+        Sprintf(qbuf, "æ•°: %ld ", *count);
         (void) key2txt((uchar) key, eos(qbuf));
         putmsghistory(qbuf, FALSE);
     }
@@ -6677,11 +6677,11 @@ dotravel(VOID_ARGS)
 /*JP
     pline("Where do you want to travel to?");
 */
-    pline("‚Ç‚±‚ÉˆÚ“®‚·‚éH");
+    pline("ã©ã“ã«ç§»å‹•ã™ã‚‹ï¼Ÿ");
 /*JP
     if (getpos(&cc, TRUE, "the desired destination") < 0) {
 */
-    if (getpos(&cc, TRUE, "ˆÚ“®æ") < 0) {
+    if (getpos(&cc, TRUE, "ç§»å‹•å…ˆ") < 0) {
             /* user pressed ESC */
             iflags.getloc_travelmode = FALSE;
             return 0;
@@ -6838,7 +6838,7 @@ dosuspend_core()
 /*JP
         Norep("Suspend command not available.");
 */
-        Norep("’†’fƒRƒ}ƒ“ƒh‚Í—˜—p‚Å‚«‚Ü‚¹‚ñD");
+        Norep("ä¸­æ–­ã‚³ãƒãƒ³ãƒ‰ã¯åˆ©ç”¨ã§ãã¾ã›ã‚“ï¼");
     return 0;
 }
 

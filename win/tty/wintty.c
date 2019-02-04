@@ -506,7 +506,7 @@ makepicks:
 /*JP
                     Strcpy(pbuf, "Pick a role or profession");
 */
-                    Strcpy(pbuf, "E‹Æ‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢");
+                    Strcpy(pbuf, "¿¦¶È¤òÁª¤ó¤Ç¤¯¤À¤µ¤¤");
                     end_menu(win, pbuf);
                     n = select_menu(win, PICK_ONE, &selected);
                     /*
@@ -608,7 +608,7 @@ makepicks:
 /*JP
                         Strcpy(pbuf, "Pick a race or species");
 */
-                        Strcpy(pbuf, "Ží‘°‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢");
+                        Strcpy(pbuf, "¼ïÂ²¤òÁª¤ó¤Ç¤¯¤À¤µ¤¤");
                         end_menu(win, pbuf);
                         n = select_menu(win, PICK_ONE, &selected);
                         if (n > 0) {
@@ -704,7 +704,7 @@ makepicks:
 /*JP
                         Strcpy(pbuf, "Pick a gender or sex");
 */
-                        Strcpy(pbuf, "«•Ê‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢");
+                        Strcpy(pbuf, "À­ÊÌ¤òÁª¤ó¤Ç¤¯¤À¤µ¤¤");
                         end_menu(win, pbuf);
                         n = select_menu(win, PICK_ONE, &selected);
                         if (n > 0) {
@@ -796,7 +796,7 @@ makepicks:
 /*JP
                         Strcpy(pbuf, "Pick an alignment or creed");
 */
-                        Strcpy(pbuf, "‘®«‚ð‘I‚ñ‚Å‚­‚¾‚³‚¢");
+                        Strcpy(pbuf, "Â°À­¤òÁª¤ó¤Ç¤¯¤À¤µ¤¤");
                         end_menu(win, pbuf);
                         n = select_menu(win, PICK_ONE, &selected);
                         if (n > 0) {
@@ -872,7 +872,7 @@ makepicks:
 /*JP
             Sprintf(plbuf, " %s", genders[GEND].adj);
 */
-            Sprintf(plbuf, "%s‚Ì", genders[GEND].adj);
+            Sprintf(plbuf, "%s¤Î", genders[GEND].adj);
         else
             *plbuf = '\0'; /* omit redundant gender */
 #if 0 /*JP*/
@@ -896,32 +896,32 @@ makepicks:
 /*JP
         add_menu(win, NO_GLYPH, &any, 'y', 0, ATR_NONE, "Yes; start game",
 */
-        add_menu(win, NO_GLYPH, &any, 'y', 0, ATR_NONE, "‚Í‚¢; ƒQ[ƒ€‚ðŽn‚ß‚é",
+        add_menu(win, NO_GLYPH, &any, 'y', 0, ATR_NONE, "¤Ï¤¤; ¥²¡¼¥à¤ò»Ï¤á¤ë",
                  MENU_SELECTED);
         any.a_int = 2;
         add_menu(win, NO_GLYPH, &any, 'n', 0, ATR_NONE,
 /*JP
                  "No; choose role again", MENU_UNSELECTED);
 */
-                 "‚¢‚¢‚¦; E‹Æ‚ð‘I‚Ñ’¼‚·", MENU_UNSELECTED);
+                 "¤¤¤¤¤¨; ¿¦¶È¤òÁª¤ÓÄ¾¤¹", MENU_UNSELECTED);
         if (iflags.renameallowed) {
             any.a_int = 3;
             add_menu(win, NO_GLYPH, &any, 'a', 0, ATR_NONE,
 /*JP
                      "Not yet; choose another name", MENU_UNSELECTED);
 */
-                     "‚Ü‚¾; –¼‘O‚ð•Ï‚¦‚é", MENU_UNSELECTED);
+                     "¤Þ¤À; Ì¾Á°¤òÊÑ¤¨¤ë", MENU_UNSELECTED);
         }
         any.a_int = -1;
 /*JP
         add_menu(win, NO_GLYPH, &any, 'q', 0, ATR_NONE, "Quit",
 */
-        add_menu(win, NO_GLYPH, &any, 'q', 0, ATR_NONE, "”²‚¯‚é",
+        add_menu(win, NO_GLYPH, &any, 'q', 0, ATR_NONE, "È´¤±¤ë",
                  MENU_UNSELECTED);
 /*JP
         Sprintf(pbuf, "Is this ok? [yn%sq]", iflags.renameallowed ? "a" : "");
 */
-        Sprintf(pbuf, "‚±‚ê‚Å‚æ‚¢H [yn%sq]", iflags.renameallowed ? "a" : "");
+        Sprintf(pbuf, "¤³¤ì¤Ç¤è¤¤¡© [yn%sq]", iflags.renameallowed ? "a" : "");
         end_menu(win, pbuf);
         n = select_menu(win, PICK_ONE, &selected);
         /* [pick-one menus with a preselected entry behave oddly...] */
@@ -1208,7 +1208,7 @@ tty_askname()
 /*JP
     static const char who_are_you[] = "Who are you? ";
 */
-    static const char who_are_you[] = "‚ ‚È‚½‚Í’NH ";
+    static const char who_are_you[] = "¤¢¤Ê¤¿¤ÏÃ¯¡© ";
     register int c, ct, tryct = 0;
 #if 1 /*JP*/
     char ptmpname[PL_NSIZ];
@@ -1236,7 +1236,7 @@ tty_askname()
 /*JP
             tty_putstr(BASE_WINDOW, 0, "Enter a name for your character...");
 */
-            tty_putstr(BASE_WINDOW, 0, "‚ ‚È‚½‚ÌƒLƒƒƒ‰ƒNƒ^‚Ì–¼‘O‚ÍH");
+            tty_putstr(BASE_WINDOW, 0, "¤¢¤Ê¤¿¤Î¥­¥ã¥é¥¯¥¿¤ÎÌ¾Á°¤Ï¡©");
             /* erase previous prompt (in case of ESC after partial response)
              */
             tty_curs(BASE_WINDOW, 1, wins[BASE_WINDOW]->cury), cl_end();
