@@ -1,0 +1,90 @@
+# NetHack 3.6  engrave.txt       $NHDT-Date: 1524689579 2018/04/25 20:52:59 $  $NHDT-Branch: NetHack-3.6.0 $:$NHDT-Revision: 1.2 $
+# Copyright (c) 2015 by Pasi Kallinen
+# NetHack may be freely redistributed.  See license for details.
+# Random engravings on the floor
+#
+Elbereth
+# trap engravings
+ヴラドはここにいる
+ad aerarium
+
+# take-offs and other famous engravings
+Owlbreath
+Galadriel
+キルロイ参上
+
+# Journey to the Center of the Earth
+A.S. ->
+<- A.S.
+# Adventure
+それはできません．
+# Inferno
+# 神曲:地獄編, ダンテ
+ここから入らんとするものは全て希望を捨てよ．
+# Prisoner
+よく来たな
+# So Long...
+ご迷惑をおかけしたことを深くお詫びいたします．
+# アメリカ横断ウルトラクイズ
+早く来い来い木曜日
+# Smokey Stover
+# 古いアニメつながり
+のらくろ
+
+バイア☆ラ 8?7-5309
+# Various zoos around the world
+動物にエサを与えないでください．
+# A palindrome
+私負けましたわ
+# Siskel & Ebert
+イチ推し！
+# The First C Program
+Hello, World!
+^?MAIL
+# AOL
+ユー・ガッタ・メール！
+^.
+# Clueless
+冗談じゃない！
+# 200x incarnation of Dr.Who
+BAD WOLF
+
+# Gang tag
+ワオーン！イェンダーの狼だ！
+
+# Strategy and pun
+勝利のためにここを掘れ！
+
+# Pompeii
+ガイウス・ユリウス・プリミジニウス参上．どうして遅れたの？
+
+# Helpful guiding
+こっちに来てはいけない
+左に行け --->
+<--- 右に行け
+X たからのばしょ
+X <--- あなたはここにいる．
+ここにドラゴンがいる
+今すぐ保存して，宿題しろ！
+ここに穴がありました．もうありません．
+振動している場所
+ここには落し穴がある！
+ここはあなたが探している迷宮ではありません．
+気をつけろ，あの扉の向こうに死の杖を持ったノームがいるぞ！
+
+# Misc fun
+このマスは意図的に空白にしています．
+
+# Viking graffiti
+手斧のハームンドがこのルーンを彫った
+
+# Advertising
+灯りが必要？Izchak の照明店洞窟街支店へどうぞ！
+天上界の蛇 - お近くの迷宮で間もなく
+あなたは百万人目の訪問者です！願いの杖を200ターンお待ちください．
+
+# DnD
+警告，爆発ルーン！
+
+# "Whispers Underground" Ben Aaronovitch
+これを読んでいるならあなたは単なるオタクではなくおそらく死んでいる．

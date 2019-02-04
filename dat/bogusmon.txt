@@ -1,0 +1,510 @@
+# NetHack 3.6  bogusmon.txt       $NHDT-Date: 1524689579 2018/04/25 20:52:59 $  $NHDT-Branch: NetHack-3.6.0 $:$NHDT-Revision: 1.7 $
+# Copyright (c) 2016 by Pasi Kallinen
+# NetHack may be freely redistributed.  See license for details.
+#
+# Hallucinatory monsters
+#
+#
+# prefix codes:
+# dash          -  female, personal name
+# underscore    _  female, general name
+# plus          +  male, personal name
+# vertical bar  |  male, general name
+# equals        =  gender not specified, personal name
+
+# misc.
+巨大甘エビ
+巨大ピグミー
+ヌー
+殺人ペンギン
+巨大ゴキブリ
+巨大ナメクジ
+蛆虫
+プテロダクティルス
+ティラノザウルス・レックス
+バジリスク
+ビホルダー
+ナイトメア
+イフリート
+マリッド
+腐ったうじ虫
+紙魚
+マスターノリッチ
+シャドウ
+ホログラム
+道化師
+弁護士
+おちょうし者
+キラートマト
+アマゾン
+ロボット
+バトルメック
+ライノウイルス
+ハーピー
+狛犬
+ネズミ蟻
+2000年問題
+怒れるマリアッチ
+衒学趣味者
+幸せの青い鳥
+段ボールのゴーレム
+ダクトテープのゴーレム
+斜めに動くグリッドバグ
+魔王
+ニュースグループ・トロル
+忍者海賊ゾンビロボット
+オクタリンドラゴン
+気違いジャーナリスト
+遅延の怪物
+高利貸し
+狂気のワッフル焼き器
+鶏肉霊魂
+アライグマのぬいぐるみ
+ヴァイキング
+ちっちゃな緑ブロッッビー
+カモノハシ人間
+軽薄化の泡
+ブラマンシェ
+怒り狂うオタク
+スペリング競争
+丘ダコ
+カエルの王子様
+天豚
+_準ゴルゴン
+大会参加者
+大型ココウモリ
+小型オオコウモリ
+ウーバーハルク
+トーファーキー
++ダッドリー
+shrinking violet
+shallow one
+spherical cow
+
+# Quendor (Zork, &c.)
+グルー
+クリスマスツリーの怪物
+厄病神
+パスカルド
+ブログモイド
+ドルンビースト
+
+# Moria
+古代万色ドラゴン
++邪悪なるイギー
+
+# Rogue V5 http://rogue.rogueforge.net/vade-mecum/
+がらがらへび
+氷の怪物
+幽霊
+大つのじか
+水ごけの怪物
+翼ライオン
+大うずら
+大はやぶさ
+ものまねの怪物
+はえとりぐさ
+
+# Wizardry
+クリーピングコイン
+
+# Greek legend
+ヒドラ
+セイレーン
+
+# Monty Python
+兇悪ウサちゃん
+
+# The Princess Bride
+異常な大きさのリスちゃん
+
+# Wallace & Gromit
+うさぎ人間
+
+# "Only you can prevent forest fires!
++森林火災防止熊スモーキー
+
+# Discworld
+＜荷物＞
+吸血スイカ
+
+# Lord of the Rings
+エント
+
+# Xanth
+触手木
+ニッケルさそり
+ぴくぴく虫
+
+# Lewis Carroll
+白うさぎ
+スナーク
+
+# Dr. Dolittle
+オシツオサレツ
+
+# The Smurfs
+スマーフ
+
+# Star Trek
+トリブル
+クリンゴン
+ボーグ
+
+# Star Wars
+イウォーク
+
+# Tonari no Totoro
+となりのトトロ
+
+# Nausicaa
+王蟲
+
+# Sailor Moon
+妖魔
+
+# Pokemon (Meowth)
+ニャース
+
+# monster movies
+-ゴジラ
++キングコング
+
+# old L of SH
+大ナマズ
+
+# Robotech
+インビッド
+
+# The Terminator
+ターミネーター
+
+# Bubblegum Crisis
+ブーマー
+
+# Dr. Who ("Exterminate!")
+ダーレク
+
+# HGttG
+超微細宇宙艦隊
+がつがつむしゃむしゃトラアル獣
+
+# TMNT
+激亀忍者
+
+# Usagi Yojimbo
+侍兎
+
+# Cerebus
+ツチブタ
+
+# Little Shop of Horrors
+=オードリーII
+
+# 50's rock 'n' roll
+呪術医
+一目一角飛行紫食人族
+
+# saccharine kiddy TV
++恐竜バーニーちゃん
+
+# Angband
++モルゴス
+
+# Babylon 5
+ヴォーロン
+
+# King Arthur
+探求のけもの
+
+# Movie
+プレデター
+
+# common pest
+姑
+
+# Actual creatures
+オオカマキリ
+シロイルカ
+ニワトリ
+シーラカンス
+ホシバナモグラ
+肺魚
+スローロリス
+ナマコ
+サナダムシ
+ライガー
+ヴェロキラプトル
+太ったネズミイルカ
+クワッカ
+タチヨタカ
+レミング
+
+# european cryptids
+ヴォルペルティンガー
+エルヴェドリッチェ
+スクヴェイダー
++ネッシー
+タッツェルヴルム
+ダウ
+
+# fictitious beasts
+肉食コアラ
+野生のハギス
+ジャッカロープ
+空飛ぶ豚
+ヒッポカムポス
+ヒポグリフ
+ケルピー
+カトブレパス
+フェニックス
+アンフィスバエナ
+
+# Unusually animate body parts
+跳ね回る目
+さまよう鼻
+さすらう目
+
+# Computerese
+バッファ・オーバーフロー
+ダングリング・ポインタ
+お散歩ディスクドライブ
+浮動小数点
+正規表現エンジン
+ネット・スプリット
+wiki
+ピア
+COBOL
+
+# bugs
+ボーアバグ
+マンデルバグ
+シュレーディンバグ
+ハイゼンバグ
+
+# DooM
+カコデーモン
+スクラグ
+
+# MST3K
++Crow T. Robot
+
+# Items and stuff
+ポーン
+チョコレートプリン
+ウーブレック
+兵馬俑
+霊柩車
+ルンバ
+ミニ飛行船
+一片の塵芥
+
+# DnD monster
+ガゼボ
+
+# SciFi elements
+グレイ・グー
+磁気単極子
+第一種永久機関
+巨大物体
+
+# Ultima
++ロード・ブリティッシュ
+
+# They Might Be Giants
+パーティクルマン
+
+# Robot Finds Kitten
+ロボットが探している子猫
+
+# Typography
+装飾付括弧
+分割斜線
+除算記号
+絵記号
+太字
+犂耕体
+合字
+判じ絵紋
+
+# Their actual character
+アポストロフィのゴーレム
+色っぽいアンパサンド
+
+# Web comics and animation
++怒れる花ボブ
++ストロング・バッド
++マジカルトレバー
+
+# KoL
+片翼の突き刺しコウモリ
+
+# deities
+見えざるピンクのユニコーン
+空飛ぶスパゲッティモンスター
+
+# Monkey Island
+三つ首の猿
++鶏の悪魔
+
+# modern folklore
+緑の小人
+
+# Portal
+コンパニオンキューブ
+
+# /b/
+/b/tard
+
+# South Park
+ヒトクマブタ
+
+# internet memes
+盆栽子猫
+ネクタイ・クトゥルー
++どーもくん
+胴の長ーーーい猫
+nyan cat
+
+# the Internet is made for cat pix
+天井猫
+地下室猫
+モノレール猫
+
+# POWDER
+トリジュード
+
+# Radomir Dopieralski
+オルクス・コズミクス
+
+# Angband
+イーク
+クイルスルグ
+グレーター・ヘル=ビースト
+
+# Souljazz
++イィザードの商法使い
+
+# Dungeon Crawl Stone Soup
++『シグムンド』
+『レルネーのヒドラ』
++『イジェィブ』
++『グロゥルクス・ヴロック』
++オークの『ブロルク』
+
+# Wil Wheaton, John Scalzi
+ユニコーン・ペガサス・小猫ちゃん
+
+# Minecraft
+エンダーマン
+
+# Pun
+ワイト至上主義者
+
+# Starcraft 2
+ザーグリング
+
+# Feelings
+実存的不安
+絵空事
+ひらめき
+
+# Fish
+ghoti
+
+# Roald Dahl
+害獣クニッド
+
+# Carcassonne
+ミープル
+
+# The Wombles
+ウォンブル
+
+# Fraggle Rock
+フラグル
+
+# Spoonerism
+いぐもわら
+
+# Truly scary things
+道化師
+パントマイム
+行商人
+値切り客
+
+# soundex and typos of monsters
+満足そうな目
+フラッシュのゴーレム
+殉教オーク
+モルタールのオーク
+酸のブログ
+鋭いブロッブ
+旋律の精
+エイリアシングの僧侶
+寄生虫
+寄せ木細工
+試験監督者
+頑固ドラゴンの子供
+憂鬱ドラゴンの子供
+戯画の子供
+クロケットの子供
+石目ドラゴンの子供
+ゴーンワームの子供
+ロングワードの子供
+寓話ワームの子供
+嘔吐の悪魔
+ビール・ワイト
+不作法ワイト
+筋肉質モールド
+熱弁グモ
+糸玉のゴーレム
+破産の渦
+正誤の精
+ゴムウナギ
+心電図ウナギ
+モミの木の精
+疲労の精
+フラミンゴの球体
+誤謬のゴーレム
+縮れのケンタウロス
+森のケンタフォールド
+激しさの球体
+霜降り巨人
+小老なヘビ
+ブヨ蟻
+巨大フロ
+グラインドバグ
+授与カブトムシ
+巨大マンゴー
+光沢仕上げのゴーレム
+ノームの受賞者
+ノームのダミー
+ぬめぬめウーズ
+緑スライド
+守護のナッチョ
+ヘルハウンドの駄洒落
+高位の修辞者
+ヘアネットの悪魔
+氷のコテ
+殺人甜菜
+羽毛のゴーレム
+ラウンジワーム
+山のリンパ液
+ポケベルのゴーレム
+パイの悪霊
+コンドームワーム
+靴下もぐら
+盗賊つらら
+浮沈の球体
+直喩のミミック
+巨黴蟻
+汚れの渦
+スコーンの巨人
+日傘ハルク
+吸血鬼のメイス
+口先ジャバウォック
+ウォーターレモン
+ウォーターメロン
+羽のある灰色熊
+黄色ワイト
