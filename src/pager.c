@@ -1745,6 +1745,12 @@ dispfile_optionfile()
 }
 
 void
+dispfile_trans()
+{
+    display_file(TRANS, TRUE);
+}
+
+void
 dispfile_license()
 {
     display_file(LICENSE, TRUE);
@@ -1811,6 +1817,7 @@ static struct {
     { dokeylist, "Full list of keyboard commands" },
     { hmenu_doextlist, "List of extended commands." },
     { domenucontrols, "List menu control keys" },
+    { dispfile_trans, "List of translations" },
     { dispfile_license, "The NetHack license." },
     { docontact, "Support information." },
 #ifdef PORT_HELP
