@@ -751,19 +751,34 @@ struct Race urace = {
 };
 
 /* Table of all genders */
+// >>> CN_TS
+/* const struct Gender genders[] = { */
+/*     { "male", "he", "him", "his", "Mal", ROLE_MALE }, */
+/*     { "female", "she", "her", "her", "Fem", ROLE_FEMALE }, */
+/*     { "neuter", "it", "it", "its", "Ntr", ROLE_NEUTER } */
+/* }; */
 const struct Gender genders[] = {
-    { "male", "he", "him", "his", "Mal", ROLE_MALE },
-    { "female", "she", "her", "her", "Fem", ROLE_FEMALE },
-    { "neuter", "it", "it", "its", "Ntr", ROLE_NEUTER }
+    { "male", "他", "他", "他的", "男性", ROLE_MALE },
+    { "female", "她", "她", "她的", "女性", ROLE_FEMALE },
+    { "neuter", "它", "它", "它的", "中性", ROLE_NEUTER }
 };
+// <<< CN_TS
 
 /* Table of all alignments */
+// >>> CN_TS
+/* const struct Align aligns[] = { */
+/*     { "law", "lawful", "Law", ROLE_LAWFUL, A_LAWFUL }, */
+/*     { "balance", "neutral", "Neu", ROLE_NEUTRAL, A_NEUTRAL }, */
+/*     { "chaos", "chaotic", "Cha", ROLE_CHAOTIC, A_CHAOTIC }, */
+/*     { "evil", "unaligned", "Una", 0, A_NONE } */
+/* }; */
 const struct Align aligns[] = {
-    { "law", "lawful", "Law", ROLE_LAWFUL, A_LAWFUL },
-    { "balance", "neutral", "Neu", ROLE_NEUTRAL, A_NEUTRAL },
-    { "chaos", "chaotic", "Cha", ROLE_CHAOTIC, A_CHAOTIC },
-    { "evil", "unaligned", "Una", 0, A_NONE }
+    { "law", "守序", "受序", ROLE_LAWFUL, A_LAWFUL },
+    { "balance", "中立", "中立", ROLE_NEUTRAL, A_NEUTRAL },
+    { "chaos", "混亂", "混亂", ROLE_CHAOTIC, A_CHAOTIC },
+    { "evil", "無陣營", "無陣營", 0, A_NONE }
 };
+// <<< CN_TS
 
 /* Filters */
 static struct {

@@ -295,27 +295,45 @@ boolean foundyou;
 
     switch (mattk->adtyp) {
     case AD_FIRE:
-        pline("You're enveloped in flames.");
+        // >>> CN_TS
+        /* pline("You're enveloped in flames."); */
+        pline("你被火焰籠罩.");
+        // <<< CN_TS
         if (Fire_resistance) {
             shieldeff(u.ux, u.uy);
-            pline("But you resist the effects.");
+            // >>> CN_TS
+            /* pline("But you resist the effects."); */
+            pline("但你抵擋住了其作用.");
+            // <<< CN_TS
             dmg = 0;
         }
         burn_away_slime();
         break;
     case AD_COLD:
-        pline("You're covered in frost.");
+        // >>> CN_TS
+        /* pline("You're covered in frost."); */
+        pline("你被冰霜覆蓋.");
+        // <<< CN_TS
         if (Cold_resistance) {
             shieldeff(u.ux, u.uy);
-            pline("But you resist the effects.");
+            // >>> CN_TS
+            /* pline("But you resist the effects."); */
+            pline("但你抵擋住了其作用.");
+            // <<< CN_TS
             dmg = 0;
         }
         break;
     case AD_MAGM:
-        You("are hit by a shower of missiles!");
+        // >>> CN_TS
+        /* You("are hit by a shower of missiles!"); */
+        You("你被飛彈雨擊中了!");
+        // <<< CN_TS
         if (Antimagic) {
             shieldeff(u.ux, u.uy);
-            pline_The("missiles bounce off!");
+            // >>> CN_TS
+            /* pline_The("missiles bounce off!"); */
+            pline_The("飛彈彈開了!");
+            // <<< CN_TS
             dmg = 0;
         } else
             dmg = d((int) mtmp->m_lev / 2 + 1, 6);
@@ -359,27 +377,45 @@ int spellnum;
 
     switch (spellnum) {
     case MGC_DEATH_TOUCH:
-        pline("Oh no, %s's using the touch of death!", mhe(mtmp));
+        // >>> CN_TS
+        /* pline("Oh no, %s's using the touch of death!", mhe(mtmp)); */
+        pline("哦, 不, %s正在使用{{touch of death}}!", mhe(mtmp));
+        // <<< CN_TS
         if (nonliving(youmonst.data) || is_demon(youmonst.data)) {
-            You("seem no deader than before.");
+            // >>> CN_TS
+            /* You("seem no deader than before."); */
+            You("看起來並不比之前更糟糕.");
+            // <<< CN_TS
         } else if (!Antimagic && rn2(mtmp->m_lev) > 12) {
             if (Hallucination) {
-                You("have an out of body experience.");
+                // >>> CN_TS
+                /* You("have an out of body experience."); */
+                You("有一種靈魂出鞘的感覺.");
+                // <<< CN_TS
             } else {
                 killer.format = KILLED_BY_AN;
-                Strcpy(killer.name, "touch of death");
+                // >>> CN_TS
+                /* Strcpy(killer.name, "touch of death"); */
+                Strcpy(killer.name, "{{touch of death}}");
+                // <<< CN_TS
                 done(DIED);
             }
         } else {
             if (Antimagic)
                 shieldeff(u.ux, u.uy);
-            pline("Lucky for you, it didn't work!");
+            // >>> CN_TS
+            /* pline("Lucky for you, it didn't work!"); */
+            pline("算你走運, 這失敗了!");
+            // <<< CN_TS
         }
         dmg = 0;
         break;
     case MGC_CLONE_WIZ:
         if (mtmp->iswiz && context.no_of_wizards == 1) {
-            pline("Double Trouble...");
+            // >>> CN_TS
+            /* pline("Double Trouble..."); */
+            pline("雙倍麻煩...");
+            // <<< CN_TS
             clonewiz();
             dmg = 0;
         } else
@@ -390,49 +426,83 @@ int spellnum;
 
         count = nasty(mtmp); /* summon something nasty */
         if (mtmp->iswiz)
-            verbalize("Destroy the thief, my pet%s!", plur(count));
+            // >>> CN_TS
+            /* verbalize("Destroy the thief, my pet%s!", plur(count)); */
+            verbalize("滅了這個賊, 我的好寵物%s!", plur(count));
+            // <<< CN_TS
         else {
+            // >>> CN_TS
+            /* const char *mappear = */
+            /*     (count == 1) ? "A monster appears" : "Monsters appear"; */
             const char *mappear =
-                (count == 1) ? "A monster appears" : "Monsters appear";
+                (count == 1) ? "一個怪物出現" : "一群怪物出現";
+            // <<< CN_TS
 
             /* messages not quite right if plural monsters created but
                only a single monster is seen */
             if (Invisible && !perceives(mtmp->data)
                 && (mtmp->mux != u.ux || mtmp->muy != u.uy))
-                pline("%s around a spot near you!", mappear);
+                // >>> CN_TS
+                /* pline("%s around a spot near you!", mappear); */
+                pline("%s在你附近的一個地方!", mappear);
+                // <<< CN_TS
             else if (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy))
+                // >>> CN_TS
+                /* pline("%s around your displaced image!", mappear); */
                 pline("%s around your displaced image!", mappear);
+                // <<< CN_TS
             else
-                pline("%s from nowhere!", mappear);
+                // >>> CN_TS
+                /* pline("%s from nowhere!", mappear); */
+                pline("從虛空中, %s了!", mappear);
+                // <<< CN_TS
         }
         dmg = 0;
         break;
     }
     case MGC_AGGRAVATION:
-        You_feel("that monsters are aware of your presence.");
+                          // >>> CN_TS
+        /* You_feel("that monsters are aware of your presence."); */
+        You_feel("那群怪物知道你的存在.");
+        // <<< CN_TS
         aggravate();
         dmg = 0;
         break;
     case MGC_CURSE_ITEMS:
-        You_feel("as if you need some help.");
+        // >>> CN_TS
+        /* You_feel("as if you need some help."); */
+        You_feel("可能你需要一些幫助.");
+        // <<< CN_TS
         rndcurse();
         dmg = 0;
         break;
     case MGC_DESTRY_ARMR:
         if (Antimagic) {
             shieldeff(u.ux, u.uy);
-            pline("A field of force surrounds you!");
+            // >>> CN_TS
+            /* pline("A field of force surrounds you!"); */
+            pline("一個力場包圍了你!");
+            // <<< CN_TS
         } else if (!destroy_arm(some_armor(&youmonst))) {
-            Your("skin itches.");
+            // >>> CN_TS
+            /* Your("skin itches."); */
+            Your("皮膚開始發癢.");
+            // <<< CN_TS
         }
         dmg = 0;
         break;
     case MGC_WEAKEN_YOU: /* drain strength */
         if (Antimagic) {
             shieldeff(u.ux, u.uy);
-            You_feel("momentarily weakened.");
+            // >>> CN_TS
+            /* You_feel("momentarily weakened."); */
+            You_feel("短暫的虛弱.");
+            // <<< CN_TS
         } else {
-            You("suddenly feel weaker!");
+            // >>> CN_TS
+            /* You("suddenly feel weaker!"); */
+            You("突然感覺更虛弱了!");
+            // <<< CN_TS
             dmg = mtmp->m_lev - 6;
             if (Half_spell_damage)
                 dmg = (dmg + 1) / 2;
@@ -445,8 +515,12 @@ int spellnum;
     case MGC_DISAPPEAR: /* makes self invisible */
         if (!mtmp->minvis && !mtmp->invis_blkd) {
             if (canseemon(mtmp))
-                pline("%s suddenly %s!", Monnam(mtmp),
-                      !See_invisible ? "disappears" : "becomes transparent");
+                // >>> CN_TS
+                /* pline("%s suddenly %s!", Monnam(mtmp), */
+                /*       !See_invisible ? "disappears" : "becomes transparent"); */
+                pline("%s突然%s了!", Monnam(mtmp),
+                      !See_invisible ? "消失" : "變得透明");
+                // <<< CN_TS
             mon_set_minvis(mtmp);
             if (cansee(mtmp->mx, mtmp->my) && !canspotmon(mtmp))
                 map_invisible(mtmp->mx, mtmp->my);
@@ -458,10 +532,16 @@ int spellnum;
         if (Antimagic || Free_action) {
             shieldeff(u.ux, u.uy);
             if (!Stunned)
-                You_feel("momentarily disoriented.");
+                // >>> CN_TS
+                /* You_feel("momentarily disoriented."); */
+                You_feel("短暫的暈頭轉向.");
+                // <<< CN_TS
             make_stunned(1L, FALSE);
         } else {
-            You(Stunned ? "struggle to keep your balance." : "reel...");
+            // >>> CN_TS
+            /* You(Stunned ? "struggle to keep your balance." : "reel..."); */
+            You(Stunned ? "努力保持你的平衡." : "踉蹌了一下...");
+            // <<< CN_TS
             dmg = d(ACURR(A_DEX) < 12 ? 6 : 4, 4);
             if (Half_spell_damage)
                 dmg = (dmg + 1) / 2;
@@ -491,13 +571,25 @@ int spellnum;
             dmg = (dmg + 1) / 2;
         }
         if (dmg <= 5)
-            You("get a slight %sache.", body_part(HEAD));
+            // >>> CN_TS
+            /* You("get a slight %sache.", body_part(HEAD)); */
+            You("有些輕微的%s痛.", body_part(HEAD));
+            // <<< CN_TS
         else if (dmg <= 10)
-            Your("brain is on fire!");
+            // >>> CN_TS
+            /* Your("brain is on fire!"); */
+            Your("大腦著火了!");
+            // <<< CN_TS
         else if (dmg <= 20)
-            Your("%s suddenly aches painfully!", body_part(HEAD));
+            // >>> CN_TS
+            /* Your("%s suddenly aches painfully!", body_part(HEAD)); */
+            Your("%s突然疼痛不已!", body_part(HEAD));
+            // <<< CN_TS
         else
-            Your("%s suddenly aches very painfully!", body_part(HEAD));
+            // >>> CN_TS
+            /* Your("%s suddenly aches very painfully!", body_part(HEAD)); */
+            Your("%s突然疼痛難忍!", body_part(HEAD));
+            // <<< CN_TS
         break;
     default:
         impossible("mcastu: invalid magic spell (%d)", spellnum);
@@ -526,13 +618,19 @@ int spellnum;
         /* this is physical damage (force not heat),
          * not magical damage or fire damage
          */
-        pline("A sudden geyser slams into you from nowhere!");
+        // >>> CN_TS
+        /* pline("A sudden geyser slams into you from nowhere!"); */
+        pline("虛空中突然一個{{geyser}}猛擊了你!");
+        // <<< CN_TS
         dmg = d(8, 6);
         if (Half_physical_damage)
             dmg = (dmg + 1) / 2;
         break;
     case CLC_FIRE_PILLAR:
-        pline("A pillar of fire strikes all around you!");
+        // >>> CN_TS
+        /* pline("A pillar of fire strikes all around you!"); */
+        pline("一股{{pillar of fire}}吞沒了你周圍的一切!");
+        // <<< CN_TS
         if (Fire_resistance) {
             shieldeff(u.ux, u.uy);
             dmg = 0;
@@ -550,7 +648,10 @@ int spellnum;
     case CLC_LIGHTNING: {
         boolean reflects;
 
-        pline("A bolt of lightning strikes down at you from above!");
+        // >>> CN_TS
+        /* pline("A bolt of lightning strikes down at you from above!"); */
+        pline("一道閃電從高空中劈中了你!");
+        // <<< CN_TS
         reflects = ureflects("It bounces off your %s%s.", "");
         if (reflects || Shock_resistance) {
             shieldeff(u.ux, u.uy);
@@ -567,7 +668,10 @@ int spellnum;
         break;
     }
     case CLC_CURSE_ITEMS:
-        You_feel("as if you need some help.");
+                        // >>> CN_TS
+        /* You_feel("as if you need some help."); */
+        You_feel("可能你需要一些幫助.");
+        // <<< CN_TS
         rndcurse();
         dmg = 0;
         break;
@@ -610,15 +714,22 @@ int spellnum;
             if (newseen <= oldseen || Unaware) {
                 /* unseen caster fails or summons unseen critters,
                    or unconscious hero ("You dream that you hear...") */
-                You_hear("someone summoning %s.", makeplural(what));
+                // >>> CN_TS
+                /* You_hear("someone summoning %s.", makeplural(what)); */
+                You_hear("有人在召喚%s.", makeplural(what));
+                // <<< CN_TS
             } else {
                 /* unseen caster summoned seen critter(s) */
                 arg = (newseen == oldseen + 1) ? an(what) : makeplural(what);
                 if (!Deaf)
-                    You_hear("someone summoning something, and %s %s.", arg,
-                             vtense(arg, "appear"));
+                    // >>> CN_TS
+                    /* You_hear("someone summoning something, and %s %s.", arg, */
+                    /*          vtense(arg, "appear")); */
+                    You_hear("有人在召喚什麼, 並且%s%s了.", arg,
+                             vtense(arg, "出現"));
+                    // <<< CN_TS
                 else
-                    pline("%s %s.", upstart(arg), vtense(arg, "appear"));
+                    pline("%s%s了.", upstart(arg), vtense(arg, "出現"));
             }
 
             /* seen caster, possibly producing unseen--or just one--critters;
@@ -626,17 +737,30 @@ int spellnum;
                observe complete accuracy of that caster's results (in other
                words, no need to fuss with visibility or singularization;
                player is told what's happening even if hero is unconscious) */
+        // >>> CN_TS
+        /* } else if (!success) */
+        /*     fmt = "%s casts at a clump of sticks, but nothing happens."; */
+        /* else if (let == S_SNAKE) */
+        /*     fmt = "%s transforms a clump of sticks into snakes!"; */
+        /* else if (Invisible && !perceives(mtmp->data) */
+        /*          && (mtmp->mux != u.ux || mtmp->muy != u.uy)) */
+        /*     fmt = "%s summons insects around a spot near you!"; */
+        /* else if (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy)) */
+        /*     fmt = "%s summons insects around your displaced image!"; */
+        /* else */
+        /*     fmt = "%s summons insects!"; */
         } else if (!success)
-            fmt = "%s casts at a clump of sticks, but nothing happens.";
+            fmt = "%s朝一堆樹枝施法, 但什麼也沒有發生.";
         else if (let == S_SNAKE)
-            fmt = "%s transforms a clump of sticks into snakes!";
+            fmt = "%s將一堆樹枝變成了蛇!";
         else if (Invisible && !perceives(mtmp->data)
                  && (mtmp->mux != u.ux || mtmp->muy != u.uy))
-            fmt = "%s summons insects around a spot near you!";
+            fmt = "%s在你附近的一個地方召喚出了蟲子!";
         else if (Displaced && (mtmp->mux != u.ux || mtmp->muy != u.uy))
-            fmt = "%s summons insects around your displaced image!";
+            fmt = "%s在你幻影附近的一個地方召喚出了蟲子!";
         else
-            fmt = "%s summons insects!";
+            fmt = "%s召喚出了蟲子!";
+        // <<< CN_TS
         if (fmt)
             pline(fmt, Monnam(mtmp));
 
@@ -647,9 +771,14 @@ int spellnum;
         /* note: resists_blnd() doesn't apply here */
         if (!Blinded) {
             int num_eyes = eyecount(youmonst.data);
-            pline("Scales cover your %s!", (num_eyes == 1)
+            // >>> CN_TS
+            /* pline("Scales cover your %s!", (num_eyes == 1) */
+            /*                                    ? body_part(EYE) */
+            /*                                    : makeplural(body_part(EYE))); */
+            pline("鱗片蓋住了你的%s!", (num_eyes == 1)
                                                ? body_part(EYE)
                                                : makeplural(body_part(EYE)));
+            // <<< CN_TS
             make_blinded(Half_spell_damage ? 100L : 200L, FALSE);
             if (!Blind)
                 Your1(vision_clears);
@@ -661,17 +790,29 @@ int spellnum;
         if (Antimagic || Free_action) {
             shieldeff(u.ux, u.uy);
             if (multi >= 0)
-                You("stiffen briefly.");
+                // >>> CN_TS
+                /* You("stiffen briefly."); */
+                You("短暫地僵硬了.");
+                // <<< CN_TS
             nomul(-1);
-            multi_reason = "paralyzed by a monster";
+            // >>> CN_TS
+            /* multi_reason = "paralyzed by a monster"; */
+            multi_reason = "被怪物麻痹;";
+            // <<< CN_TS
         } else {
             if (multi >= 0)
-                You("are frozen in place!");
+                // >>> CN_TS
+                /* You("are frozen in place!"); */
+                You("原地被凍住了!");
+                // <<< CN_TS
             dmg = 4 + (int) mtmp->m_lev;
             if (Half_spell_damage)
                 dmg = (dmg + 1) / 2;
             nomul(-dmg);
-            multi_reason = "paralyzed by a monster";
+            // >>> CN_TS
+            /* multi_reason = "paralyzed by a monster"; */
+            multi_reason = "被怪物麻痹;";
+            // <<< CN_TS
         }
         nomovemsg = 0;
         dmg = 0;
@@ -679,7 +820,10 @@ int spellnum;
     case CLC_CONFUSE_YOU:
         if (Antimagic) {
             shieldeff(u.ux, u.uy);
-            You_feel("momentarily dizzy.");
+            // >>> CN_TS
+            /* You_feel("momentarily dizzy."); */
+            You_feel("短暫地頭暈目眩!");
+            // <<< CN_TS
         } else {
             boolean oldprop = !!Confusion;
 
@@ -688,16 +832,22 @@ int spellnum;
                 dmg = (dmg + 1) / 2;
             make_confused(HConfusion + dmg, TRUE);
             if (Hallucination)
-                You_feel("%s!", oldprop ? "trippier" : "trippy");
+                You_feel("%s了!", oldprop ? "更迷幻" : "迷幻");
             else
-                You_feel("%sconfused!", oldprop ? "more " : "");
+                // >>> CN_TS
+                /* You_feel("%sconfused!", oldprop ? "more " : ""); */
+                You_feel("%s迷糊了!", oldprop ? "更" : "");
+                // <<< CN_TS
         }
         dmg = 0;
         break;
     case CLC_CURE_SELF:
         if (mtmp->mhp < mtmp->mhpmax) {
             if (canseemon(mtmp))
-                pline("%s looks better.", Monnam(mtmp));
+                // >>> CN_TS
+                /* pline("%s looks better.", Monnam(mtmp)); */
+                pline("%s看起來好些了.", Monnam(mtmp));
+                // <<< CN_TS
             /* note: player healing does 6d4; this used to do 1d8 */
             if ((mtmp->mhp += d(3, 6)) > mtmp->mhpmax)
                 mtmp->mhp = mtmp->mhpmax;
@@ -709,14 +859,25 @@ int spellnum;
             shieldeff(u.ux, u.uy);
             dmg = (dmg + 1) / 2;
         }
+        // >>> CN_TS
+        /* if (dmg <= 5) */
+        /* if (dmg <= 5) */
+        /*     Your("skin itches badly for a moment."); */
+        /* else if (dmg <= 10) */
+        /*     pline("Wounds appear on your body!"); */
+        /* else if (dmg <= 20) */
+        /*     pline("Severe wounds appear on your body!"); */
+        /* else */
+        /*     Your("body is covered with painful wounds!"); */
         if (dmg <= 5)
-            Your("skin itches badly for a moment.");
+            Your("皮膚");
         else if (dmg <= 10)
-            pline("Wounds appear on your body!");
+            pline("你的身上了出現傷口!");
         else if (dmg <= 20)
-            pline("Severe wounds appear on your body!");
+            pline("你的身上了出現嚴重的傷口!");
         else
-            Your("body is covered with painful wounds!");
+            Your("你的身上佈滿了疼痛不已的傷口!");
+        // <<< CN_TS
         break;
     default:
         impossible("mcastu: invalid clerical spell (%d)", spellnum);

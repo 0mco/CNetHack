@@ -57,7 +57,10 @@ struct obj *obj;
     struct monst *mtmp;
 
     if (Underwater) {
-        pline("Using your camera underwater would void the warranty.");
+        // >>> CN_TS
+        /* pline("Using your camera underwater would void the warranty."); */
+        pline("在水下使用相機將無法保修.");
+        // <<< CN_TS
         return 0;
     }
     if (!getdir((char *) 0))

@@ -45,14 +45,23 @@ boolean resuming;
     /* side-effects from the real world */
     flags.moonphase = phase_of_the_moon();
     if (flags.moonphase == FULL_MOON) {
-        You("are lucky!  Full moon tonight.");
+        // >>> CN_TS
+        /* You("are lucky!  Full moon tonight."); */
+        You("真走運!  今晚滿月.");
+        // <<< CN_TS
         change_luck(1);
     } else if (flags.moonphase == NEW_MOON) {
-        pline("Be careful!  New moon tonight.");
+        // >>> CN_TS
+        /* pline("Be careful!  New moon tonight."); */
+        pline("小心!  今晚新月.");
+        // <<< CN_TS
     }
     flags.friday13 = friday_13th();
     if (flags.friday13) {
-        pline("Watch out!  Bad things can happen on Friday the 13th.");
+        // >>> CN_TS
+        /* pline("Watch out!  Bad things can happen on Friday the 13th."); */
+        pline("當心!  十三號星期五可能發生不好的事情.");
+        // <<< CN_TS
         change_luck(-1);
     }
 
@@ -209,7 +218,10 @@ boolean resuming;
                             } else if (!Upolyd && u.uhp > 1) {
                                 u.uhp--;
                             } else {
-                                You("pass out from exertion!");
+                                // >>> CN_TS
+                                /* You("pass out from exertion!"); */
+                                You("因勞累而昏倒了.");
+                                // <<< CN_TS
                                 exercise(A_CON, FALSE);
                                 fall_asleep(-10, FALSE);
                             }
@@ -227,7 +239,10 @@ boolean resuming;
                             u.uen = u.uenmax;
                         context.botl = 1;
                         if (u.uen == u.uenmax)
-                            interrupt_multi("You feel full of energy.");
+                            // >>> CN_TS
+                            /* interrupt_multi("You feel full of energy."); */
+                            interrupt_multi("你感覺充滿了力量.");
+                            // <<< CN_TS
                     }
 
                     if (!u.uinvulnerable) {
@@ -507,7 +522,10 @@ int wtcap;
     }
 
     if (reached_full)
-        interrupt_multi("You are in full health.");
+        // >>> CN_TS
+        /* interrupt_multi("You are in full health."); */
+        interrupt_multi("你現在身心健康.");
+        // <<< CN_TS
 }
 
 void
@@ -515,7 +533,10 @@ stop_occupation()
 {
     if (occupation) {
         if (!maybe_finished_meal(TRUE))
-            You("stop %s.", occtxt);
+            // >>> CN_TS
+            /* You("stop %s.", occtxt); */
+            You("停止了", occtxt);
+            // <<< CN_TS
         occupation = 0;
         context.botl = 1; /* in case u.uhs changed */
         nomul(0);
@@ -644,7 +665,10 @@ boolean new_game; /* false => restoring an old game */
     /* skip "welcome back" if restoring a doomed character */
     if (!new_game && Upolyd && ugenocided()) {
         /* death via self-genocide is pending */
-        pline("You're back, but you still feel %s inside.", udeadinside());
+        // >>> CN_TS
+        /* pline("You're back, but you still feel %s inside.", udeadinside()); */
+        pline("你回來了, 但你仍感覺內心%s", udeadinside());
+        // <<< CN_TS
         return;
     }
 
@@ -658,17 +682,29 @@ boolean new_game; /* false => restoring an old game */
      */
     *buf = '\0';
     if (new_game || u.ualignbase[A_ORIGINAL] != u.ualignbase[A_CURRENT])
+        // >>> CN_TS
+        /* Sprintf(eos(buf), " %s", align_str(u.ualignbase[A_ORIGINAL])); */
         Sprintf(eos(buf), " %s", align_str(u.ualignbase[A_ORIGINAL]));
+        // <<< CN_TS
     if (!urole.name.f
         && (new_game
                 ? (urole.allow & ROLE_GENDMASK) == (ROLE_MALE | ROLE_FEMALE)
                 : currentgend != flags.initgend))
+        // >>> CN_TS
+        /* Sprintf(eos(buf), " %s", genders[currentgend].adj); */
         Sprintf(eos(buf), " %s", genders[currentgend].adj);
+        // <<< CN_TS
 
-    pline(new_game ? "%s %s, welcome to NetHack!  You are a%s %s %s."
-                   : "%s %s, the%s %s %s, welcome back to NetHack!",
+    // >>> CN_TS
+    /* pline(new_game ? "%s %s, welcome to NetHack!  You are a%s %s %s." */
+    /*                : "%s %s, the%s %s %s, welcome back to NetHack!", */
+    /*       Hello((struct monst *) 0), plname, buf, urace.adj, */
+    /*       (currentgend && urole.name.f) ? urole.name.f : urole.name.m); */
+    pline(new_game ? "%s %s, 歡迎來到NetHack!  你是一位%s %s %s."
+                   : "%s %s, %s %s %s, 歡迎回到NetHack!",
           Hello((struct monst *) 0), plname, buf, urace.adj,
           (currentgend && urole.name.f) ? urole.name.f : urole.name.m);
+    // <<< CN_TS
 }
 
 #ifdef POSITIONBAR

@@ -459,7 +459,10 @@ enum bodypart_types {
 #ifndef min
 #define min(x, y) ((x) < (y) ? (x) : (y))
 #endif
-#define plur(x) (((x) == 1) ? "" : "s")
+// >>> CN_TS
+// #define plur(x) (((x) == 1) ? "" : "s")
+#define plur(x) (((x) == 1) ? "" : "們")
+// <<< CN_TS
 
 #define ARM_BONUS(obj)                      \
     (objects[(obj)->otyp].a_ac + (obj)->spe \

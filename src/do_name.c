@@ -50,7 +50,24 @@ boolean FDECL((*gp_getvalidf), (int, int));
     getpos_getvalid = gp_getvalidf;
 }
 
+// >>> CN_TS
+/* const char *const gloc_descr[NUM_GLOCS][4] = { */
+/*     { "any monsters", "monster", "next monster", "monsters" }, */
+/*     { "any items", "item", "next object", "objects" }, */
+/*     { "any doors", "door", "next door or doorway", "doors or doorways" }, */
+/*     { "any unexplored areas", "unexplored area", "unexplored location", */
+/*       "unexplored locations" }, */
+/*     { "anything interesting", "interesting thing", "anything interesting", */
+/*       "anything interesting" } */
+/* }; */
 const char *const gloc_descr[NUM_GLOCS][4] = {
+    /* { "任何怪物", "怪物", "下個怪物", "一群怪物" }, */
+    /* { "任何物品", "物品", "下個物品", "一堆物品" }, */
+    /* { "任何門", "門", "下個門或走廊", "doors or doorways" }, */
+    /* { "any unexplored areas", "unexplored area", "unexplored location", */
+    /*   "unexplored locations" }, */
+    /* { "anything interesting", "interesting thing", "anything interesting", */
+    /*   "anything interesting" } */
     { "any monsters", "monster", "next monster", "monsters" },
     { "any items", "item", "next object", "objects" },
     { "any doors", "door", "next door or doorway", "doors or doorways" },
@@ -59,12 +76,20 @@ const char *const gloc_descr[NUM_GLOCS][4] = {
     { "anything interesting", "interesting thing", "anything interesting",
       "anything interesting" }
 };
+// <<< CN_TS
 
+// >>> CN_TS
+/* const char *const gloc_filtertxt[NUM_GFILTER] = { */
+/*     "", */
+/*     " in view", */
+/*     " in this area" */
+/* }; */
 const char *const gloc_filtertxt[NUM_GFILTER] = {
     "",
-    " in view",
-    " in this area"
+    "視野中",
+    "在這片區域"
 };
+// <<< CN_TS
 
 void
 getpos_help_keyxhelp(tmpwin, k1, k2, gloc)
@@ -75,12 +100,20 @@ int gloc;
 {
     char sbuf[BUFSZ];
 
+    // >>> CN_TS
     Sprintf(sbuf, "Use '%s' or '%s' to %s%s%s.",
             k1, k2,
             iflags.getloc_usemenu ? "get a menu of "
                                   : "move the cursor to ",
             gloc_descr[gloc][2 + iflags.getloc_usemenu],
             gloc_filtertxt[iflags.getloc_filter]);
+    /* Sprintf(sbuf, "使用'%s'或'%s'來%s%s%s.", */
+    /*         k1, k2, */
+    /*         iflags.getloc_usemenu ? "get a menu of " */
+    /*                               : "移動光標到", */
+    /*         gloc_descr[gloc][2 + iflags.getloc_usemenu], */
+    /*         gloc_filtertxt[iflags.getloc_filter]); */
+    // <<< CN_TS
     putstr(tmpwin, 0, sbuf);
 }
 
@@ -574,9 +607,14 @@ int gloc;
 
     if (gcount < 2) { /* gcount always includes the hero */
         free((genericptr_t) garr);
-        You("cannot %s %s.",
-            iflags.getloc_filter == GFILTER_VIEW ? "see" : "detect",
+        // >>> CN_TS
+        /* You("cannot %s %s.", */
+        /*     iflags.getloc_filter == GFILTER_VIEW ? "see" : "detect", */
+        /*     gloc_descr[gloc][0]); */
+        You("無法%s%s.",
+            iflags.getloc_filter == GFILTER_VIEW ? "看見" : "探測出",
             gloc_descr[gloc][0]);
+        // <<< CN_TS
         return FALSE;
     }
 
@@ -603,10 +641,16 @@ int gloc;
         }
     }
 
-    Sprintf(tmpbuf, "Pick a target %s%s%s",
+    // >>> CN_TS
+    /* Sprintf(tmpbuf, "Pick a target %s%s%s", */
+    /*         gloc_descr[gloc][1], */
+    /*         gloc_filtertxt[iflags.getloc_filter], */
+    /*         iflags.getloc_travelmode ? " for travel" : ""); */
+    Sprintf(tmpbuf, "選一個目標%s%s%s",
             gloc_descr[gloc][1],
             gloc_filtertxt[iflags.getloc_filter],
-            iflags.getloc_travelmode ? " for travel" : "");
+            iflags.getloc_travelmode ? "來移動" : "");
+    // <<< CN_TS
     end_menu(tmpwin, tmpbuf);
     pick_cnt = select_menu(tmpwin, PICK_ONE, &picks);
     destroy_nhwindow(tmpwin);
@@ -1116,22 +1160,34 @@ do_mname()
     struct monst *mtmp = 0;
 
     if (Hallucination) {
-        You("would never recognize it anyway.");
+        // >>> CN_TS
+        /* You("would never recognize it anyway."); */
+        You("將永遠也無法識別出它.");
+        // <<< CN_TS
         return;
     }
     cc.x = u.ux;
     cc.y = u.uy;
-    if (getpos(&cc, FALSE, "the monster you want to name") < 0
+    // >>> CN_TS
+    /* if (getpos(&cc, FALSE, "the monster you want to name") < 0 */
+    /*     || (cx = cc.x) < 0) */
+    /*     return; */
+    if (getpos(&cc, FALSE, "你想要命名的怪物") < 0
         || (cx = cc.x) < 0)
         return;
+    // <<< CN_TS
     cy = cc.y;
 
     if (cx == u.ux && cy == u.uy) {
         if (u.usteed && canspotmon(u.usteed)) {
             mtmp = u.usteed;
         } else {
-            pline("This %s creature is called %s and cannot be renamed.",
+            // >>> CN_TS
+            /* pline("This %s creature is called %s and cannot be renamed.", */
+            /*       beautiful(), plname); */
+            pline("這個%s生物叫做%s, 並且無法被重新命名.",
                   beautiful(), plname);
+            // <<< CN_TS
             return;
         }
     } else
@@ -1143,12 +1199,19 @@ do_mname()
                 || mtmp->mundetected || mtmp->m_ap_type == M_AP_FURNITURE
                 || mtmp->m_ap_type == M_AP_OBJECT
                 || (mtmp->minvis && !See_invisible)))) {
-        pline("I see no monster there.");
+        // >>> CN_TS
+        /* pline("I see no monster there."); */
+        pline("我沒看見那裡有怪物.");
+        // <<< CN_TS
         return;
     }
     /* special case similar to the one in lookat() */
-    Sprintf(qbuf, "What do you want to call %s?",
+    // >>> CN_TS
+    /* Sprintf(qbuf, "What do you want to call %s?", */
+    /*         distant_monnam(mtmp, ARTICLE_THE, monnambuf)); */
+    Sprintf(qbuf, "你想將%s命名為什麼?",
             distant_monnam(mtmp, ARTICLE_THE, monnambuf));
+    // <<< CN_TS
     getlin(qbuf, buf);
     if (!*buf || *buf == '\033')
         return;
@@ -1164,15 +1227,24 @@ do_mname()
      */
     if ((mtmp->data->geno & G_UNIQ) && !mtmp->ispriest) {
         if (!alreadynamed(mtmp, monnambuf, buf))
-            pline("%s doesn't like being called names!", upstart(monnambuf));
+            // >>> CN_TS
+            /* pline("%s doesn't like being called names!", upstart(monnambuf)); */
+            pline("%s不喜歡被用名字稱呼!", upstart(monnambuf));
+            // <<< CN_TS
     } else if (mtmp->isshk
                && !(Deaf || mtmp->msleeping || !mtmp->mcanmove
                     || mtmp->data->msound <= MS_ANIMAL)) {
         if (!alreadynamed(mtmp, monnambuf, buf))
-            verbalize("I'm %s, not %s.", shkname(mtmp), buf);
+            // >>> CN_TS
+            /* verbalize("I'm %s, not %s.", shkname(mtmp), buf); */
+            verbalize("我是%s, 不是%s.", shkname(mtmp), buf);
+            // <<< CN_TS
     } else if (mtmp->ispriest || mtmp->isminion || mtmp->isshk) {
         if (!alreadynamed(mtmp, monnambuf, buf))
-            pline("%s will not accept the name %s.", upstart(monnambuf), buf);
+            // >>> CN_TS
+            /* pline("%s will not accept the name %s.", upstart(monnambuf), buf); */
+            pline("%s不會接受%s這個名字.", upstart(monnambuf), buf);
+            // <<< CN_TS
     } else
         (void) christen_monst(mtmp, buf);
 }
@@ -1195,12 +1267,19 @@ register struct obj *obj;
 
     /* Do this now because there's no point in even asking for a name */
     if (obj->otyp == SPE_NOVEL) {
-        pline("%s already has a published name.", Ysimple_name2(obj));
+        // >>> CN_TS
+        /* pline("%s already has a published name.", Ysimple_name2(obj)); */
+        pline("%s已經有一個公開的名字了.", Ysimple_name2(obj));
+        // <<< CN_TS
         return;
     }
 
-    Sprintf(qbuf, "What do you want to name %s ",
-            is_plural(obj) ? "these" : "this");
+    // >>> CN_TS
+    /* Sprintf(qbuf, "What do you want to name %s ", */
+    /*         is_plural(obj) ? "these" : "this"); */
+    Sprintf(qbuf, "你想將%s命名為什麼",
+            is_plural(obj) ? "這些" : "這個");
+    // <<< CN_TS
     (void) safe_qbuf(qbuf, qbuf, "?", obj, xname, simpleonames, "item");
     getlin(qbuf, buf);
     if (!*buf || *buf == '\033')
@@ -1223,7 +1302,10 @@ register struct obj *obj;
         Strcpy(buf, aname);
 
     if (obj->oartifact) {
-        pline_The("artifact seems to resist the attempt.");
+        // >>> CN_TS
+        /* pline_The("artifact seems to resist the attempt."); */
+        pline_The("神器似乎在抵抗.");
+        // <<< CN_TS
         return;
     } else if (restrict_name(obj, buf) || exist_artifact(obj->otyp, buf)) {
         /* this used to change one letter, substituting a value
@@ -1243,9 +1325,15 @@ register struct obj *obj;
         do {
             wipeout_text(bufp, rnd(2), (unsigned) 0);
         } while (!strcmp(buf, bufcpy));
-        pline("While engraving, your %s slips.", body_part(HAND));
+        // >>> CN_TS
+        /* pline("While engraving, your %s slips.", body_part(HAND)); */
+        pline("正當刻咒的時候, 你的%s滑了一下.", body_part(HAND));
+        // <<< CN_TS
         display_nhwindow(WIN_MESSAGE, FALSE);
-        You("engrave: \"%s\".", buf);
+        // >>> CN_TS
+        /* You("engrave: \"%s\".", buf); */
+        You("刻下: \"%s\".", buf);
+        // <<< CN_TS
         /* violate illiteracy conduct since hero attempted to write
            a valid artifact name */
         u.uconduct.literate++;
@@ -1332,8 +1420,12 @@ docallcmd()
     start_menu(win);
     any = zeroany;
     any.a_char = 'm'; /* group accelerator 'C' */
+    // >>> CN_TS
     add_menu(win, NO_GLYPH, &any, abc ? 0 : any.a_char, 'C', ATR_NONE,
              "a monster", MENU_UNSELECTED);
+    /* add_menu(win, NO_GLYPH, &any, abc ? 0 : any.a_char, 'C', ATR_NONE, */
+    /*          "一個怪物", MENU_UNSELECTED); */
+    // <<< CN_TS
     if (invent) {
         /* we use y and n as accelerators so that we can accept user's
            response keyed to old "name an individual object?" prompt */
@@ -1384,7 +1476,10 @@ docallcmd()
             (void) xname(obj);
 
             if (!obj->dknown) {
-                You("would never recognize another one.");
+                // >>> CN_TS
+                /* You("would never recognize another one."); */
+                You("將永遠也無法識別出另一個.");
+                // <<< CN_TS
 #if 0
             } else if (!objtyp_is_callable(obj->otyp)) {
                 You("know those as well as you ever will.");
