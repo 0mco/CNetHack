@@ -41,6 +41,9 @@ struct attack {
 
 struct permonst {
     const char *mname;          /* full name */
+    // >>> CN_TS
+    const char *cname;          /* Chinese name */
+    // <<< CN_TS
     char mlet;                  /* symbol */
     schar mlevel,               /* base monster level */
         mmove,                  /* move speed */

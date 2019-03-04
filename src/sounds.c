@@ -613,7 +613,10 @@ register struct monst *mtmp;
                     verbl_msg = verbuf;
                 } else if (vampindex == 1) {
                     Sprintf(verbuf, vampmsg[vampindex],
-                            Upolyd ? an(mons[u.umonnum].mname)
+                            // >>> CN_TS
+                            /* Upolyd ? an(mons[u.umonnum].mname) */
+                            Upolyd ? an(mons[u.umonnum].cname)
+                            // <<< CN_TS
                                    : an(racenoun));
                     verbl_msg = verbuf;
                 } else
@@ -975,7 +978,10 @@ dochat()
     struct obj *otmp;
 
     if (is_silent(youmonst.data)) {
-        pline("As %s, you cannot speak.", an(youmonst.data->mname));
+        // >>> CN_TS
+        /* pline("As %s, you cannot speak.", an(youmonst.data->mname)); */
+        pline("As %s, you cannot speak.", an(youmonst.data->cname));
+        // <<< CN_TS
         return 0;
     }
     if (Strangled) {

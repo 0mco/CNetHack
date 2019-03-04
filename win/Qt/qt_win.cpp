@@ -2536,7 +2536,10 @@ void NetHackQtStatusWindow::updateStats()
 	char mname[BUFSZ];
 	int k = 0;
 
-	Strcpy(mname, mons[u.umonnum].mname);
+    // >>> CN_TS
+	// Strcpy(mname, mons[u.umonnum].mname);
+	Strcpy(mname, mons[u.umonnum].cname);
+    // <<< CN_TS
 	while(mname[k] != 0) {
 	    if ((k == 0 || (k > 0 && mname[k-1] == ' '))
 	     && 'a' <= mname[k] && mname[k] <= 'z')

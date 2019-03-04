@@ -376,11 +376,19 @@ long new_value;
                 char mname[BUFSZ];
                 int k;
 
-                Strcpy(mname, mons[u.umonnum].mname);
+                // >>> CN_TS
+                /* Strcpy(mname, mons[u.umonnum].mname); */
+                /* for (k = 0; mname[k] != '\0'; k++) { */
+                /*     if (k == 0 || mname[k - 1] == ' ') */
+                /*         mname[k] = highc(mname[k]); */
+                /* } */
+                Strcpy(mname, mons[u.umonnum].cname);
                 for (k = 0; mname[k] != '\0'; k++) {
-                    if (k == 0 || mname[k - 1] == ' ')
+                    if ((k == 0 || mname[k - 1] == ' ') && 'a' <= mname[k]
+                        && mname[k] <= 'z')
                         mname[k] = highc(mname[k]);
                 }
+                // <<< CN_TS
                 Strcat(buf, mname);
             } else
                 Strcat(buf, rank_of(u.ulevel, pl_character[0], flags.female));

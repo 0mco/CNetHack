@@ -84,7 +84,10 @@ char *outbuf;
     Sprintf(outbuf, "%s%s%s called %s",
             /* being blinded may hide invisibility from self */
             (Invis && (senseself() || !Blind)) ? "invisible " : "", race,
-            mons[u.umonnum].mname, plname);
+            // >>> CN_TS
+            /* mons[u.umonnum].mname, plname); */
+            mons[u.umonnum].cname, plname);
+            // <<< CN_TS
     if (u.usteed)
         Sprintf(eos(outbuf), ", mounted on %s", y_monnam(u.usteed));
     if (u.uundetected || (Upolyd && youmonst.m_ap_type))
@@ -129,7 +132,10 @@ char *outbuf;
     } else if (mon->m_ap_type == M_AP_MONSTER) {
         if (altmon)
             Sprintf(outbuf, ", masquerading as %s",
-                    an(mons[mon->mappearance].mname));
+                    // >>> CN_TS
+                    /* an(mons[mon->mappearance].mname)); */
+                    an(mons[mon->mappearance].cname));
+                    // <<< CN_TS
     } else if (isyou ? u.uundetected : mon->mundetected) {
         Strcpy(outbuf, ", hiding");
         if (hides_under(mon->data)) {
@@ -339,7 +345,10 @@ int x, y;
                                         : (mW & M2_ELF & m2) ? "elf"
                                           : (mW & M2_ORC & m2) ? "orc"
                                             : (mW & M2_DEMON & m2) ? "demon"
-                                              : mtmp->data->mname);
+                                              // >>> CN_TS
+                                              /* : mtmp->data->mname); */
+                                              : mtmp->data->cname);
+                                              // <<< CN_TS
 
                     Sprintf(eos(monbuf), "warned of %s", makeplural(whom));
                 }
@@ -533,7 +542,10 @@ boolean user_typed_name, without_asking;
      * user_typed_name and picked name.
      */
     if (pm != (struct permonst *) 0 && !user_typed_name)
-        dbase_str = strcpy(newstr, pm->mname);
+        // >>> CN_TS
+        /* dbase_str = strcpy(newstr, pm->mname); */
+        dbase_str = strcpy(newstr, pm->cname);
+        // <<< CN_TS
     else
         dbase_str = strcpy(newstr, inp);
     (void) lcase(dbase_str);
@@ -1744,11 +1756,13 @@ dispfile_optionfile()
     display_file(OPTIONFILE, TRUE);
 }
 
+// >>> CN_TS
 void
 dispfile_trans()
 {
     display_file(TRANS, TRUE);
 }
+// <<< CN_TS
 
 void
 dispfile_license()
@@ -1817,7 +1831,9 @@ static struct {
     { dokeylist, "Full list of keyboard commands" },
     { hmenu_doextlist, "List of extended commands." },
     { domenucontrols, "List menu control keys" },
+    // >>> CN_TS
     { dispfile_trans, "List of translations" },
+    // <<< CN_TS
     { dispfile_license, "The NetHack license." },
     { docontact, "Support information." },
 #ifdef PORT_HELP

@@ -919,7 +919,10 @@ int dieroll;
                         pline("Splat! You hit %s with %s %s egg%s!",
                               mon_nam(mon),
                               obj->known ? "the" : cnt > 1L ? "some" : "a",
-                              obj->known ? mons[obj->corpsenm].mname
+                              // >>> CN_TS
+                              /* obj->known ? mons[obj->corpsenm].mname */
+                              obj->known ? mons[obj->corpsenm].cname
+                              // <<< CN_TS
                                          : "petrifying",
                               plur(cnt));
                         obj->known = 1; /* (not much point...) */
@@ -932,7 +935,10 @@ int dieroll;
                     } else { /* ordinary egg(s) */
                         const char *eggp =
                             (obj->corpsenm != NON_PM && obj->known)
-                                ? the(mons[obj->corpsenm].mname)
+                                // >>> CN_TS
+                                /* ? the(mons[obj->corpsenm].mname) */
+                                ? the(mons[obj->corpsenm].cname)
+                                // <<< CN_TS
                                 : (cnt > 1L) ? "some" : "an";
                         You("hit %s with %s egg%s.", mon_nam(mon), eggp,
                             plur(cnt));
@@ -2030,7 +2036,10 @@ register struct attack *mattk;
 
         if (fatal_gulp && !is_rider(pd)) { /* petrification */
             char kbuf[BUFSZ];
-            const char *mname = pd->mname;
+            // >>> CN_TS
+            /* const char *mname = pd->mname; */
+            const char *mname = pd->cname;
+            // <<< CN_TS
 
             if (!type_is_pname(pd))
                 mname = an(mname);
@@ -2046,7 +2055,10 @@ register struct attack *mattk;
                     pline("Unfortunately, digesting any of it is fatal.");
                     end_engulf();
                     Sprintf(killer.name, "unwisely tried to eat %s",
-                            pd->mname);
+                            // >>> CN_TS
+                            /* pd->mname); */
+                            pd->cname);
+                            // <<< CN_TS
                     killer.format = NO_KILLER_PREFIX;
                     done(DIED);
                     return 0; /* lifesaved */
@@ -2097,7 +2109,10 @@ register struct attack *mattk;
                         pline1(msgbuf);
                     if (pd == &mons[PM_GREEN_SLIME]) {
                         Sprintf(msgbuf, "%s isn't sitting well with you.",
-                                The(pd->mname));
+                                // >>> CN_TS
+                                /* The(pd->mname)); */
+                                The(pd->cname));
+                                // <<< CN_TS
                         if (!Unchanging) {
                             make_slimed(5L, (char *) 0);
                         }

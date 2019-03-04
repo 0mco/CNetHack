@@ -1655,14 +1655,14 @@ struct obj *corpse;
     struct monst *mtmp, *mcarry;
     boolean is_uwep, chewed;
     xchar where;
-    char cname[BUFSZ];
+    char mname[BUFSZ];
     struct obj *container = (struct obj *) 0;
     int container_where = 0;
 
     where = corpse->where;
     is_uwep = (corpse == uwep);
     chewed = (corpse->oeaten != 0);
-    Strcpy(cname,
+    Strcpy(mname,
            corpse_xname(corpse, chewed ? "bite-covered" : (const char *) 0,
                         CXN_SINGULAR));
     mcarry = (where == OBJ_MINVENT) ? corpse->ocarry : 0;
@@ -1684,7 +1684,7 @@ struct obj *corpse;
         switch (where) {
         case OBJ_INVENT:
             if (is_uwep)
-                pline_The("%s writhes out of your grasp!", cname);
+                pline_The("%s writhes out of your grasp!", mname);
             else
                 You_feel("squirming in your backpack!");
             break;
@@ -1700,7 +1700,7 @@ struct obj *corpse;
             if (cansee(mtmp->mx, mtmp->my)) {
                 if (canseemon(mcarry))
                     pline("Startled, %s drops %s as it revives!",
-                          mon_nam(mcarry), an(cname));
+                          mon_nam(mcarry), an(mname));
                 else
                     pline("%s suddenly appears!",
                           chewed ? Adjmonnam(mtmp, "bite-covered")

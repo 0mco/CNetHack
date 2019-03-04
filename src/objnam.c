@@ -476,8 +476,12 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
         /* it whenever calling doname() or xname(). */
         if (typ == FIGURINE && omndx != NON_PM) {
             Sprintf(eos(buf), " of a%s %s",
-                    index(vowels, *mons[omndx].mname) ? "n" : "",
-                    mons[omndx].mname);
+                    // >>> CN_TS
+                    /* index(vowels, *mons[omndx].cname) ? "n" : "", */
+                    /* mons[omndx].cname); */
+                    index(vowels, *mons[omndx].cname) ? "n" : "",
+                    mons[omndx].cname);
+                    // <<< CN_TS
         } else if (is_wet_towel(obj)) {
             if (wizard)
                 Sprintf(eos(buf), " (%d)", obj->spe);
@@ -573,10 +577,16 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
                        ? ""
                        : the_unique_pm(&mons[omndx])
                           ? "the "
-                          : index(vowels, *mons[omndx].mname)
+                          // >>> CN_TS
+                          /* : index(vowels, *mons[omndx].mname) */
+                          : index(vowels, *mons[omndx].cname)
+                          // <<< CN_TS
                              ? "an "
                              : "a ",
-                    mons[omndx].mname);
+                    // >>> CN_TS
+                    /* mons[omndx].mname); */
+                    mons[omndx].cname);
+                    // <<< CN_TS
         else
             Strcpy(buf, actualn);
         break;
@@ -1121,7 +1131,10 @@ unsigned doname_flags;
 #endif
             if (omndx >= LOW_PM
                 && (known || (mvitals[omndx].mvflags & MV_KNOWS_EGG))) {
-                Strcat(prefix, mons[omndx].mname);
+                // >>> CN_TS
+                /* Strcat(prefix, mons[omndx].mname); */
+                Strcat(prefix, mons[omndx].cname);
+                // <<< CN_TS
                 Strcat(prefix, " ");
                 if (obj->spe)
                     Strcat(bp, " (laid by you)");
@@ -1320,6 +1333,16 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
         glob = (otmp->otyp != CORPSE && otmp->globby);
     const char *mname;
 
+    // >>> CN_TS
+    /* if (glob) { */
+    /*     mname = OBJ_NAME(objects[otmp->otyp]); #<{(| "glob of <monster>" |)}># */
+    /* } else if (omndx == NON_PM) { #<{(| paranoia |)}># */
+    /*     mname = "thing"; */
+    /*     #<{(| [Possible enhancement:  check whether corpse has monster traits */
+    /*         attached in order to use priestname() for priests and minions.] |)}># */
+    /* } else if (omndx == PM_ALIGNED_PRIEST) { */
+    /*     #<{(| avoid "aligned priest"; it just exposes internal details |)}># */
+    /*     mname = "priest"; */
     if (glob) {
         mname = OBJ_NAME(objects[otmp->otyp]); /* "glob of <monster>" */
     } else if (omndx == NON_PM) { /* paranoia */
@@ -1329,10 +1352,16 @@ unsigned cxn_flags; /* bitmask of CXN_xxx values */
     } else if (omndx == PM_ALIGNED_PRIEST) {
         /* avoid "aligned priest"; it just exposes internal details */
         mname = "priest";
+    // <<< CN_TS
     } else {
-        mname = mons[omndx].mname;
+        // >>> CN_TS
+        /* mname = mons[omndx].mname; */
+        /* if (the_unique_pm(&mons[omndx]) || type_is_pname(&mons[omndx])) { */
+        /*     mname = s_suffix(mname); */
+        mname = mons[omndx].cname;
         if (the_unique_pm(&mons[omndx]) || type_is_pname(&mons[omndx])) {
             mname = s_suffix(mname);
+        // <<< CN_TS
             possessive = TRUE;
             /* don't precede personal name like "Medusa" with an article */
             if (type_is_pname(&mons[omndx]))
@@ -3100,7 +3129,10 @@ struct obj *no_wish;
             char *obp = bp;
 
             mntmptoo = title_to_mon(bp, (int *) 0, &mntmplen);
-            bp += (mntmp != mntmptoo) ? (int) strlen(mons[mntmp].mname)
+            // >>> CN_TS
+            /* bp += (mntmp != mntmptoo) ? (int) strlen(mons[mntmp].mname) */
+            bp += (mntmp != mntmptoo) ? (int) strlen(mons[mntmp].cname)
+            // <<< CN_TS
                                       : mntmplen;
             if (*bp == ' ') {
                 bp++;

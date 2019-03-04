@@ -8,6 +8,7 @@
 
 STATIC_VAR NEARDATA struct engr *head_engr;
 
+// >>> CN_TS
 void
 wipeout_utf8_char(str, ch, rep)
 char *str, *ch;
@@ -47,6 +48,7 @@ int rep;
     }
 }
 
+// <<< CN_TS
 char *
 random_engraving(outbuf)
 char *outbuf;
@@ -184,7 +186,7 @@ unsigned seed; /* for semi-controlled randomization */
     }
 
     /* trim trailing spaces */
-    while (lth && engr[lth - 1] == ' ') /* 0x20 for ' ' is ok */
+    while (lth && engr[lth - 1] == ' ')
         engr[--lth] = '\0';
 }
 
@@ -1083,13 +1085,16 @@ doengrave()
             continue;
         if (((type == DUST || type == ENGR_BLOOD) && !rn2(25))
             || (Blind && !rn2(11)) || (Confusion && !rn2(7))
-            || (Stunned && !rn2(4)) || (Hallucination && !rn2(2))) {
-            // >>> CN_TS
+        // >>> CN_TS
+            /* || (Stunned && !rn2(4)) || (Hallucination && !rn2(2))) */
             /* *sp = ' ' + rnd(96 - 2); #<{(| ASCII '!' thru '~' */
             /*                             (excludes ' ' and DEL) |)}># */
-            wipeout_utf8_char(ebuf, sp, ' ' + rnd(96 - 2));
-            // <<< CN_TS
+            || (Stunned && !rn2(4)) || (Hallucination && !rn2(2))) {
+            wipeout_utf8_char(ebuf, sp, ' ' + rnd(96 - 2)); /* ASCII '!' thru '~'
+                                        (excludes ' ' and DEL) */
+
         }
+        // <<< CN_TS
     }
 
     /* Previous engraving is overwritten */

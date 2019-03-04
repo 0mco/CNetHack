@@ -1970,7 +1970,10 @@ struct obj *obj, *otmp;
                         learn_it = TRUE;
                     } else if (!Blind) {
                         You("observe %s %s change dramatically.",
-                            s_suffix(an(mons[corpsenm].mname)),
+                            // >>> CN_TS
+                            /* s_suffix(an(mons[corpsenm].mname)), */
+                            s_suffix(an(mons[corpsenm].cname)),
+                            // <<< CN_TS
                             nonliving(&mons[corpsenm]) ? "motility"
                                                        : "health");
                         learn_it = TRUE;

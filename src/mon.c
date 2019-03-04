@@ -61,7 +61,10 @@ const char *msg;
             mtmp->mnum = mndx;
         }
         if (chk_geno && (mvitals[mndx].mvflags & G_GENOD) != 0)
-            impossible("genocided %s in play (%s)", mons[mndx].mname, msg);
+            // >>> CN_TS
+            /* impossible("genocided %s in play (%s)", mons[mndx].mname, msg); */
+            impossible("genocided %s in play (%s)", mons[mndx].cname, msg);
+            // <<< CN_TS
     }
     if (mtmp->isshk && !has_eshk(mtmp))
         impossible("shk without eshk (%s)", msg);
@@ -1697,6 +1700,8 @@ struct monst *m;
     if (x) {
         if (x->mname)
             free((genericptr_t) x->mname);
+        if (x->cname)
+            free((genericptr_t) x->cname);
         if (x->egd)
             free((genericptr_t) x->egd);
         if (x->epri)
@@ -1878,7 +1883,10 @@ register struct monst *mtmp;
             if (canspotmon(mtmp)) {
                 /* was using a_monnam(mtmp) but that's weird if mtmp is named:
                    "Dracula suddenly transforms and rises as Dracula" */
-                pline(upstart(buf), an(mtmp->data->mname));
+                // >>> CN_TS
+                /* pline(upstart(buf), an(mtmp->data->mname)); */
+                pline(upstart(buf), an(mtmp->data->cname));
+                // <<< CN_TS
                 vamp_rise_msg = TRUE;
             }
             newsym(x, y);
@@ -1984,7 +1992,10 @@ boolean was_swallowed; /* digestion */
                 if (magr == &youmonst) {
                     There("is an explosion in your %s!", body_part(STOMACH));
                     Sprintf(killer.name, "%s explosion",
-                            s_suffix(mdat->mname));
+                            // >>> CN_TS
+                            /* s_suffix(mdat->mname)); */
+                            s_suffix(mdat->cname));
+                            // <<< CN_TS
                     losehp(Maybe_Half_Phys(tmp), killer.name, KILLED_BY_AN);
                 } else {
                     You_hear("an explosion.");
@@ -2001,7 +2012,10 @@ boolean was_swallowed; /* digestion */
                 return FALSE;
             }
 
-            Sprintf(killer.name, "%s explosion", s_suffix(mdat->mname));
+            // >>> CN_TS
+            /* Sprintf(killer.name, "%s explosion", s_suffix(mdat->mname)); */
+            Sprintf(killer.name, "%s explosion", s_suffix(mdat->cname));
+            // <<< CN_TS
             killer.format = KILLED_BY_AN;
             explode(mon->mx, mon->my, -1, tmp, MON_EXPLODE, EXPL_NOXIOUS);
             killer.name[0] = '\0';
@@ -2408,7 +2422,10 @@ struct monst *mtmp;
             pline("%s solidifies...", Monnam(mtmp));
         if (newcham(mtmp, &mons[PM_STONE_GOLEM], FALSE, FALSE)) {
             if (canseemon(mtmp))
-                pline("Now it's %s.", an(mtmp->data->mname));
+                // >>> CN_TS
+                /* pline("Now it's %s.", an(mtmp->data->mname)); */
+                pline("Now it's %s.", an(mtmp->data->cname));
+                // <<< CN_TS
         } else {
             if (canseemon(mtmp))
                 pline("... and returns to normal.");
@@ -2693,7 +2710,10 @@ boolean via_attack;
             }
         }
         if (got_mad && !Hallucination) {
-            const char *who = q_guardian->mname;
+            // >>> CN_TS
+            /* const char *who = q_guardian->mname; */
+            const char *who = q_guardian->cname;
+            // <<< CN_TS
 
             if (got_mad > 1)
                 who = makeplural(who);

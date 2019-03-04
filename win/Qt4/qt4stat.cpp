@@ -429,7 +429,10 @@ void NetHackQtStatusWindow::updateStats()
 	encumber.show();
     }
     if (u.mtimedone) {
-	buf = nh_capitalize_words(mons[u.umonnum].mname);
+    // >>> CN_TS
+	// buf = nh_capitalize_words(mons[u.umonnum].mname);
+	buf = nh_capitalize_words(mons[u.umonnum].cname);
+    // <<< CN_TS
     } else {
 	buf = rank_of(u.ulevel, pl_character[0], ::flags.female);
     }

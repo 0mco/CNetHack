@@ -179,7 +179,10 @@ ldrname()
     int i = urole.ldrnum;
 
     Sprintf(nambuf, "%s%s", type_is_pname(&mons[i]) ? "" : "the ",
-            mons[i].mname);
+            // >>> CN_TS
+            /* mons[i].mname); */
+            mons[i].cname);
+            // <<< CN_TS
     return nambuf;
 }
 
@@ -256,7 +259,10 @@ neminame()
     int i = urole.neminum;
 
     Sprintf(nambuf, "%s%s", type_is_pname(&mons[i]) ? "" : "the ",
-            mons[i].mname);
+            // >>> CN_TS
+            /* mons[i].mname); */
+            mons[i].cname);
+            // <<< CN_TS
     return nambuf;
 }
 
@@ -265,7 +271,10 @@ guardname() /* return your role leader's guard monster name */
 {
     int i = urole.guardnum;
 
-    return mons[i].mname;
+    // >>> CN_TS
+    /* return mons[i].mname; */
+    return mons[i].cname;
+    // <<< CN_TS
 }
 
 STATIC_OVL const char *

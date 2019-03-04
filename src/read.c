@@ -2079,7 +2079,10 @@ do_class_genocide()
             if (mons[i].mlet == class) {
                 char nam[BUFSZ];
 
-                Strcpy(nam, makeplural(mons[i].mname));
+                // >>> CN_TS
+                /* Strcpy(nam, makeplural(mons[i].mname)); */
+                Strcpy(nam, makeplural(mons[i].cname));
+                // <<< CN_TS
                 /* Although "genus" is Latin for race, the hero benefits
                  * from both race and role; thus genocide affects either.
                  */
@@ -2145,7 +2148,10 @@ do_class_genocide()
 
                         You("aren't permitted to genocide %s%s.",
                             (uniq && !named) ? "the " : "",
-                            (uniq || named) ? mons[i].mname : nam);
+                            // >>> CN_TS
+                            /* (uniq || named) ? mons[i].mname : nam); */
+                            (uniq || named) ? mons[i].cname : nam);
+                            // <<< CN_TS
                     }
                 }
             }
@@ -2180,7 +2186,10 @@ int how;
     if (how & PLAYER) {
         mndx = u.umonster; /* non-polymorphed mon num */
         ptr = &mons[mndx];
-        Strcpy(buf, ptr->mname);
+        // >>> CN_TS
+        /* Strcpy(buf, ptr->mname); */
+        Strcpy(buf, ptr->cname);
+        // <<< CN_TS
         killplayer++;
     } else {
         for (i = 0;; i++) {
@@ -2247,14 +2256,20 @@ int how;
     which = "all ";
     if (Hallucination) {
         if (Upolyd)
-            Strcpy(buf, youmonst.data->mname);
+            // >>> CN_TS
+            /* Strcpy(buf, youmonst.data->mname); */
+            Strcpy(buf, youmonst.data->cname);
+            // <<< CN_TS
         else {
             Strcpy(buf, (flags.female && urole.name.f) ? urole.name.f
                                                        : urole.name.m);
             buf[0] = lowc(buf[0]);
         }
     } else {
-        Strcpy(buf, ptr->mname); /* make sure we have standard singular */
+        // >>> CN_TS
+        /* Strcpy(buf, ptr->mname); #<{(| make sure we have standard singular |)}># */
+        Strcpy(buf, ptr->cname); /* make sure we have standard singular */
+        // <<< CN_TS
         if ((ptr->geno & G_UNIQ) && ptr != &mons[PM_HIGH_PRIEST])
             which = !type_is_pname(ptr) ? "the " : "";
     }
@@ -2509,7 +2524,10 @@ create_particular()
             if (cant_revive(&which, FALSE, (struct obj *) 0)) {
                 /* wizard mode can override handling of special monsters */
                 Sprintf(buf, "Creating %s instead; force %s?",
-                        mons[which].mname, mons[firstchoice].mname);
+                        // >>> CN_TS
+                        /* mons[which].mname, mons[firstchoice].mname); */
+                        mons[which].cname, mons[firstchoice].cname);
+                        // <<< CN_TS
                 if (yn(buf) == 'y')
                     which = firstchoice;
             }

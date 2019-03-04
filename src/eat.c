@@ -518,7 +518,10 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
            tentacle-touch should have been caught before reaching this far) */
         if (magr == &youmonst) {
             if (!Stone_resistance && !Stoned)
-                make_stoned(5L, (char *) 0, KILLED_BY_AN, pd->mname);
+                // >>> CN_TS
+                /* make_stoned(5L, (char *) 0, KILLED_BY_AN, pd->mname); */
+                make_stoned(5L, (char *) 0, KILLED_BY_AN, pd->cname);
+                // <<< CN_TS
         } else {
             /* no need to check for poly_when_stoned or Stone_resistance;
                mind flayers don't have those capabilities */
@@ -548,7 +551,10 @@ int *dmg_p; /* for dishing out extra damage in lieu of Int loss */
             return MM_MISS;
         } else if (is_rider(pd)) {
             pline("Ingesting that is fatal.");
-            Sprintf(killer.name, "unwisely ate the brain of %s", pd->mname);
+            // >>> CN_TS
+            /* Sprintf(killer.name, "unwisely ate the brain of %s", pd->mname); */
+            Sprintf(killer.name, "unwisely ate the brain of %s", pd->cname);
+            // <<< CN_TS
             killer.format = NO_KILLER_PREFIX;
             done(DIED);
             /* life-saving needed to reach here */
@@ -678,7 +684,10 @@ register int pm;
         if (!Stone_resistance
             && !(poly_when_stoned(youmonst.data)
                  && polymon(PM_STONE_GOLEM))) {
-            Sprintf(killer.name, "tasting %s meat", mons[pm].mname);
+            // >>> CN_TS
+            /* Sprintf(killer.name, "tasting %s meat", mons[pm].mname); */
+            Sprintf(killer.name, "tasting %s meat", mons[pm].cname);
+            // <<< CN_TS
             killer.format = KILLED_BY;
             You("turn to stone.");
             done(STONING);
@@ -697,7 +706,10 @@ register int pm;
     case PM_LARGE_CAT:
         /* cannibals are allowed to eat domestic animals without penalty */
         if (!CANNIBAL_ALLOWED()) {
-            You_feel("that eating the %s was a bad idea.", mons[pm].mname);
+            // >>> CN_TS
+            /* You_feel("that eating the %s was a bad idea.", mons[pm].mname); */
+            You_feel("that eating the %s was a bad idea.", mons[pm].cname);
+            // <<< CN_TS
             HAggravate_monster |= FROMOUTSIDE;
         }
         break;
@@ -709,7 +721,10 @@ register int pm;
     case PM_PESTILENCE:
     case PM_FAMINE: {
         pline("Eating that is instantly fatal.");
-        Sprintf(killer.name, "unwisely ate the body of %s", mons[pm].mname);
+        // >>> CN_TS
+        /* Sprintf(killer.name, "unwisely ate the body of %s", mons[pm].mname); */
+        Sprintf(killer.name, "unwisely ate the body of %s", mons[pm].cname);
+        // <<< CN_TS
         killer.format = NO_KILLER_PREFIX;
         done(DIED);
         /* life-saving needed to reach here */
@@ -1029,7 +1044,10 @@ register int pm;
                     Hallucination
                        ? "You suddenly dread being peeled and mimic %s again!"
                        : "You now prefer mimicking %s again.",
-                    an(Upolyd ? youmonst.data->mname : urace.noun));
+                    // >>> CN_TS
+                    /* an(Upolyd ? youmonst.data->mname : urace.noun)); */
+                    an(Upolyd ? youmonst.data->cname : urace.noun));
+                    // <<< CN_TS
             eatmbuf = dupstr(buf);
             nomovemsg = eatmbuf;
             afternmv = eatmdone;
@@ -1226,9 +1244,15 @@ char *buf;
                 Strcpy(eos(buf), " of ");
             }
             if (vegetarian(&mons[mnum]))
-                Sprintf(eos(buf), "%s", mons[mnum].mname);
+                // >>> CN_TS
+                /* Sprintf(eos(buf), "%s", mons[mnum].mname); */
+                Sprintf(eos(buf), "%s", mons[mnum].cname);
+                // <<< CN_TS
             else
-                Sprintf(eos(buf), "%s meat", mons[mnum].mname);
+                // >>> CN_TS
+                /* Sprintf(eos(buf), "%s meat", mons[mnum].mname); */
+                Sprintf(eos(buf), "%s meat", mons[mnum].cname);
+                // <<< CN_TS
         }
     }
 }
@@ -1322,7 +1346,10 @@ const char *mesg;
         } else if (Hallucination) {
             what = rndmonnam(NULL);
         } else {
-            what = mons[mnum].mname;
+            // >>> CN_TS
+            /* what = mons[mnum].mname; */
+            what = mons[mnum].cname;
+            // <<< CN_TS
             if (the_unique_pm(&mons[mnum]))
                 which = 2;
             else if (type_is_pname(&mons[mnum]))
@@ -1349,7 +1376,10 @@ const char *mesg;
         context.victual.fullwarn = context.victual.eating =
             context.victual.doreset = FALSE;
 
-        You("consume %s %s.", tintxts[r].txt, mons[mnum].mname);
+        // >>> CN_TS
+        /* You("consume %s %s.", tintxts[r].txt, mons[mnum].mname); */
+        You("consume %s %s.", tintxts[r].txt, mons[mnum].cname);
+        // <<< CN_TS
 
         eating_conducts(&mons[mnum]);
 
@@ -2207,7 +2237,10 @@ struct obj *otmp;
                      && polymon(PM_STONE_GOLEM))) {
                 if (!Stoned) {
                     Sprintf(killer.name, "%s egg",
-                            mons[otmp->corpsenm].mname);
+                            // >>> CN_TS
+                            /* mons[otmp->corpsenm].mname); */
+                            mons[otmp->corpsenm].cname);
+                            // <<< CN_TS
                     make_stoned(5L, (char *) 0, KILLED_BY_AN, killer.name);
                 }
             }

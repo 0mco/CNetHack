@@ -1402,7 +1402,10 @@ struct monst *mtmp;
                          && OBJ_NAME(objects[mtmp->mappearance]))
                             ? an(OBJ_NAME(objects[mtmp->mappearance]))
                             : (mtmp->m_ap_type == M_AP_MONSTER)
-                                  ? an(mons[mtmp->mappearance].mname)
+                                  // >>> CN_TS
+                                  /* ? an(mons[mtmp->mappearance].mname) */
+                                  ? an(mons[mtmp->mappearance].cname)
+                                  // <<< CN_TS
                                   : something,
             cansee(mtmp->mx, mtmp->my) ? "" : "has ",
             cansee(mtmp->mx, mtmp->my) ? "" : "ed",

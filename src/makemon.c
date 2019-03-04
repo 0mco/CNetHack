@@ -917,7 +917,10 @@ boolean ghostly;
         && !(mvitals[mndx].mvflags & G_EXTINCT)) {
         if (wizard) {
             debugpline1("Automatically extinguished %s.",
-                        makeplural(mons[mndx].mname));
+                        // >>> CN_TS
+                        /* makeplural(mons[mndx].mname)); */
+                        makeplural(mons[mndx].cname));
+                        // <<< CN_TS
         }
         mvitals[mndx].mvflags |= G_EXTINCT;
         reset_rndmonst(mndx);
@@ -994,7 +997,11 @@ newmextra()
     struct mextra *mextra;
 
     mextra = (struct mextra *) alloc(sizeof(struct mextra));
+    // >>> CN_TS
+    /* mextra->mname = 0; */
     mextra->mname = 0;
+    mextra->cname = 0;
+    // <<< CN_TS
     mextra->egd = 0;
     mextra->epri = 0;
     mextra->eshk = 0;
@@ -1133,7 +1140,10 @@ int mmflags;
             return (struct monst *) 0;
         if (wizard && (mvitals[mndx].mvflags & G_EXTINCT)) {
             debugpline1("Explicitly creating extinct monster %s.",
-                        mons[mndx].mname);
+                        // >>> CN_TS
+                        /* mons[mndx].mname); */
+                        mons[mndx].cname);
+                        // <<< CN_TS
         }
     } else {
         /* make a random (common) monster that can survive here.
@@ -1805,7 +1815,10 @@ struct monst *mtmp, *victim;
         if (mvitals[newtype].mvflags & G_GENOD) { /* allow G_EXTINCT */
             if (canspotmon(mtmp))
                 pline("As %s grows up into %s, %s %s!", mon_nam(mtmp),
-                      an(ptr->mname), mhe(mtmp),
+                      // >>> CN_TS
+                      /* an(ptr->mname), mhe(mtmp), */
+                      an(ptr->cname), mhe(mtmp),
+                      // <<< CN_TS
                       nonliving(ptr) ? "expires" : "dies");
             set_mon_data(mtmp, ptr, -1); /* keep mvitals[] accurate */
             mondied(mtmp);
@@ -1823,7 +1836,10 @@ struct monst *mtmp, *victim;
                            (can't happen with 3.6.0 mons[], but perhaps
                            slightly less sexist if prepared for it...) */
                       : (fem && !mtmp->female) ? "female " : "",
-                    ptr->mname);
+                    // >>> CN_TS
+                    /* ptr->mname); */
+                    ptr->cname);
+                    // <<< CN_TS
             pline("%s %s %s.", Monnam(mtmp),
                   (fem != mtmp->female) ? "changes into"
                                         : humanoid(ptr) ? "becomes"

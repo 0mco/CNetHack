@@ -71,7 +71,10 @@ struct obj *otmp;
 
         You("touch %s.", mon_nam(mtmp));
         if (!(poly_when_stoned(youmonst.data) && polymon(PM_STONE_GOLEM))) {
-            Sprintf(kbuf, "attempting to saddle %s", an(mtmp->data->mname));
+            // >>> CN_TS
+            /* Sprintf(kbuf, "attempting to saddle %s", an(mtmp->data->mname)); */
+            Sprintf(kbuf, "attempting to saddle %s", an(mtmp->data->cname));
+            // <<< CN_TS
             instapetrify(kbuf);
         }
     }
@@ -264,7 +267,10 @@ boolean force;      /* Quietly force this animal */
         char kbuf[BUFSZ];
 
         You("touch %s.", mon_nam(mtmp));
-        Sprintf(kbuf, "attempting to ride %s", an(mtmp->data->mname));
+        // >>> CN_TS
+        /* Sprintf(kbuf, "attempting to ride %s", an(mtmp->data->mname)); */
+        Sprintf(kbuf, "attempting to ride %s", an(mtmp->data->cname));
+        // <<< CN_TS
         instapetrify(kbuf);
     }
     if (!mtmp->mtame || mtmp->isminion) {
@@ -522,7 +528,10 @@ int reason; /* Player was thrown off etc. */
         }
         if (!has_mname(mtmp)) {
             pline("You've been through the dungeon on %s with no name.",
-                  an(mtmp->data->mname));
+                  // >>> CN_TS
+                  /* an(mtmp->data->mname)); */
+                  an(mtmp->data->cname));
+                  // <<< CN_TS
             if (Hallucination)
                 pline("It felt good to get out of the rain.");
         } else

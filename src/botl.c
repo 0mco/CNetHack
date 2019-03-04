@@ -53,7 +53,10 @@ do_statusline1()
         char mbot[BUFSZ];
         int k = 0;
 
+        // >>> CN_TS
         Strcpy(mbot, mons[u.umonnum].mname);
+        /* Strcpy(mbot, mons[u.umonnum].cname); */
+        // <<< CN_TS
         while (mbot[k] != 0) {
             if ((k == 0 || (k > 0 && mbot[k - 1] == ' ')) && 'a' <= mbot[k]
                 && mbot[k] <= 'z')
@@ -548,8 +551,12 @@ bot_via_windowport()
     nb[10] = '\0';
     Sprintf(nb = eos(nb), " the ");
     if (Upolyd) {
-        for (i = 0, nb = strcpy(eos(nb), mons[u.umonnum].mname); nb[i]; i++)
-            if (i == 0 || nb[i - 1] == ' ')
+        // >>> CN_TS
+        /* for (i = 0, nb = strcpy(eos(nb), mons[u.umonnum].mname); nb[i]; i++) */
+        for (i = 0, nb = strcpy(eos(nb), mons[u.umonnum].cname); nb[i]; i++)
+        // <<< CN_TS
+            if ((i == 0 || nb[i - 1] == ' ') && 'a' <= nb[i]
+                && nb[i] <= 'z')
                 nb[i] = highc(nb[i]);
     } else
         Strcpy(nb = eos(nb), rank());

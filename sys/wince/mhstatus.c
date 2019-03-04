@@ -192,7 +192,10 @@ FormatStatusString(char *text, int format)
         char mbot[BUFSZ];
         int k = 0;
 
-        Strcpy(mbot, mons[u.umonnum].mname);
+        // >>> CN_TS
+        /* Strcpy(mbot, mons[u.umonnum].mname); */
+        Strcpy(mbot, mons[u.umonnum].cname);
+        // <<< CN_TS
         while (mbot[k] != 0) {
             if ((k == 0 || (k > 0 && mbot[k - 1] == ' ')) && 'a' <= mbot[k]
                 && mbot[k] <= 'z')

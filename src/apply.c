@@ -273,7 +273,10 @@ int rx, ry, *resp;
                     humanoid(mptr) ? "person" : "creature");
             what = buf;
         } else {
-            what = mptr->mname;
+            // >>> CN_TS
+            /* what = mptr->mname; */
+            what = mptr->cname;
+            // <<< CN_TS
             if (!type_is_pname(mptr))
                 what = The(what);
         }
@@ -392,7 +395,10 @@ register struct obj *obj;
                 what = simple_typename(mtmp->mappearance);
                 break;
             case M_AP_MONSTER: /* ignore Hallucination here */
-                what = mons[mtmp->mappearance].mname;
+                // >>> CN_TS
+                /* what = mons[mtmp->mappearance].mname; */
+                what = mons[mtmp->mappearance].cname;
+                // <<< CN_TS
                 break;
             case M_AP_FURNITURE:
                 what = defsyms[mtmp->mappearance].explanation;
@@ -1825,12 +1831,21 @@ struct obj *obj;
 
         if (poly_when_stoned(youmonst.data))
             You("tin %s without wearing gloves.",
-                an(mons[corpse->corpsenm].mname));
+                // >>> CN_TS
+                /* an(mons[corpse->corpsenm].mname)); */
+                an(mons[corpse->corpsenm].cname));
+                // <<< CN_TS
         else {
             pline("Tinning %s without wearing gloves is a fatal mistake...",
-                  an(mons[corpse->corpsenm].mname));
+                  // >>> CN_TS
+                  /* an(mons[corpse->corpsenm].mname)); */
+                  an(mons[corpse->corpsenm].cname));
+                  // <<< CN_TS
             Sprintf(kbuf, "trying to tin %s without gloves",
-                    an(mons[corpse->corpsenm].mname));
+                    // >>> CN_TS
+                    /* an(mons[corpse->corpsenm].mname)); */
+                    an(mons[corpse->corpsenm].cname));
+                    // <<< CN_TS
         }
         instapetrify(kbuf);
     }
@@ -2808,7 +2823,10 @@ struct obj *obj;
                         char kbuf[BUFSZ];
 
                         Sprintf(kbuf, "%s corpse",
-                                an(mons[otmp->corpsenm].mname));
+                                // >>> CN_TS
+                                /* an(mons[otmp->corpsenm].mname)); */
+                                an(mons[otmp->corpsenm].cname));
+                                // <<< CN_TS
                         pline("Snatching %s is a fatal mistake.", kbuf);
                         instapetrify(kbuf);
                     }

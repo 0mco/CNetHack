@@ -624,7 +624,10 @@ getbones()
                 if (mtmp->mhpmax == DEFUNCT_MONSTER) {
                     if (wizard) {
                         debugpline1("Removing defunct monster %s from bones.",
-                                    mtmp->data->mname);
+                                    // >>> CN_TS
+                                    /* mtmp->data->mname); */
+                                    mtmp->data->cname);
+                                    // <<< CN_TS
                     }
                     mongone(mtmp);
                 } else

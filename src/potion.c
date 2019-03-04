@@ -614,7 +614,10 @@ register struct obj *otmp;
                 exercise(A_CON, FALSE);
                 if (u.ulycn >= LOW_PM) {
                     Your("affinity to %s disappears!",
-                         makeplural(mons[u.ulycn].mname));
+                         // >>> CN_TS
+                         /* makeplural(mons[u.ulycn].mname)); */
+                         makeplural(mons[u.ulycn].cname));
+                         // <<< CN_TS
                     if (youmonst.data == &mons[u.ulycn])
                         you_unwere(FALSE);
                     set_ulycn(NON_PM); /* cure lycanthropy */

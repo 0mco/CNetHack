@@ -173,7 +173,11 @@ struct edog {
  **     mextra.h -- collection of all monster extensions
  */
 struct mextra {
+    // >>> CN_TS
+    // char *mname;
     char *mname;
+    char *cname;    /* Chinese name */
+    // <<< CN_TS
     struct egd *egd;
     struct epri *epri;
     struct eshk *eshk;
@@ -182,7 +186,11 @@ struct mextra {
     int mcorpsenm; /* obj->corpsenm for mimic posing as statue or corpse */
 };
 
+// >>> CN_TS
+// #define MNAME(mon) ((mon)->mextra->mname)
 #define MNAME(mon) ((mon)->mextra->mname)
+#define CNAME(mon) ((mon)->mextra->cname)
+// <<< CN_TS
 #define EGD(mon) ((mon)->mextra->egd)
 #define EPRI(mon) ((mon)->mextra->epri)
 #define ESHK(mon) ((mon)->mextra->eshk)

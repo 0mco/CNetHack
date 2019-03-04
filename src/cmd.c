@@ -1604,7 +1604,10 @@ int final;
         if (!is_male(uasmon) && !is_female(uasmon) && !is_neuter(uasmon))
             Sprintf(tmpbuf, "%s ", genders[flags.female ? 1 : 0].adj);
         Sprintf(buf, "%sin %s%s form", !final ? "currently " : "", tmpbuf,
-                uasmon->mname);
+                // >>> CN_TS
+                /* uasmon->mname); */
+                uasmon->cname);
+                // <<< CN_TS
         you_are(buf, "");
     }
 
@@ -2246,7 +2249,10 @@ int final;
     }
     if (Warn_of_mon && context.warntype.speciesidx >= LOW_PM) {
         Sprintf(buf, "aware of the presence of %s",
-                makeplural(mons[context.warntype.speciesidx].mname));
+                // >>> CN_TS
+                /* makeplural(mons[context.warntype.speciesidx].mname)); */
+                makeplural(mons[context.warntype.speciesidx].cname));
+                // <<< CN_TS
         you_are(buf, from_what(WARN_OF_MON));
     }
     if (Undead_warning)
@@ -2412,7 +2418,10 @@ int final;
         you_have("polymorph control", from_what(POLYMORPH_CONTROL));
     if (Upolyd && u.umonnum != u.ulycn) {
         /* foreign shape (except were-form which is handled below) */
-        Sprintf(buf, "polymorphed into %s", an(youmonst.data->mname));
+        // >>> CN_TS
+        /* Sprintf(buf, "polymorphed into %s", an(youmonst.data->mname)); */
+        Sprintf(buf, "polymorphed into %s", an(youmonst.data->cname));
+        // <<< CN_TS
         if (wizard)
             Sprintf(eos(buf), " (%d)", u.mtimedone);
         you_are(buf, "");
@@ -2421,7 +2430,10 @@ int final;
         you_can("lay eggs", "");
     if (u.ulycn >= LOW_PM) {
         /* "you are a werecreature [in beast form]" */
-        Strcpy(buf, an(mons[u.ulycn].mname));
+        // >>> CN_TS
+        /* Strcpy(buf, an(mons[u.ulycn].mname)); */
+        Strcpy(buf, an(mons[u.ulycn].cname));
+        // <<< CN_TS
         if (u.umonnum == u.ulycn) {
             Strcat(buf, " in beast form");
             if (wizard)
@@ -2607,7 +2619,10 @@ minimal_enlightenment()
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, "", FALSE);
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, iflags.menu_headings,
              "Current", FALSE);
-    Sprintf(buf, fmtstr, "race", Upolyd ? youmonst.data->mname : urace.noun);
+    // >>> CN_TS
+    /* Sprintf(buf, fmtstr, "race", Upolyd ? youmonst.data->mname : urace.noun); */
+    Sprintf(buf, fmtstr, "race", Upolyd ? youmonst.data->cname : urace.noun);
+    // <<< CN_TS
     add_menu(tmpwin, NO_GLYPH, &any, 0, 0, ATR_NONE, buf, FALSE);
     if (Upolyd) {
         Sprintf(buf, fmtstr, "role (base)",
@@ -4879,7 +4894,10 @@ boolean doit;
 #if 0
     if (Upolyd) { /* before objects */
         Sprintf(buf, "Use %s special ability",
-                s_suffix(mons[u.umonnum].mname));
+                // >>> CN_TS
+                /* s_suffix(mons[u.umonnum].mname)); */
+                s_suffix(mons[u.umonnum].cname));
+                // <<< CN_TS
         add_herecmd_menuitem(win, domonability, buf);
     }
 #endif

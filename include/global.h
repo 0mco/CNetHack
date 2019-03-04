@@ -26,7 +26,9 @@
 #define DATAFILE "data"         /* file giving the meaning of symbols used */
 #define CMDHELPFILE "cmdhelp"   /* file telling what commands do */
 #define HISTORY "history"       /* file giving nethack's history */
+// >>> CN_TS
 #define TRANS "translations"     /* file giving translation table */
+// <<< CN_TS
 #define LICENSE "license"       /* file with license information */
 #define OPTIONFILE "opthelp"    /* file explaining runtime options */
 #define OPTIONS_USED "options"  /* compile-time options, for #version */

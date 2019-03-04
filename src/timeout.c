@@ -907,7 +907,10 @@ slip_or_trip()
         if (!uarmf && otmp->otyp == CORPSE
             && touch_petrifies(&mons[otmp->corpsenm]) && !Stone_resistance) {
             Sprintf(killer.name, "tripping over %s corpse",
-                    an(mons[otmp->corpsenm].mname));
+                    // >>> CN_TS
+                    /* an(mons[otmp->corpsenm].mname)); */
+                    an(mons[otmp->corpsenm].cname));
+                    // <<< CN_TS
             instapetrify(killer.name);
         }
     } else if (rn2(3) && is_ice(u.ux, u.uy)) {

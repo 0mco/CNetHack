@@ -491,11 +491,17 @@ register struct monst *mtmp;
                         || u.umonnum == PM_TRAPPER)
                         pline(
                              "Wait, %s!  There's a hidden %s named %s there!",
-                              m_monnam(mtmp), youmonst.data->mname, plname);
+                              // >>> CN_TS
+                              /* m_monnam(mtmp), youmonst.data->mname, plname); */
+                              m_monnam(mtmp), youmonst.data->cname, plname);
+                              // <<< CN_TS
                     else
                         pline(
                           "Wait, %s!  There's a %s named %s hiding under %s!",
-                              m_monnam(mtmp), youmonst.data->mname, plname,
+                              // >>> CN_TS
+                              /* m_monnam(mtmp), youmonst.data->mname, plname, */
+                              m_monnam(mtmp), youmonst.data->cname, plname,
+                              // <<< CN_TS
                               doname(level.objects[u.ux][u.uy]));
                     if (obj)
                         obj->spe = save_spe;
@@ -518,7 +524,10 @@ register struct monst *mtmp;
             pline("It gets stuck on you.");
         else /* see note about m_monnam() above */
             pline("Wait, %s!  That's a %s named %s!", m_monnam(mtmp),
-                  youmonst.data->mname, plname);
+                  // >>> CN_TS
+                  /* youmonst.data->mname, plname); */
+                  youmonst.data->cname, plname);
+                  // <<< CN_TS
         if (sticky)
             u.ustuck = mtmp;
         youmonst.m_ap_type = M_AP_NOTHING;
@@ -539,13 +548,19 @@ register struct monst *mtmp;
                                            : "disturbs you");
         else /* see note about m_monnam() above */
             pline("Wait, %s!  That %s is really %s named %s!", m_monnam(mtmp),
-                  mimic_obj_name(&youmonst), an(mons[u.umonnum].mname),
+                  // >>> CN_TS
+                  /* mimic_obj_name(&youmonst), an(mons[u.umonnum].mname), */
+                  mimic_obj_name(&youmonst), an(mons[u.umonnum].cname),
+                  // <<< CN_TS
                   plname);
         if (multi < 0) { /* this should always be the case */
             char buf[BUFSZ];
 
             Sprintf(buf, "You appear to be %s again.",
-                    Upolyd ? (const char *) an(youmonst.data->mname)
+                    // >>> CN_TS
+                    /* Upolyd ? (const char *) an(youmonst.data->mname) */
+                    Upolyd ? (const char *) an(youmonst.data->cname)
+                    // <<< CN_TS
                            : (const char *) "yourself");
             unmul(buf); /* immediately stop mimicking */
         }
@@ -806,7 +821,10 @@ struct permonst *mdat;
         return FALSE;
     } else {
         make_sick(Sick ? Sick / 3L + 1L : (long) rn1(ACURR(A_CON), 20),
-                  mdat->mname, TRUE, SICK_NONVOMITABLE);
+                  // >>> CN_TS
+                  /* mdat->mname, TRUE, SICK_NONVOMITABLE); */
+                  mdat->cname, TRUE, SICK_NONVOMITABLE);
+                  // <<< CN_TS
         return TRUE;
     }
 }
@@ -980,7 +998,10 @@ register struct attack *mattk;
                     && touch_petrifies(&mons[otmp->corpsenm])) {
                     dmg = 1;
                     pline("%s hits you with the %s corpse.", Monnam(mtmp),
-                          mons[otmp->corpsenm].mname);
+                          // >>> CN_TS
+                          /* mons[otmp->corpsenm].mname); */
+                          mons[otmp->corpsenm].cname);
+                          // <<< CN_TS
                     if (!Stoned)
                         goto do_stone;
                 }
@@ -1120,7 +1141,10 @@ register struct attack *mattk;
         if (uncancelled && !rn2(8)) {
             Sprintf(buf, "%s %s", s_suffix(Monnam(mtmp)),
                     mpoisons_subj(mtmp, mattk));
-            poisoned(buf, ptmp, mdat->mname, 30, FALSE);
+            // >>> CN_TS
+            /* poisoned(buf, ptmp, mdat->mname, 30, FALSE); */
+            poisoned(buf, ptmp, mdat->cname, 30, FALSE);
+            // <<< CN_TS
         }
         break;
     case AD_DRIN:
@@ -1239,7 +1263,10 @@ register struct attack *mattk;
                         && !(poly_when_stoned(youmonst.data)
                              && polymon(PM_STONE_GOLEM))) {
                         int kformat = KILLED_BY_AN;
-                        const char *kname = mtmp->data->mname;
+                        // >>> CN_TS
+                        /* const char *kname = mtmp->data->mname; */
+                        const char *kname = mtmp->data->cname;
+                        // <<< CN_TS
 
                         if (mtmp->data->geno & G_UNIQ) {
                             if (!type_is_pname(mtmp->data))
@@ -1279,7 +1306,10 @@ register struct attack *mattk;
                     killer.format = KILLED_BY_AN;
                     Sprintf(killer.name, "%s by %s",
                             moat ? "moat" : "pool of water",
-                            an(mtmp->data->mname));
+                            // >>> CN_TS
+                            /* an(mtmp->data->mname)); */
+                            an(mtmp->data->cname));
+                            // <<< CN_TS
                     done(DROWNING);
                 } else if (mattk->aatyp == AT_HUGS)
                     You("are being crushed.");
@@ -1597,7 +1627,10 @@ register struct attack *mattk;
         } else if (!Slimed) {
             You("don't feel very well.");
             make_slimed(10L, (char *) 0);
-            delayed_killer(SLIMED, KILLED_BY_AN, mtmp->data->mname);
+            // >>> CN_TS
+            /* delayed_killer(SLIMED, KILLED_BY_AN, mtmp->data->mname); */
+            delayed_killer(SLIMED, KILLED_BY_AN, mtmp->data->cname);
+            // <<< CN_TS
         } else
             pline("Yuck!");
         break;
@@ -2142,7 +2175,10 @@ struct attack *mattk;
                 break;
             You("turn to stone...");
             killer.format = KILLED_BY;
-            Strcpy(killer.name, mtmp->data->mname);
+            // >>> CN_TS
+            /* Strcpy(killer.name, mtmp->data->mname); */
+            Strcpy(killer.name, mtmp->data->cname);
+            // <<< CN_TS
             done(STONING);
         }
         break;
@@ -2775,7 +2811,10 @@ struct attack *mattk;
                     && (perceives(mtmp->data) || !Invis)) {
                     if (Blind)
                         pline("As a blind %s, you cannot defend yourself.",
-                              youmonst.data->mname);
+                              // >>> CN_TS
+                              /* youmonst.data->mname); */
+                              youmonst.data->cname);
+                              // <<< CN_TS
                     else {
                         if (mon_reflects(mtmp,
                                          "Your gaze is reflected by %s %s."))

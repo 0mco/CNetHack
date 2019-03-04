@@ -345,7 +345,10 @@ invault()
         gsensed = !canspotmon(guard);
         if (!gsensed)
             pline("Suddenly one of the Vault's %s enters!",
-                  makeplural(guard->data->mname));
+                    // >>> CN_TS
+                  /* makeplural(guard->data->mname)); */
+                  makeplural(guard->data->cname));
+                  // <<< CN_TS
         else
             pline("Someone else has entered the Vault.");
         newsym(guard->mx, guard->my);
@@ -939,7 +942,10 @@ paygd()
         gx = rooms[EGD(grd)->vroom].lx + rn2(2);
         gy = rooms[EGD(grd)->vroom].ly + rn2(2);
         Sprintf(buf, "To Croesus: here's the gold recovered from %s the %s.",
-                plname, mons[u.umonster].mname);
+                // >>> CN_TS
+                /* plname, mons[u.umonster].mname); */
+                plname, mons[u.umonster].cname);
+                // <<< CN_TS
         make_grave(gx, gy, buf);
     }
     for (coins = invent; coins; coins = nextcoins) {
