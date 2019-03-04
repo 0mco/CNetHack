@@ -8,6 +8,45 @@
 
 STATIC_VAR NEARDATA struct engr *head_engr;
 
+void
+wipeout_utf8_char(str, ch, rep)
+char *str, *ch;
+int rep;
+{
+    char *s = str;
+    boolean is_ascii;
+    while (s <= ch) {
+        is_ascii = FALSE;
+        if (((*s & 0xf8) == 0xf0) &&
+            ((*(s+1) & 0xc0) == 0x80) &&
+            ((*(s+2) & 0xc0) == 0x80) &&
+            ((*(s+3) & 0xc0) == 0x80))
+            s += 4;
+        else if (((*s & 0xf0) == 0xe0) &&
+            ((*(s+1) & 0xc0) == 0x80) &&
+            ((*(s+2) & 0xc0) == 0x80))
+            s += 3;
+        else if (((*s & 0xe0) == 0xc0) &&
+            ((*(s+1) & 0xc0) == 0x80))
+            s += 2;
+        else {
+            s++;
+            is_ascii = TRUE;
+        }
+    }
+
+    --s;
+    if (is_ascii)
+        *s = rep;
+    else {
+        int r = rnd(5);
+        if ((unsigned char)(*s + r) <= (unsigned char)(0xbf))
+            *s += r;
+        else if ((unsigned char)(*s - r) >= (unsigned char)(0x80))
+            *s -= r;
+    }
+}
+
 char *
 random_engraving(outbuf)
 char *outbuf;
@@ -107,7 +146,10 @@ unsigned seed; /* for semi-controlled randomization */
 
             /* rub out unreadable & small punctuation marks */
             if (index("?.,'`-|_", *s)) {
-                *s = ' ';
+                // >>> CN_TS
+                /* *s = ' '; */
+                wipeout_utf8_char(engr, s, ' ');
+                // <<< CN_TS
                 continue;
             }
 
@@ -125,18 +167,24 @@ unsigned seed; /* for semi-controlled randomization */
                             seed *= 31, seed %= (BUFSZ - 1);
                             j = seed % (strlen(rubouts[i].wipeto));
                         }
-                        *s = rubouts[i].wipeto[j];
+                        // >>> CN_TS
+                        /* *s = rubouts[i].wipeto[j]; */
+                        wipeout_utf8_char(engr, s, rubouts[i].wipeto[j]);
+                        // <<< CN_TS
                         break;
                     }
 
             /* didn't pick rubout; use '?' for unreadable character */
             if (i == SIZE(rubouts))
-                *s = '?';
+                // >>> CN_TS
+                /* *s = '?'; */
+                wipeout_utf8_char(engr, s, '?');
+                // <<< CN_TS
         }
     }
 
     /* trim trailing spaces */
-    while (lth && engr[lth - 1] == ' ')
+    while (lth && engr[lth - 1] == ' ') /* 0x20 for ' ' is ok */
         engr[--lth] = '\0';
 }
 
@@ -1035,9 +1083,13 @@ doengrave()
             continue;
         if (((type == DUST || type == ENGR_BLOOD) && !rn2(25))
             || (Blind && !rn2(11)) || (Confusion && !rn2(7))
-            || (Stunned && !rn2(4)) || (Hallucination && !rn2(2)))
-            *sp = ' ' + rnd(96 - 2); /* ASCII '!' thru '~'
-                                        (excludes ' ' and DEL) */
+            || (Stunned && !rn2(4)) || (Hallucination && !rn2(2))) {
+            // >>> CN_TS
+            /* *sp = ' ' + rnd(96 - 2); #<{(| ASCII '!' thru '~' */
+            /*                             (excludes ' ' and DEL) |)}># */
+            wipeout_utf8_char(ebuf, sp, ' ' + rnd(96 - 2));
+            // <<< CN_TS
+        }
     }
 
     /* Previous engraving is overwritten */
